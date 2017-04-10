@@ -1,0 +1,23 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "## What is this   ポートフォリオを作ろうとしている．でも作ってない．",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmsuvM/fmsuvM.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmsuvM/fmsuvM.github.io/issues"
+  },
+  "homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
+  "dependencies": {
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3"
+  }
+}
