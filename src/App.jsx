@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import BootButton from './components/Button.jsx';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
+import BootButton from './javascripts/components/Button.jsx';
 
 class App extends Component {
     
     render(){
         return (
             <div>
-                hello
-                <BootButton />
+                まだpushしてない
             </div>
         )
     }

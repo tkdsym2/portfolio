@@ -10,7 +10,7 @@ const handleSelect = (selectedKey) => {
 class BootButton extends Component {
     constructor(props){
         super(props);
-    };
+    }
 
     componentDidMount () {
         console.log('componentDidMount');
@@ -21,7 +21,7 @@ class BootButton extends Component {
             <button
             style={[
                 styles.base,
-            ]}></button>
+            ]}> yeah </button>
         )
     }
 }
@@ -29,13 +29,8 @@ class BootButton extends Component {
 const styles = {
     base: {
         color: '#fff',
-
-        // Adding interactive state couldn't be easier! Add a special key to your
-        // style object (:hover, :focus, :active, or @media) with the additional rules.
-        ':hover': {
-            background: color('#0074d9').lighten(0.2).hexString()
+        background: '#0074d9'
         }
-    }
 }
 
 export default Radium(BootButton);
