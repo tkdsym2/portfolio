@@ -7,8 +7,6 @@ import {
   Link
 } from 'react-router-dom'
 
-import BootButton from './javascripts/components/Button.jsx';
-
 class App extends Component {
     
     render(){
