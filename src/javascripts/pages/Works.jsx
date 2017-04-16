@@ -4,7 +4,7 @@ import { Card, CardImage, Heading, Text } from 'rebass';
 import Radium from 'radium';
 import color from 'color';
 
-class Home extends Component {
+class Works extends Component {
     constructor(props){
         super(props);
     }
@@ -26,4 +26,4 @@ class Home extends Component {
     }
 }
 
-export default Radium(Home);
+export default Works;
