@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Button, Col, Row, Grid, DropdownButton, MenuItem, Clearfix, ButtonToolbar, Jumbotron, Nav, NavItem } from 'react-bootstrap';
-import { Card, CardImage, Heading, Text } from 'rebass';
+import { Row, Col } from 'react-materialize';
 import Radium from 'radium';
 import color from 'color';
+
+import ProjectCard from '../components/ProjectCard';
 
 class Works extends Component {
     constructor(props){
@@ -11,16 +12,14 @@ class Works extends Component {
 
     render(){
         return (
-            <div>
-                <Card rounded width={256}>
-                    <CardImage src="https://i.gyazo.com/9641aa5b538a4cd64fdcfb95d44b37d2.png" />
-                    <Heading level={2} size={3}>
-                        まだ作っていない．勘弁
-                    </Heading>
-                    <Text>
-                        pushしてないんや
-                    </Text>
-                </Card>
+            <div className="work-list">
+                <Row>
+                    <Col><ProjectCard /></Col>
+                    <Col><ProjectCard /></Col>
+                    <Col><ProjectCard /></Col>
+                    <Col><ProjectCard /></Col>
+                    <Col><ProjectCard /></Col>
+                </Row>
             </div>
         )
     }
