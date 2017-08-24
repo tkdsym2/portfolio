@@ -14,8 +14,8 @@ module.exports = [{
             exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react'],
-                "plugins": [
-                    "styled-jsx/babel"
+                'plugins': [
+                    'styled-jsx/babel'
                 ]
             }
         }, {

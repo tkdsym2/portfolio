@@ -3,7 +3,7 @@ import {
     Link
 } from 'react-router-dom';
 
-import '../../stylesheets/navigation.scss';
+// import '../../stylesheets/navigation.scss';
 
 export default class Navigation extends Component {
     constructor(props) {

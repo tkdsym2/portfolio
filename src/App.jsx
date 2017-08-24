@@ -11,12 +11,23 @@ import Profile from './javascripts/pages/Profile.jsx';
 import Research from './javascripts/pages/Research';
 import Manager from './javascripts/pages/Manager';
 
-import './stylesheets/index.scss';
+// import './stylesheets/index.scss';
 
 class App extends Component {
     render() {
         return (
             <div>
+                <style jsx>{`
+                    body {
+                        margin: 0;
+                    }
+                    hr{
+                        width: 100%;
+                        border: 0;
+                        border-bottom: 1px dashed #ccc;
+                        background: #fff;
+                    }
+                `}</style>
                 <Router>
                     <Manager>
                         <Switch>
