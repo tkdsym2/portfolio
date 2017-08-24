@@ -12,15 +12,15 @@ export default class Navigation extends Component {
 
     render() {
         return (
-            <div className="navigation-bar">
-                <nav>
-                    <ul className="header-contents">
-                        <li><Link to="/"><p>Works</p></Link></li>
-                        <li><Link to="/research"><p>Research</p></Link></li>
-                        <li><Link to="/profile"><p>Profile</p></Link></li>
-                    </ul>
-                </nav>
-                <hr />
+            <div className="navigation-component">
+                <div className="navigation-bar area">
+                    <p className="myname">Kazuma Takada</p>
+                    <nav className="navigation-list">
+                        <Link to="/" className="item">Works</Link>
+                        <Link to="/research" className="item">Research</Link>
+                        <Link to="/profile" className="item">Profile</Link>
+                    </nav>
+                </div>
             </div>
         )
     }
