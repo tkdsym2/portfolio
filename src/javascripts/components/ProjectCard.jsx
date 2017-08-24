@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const dummyText = "jpgejpge";
-
-export default class ProjectCard extends React.Component {
-    render(){
+export default class ProjectCard extends Component {
+    render() {
         return (
             <div className="work-card">
                 hoge

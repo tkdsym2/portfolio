@@ -1,18 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Radium from 'radium';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
-    Link,
-    Match,
     Switch,
-    IndexRoute
 } from 'react-router-dom';
 
 import Works from './javascripts/pages/Works.jsx';
-import About from './javascripts/pages/About.jsx';
-import Header from './javascripts/pages/Header.jsx';
-import Footer from './javascripts/pages/Footer.jsx';
+import Profile from './javascripts/pages/Profile.jsx';
+import Research from './javascripts/pages/Research';
+import Manager from './javascripts/pages/Manager';
 
 import './stylesheets/index.scss';
 
@@ -20,42 +17,14 @@ class App extends Component {
     render() {
         return (
             <div>
-                <style jsx>{`
-                    .hoge {
-                        color: #FF0000;
-                    }
-                `}</style>
                 <Router>
-                    <div className="container">
-                        <header className="globalHeader" style={[styles.base]}>
-                            <nav className="navi">
-                                <ul>
-                                    <li style={[styles.title]}>
-                                        <h1>This is Header</h1>
-                                    </li>
-                                    <li key={'li1'}>
-                                        <Link to="/">
-                                            <p className="hoge">Works</p>
-                                        </Link>
-                                    </li>
-                                    <li key={'li2'} style={[styles.navicontent]}>
-                                        <Link to="/about">
-                                            About
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </header>
-
-                        <hr />
-
-                        <Route exact path="/" component={Works}/>
-                        <Route path="/works" component={Works} />
-                        <Route path="/about" component={About}/>
-
-                        <Footer/>
-
-                    </div>
+                    <Manager>
+                        <Switch>
+                            <Route component={Works} path="/" exact />
+                            <Route component={Profile} path="/profile" />
+                            <Route component={Research} path="/research" />
+                        </Switch>
+                    </Manager>
                 </Router>
             </div>
         )

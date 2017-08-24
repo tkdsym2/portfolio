@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-materialize';
-import Radium from 'radium';
-import color from 'color';
 
 import ProjectCard from '../components/ProjectCard';
 
-class Works extends Component {
-    constructor(props){
+export default class Works extends Component {
+    constructor(props) {
         super(props);
     }
 
-    render(){
+    render() {
         return (
             <div className="work-list">
                 <Row>
@@ -24,5 +22,3 @@ class Works extends Component {
         )
     }
 }
-
-export default Works;

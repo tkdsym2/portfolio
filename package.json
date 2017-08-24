@@ -21,7 +21,8 @@
   "homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
   "dependencies": {
     "color": "^1.0.3",
-    "prop-types": "^15.5.6",
+    "debug": "^3.0.0",
+    "prop-types": "^15.5.10",
     "radium": "^0.18.2",
     "react": "^15.6.1",
     "react-bootstrap": "^0.30.8",
