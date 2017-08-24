@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:watch": "webpack --progress --colors --watch",
     "build:server": "webpack-dev-server",
-    "build-sass": "node-sass --source-map true ./src/stylesheets/index.scss ./dist/index.css"
+    "build-sass": "node-sass --source-map true ./src/stylesheets/index.scss ./dist/index.css",
+    "build:scss": "scss --watch --no-cache ./src/stylesheets:./dist"
   },
   "repository": {
     "type": "git",
