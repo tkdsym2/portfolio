@@ -14045,8 +14045,13 @@ var Works = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'work-list' },
-                _react2.default.createElement(_ProjectCard2.default, null),
-                _react2.default.createElement(_ProjectCard2.default, null)
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card' })
             );
         }
     }]);
@@ -33830,7 +33835,7 @@ exports = module.exports = __webpack_require__(471)(undefined);
 
 
 // module
-exports.push([module.i, ".project-card {\n  width: 300px;\n  height: 350px;\n  display: block;\n  margin: auto;\n  border: solid 2px;\n  border-radius: 5px;\n  margin-top: 20px;\n  box-shadow: 0 2 1px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12); }\n  .project-card > .card-image > img {\n    width: 300px;\n    height: 220px; }\n  .project-card > .card-contents {\n    display: block;\n    padding: 0px;\n    margin: auto;\n    padding-left: 10px;\n    margin-top: -20px; }\n  .project-card > .card-contents > .project-title {\n    margin-top: -5px;\n    font-size: 24px; }\n  .project-card > .card-contents > .project-subtitle {\n    margin-top: -20px;\n    font-size: 15px; }\n", ""]);
+exports.push([module.i, ".project-card {\n  width: 300px;\n  height: 350px;\n  display: block;\n  border: solid 2px;\n  border-radius: 5px;\n  box-shadow: 0 2 1px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);\n  margin: 0px;\n  padding: 0px;\n  margin-top: 30px; }\n  .project-card > .card-image > img {\n    width: 300px;\n    height: 220px; }\n  .project-card > .card-contents {\n    display: block;\n    padding: 0px;\n    margin: auto;\n    padding-left: 10px;\n    margin-top: -20px; }\n  .project-card > .card-contents > .project-title {\n    margin-top: -5px;\n    font-size: 24px; }\n  .project-card > .card-contents > .project-subtitle {\n    margin-top: -20px;\n    font-size: 15px; }\n", ""]);
 
 // exports
 
