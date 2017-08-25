@@ -11,8 +11,6 @@ import Profile from './javascripts/pages/Profile.jsx';
 import Research from './javascripts/pages/Research';
 import Manager from './javascripts/pages/Manager';
 
-// import './stylesheets/index.scss';
-
 class App extends Component {
     render() {
         return (

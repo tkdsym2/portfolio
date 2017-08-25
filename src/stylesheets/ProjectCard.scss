@@ -1,0 +1,34 @@
+.project-card {
+    width: 300px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    border: solid 2px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2
+    1px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+
+    & > .card-image > img {
+        width: 300px;
+        height: 220px;
+    }
+
+    & > .card-contents {
+        display: block;
+        padding: 0px;
+        margin: auto;
+        padding-left: 10px;
+        margin-top: -20px;
+    }
+
+    & > .card-contents > .project-title {
+        margin-top: -5px;
+        font-size: 24px;
+    }
+
+    & > .card-contents > .project-subtitle {
+        margin-top: -20px;
+        font-size: 15px;
+    }
+}
