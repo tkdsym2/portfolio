@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 
 class Footer extends Component {
-    render(){
+    render() {
         return (
             <div>
                 <hr />
-                
             </div>
         )
     }

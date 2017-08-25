@@ -41,3 +41,6 @@ jspm_packages
 
 # ignore .vscode
 .vscode
+
+# ignore sass-cache
+.sass-caches

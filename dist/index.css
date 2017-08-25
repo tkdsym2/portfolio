@@ -1,2 +1,10 @@
-nav ul li{list-style:none;vertical-align:baseline;background:transparent;display:inline-block}.navi{margin-top:18px}.navi ul li{float:left;margin-right:25px;font-size:30px}.navi ul li a{margin-top:30px;text-decoration:none;color:#333;letter-spacing:.1em;font-weight:400;padding-top:150px;padding-bottom:54px}.navi ul li a.current,.navi ul li a:hover{border-bottom:1px solid #ec652b}.navi{float:left}
-/*# sourceMappingURL=index.css.map*/
+body {
+  margin: 0; }
+
+hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #fff; }
+
+/*# sourceMappingURL=index.css.map */

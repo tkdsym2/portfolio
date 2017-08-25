@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = [{
     entry: path.join(__dirname, 'src/index.jsx'),
@@ -14,8 +13,20 @@ module.exports = [{
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
-                presets: ['es2015', 'react']
+                presets: ['es2015', 'react'],
+                'plugins': [
+                    'styled-jsx/babel'
+                ]
             }
+        }, {
+            test: /\.scss$/,
+            use: [{
+                loader: 'style-loader'
+            }, {
+                loader: 'css-loader'
+            }, {
+                loader: 'sass-loader'
+            }]
         }]
     },
     resolve: {
@@ -28,25 +39,4 @@ module.exports = [{
         // host: '0.0.0.0',
         inline: true
     }
-}, {
-    context: path.join(__dirname, 'src/stylesheets/'),
-    entry: {
-        app: './index.scss'
-    },
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'index.css'
-    },
-    module: {
-        loaders: [{
-            test: /\.scss$/,
-            loader: ExtractTextPlugin.extract({
-                fallback: "style-loader",
-                use: "css-loader?-url&sourceMap&minimize!sass-loader?outputStyle=expanded&sourceMap=tr" +
-                    "ue&sourceMapContents=true"
-            })
-        }]
-    },
-    plugins: [new ExtractTextPlugin('index.css')],
-    devtool: 'source-map'
 }]
