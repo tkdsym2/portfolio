@@ -14354,11 +14354,7 @@ var ProjectDetail = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'prooject-contents' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'project-img' },
-                        _react2.default.createElement('img', { src: imgUrl })
-                    ),
+                    _react2.default.createElement('img', { src: imgUrl }),
                     _react2.default.createElement(
                         'div',
                         { className: 'project-description' },

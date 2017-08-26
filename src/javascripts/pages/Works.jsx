@@ -14,16 +14,7 @@ export default class Works extends Component {
         // debug(fabnavi);
         return (
             <div className="work-list">
-                {/* コンテンツは以下に追記して行く */}
-                {/* <div className="work-contents"> */}
-                    <ProjectCard className="project-card" projectName="fabnavi" />
-                    {/* <ProjectCard className="project-card" projectName="fabspace"/>
-                    <ProjectCard className="project-card"/>
-                    <ProjectCard className="project-card"/>
-                    <ProjectCard className="project-card"/>
-                    <ProjectCard className="project-card"/>
-                    <ProjectCard className="project-card"/> */}
-                {/* </div> */}
+                <ProjectCard className="project-card" projectName="fabnavi" />
             </div>
         )
     }
