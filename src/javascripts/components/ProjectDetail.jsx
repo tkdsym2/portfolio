@@ -36,9 +36,7 @@ export default class ProjectDetail extends Component {
                     <h5>{ this.state.subtitle }</h5>
                 </div>
                 <div className="prooject-contents">
-                    <div className="project-img">
-                        <img src={ imgUrl }/>
-                    </div>
+                    <img src={ imgUrl }/>
                     <div className="project-description">
                         <p>
                             { this.state.description }
