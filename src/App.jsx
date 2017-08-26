@@ -5,11 +5,15 @@ import {
     Route,
     Switch,
 } from 'react-router-dom';
+import createHashHistory from 'history/createHashHistory';
 
 import Works from './javascripts/pages/Works.jsx';
 import Profile from './javascripts/pages/Profile.jsx';
 import Research from './javascripts/pages/Research';
 import Manager from './javascripts/pages/Manager';
+import ProjectDetail from './javascripts/components/ProjectDetail';
+
+const history = createHashHistory();
 
 class App extends Component {
     render() {
@@ -26,12 +30,13 @@ class App extends Component {
                         background: #fff;
                     }
                 `}</style>
-                <Router>
+                <Router history={history}>
                     <Manager>
                         <Switch>
                             <Route component={Works} path="/" exact />
                             <Route component={Profile} path="/profile" />
                             <Route component={Research} path="/research" />
+                            <Route component={ProjectDetail} path="/detail/:projectName"/>
                         </Switch>
                     </Manager>
                 </Router>
