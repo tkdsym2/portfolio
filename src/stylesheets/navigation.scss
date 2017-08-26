@@ -1,10 +1,12 @@
+@import "./var.scss";
+
 .area {
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: $page-width;
 }
 
 .navigation-component {
@@ -19,6 +21,7 @@
         display: block;
         font-size: 20px;
         margin: 22px;
+        margin-left: 0px;
     }
 
     & > .navigation-list {
@@ -39,5 +42,6 @@
         padding-bottom: 0px;
         font-size: 15px;
         text-decoration: none;
+        padding-right: 0px;
     }
 }

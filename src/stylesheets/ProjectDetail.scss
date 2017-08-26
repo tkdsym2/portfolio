@@ -1,0 +1,44 @@
+@import "./var.scss";
+
+.detail-page {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+    word-wrap: break-word;
+
+    & > .project-header {
+        width: $page-width;
+        display: inline-block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    & > .project-header > h3 {
+        text-align: left;
+    }
+    & > .project-header > h5 {
+        text-align: left;
+    }
+
+}
+
+.prooject-contents {
+    img {
+        width: 1000px;
+        height: auto;
+        border-radius: 5px;
+        align-self: center;
+    }
+
+    & > .project-description {
+        width: $page-width;
+        display: inline-block;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    & > .project-description > p {
+        text-align: left;
+    }
+}

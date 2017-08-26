@@ -1,9 +1,11 @@
+@import "./var.scss";
+
 .work-list {
     display: flex;
     flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: $page-width;
     justify-content: space-between;
 
     & > .project-card {
