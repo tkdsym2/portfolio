@@ -9,7 +9,7 @@ import createHashHistory from 'history/createHashHistory';
 
 import Works from './javascripts/pages/Works.jsx';
 import Profile from './javascripts/pages/Profile.jsx';
-import Research from './javascripts/pages/Research';
+import Publications from './javascripts/pages/Publications';
 import Manager from './javascripts/pages/Manager';
 import ProjectDetail from './javascripts/components/ProjectDetail';
 
@@ -20,22 +20,14 @@ class App extends Component {
         return (
             <div>
                 <style jsx>{`
-                    body {
-                        margin: 0;
-                    }
-                    hr{
-                        width: 100%;
-                        border: 0;
-                        border-bottom: 1px dashed #ccc;
-                        background: #fff;
-                    }
+                    
                 `}</style>
                 <Router history={history}>
                     <Manager>
                         <Switch>
                             <Route component={Works} path="/" exact />
                             <Route component={Profile} path="/profile" />
-                            <Route component={Research} path="/research" />
+                            <Route component={Publications} path="/publications" />
                             <Route component={ProjectDetail} path="/detail/:projectName"/>
                         </Switch>
                     </Manager>
