@@ -1,0 +1,56 @@
+.research-page {
+  display: block;
+  width: 1000px;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+  word-wrap: break-word; }
+  .research-page h3 {
+    font-size: 28px;
+    padding-bottom: 10px; }
+
+.bachelor-container {
+  width: 1000px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px; }
+  .bachelor-container > .bachelor {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .bachelor-container > .bachelor > .title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    border-bottom: solid 1.5px;
+    padding-bottom: 3px;
+    width: 120px;
+    border-color: #1e88a8; }
+  .bachelor-container > .bachelor > .contents {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .bachelor-container > .bachelor > p {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px; }
+  .bachelor-container > .bachelor > .contents > a {
+    font-size: 16px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #373c38; }
+    .bachelor-container > .bachelor > .contents > a:hover {
+      color: #005b98; }
+  .bachelor-container > .splitLine {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #3f4551; }
+
+/*# sourceMappingURL=publications.css.map */
