@@ -15,7 +15,7 @@ export default class Navigation extends Component {
                     <p className="myname">Kazuma Takada</p>
                     <nav className="navigation-list">
                         <Link to="/" className="item">Works</Link>
-                        <Link to="/research" className="item">Research</Link>
+                        <Link to="/publications" className="item">Publications</Link>
                         <Link to="/profile" className="item">Profile</Link>
                     </nav>
                 </div>
