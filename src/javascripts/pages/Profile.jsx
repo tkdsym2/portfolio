@@ -20,7 +20,7 @@ class About extends Component {
                 <h3>Profile</h3>
 
                 <div className="profile-about">
-                    <img src="./src/images/profile.jpg" />
+                    <img src="https://i.gyazo.com/0fff108b825bd60ddb349430b2fe131d.jpg" />
                     <div className="status">
                         <ul>
                             <li className="name">髙田 一真<small>Kazuma Takada</small></li>
