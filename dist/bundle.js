@@ -13983,9 +13983,9 @@ var _Profile = __webpack_require__(185);
 
 var _Profile2 = _interopRequireDefault(_Profile);
 
-var _Research = __webpack_require__(186);
+var _Publications = __webpack_require__(423);
 
-var _Research2 = _interopRequireDefault(_Research);
+var _Publications2 = _interopRequireDefault(_Publications);
 
 var _Manager = __webpack_require__(183);
 
@@ -14020,11 +14020,11 @@ var App = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 {
-                    'data-jsx': 3904871853
+                    'data-jsx': 3598756741
                 },
                 _react2.default.createElement(_style2.default, {
-                    styleId: 3904871853,
-                    css: 'body[data-jsx="3904871853"]{margin:0}hr[data-jsx="3904871853"]{width:100%;border:0;border-bottom:1px dashed #ccc;background:#fff}'
+                    styleId: 3598756741,
+                    css: ''
                 }),
                 _react2.default.createElement(
                     _reactRouterDom.HashRouter,
@@ -14037,7 +14037,7 @@ var App = function (_Component) {
                             null,
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Works2.default, path: '/', exact: true }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Profile2.default, path: '/profile' }),
-                            _react2.default.createElement(_reactRouterDom.Route, { component: _Research2.default, path: '/research' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Publications2.default, path: '/publications' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _ProjectDetail2.default, path: '/detail/:projectName' })
                         )
                     )
@@ -14556,8 +14556,8 @@ var Navigation = function (_Component) {
                         ),
                         _react2.default.createElement(
                             _reactRouterDom.Link,
-                            { to: '/research', className: 'item' },
-                            'Research'
+                            { to: '/publications', className: 'item' },
+                            'Publications'
                         ),
                         _react2.default.createElement(
                             _reactRouterDom.Link,
@@ -14626,56 +14626,7 @@ var About = function (_Component) {
 exports.default = About;
 
 /***/ }),
-/* 186 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Research = function (_Component) {
-    _inherits(Research, _Component);
-
-    function Research() {
-        _classCallCheck(this, Research);
-
-        return _possibleConstructorReturn(this, (Research.__proto__ || Object.getPrototypeOf(Research)).apply(this, arguments));
-    }
-
-    _createClass(Research, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                'this is my research page'
-            );
-        }
-    }]);
-
-    return Research;
-}(_react.Component);
-
-exports.default = Research;
-
-/***/ }),
+/* 186 */,
 /* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14726,6 +14677,11 @@ var Works = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'work-list' },
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
                 _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' })
             );
         }
@@ -33947,6 +33903,137 @@ module.exports = {
 		"description": "fabnaviをSFCにて設置しました"
 	}
 };
+
+/***/ }),
+/* 423 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Publications = function (_Component) {
+    _inherits(Publications, _Component);
+
+    function Publications() {
+        _classCallCheck(this, Publications);
+
+        return _possibleConstructorReturn(this, (Publications.__proto__ || Object.getPrototypeOf(Publications)).apply(this, arguments));
+    }
+
+    _createClass(Publications, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "research-page" },
+                _react2.default.createElement(
+                    "h3",
+                    null,
+                    "Publications"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "bachelor-container" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "bachelor" },
+                        _react2.default.createElement(
+                            "h3",
+                            { className: "title" },
+                            "Bachelor 4"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "Coming Soon......"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "bachelor" },
+                        _react2.default.createElement(
+                            "h3",
+                            { className: "title" },
+                            "Bachelor 3"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "Coming Soon......"
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "bachelor" },
+                        _react2.default.createElement(
+                            "h3",
+                            { className: "title" },
+                            "Bachelor 2"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "contents" },
+                            _react2.default.createElement(
+                                "a",
+                                { href: "https://www.wiss.org/WISS2016/Demo.html" },
+                                "\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. \u88AB\u5199\u901A\u77E5\uFF1A\u30A2\u30C9\u30DB\u30C3\u30AF\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u3088\u308B\u5199\u771F\u5171\u6709. \u7B2C24\u56DE\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u30B7\u30B9\u30C6\u30E0\u3068\u30BD\u30D5\u30C8\u30A6\u30A7\u30A2\u306B\u95A2\u3059\u308B\u30EF\u30FC\u30AF\u30B7\u30E7\u30C3\u30D7(WISS2016), 2016."
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "contents" },
+                            _react2.default.createElement(
+                                "a",
+                                { href: "http://www.ipsj.or.jp/kenkyukai/event/hci169.html" },
+                                "\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter: Bluetooth\u96FB\u6CE2\u3068\u9854\u8A8D\u8B58\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u57FA\u3065\u304F\u5199\u771F\u5171\u6709. \u7B2C169\u56DE\u30D2\u30E5\u30FC\u30DE\u30F3\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u7814\u7A76\u767A\u8868\u4F1A(HCI169), 2016."
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "bachelor" },
+                        _react2.default.createElement(
+                            "h3",
+                            { className: "title" },
+                            "Bachelor 1"
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "contents" },
+                            _react2.default.createElement(
+                                "a",
+                                { href: "http://www.interaction-ipsj.org/2016/program/interactivel" },
+                                "\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter : Bluetooth\u96FB\u6CE2\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306E\u691C\u8A0E\u3068\u8A66\u4F5C. \u7B2C20\u56DE\u4E00\u822C\u793E\u56E3\u6CD5\u4EBA\u60C5\u5831\u51E6\u7406\u5B66\u4F1A\u30B7\u30F3\u30DD\u30B8\u30A6\u30E0(\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F32016), 2016."
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Publications;
+}(_react.Component);
+
+exports.default = Publications;
 
 /***/ })
 /******/ ]);
