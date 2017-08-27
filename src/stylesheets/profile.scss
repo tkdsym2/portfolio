@@ -1,0 +1,142 @@
+@import "./var.scss";
+
+.profile-page {
+    display: block;
+    width: $page-width;
+    margin: auto;
+    padding: 0px;
+    word-wrap: break-word;
+
+    h3 {
+        font-size: 32px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    & > .profile-about {
+        display: flex;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    & > .profile-about > img{
+        width: 265px;
+        height: 265px;
+        border-radius: 5px;
+    }
+}
+
+.status {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -20px;
+    ul {
+        list-style: none;
+    }
+
+    li {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    p {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $gunjou;
+    }
+
+    a:hover {
+        color: $aisumicha;
+    }
+
+    .infotext {
+        vertical-align: middle;
+    }
+
+    .info {
+        margin: 0px;
+        img {
+            width: 20px;
+            height: 20px;
+            padding-right: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .name {
+        font-size: 30px;
+        
+    }
+
+    small {
+        padding-left: 30px;
+    }
+}
+
+.bio div{
+    margin-left: 52px;
+    h5 {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 18px;
+        margin-bottom: -5px;
+    }
+
+    p {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .background-contents {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+
+        .background-year {
+            margin: 0px;
+            padding: 0px;
+            ul {
+                margin: 0px;
+                padding: 0px;
+                padding-top: 10px;
+            }
+            li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+
+        .background-year-info {
+            margin: 0px;
+            padding: 0px;
+            ul {
+                margin: 0px;
+                padding: 0px;
+                padding-top: 10px;
+                padding-left: 70px;
+            }
+            li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,97 @@
+.profile-page {
+  display: block;
+  width: 1000px;
+  margin: auto;
+  padding: 0px;
+  word-wrap: break-word; }
+  .profile-page h3 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    text-align: center; }
+  .profile-page > .profile-about {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-left: 0px; }
+  .profile-page > .profile-about > img {
+    width: 265px;
+    height: 265px;
+    border-radius: 5px; }
+
+.status {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -20px; }
+  .status ul {
+    list-style: none; }
+  .status li {
+    text-align: left;
+    margin: 0px;
+    padding: 0px; }
+  .status p {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .status a {
+    text-decoration: none;
+    color: #005baa; }
+  .status a:hover {
+    color: #373c38; }
+  .status .infotext {
+    vertical-align: middle; }
+  .status .info {
+    margin: 0px; }
+    .status .info img {
+      width: 20px;
+      height: 20px;
+      padding-right: 10px;
+      vertical-align: middle; }
+  .status .name {
+    font-size: 30px; }
+  .status small {
+    padding-left: 30px; }
+
+.bio div {
+  margin-left: 52px; }
+  .bio div h5 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: -5px; }
+  .bio div p {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px; }
+  .bio div ul {
+    list-style: none; }
+  .bio div .background-contents {
+    display: flex;
+    margin: 0px;
+    padding: 0px; }
+    .bio div .background-contents .background-year {
+      margin: 0px;
+      padding: 0px; }
+      .bio div .background-contents .background-year ul {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px; }
+      .bio div .background-contents .background-year li {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+    .bio div .background-contents .background-year-info {
+      margin: 0px;
+      padding: 0px; }
+      .bio div .background-contents .background-year-info ul {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 10px;
+        padding-left: 70px; }
+      .bio div .background-contents .background-year-info li {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+
+/*# sourceMappingURL=profile.css.map */

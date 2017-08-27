@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
 
+// Twitter, facebook. github
+
 class Footer extends Component {
     render() {
         return (
