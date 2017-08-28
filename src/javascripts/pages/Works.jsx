@@ -17,6 +17,8 @@ export default class Works extends Component {
                 <ProjectCard className="project-card" projectName="fabnavi" />
                 <ProjectCard className="project-card" projectName="shogg" />
                 <ProjectCard className="project-card" projectName="shogg" />
+                <ProjectCard className="project-card" projectName="fabnavi" />
+                <ProjectCard className="project-card" projectName="fabnavi" />
             </div>
         )
     }

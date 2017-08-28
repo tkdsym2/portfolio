@@ -3,11 +3,15 @@
   flex-flow: row wrap;
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
-  justify-content: space-between; }
+  width: 1050px;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center; }
   .work-list > .project-card {
     margin: 0px;
-    margin-top: 40px;
-    margin-bottom: 10px; }
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px; }
 
 /*# sourceMappingURL=works.css.map */
