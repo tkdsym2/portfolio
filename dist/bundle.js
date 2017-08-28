@@ -14764,13 +14764,13 @@ var About = function (_Component) {
                                         { className: 'infotext' },
                                         _react2.default.createElement(
                                             'a',
-                                            { href: 'http://www.meiji.ac.jp/ims/subject/fms/', target: '_blank' },
+                                            { href: 'http://www.meiji.ac.jp/ims/subject/fms/', target: '_blank', className: 'jump-link' },
                                             '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1'
                                         ),
                                         ' ',
                                         _react2.default.createElement(
                                             'a',
-                                            { href: 'http://keita-lab.jp/', target: '_blank' },
+                                            { href: 'http://keita-lab.jp/', target: '_blank', className: 'jump-link' },
                                             '\u6E21\u908A\u7814\u7A76\u5BA4'
                                         ),
                                         '\u6240\u5C5E \u5B66\u90E83\u5E74'
@@ -14803,7 +14803,7 @@ var About = function (_Component) {
                                         { className: 'infotext' },
                                         _react2.default.createElement(
                                             'a',
-                                            { href: 'https://www.facebook.com/kazuma.takada.90', target: '_blank' },
+                                            { href: 'https://www.facebook.com/kazuma.takada.90', target: '_blank', className: 'jump-link' },
                                             '\u9AD8\u7530 \u4E00\u771F'
                                         )
                                     )
@@ -14839,7 +14839,7 @@ var About = function (_Component) {
                                         { className: 'infotext' },
                                         _react2.default.createElement(
                                             'a',
-                                            { href: 'https://twitter.com/fmsuvM', target: '_blank' },
+                                            { href: 'https://twitter.com/fmsuvM', target: '_blank', className: 'jump-link' },
                                             '@fmsuvM'
                                         )
                                     )
@@ -14857,7 +14857,7 @@ var About = function (_Component) {
                                         { className: 'infotext' },
                                         _react2.default.createElement(
                                             'a',
-                                            { href: 'https://www.instagram.com/kazuma__tkd/', target: '_blank' },
+                                            { href: 'https://www.instagram.com/kazuma__tkd/', target: '_blank', className: 'jump-link' },
                                             '@kazuma__tkd'
                                         )
                                     )
@@ -14875,7 +14875,7 @@ var About = function (_Component) {
                                         { className: 'infotext' },
                                         _react2.default.createElement(
                                             'a',
-                                            { href: 'https://medium.com/@fmsuvM', target: '_blank' },
+                                            { href: 'https://medium.com/@fmsuvM', target: '_blank', className: 'jump-link' },
                                             '@fmsuvM'
                                         )
                                     )

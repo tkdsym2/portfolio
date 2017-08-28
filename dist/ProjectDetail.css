@@ -2,7 +2,8 @@
   display: block;
   padding-top: 30px;
   text-align: center;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  color: #373c38; }
   .detail-page > .project-header {
     width: 1000px;
     display: inline-block;

@@ -11,6 +11,7 @@
         font-size: 32px;
         padding-bottom: 10px;
         text-align: center;
+        color: $aisumicha;
     }
 
     & > .profile-about {
@@ -33,6 +34,7 @@
     margin: 0px;
     padding: 0px;
     margin-top: -20px;
+    color: $aisumicha;
     ul {
         list-style: none;
     }
@@ -52,11 +54,13 @@
 
     a {
         text-decoration: none;
-        color: $gunjou;
+        color: $tikusa;
     }
 
     a:hover {
-        color: $aisumicha;
+        color: $benihiwa;
+        font-size: 16px;
+        transition: all 0.4s 0s ease;
     }
 
     .infotext {
@@ -75,7 +79,7 @@
 
     .name {
         font-size: 30px;
-        
+        color: $aisumicha;
     }
 
     small {
@@ -85,6 +89,7 @@
 
 .bio div{
     margin-left: 52px;
+    color: $aisumicha;
     h5 {
         padding: 0px;
         margin: 0px;

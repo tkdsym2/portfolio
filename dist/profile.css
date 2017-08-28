@@ -7,7 +7,8 @@
   .profile-page h3 {
     font-size: 32px;
     padding-bottom: 10px;
-    text-align: center; }
+    text-align: center;
+    color: #373c38; }
   .profile-page > .profile-about {
     display: flex;
     text-align: center;
@@ -23,7 +24,8 @@
   position: relative;
   margin: 0px;
   padding: 0px;
-  margin-top: -20px; }
+  margin-top: -20px;
+  color: #373c38; }
   .status ul {
     list-style: none; }
   .status li {
@@ -37,9 +39,11 @@
     margin-bottom: 5px; }
   .status a {
     text-decoration: none;
-    color: #005baa; }
+    color: #3a8fb7; }
   .status a:hover {
-    color: #373c38; }
+    color: #c9396d;
+    font-size: 16px;
+    transition: all 0.4s 0s ease; }
   .status .infotext {
     vertical-align: middle; }
   .status .info {
@@ -50,12 +54,14 @@
       padding-right: 10px;
       vertical-align: middle; }
   .status .name {
-    font-size: 30px; }
+    font-size: 30px;
+    color: #373c38; }
   .status small {
     padding-left: 30px; }
 
 .bio div {
-  margin-left: 52px; }
+  margin-left: 52px;
+  color: #373c38; }
   .bio div h5 {
     padding: 0px;
     margin: 0px;

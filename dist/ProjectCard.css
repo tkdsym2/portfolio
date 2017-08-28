@@ -7,6 +7,7 @@
   border-radius: 5px;
   margin-top: 30px;
   transition: all 0.3s ease;
+  color: #373c38;
   /* mouse hover */ }
   .project-card > .card-image > img {
     width: 300px;
