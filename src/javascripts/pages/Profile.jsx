@@ -24,13 +24,13 @@ class About extends Component {
                     <div className="status">
                         <ul>
                             <li className="name">髙田 一真<small>Kazuma Takada</small></li>
-                            <li className="info"><p><img src="./src/images/icon/school.png"/><span className="infotext"><a href="http://www.meiji.ac.jp/ims/subject/fms/" target="_blank">明治大学 総合数理学部 先端メディアサイエンス学科</a> <a href="http://keita-lab.jp/" target="_blank">渡邊研究室</a>所属 学部3年</span></p></li>
+                            <li className="info"><p><img src="./src/images/icon/school.png"/><span className="infotext"><a href="http://www.meiji.ac.jp/ims/subject/fms/" target="_blank" className="jump-link">明治大学 総合数理学部 先端メディアサイエンス学科</a> <a href="http://keita-lab.jp/" target="_blank" className="jump-link">渡邊研究室</a>所属 学部3年</span></p></li>
                             <li className="info"><p><img src="./src/images/icon/mail.png"/><span className="infotext">k222.tkd.fms [at] gmail.com</span></p></li>
-                            <li className="info"><p><img src="./src/images/icon/facebook.png" style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px'}}/><span className="infotext"><a href="https://www.facebook.com/kazuma.takada.90" target="_blank">高田 一真</a></span></p></li>
+                            <li className="info"><p><img src="./src/images/icon/facebook.png" style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px'}}/><span className="infotext"><a href="https://www.facebook.com/kazuma.takada.90" target="_blank" className="jump-link">高田 一真</a></span></p></li>
                             <li className="info"><p><img src="./src/images/icon/github.png"/><span className="infotext"><a href="https://github.com/fmsuvM" target="_blank">@fmsuvM</a></span></p></li>
-                            <li className="info"><p><img src="./src/images/icon/twitter.png" style={{width: '30px', height: '30px', marginLeft: '-5px', marginRight: '-5px'}} /><span className="infotext"><a href="https://twitter.com/fmsuvM" target="_blank">@fmsuvM</a></span></p></li>
-                            <li className="info"><p><img src="./src/images/icon/instagram.png"/><span className="infotext"><a href="https://www.instagram.com/kazuma__tkd/" target="_blank">@kazuma__tkd</a></span></p></li>
-                            <li className="info"><p><img src="./src/images/icon/medium.png" style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px'}}/><span className="infotext"><a href="https://medium.com/@fmsuvM" target="_blank">@fmsuvM</a></span></p></li>
+                            <li className="info"><p><img src="./src/images/icon/twitter.png" style={{width: '30px', height: '30px', marginLeft: '-5px', marginRight: '-5px'}} /><span className="infotext"><a href="https://twitter.com/fmsuvM" target="_blank" className="jump-link">@fmsuvM</a></span></p></li>
+                            <li className="info"><p><img src="./src/images/icon/instagram.png"/><span className="infotext"><a href="https://www.instagram.com/kazuma__tkd/" target="_blank" className="jump-link">@kazuma__tkd</a></span></p></li>
+                            <li className="info"><p><img src="./src/images/icon/medium.png" style={{borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px'}}/><span className="infotext"><a href="https://medium.com/@fmsuvM" target="_blank" className="jump-link">@fmsuvM</a></span></p></li>
                         </ul>
                     </div>
                 </div>

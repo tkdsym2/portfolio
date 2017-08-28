@@ -7,6 +7,7 @@
     padding: 0px;
     text-align: center;
     word-wrap: break-word;
+    color: $aisumicha;
     
     h3 {
         font-size: 32px;
@@ -63,8 +64,6 @@
         &:hover {
             color: $konpeki;
         }
-
-
     }
 
     & > .splitLine {

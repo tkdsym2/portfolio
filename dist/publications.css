@@ -4,7 +4,8 @@
   margin: auto;
   padding: 0px;
   text-align: center;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  color: #373c38; }
   .research-page h3 {
     font-size: 32px;
     padding-bottom: 10px; }
