@@ -3,15 +3,16 @@ import Debug from 'debug';
 
 const debug = Debug('ProjectDetail:jsx:');
 
-export default class ProjectDetail extends Component {
+/*
+    * 各プロジェクトのDetailのtemplate
+    * 追加要素があれば，ProjectDetail.scssか新しくfileをつくってclass名が混ざらないように管理
+    * ProjectCardのため，jsonファイルも作るのを忘れない
+*/
+
+class ProjectDetailTemplate extends Component {
     constructor(props) {
         super(props);
         debug(props);
-        this.state = {
-            title: '',
-            subtitle: '',
-            description: ''
-        };
     }
 
     componentWillMount() {
