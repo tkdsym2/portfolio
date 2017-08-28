@@ -12,6 +12,7 @@ import Profile from './javascripts/pages/Profile.jsx';
 import Publications from './javascripts/pages/Publications';
 import Manager from './javascripts/pages/Manager';
 import Fabnavi from './javascripts/contents/Fabnavi';
+import Shogg from './javascripts/contents/Shogg';
 
 const history = createHashHistory();
 
@@ -29,6 +30,7 @@ class App extends Component {
                             <Route component={Profile} path="/profile" />
                             <Route component={Publications} path="/publications" />
                             <Route component={Fabnavi} path="/detail/fabnavi"/>
+                            <Route component={Shogg} path="/detail/shogg"/>
                         </Switch>
                     </Manager>
                 </Router>
