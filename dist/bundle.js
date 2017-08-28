@@ -13932,7 +13932,8 @@ module.exports = getIteratorFn;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./fabnavi.json": 424
+	"./fabnavi.json": 424,
+	"./shogg.json": 427
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -14001,9 +14002,13 @@ var _Manager = __webpack_require__(184);
 
 var _Manager2 = _interopRequireDefault(_Manager);
 
-var _ProjectDetail = __webpack_require__(182);
+var _Fabnavi = __webpack_require__(425);
 
-var _ProjectDetail2 = _interopRequireDefault(_ProjectDetail);
+var _Fabnavi2 = _interopRequireDefault(_Fabnavi);
+
+var _Shogg = __webpack_require__(426);
+
+var _Shogg2 = _interopRequireDefault(_Shogg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14048,7 +14053,8 @@ var App = function (_Component) {
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Works2.default, path: '/', exact: true }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Profile2.default, path: '/profile' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Publications2.default, path: '/publications' }),
-                            _react2.default.createElement(_reactRouterDom.Route, { component: _ProjectDetail2.default, path: '/detail/:projectName' })
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Fabnavi2.default, path: '/detail/fabnavi' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Shogg2.default, path: '/detail/shogg' })
                         )
                     )
                 )
@@ -14294,112 +14300,7 @@ ProjectCard.PropTypes = {
 exports.default = (0, _reactRouterDom.withRouter)(ProjectCard);
 
 /***/ }),
-/* 182 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _debug = __webpack_require__(54);
-
-var _debug2 = _interopRequireDefault(_debug);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var debug = (0, _debug2.default)('ProjectDetail:jsx:');
-
-var ProjectDetail = function (_Component) {
-    _inherits(ProjectDetail, _Component);
-
-    function ProjectDetail(props) {
-        _classCallCheck(this, ProjectDetail);
-
-        var _this = _possibleConstructorReturn(this, (ProjectDetail.__proto__ || Object.getPrototypeOf(ProjectDetail)).call(this, props));
-
-        debug(props);
-        _this.state = {
-            title: '',
-            subtitle: '',
-            description: ''
-        };
-        return _this;
-    }
-
-    _createClass(ProjectDetail, [{
-        key: 'componentWillMount',
-        value: function componentWillMount() {
-            var projectName = this.props.match.params.projectName;
-            var data = __webpack_require__(177)("./" + projectName + '.json');
-            debug('json', data);
-            this.setState({
-                title: data.project.title,
-                subtitle: data.project.subTitle,
-                description: data.project.description
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var projectName = this.props.match.params.projectName;
-            var imgUrl = './src/images/16_9/' + projectName + '.png';
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'detail-page' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'project-header' },
-                    _react2.default.createElement(
-                        'h3',
-                        null,
-                        this.state.title
-                    ),
-                    _react2.default.createElement(
-                        'h5',
-                        null,
-                        this.state.subtitle
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'prooject-contents' },
-                    _react2.default.createElement('img', { src: imgUrl }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'project-description' },
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            this.state.description
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return ProjectDetail;
-}(_react.Component);
-
-exports.default = ProjectDetail;
-
-/***/ }),
+/* 182 */,
 /* 183 */,
 /* 184 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15082,11 +14983,8 @@ var Works = function (_Component) {
                 'div',
                 { className: 'work-list' },
                 _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' })
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' })
             );
         }
     }]);
@@ -34681,6 +34579,191 @@ module.exports = {
 		"subTitle": "Support system to assemble physical objects using visual instructions",
 		"abstraction": "Support system to assemble physical objects using visual instructions",
 		"description": "fabnaviをSFCにて設置しました"
+	}
+};
+
+/***/ }),
+/* 425 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _debug = __webpack_require__(54);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Favbnavi = function (_Component) {
+    _inherits(Favbnavi, _Component);
+
+    function Favbnavi(props) {
+        _classCallCheck(this, Favbnavi);
+
+        return _possibleConstructorReturn(this, (Favbnavi.__proto__ || Object.getPrototypeOf(Favbnavi)).call(this, props));
+    }
+
+    _createClass(Favbnavi, [{
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl = './src/images/16_9/' + projectName + '.png';
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'detail-page' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'project-header' },
+                    _react2.default.createElement(
+                        'h3',
+                        null,
+                        'fabnavi in SFC'
+                    ),
+                    _react2.default.createElement(
+                        'h5',
+                        null,
+                        'Support system to assemble physical objects using visual instructions'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'prooject-contents' },
+                    _react2.default.createElement('img', { src: imgUrl }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'project-description' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'fabnavi\u3092SFC\u306B\u3066\u8A2D\u7F6E\u3057\u307E\u3057\u305F'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Favbnavi;
+}(_react.Component);
+
+exports.default = Favbnavi;
+
+/***/ }),
+/* 426 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _debug = __webpack_require__(54);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Favbnavi = function (_Component) {
+    _inherits(Favbnavi, _Component);
+
+    function Favbnavi(props) {
+        _classCallCheck(this, Favbnavi);
+
+        return _possibleConstructorReturn(this, (Favbnavi.__proto__ || Object.getPrototypeOf(Favbnavi)).call(this, props));
+    }
+
+    _createClass(Favbnavi, [{
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl = './src/images/16_9/' + projectName + '.png';
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'detail-page' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'project-header' },
+                    _react2.default.createElement(
+                        'h3',
+                        null,
+                        'Shogg'
+                    ),
+                    _react2.default.createElement(
+                        'h5',
+                        null,
+                        '\u8B1B\u7FA9:\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u30C7\u30B6\u30A4\u30F3\u306B\u3066\u88FD\u4F5C'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'prooject-contents' },
+                    _react2.default.createElement('img', { src: imgUrl }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'project-description' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'shogg'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Favbnavi;
+}(_react.Component);
+
+exports.default = Favbnavi;
+
+/***/ }),
+/* 427 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Shogg",
+		"subTitle": "講義: インタラクションデザインの課題にて製作",
+		"abstraction": "講義: インタラクションデザインの課題にて製作",
+		"description": "た"
 	}
 };
 
