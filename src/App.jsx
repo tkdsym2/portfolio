@@ -11,7 +11,7 @@ import Works from './javascripts/pages/Works.jsx';
 import Profile from './javascripts/pages/Profile.jsx';
 import Publications from './javascripts/pages/Publications';
 import Manager from './javascripts/pages/Manager';
-import ProjectDetail from './javascripts/components/ProjectDetail';
+import Fabnavi from './javascripts/contents/Fabnavi';
 
 const history = createHashHistory();
 
@@ -28,7 +28,7 @@ class App extends Component {
                             <Route component={Works} path="/" exact />
                             <Route component={Profile} path="/profile" />
                             <Route component={Publications} path="/publications" />
-                            <Route component={ProjectDetail} path="/detail/:projectName"/>
+                            <Route component={Fabnavi} path="/detail/fabnavi"/>
                         </Switch>
                     </Manager>
                 </Router>
