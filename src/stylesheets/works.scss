@@ -5,12 +5,16 @@
     flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
-    width: $page-width;
-    justify-content: space-between;
+    width: $page-width+50px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
 
     & > .project-card {
         margin: 0px;
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 }

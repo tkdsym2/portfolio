@@ -14252,6 +14252,7 @@ var ProjectCard = function (_Component) {
                             this.state.title
                         )
                     ),
+                    _react2.default.createElement('hr', null),
                     _react2.default.createElement(
                         'div',
                         { className: 'project-subtitle' },
@@ -15130,7 +15131,9 @@ var Works = function (_Component) {
                 { className: 'work-list' },
                 _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
                 _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' })
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' })
             );
         }
     }]);

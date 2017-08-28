@@ -47,6 +47,7 @@ class ProjectCard extends Component {
                     <div className="project-title">
                         <h5>{this.state.title}</h5>
                     </div>
+                    <hr />
                     <div className="project-subtitle">
                         <p>
                             { this.state.abstraction }
