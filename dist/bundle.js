@@ -14112,10 +14112,6 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _radium = __webpack_require__(144);
-
-var _radium2 = _interopRequireDefault(_radium);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14136,12 +14132,62 @@ var Footer = function (_Component) {
     }
 
     _createClass(Footer, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement('hr', null)
+                "div",
+                { className: "footer" },
+                _react2.default.createElement("hr", null),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "k222.tkd.fms [at] gmail.com"
+                ),
+                _react2.default.createElement(
+                    "ul",
+                    { className: "footer-list" },
+                    _react2.default.createElement(
+                        "li",
+                        { className: "list-item" },
+                        _react2.default.createElement(
+                            "a",
+                            { href: "https://www.facebook.com/kazuma.takada.90", target: "_blank" },
+                            _react2.default.createElement("img", { src: "./src/images/icon/facebook.png", style: { borderTopLeftRadius: '2px', borderTopRightRadius: '2px', borderBottomLeftRadius: '2px', borderBottomRightRadius: '2px' } })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        { className: "list-item" },
+                        _react2.default.createElement(
+                            "a",
+                            { href: "https://github.com/fmsuvM", target: "_blank" },
+                            _react2.default.createElement("img", { src: "./src/images/icon/github.png" })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        { className: "list-item" },
+                        _react2.default.createElement(
+                            "a",
+                            { href: "https://twitter.com/fmsuvM", target: "_blank" },
+                            _react2.default.createElement("img", { src: "./src/images/icon/twitter.png", style: { width: '30px', height: '30px', marginLeft: '-5px', marginRight: '-5px', marginTop: '-5px' } })
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "p",
+                    { className: "copyright" },
+                    _react2.default.createElement(
+                        "span",
+                        { className: "copyright-mark" },
+                        "\xA9"
+                    ),
+                    _react2.default.createElement(
+                        "span",
+                        { className: "author" },
+                        " 2017 Kazuma Takada"
+                    )
+                )
             );
         }
     }]);
@@ -14149,10 +14195,7 @@ var Footer = function (_Component) {
     return Footer;
 }(_react.Component);
 
-exports.default = (0, _radium2.default)(Footer);
-
-
-var styles = {};
+exports.default = Footer;
 
 /***/ }),
 /* 180 */
