@@ -20,9 +20,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                <style jsx>{`
-                    
-                `}</style>
                 <Router history={history}>
                     <Manager>
                         <Switch>
