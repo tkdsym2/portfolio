@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Radium from 'radium';
 import {
     HashRouter as Router,
     Route,
@@ -16,7 +15,7 @@ import Shogg from './javascripts/contents/Shogg';
 
 const history = createHashHistory();
 
-class App extends Component {
+export default class App extends Component {
     render() {
         return (
             <div>
@@ -35,33 +34,3 @@ class App extends Component {
         )
     }
 }
-
-export default Radium(App);
-
-const styles = {
-    base: {
-        backgroundColor: '#fff',
-        height: '120px',
-        outline: 'none',
-        // boxShadow: '0 1px 0 rgba(0,0,0,0.2)'
-    },
-    title: {
-        color: '#333',
-        fontSize: 40,
-        fontFamily: 'Capella Bold',
-        marginTop: '20px',
-        marginLeft: '20px',
-        marginRight: '150px'
-    },
-    navicontent: {
-        color: '#333',
-        fontSize: 20,
-        fontFamily: 'Capella Bold',
-        letterSpacing: '0.1em',
-        marginTop: '40px',
-        marginLeft: '30px',
-        ':hover': {
-            // borderBottom: '1px solid #ec652b'
-        }
-    }
-};

@@ -15,9 +15,6 @@ export default class Manager extends Component {
     render() {
         return (
             <div>
-                <style jsx>{`
-
-                `}</style>
                 <div className="body">
                     <div className="header">
                         <Navigation />
