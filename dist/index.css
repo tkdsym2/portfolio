@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background: #fffffc; }
+  background: #fffffc;
+  font-family: 'Noto Sans', 'Noto Sans Japanese', sans-serif; }
 
 hr {
   width: 100%;
