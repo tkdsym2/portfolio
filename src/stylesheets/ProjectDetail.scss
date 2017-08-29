@@ -8,38 +8,93 @@
     color: $aisumicha;
     
     & > .project-header {
-        width: $page-width;
+        width: 900px;
         display: inline-block;
         text-align: center;
         margin: 0px;
         padding: 0px;
     }
-    & > .project-header > h3 {
+    & > .project-header > h4 {
         text-align: left;
+        font-size: 26px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
-    & > .project-header > h5 {
+    & > .project-header > p {
         text-align: left;
+        font-size: 17px;
+        margin: 0px;
+        margin-top:10px;
+        margin-bottom: 20px;
     }
 
 }
 
 .prooject-contents {
+    & > .project-images {
+        position: relative;
+        width: 1000px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
     img {
-        width: $page-width;
+        width: 900px;
         height: auto;
         border-radius: 5px;
         align-self: center;
     }
 
     & > .project-description {
-        width: $page-width;
+        width: 900px;
         display: inline-block;
         text-align: center;
         margin: 0px;
         padding: 0px;
+        margin-bottom: 20px;
     }
 
     & > .project-description > p {
         text-align: left;
+        font-size: 15px;
+    }
+}
+
+.relations {
+    width: 900px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none;
+        color: $tikusa;
+    }
+
+    a:hover {
+        color: $benihiwa;
+        transition: all 0.4s 0s ease;
+    }
+
+    p {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    ul {
+        text-align: left;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 }
