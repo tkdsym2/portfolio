@@ -1,0 +1,8 @@
+{
+    "project": {
+        "title": "Book Roof",
+        "subTitle": "Support system to assemble physical objects using visual instructions",
+        "abstraction": "本が屋根になるブックスタンド",
+        "description": "fabnaviをSFCにて設置しました"
+    }
+}

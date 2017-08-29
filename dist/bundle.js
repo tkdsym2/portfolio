@@ -13657,6 +13657,14 @@ var _Shogg = __webpack_require__(189);
 
 var _Shogg2 = _interopRequireDefault(_Shogg);
 
+var _BookRoof = __webpack_require__(458);
+
+var _BookRoof2 = _interopRequireDefault(_BookRoof);
+
+var _Unpresence = __webpack_require__(459);
+
+var _Unpresence2 = _interopRequireDefault(_Unpresence);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13695,7 +13703,9 @@ var App = function (_Component) {
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Profile2.default, path: '/profile' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Publications2.default, path: '/publications' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Fabnavi2.default, path: '/detail/fabnavi' }),
-                            _react2.default.createElement(_reactRouterDom.Route, { component: _Shogg2.default, path: '/detail/shogg' })
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Shogg2.default, path: '/detail/shogg' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _BookRoof2.default, path: '/detail/bookroof' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Unpresence2.default, path: '/detail/unpresence' })
                         )
                     )
                 )
@@ -14922,7 +14932,9 @@ var Works = function (_Component) {
                 'div',
                 { className: 'work-list' },
                 _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' })
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'bookroof' }),
+                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' })
             );
         }
     }]);
@@ -31466,8 +31478,10 @@ function valueEqual(a, b) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./bookroof.json": 456,
 	"./fabnavi.json": 452,
-	"./shogg.json": 453
+	"./shogg.json": 453,
+	"./unpresence.json": 457
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -31510,6 +31524,300 @@ module.exports = {
 		"description": "た"
 	}
 };
+
+/***/ }),
+/* 454 */,
+/* 455 */,
+/* 456 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Book Roof",
+		"subTitle": "Support system to assemble physical objects using visual instructions",
+		"abstraction": "本が屋根になるブックスタンド",
+		"description": "fabnaviをSFCにて設置しました"
+	}
+};
+
+/***/ }),
+/* 457 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "(Un)Presence",
+		"subTitle": "Support system to assemble physical objects using visual instructions",
+		"abstraction": "透明な存在",
+		"description": "fabnaviをSFCにて設置しました"
+	}
+};
+
+/***/ }),
+/* 458 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(177);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(41);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var BookRoof = function (_Component) {
+    _inherits(BookRoof, _Component);
+
+    function BookRoof(props) {
+        _classCallCheck(this, BookRoof);
+
+        return _possibleConstructorReturn(this, (BookRoof.__proto__ || Object.getPrototypeOf(BookRoof)).call(this, props));
+    }
+
+    _createClass(BookRoof, [{
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'detail-page' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'project-header' },
+                    _react2.default.createElement(
+                        'h4',
+                        null,
+                        ' Book Roof '
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' \u672C\u304C\u5C4B\u6839\u306B\u306A\u308B\u30D6\u30C3\u30AF\u30B9\u30BF\u30F3\u30C9 '
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'prooject-contents' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'project-images' },
+                        _react2.default.createElement(
+                            _reactSlick2.default,
+                            settings,
+                            _react2.default.createElement('img', { src: imgUrl1 }),
+                            _react2.default.createElement('img', { src: imgUrl2 }),
+                            _react2.default.createElement('img', { src: imgUrl3 })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'project-description' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Coming Soon ...'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'movie' },
+                        _react2.default.createElement('iframe', { width: '640', height: '360', src: 'https://www.youtube.com/embed/QmCKWIE7J-o', frameborder: '0', allowfullscreen: true })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'relations' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                '\u95A2\u9023\u30EA\u30F3\u30AF'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return BookRoof;
+}(_react.Component);
+
+exports.default = BookRoof;
+
+/***/ }),
+/* 459 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(177);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(41);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Unpresence = function (_Component) {
+    _inherits(Unpresence, _Component);
+
+    function Unpresence(props) {
+        _classCallCheck(this, Unpresence);
+
+        return _possibleConstructorReturn(this, (Unpresence.__proto__ || Object.getPrototypeOf(Unpresence)).call(this, props));
+    }
+
+    _createClass(Unpresence, [{
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'detail-page' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'project-header' },
+                    _react2.default.createElement(
+                        'h4',
+                        null,
+                        ' (Un)Presence '
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        ' \u900F\u660E\u306A\u5B58\u5728 '
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'prooject-contents' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'project-images' },
+                        _react2.default.createElement(
+                            _reactSlick2.default,
+                            settings,
+                            _react2.default.createElement('img', { src: imgUrl1 }),
+                            _react2.default.createElement('img', { src: imgUrl2 }),
+                            _react2.default.createElement('img', { src: imgUrl3 })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'project-description' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            'Coming Soon ...'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'movie' },
+                        _react2.default.createElement('iframe', { width: '640', height: '360', src: 'https://www.youtube.com/embed/DZiIGaBSnP4', frameborder: '0', allowfullscreen: true })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'relations' },
+                        _react2.default.createElement(
+                            'p',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                '\u95A2\u9023\u30EA\u30F3\u30AF'
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Unpresence;
+}(_react.Component);
+
+exports.default = Unpresence;
 
 /***/ })
 /******/ ]);
