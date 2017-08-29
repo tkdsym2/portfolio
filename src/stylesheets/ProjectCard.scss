@@ -16,11 +16,13 @@
     }
 
     & > .card-contents {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 0px;
         margin: auto;
         margin-top: -20px;
         width: 280px;
+        align-items: center;
     }
 
     & > .card-contents > .project-title > h5 {
@@ -34,12 +36,19 @@
     & > .card-contents > .project-subtitle > p {
         font-size: 14px;
         text-align: left;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 30px;
     }
 
     & > .card-contents > hr {
         text-align: center;
         border: 0;
         border-bottom: 1px dashed $suzuiro;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom : 10px;
     }
 
     /* mouse hover */
