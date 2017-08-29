@@ -14474,20 +14474,7 @@ var About = function (_Component) {
                         'title',
                         null,
                         'Kazuma Takada Profile'
-                    ),
-                    _react2.default.createElement('link', { rel: 'canonical', href: 'http://fmsuvm.github.io/#/profile' }),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Profile' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/profile' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
+                    )
                 ),
                 _react2.default.createElement(
                     'h3',

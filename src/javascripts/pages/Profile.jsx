@@ -11,20 +11,6 @@ class About extends Component {
             <div className="profile-page">
                 <Helmet>
                     <title>Kazuma Takada Profile</title>
-
-                    <link rel="canonical" href="http://fmsuvm.github.io/#/profile" />
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Profile" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/profile" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
                 </Helmet>
                 <h3>Profile</h3>
 
