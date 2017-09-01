@@ -1,5 +1,37 @@
 @import "./var.scss";
 
+.navigation-header-middle {
+    color: $aisumicha;
+}
+
+.header-contents-middle {
+    p {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+.navigation-list-middle {
+    display: flex;
+    justify-content: center;
+
+    & > .item-middle {
+        font-size: 18px;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        color: $tikusa;
+    }
+}
+
+
+
+
 .area {
     display: flex;
     flex-flow: row wrap;

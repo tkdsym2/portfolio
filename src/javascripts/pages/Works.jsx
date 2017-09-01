@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Debug from 'debug';
+import MediaQuery from 'react-responsive';
 
 import ProjectCard from '../components/ProjectCard';
 
@@ -13,11 +14,23 @@ export default class Works extends Component {
     render() {
         // debug(fabnavi);
         return (
-            <div className="work-list">
-                <ProjectCard className="project-card" projectName="fabnavi" />
-                <ProjectCard className="project-card" projectName="shogg" />
-                <ProjectCard className="project-card" projectName="bookroof" />
-                <ProjectCard className="project-card" projectName="unpresence" />
+            <div>
+                <MediaQuery maxWidth={1049}>
+                    <div className="work-list-middle">
+                        <ProjectCard className="project-card" projectName="fabnavi" />
+                        <ProjectCard className="project-card" projectName="shogg" />
+                        <ProjectCard className="project-card" projectName="bookroof" />
+                        <ProjectCard className="project-card" projectName="unpresence" />
+                    </div>
+                </MediaQuery>
+                <MediaQuery minWidth={1050}>
+                    <div className="work-list">
+                        <ProjectCard className="project-card" projectName="fabnavi" />
+                        <ProjectCard className="project-card" projectName="shogg" />
+                        <ProjectCard className="project-card" projectName="bookroof" />
+                        <ProjectCard className="project-card" projectName="unpresence" />
+                    </div>
+                </MediaQuery>
             </div>
         )
     }

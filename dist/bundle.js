@@ -7237,7 +7237,1738 @@ module.exports = validateDOMNesting;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 61 */,
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory(__webpack_require__(3));
+	else if(typeof define === 'function' && define.amd)
+		define(["react"], factory);
+	else if(typeof exports === 'object')
+		exports["MediaQuery"] = factory(require("react"));
+	else
+		root["MediaQuery"] = factory(root["react"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_15__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(15);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(8);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	var _matchmediaquery = __webpack_require__(11);
+	
+	var _matchmediaquery2 = _interopRequireDefault(_matchmediaquery);
+	
+	var _hyphenateStyleName = __webpack_require__(7);
+	
+	var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
+	
+	var _mediaQuery = __webpack_require__(5);
+	
+	var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
+	
+	var _toQuery = __webpack_require__(9);
+	
+	var _toQuery2 = _interopRequireDefault(_toQuery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var defaultTypes = {
+	  component: _propTypes2.default.node,
+	  query: _propTypes2.default.string,
+	  values: _propTypes2.default.shape(_mediaQuery2.default.matchers),
+	  children: _propTypes2.default.oneOfType([_propTypes2.default.node, _propTypes2.default.func]),
+	  onChange: _propTypes2.default.func,
+	  onBeforeChange: _propTypes2.default.func
+	};
+	var mediaKeys = Object.keys(_mediaQuery2.default.all);
+	var excludedQueryKeys = Object.keys(defaultTypes);
+	var excludedPropKeys = excludedQueryKeys.concat(mediaKeys);
+	
+	function omit(object, keys) {
+	  var newObject = _extends({}, object);
+	  keys.forEach(function (key) {
+	    return delete newObject[key];
+	  });
+	  return newObject;
+	}
+	
+	var MediaQuery = function (_React$Component) {
+	  _inherits(MediaQuery, _React$Component);
+	
+	  function MediaQuery() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    _classCallCheck(this, MediaQuery);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = MediaQuery.__proto__ || Object.getPrototypeOf(MediaQuery)).call.apply(_ref, [this].concat(args))), _this), _this.state = { matches: false }, _this.updateMatches = function () {
+	      if (_this._mql.matches === _this.state.matches) {
+	        return;
+	      }
+	      _this.setState({
+	        matches: _this._mql.matches
+	      });
+	    }, _this.removeMql = function () {
+	      if (_this._mql) {
+	        _this._mql.removeListener(_this.updateMatches);
+	        _this._mql.dispose();
+	      }
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+	
+	  _createClass(MediaQuery, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.updateQuery(this.props);
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      this.updateQuery(nextProps);
+	    }
+	  }, {
+	    key: 'updateQuery',
+	    value: function updateQuery(props) {
+	      var values = void 0;
+	      if (props.query) {
+	        this.query = props.query;
+	      } else {
+	        this.query = (0, _toQuery2.default)(omit(props, excludedQueryKeys));
+	      }
+	
+	      if (!this.query) {
+	        throw new Error('Invalid or missing MediaQuery!');
+	      }
+	
+	      if (props.values) {
+	        values = Object.keys(props.values).reduce(function (result, key) {
+	          result[(0, _hyphenateStyleName2.default)(key)] = props.values[key];
+	          return result;
+	        }, {});
+	      }
+	
+	      this.removeMql();
+	
+	      this._mql = (0, _matchmediaquery2.default)(this.query, values);
+	      this._mql.addListener(this.updateMatches);
+	      this.updateMatches();
+	    }
+	  }, {
+	    key: 'componentWillUpdate',
+	    value: function componentWillUpdate(_, nextState) {
+	      if (this.props.onBeforeChange && this.state.matches !== nextState.matches) {
+	        this.props.onBeforeChange(this.state.matches);
+	      }
+	    }
+	  }, {
+	    key: 'componentDidUpdate',
+	    value: function componentDidUpdate(_, prevState) {
+	      if (this.props.onChange && prevState.matches !== this.state.matches) {
+	        this.props.onChange(this.state.matches);
+	      }
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      this.removeMql();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      if (typeof this.props.children === 'function') {
+	        return this.props.children(this.state.matches);
+	      }
+	
+	      if (this.state.matches === false) {
+	        return null;
+	      }
+	      var props = omit(this.props, excludedPropKeys);
+	      var hasMergeProps = Object.keys(props).length > 0;
+	      var childrenCount = _react2.default.Children.count(this.props.children);
+	      var wrapChildren = this.props.component || childrenCount > 1 || typeof this.props.children === 'string' || Array.isArray(this.props.children) && childrenCount == 1 || this.props.children === undefined;
+	      if (wrapChildren) {
+	        return _react2.default.createElement(this.props.component || 'div', props, this.props.children);
+	      } else if (hasMergeProps) {
+	        return _react2.default.cloneElement(this.props.children, props);
+	      } else if (childrenCount) {
+	        return this.props.children;
+	      } else {
+	        return null;
+	      }
+	    }
+	  }]);
+	
+	  return MediaQuery;
+	}(_react2.default.Component);
+	
+	MediaQuery.displayName = 'MediaQuery';
+	MediaQuery.defaultProps = {
+	  values: {}
+	};
+	exports.default = MediaQuery;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+	// shim for using process in browser
+	var process = module.exports = {};
+	
+	// cached from whatever global is present so that test runners that stub it
+	// don't break things.  But we need to wrap it in a try catch in case it is
+	// wrapped in strict mode code which doesn't define any globals.  It's inside a
+	// function because try/catches deoptimize in certain engines.
+	
+	var cachedSetTimeout;
+	var cachedClearTimeout;
+	
+	function defaultSetTimout() {
+	    throw new Error('setTimeout has not been defined');
+	}
+	function defaultClearTimeout () {
+	    throw new Error('clearTimeout has not been defined');
+	}
+	(function () {
+	    try {
+	        if (typeof setTimeout === 'function') {
+	            cachedSetTimeout = setTimeout;
+	        } else {
+	            cachedSetTimeout = defaultSetTimout;
+	        }
+	    } catch (e) {
+	        cachedSetTimeout = defaultSetTimout;
+	    }
+	    try {
+	        if (typeof clearTimeout === 'function') {
+	            cachedClearTimeout = clearTimeout;
+	        } else {
+	            cachedClearTimeout = defaultClearTimeout;
+	        }
+	    } catch (e) {
+	        cachedClearTimeout = defaultClearTimeout;
+	    }
+	} ())
+	function runTimeout(fun) {
+	    if (cachedSetTimeout === setTimeout) {
+	        //normal enviroments in sane situations
+	        return setTimeout(fun, 0);
+	    }
+	    // if setTimeout wasn't available but was latter defined
+	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+	        cachedSetTimeout = setTimeout;
+	        return setTimeout(fun, 0);
+	    }
+	    try {
+	        // when when somebody has screwed with setTimeout but no I.E. maddness
+	        return cachedSetTimeout(fun, 0);
+	    } catch(e){
+	        try {
+	            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+	            return cachedSetTimeout.call(null, fun, 0);
+	        } catch(e){
+	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+	            return cachedSetTimeout.call(this, fun, 0);
+	        }
+	    }
+	
+	
+	}
+	function runClearTimeout(marker) {
+	    if (cachedClearTimeout === clearTimeout) {
+	        //normal enviroments in sane situations
+	        return clearTimeout(marker);
+	    }
+	    // if clearTimeout wasn't available but was latter defined
+	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+	        cachedClearTimeout = clearTimeout;
+	        return clearTimeout(marker);
+	    }
+	    try {
+	        // when when somebody has screwed with setTimeout but no I.E. maddness
+	        return cachedClearTimeout(marker);
+	    } catch (e){
+	        try {
+	            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+	            return cachedClearTimeout.call(null, marker);
+	        } catch (e){
+	            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+	            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+	            return cachedClearTimeout.call(this, marker);
+	        }
+	    }
+	
+	
+	
+	}
+	var queue = [];
+	var draining = false;
+	var currentQueue;
+	var queueIndex = -1;
+	
+	function cleanUpNextTick() {
+	    if (!draining || !currentQueue) {
+	        return;
+	    }
+	    draining = false;
+	    if (currentQueue.length) {
+	        queue = currentQueue.concat(queue);
+	    } else {
+	        queueIndex = -1;
+	    }
+	    if (queue.length) {
+	        drainQueue();
+	    }
+	}
+	
+	function drainQueue() {
+	    if (draining) {
+	        return;
+	    }
+	    var timeout = runTimeout(cleanUpNextTick);
+	    draining = true;
+	
+	    var len = queue.length;
+	    while(len) {
+	        currentQueue = queue;
+	        queue = [];
+	        while (++queueIndex < len) {
+	            if (currentQueue) {
+	                currentQueue[queueIndex].run();
+	            }
+	        }
+	        queueIndex = -1;
+	        len = queue.length;
+	    }
+	    currentQueue = null;
+	    draining = false;
+	    runClearTimeout(timeout);
+	}
+	
+	process.nextTick = function (fun) {
+	    var args = new Array(arguments.length - 1);
+	    if (arguments.length > 1) {
+	        for (var i = 1; i < arguments.length; i++) {
+	            args[i - 1] = arguments[i];
+	        }
+	    }
+	    queue.push(new Item(fun, args));
+	    if (queue.length === 1 && !draining) {
+	        runTimeout(drainQueue);
+	    }
+	};
+	
+	// v8 likes predictible objects
+	function Item(fun, array) {
+	    this.fun = fun;
+	    this.array = array;
+	}
+	Item.prototype.run = function () {
+	    this.fun.apply(null, this.array);
+	};
+	process.title = 'browser';
+	process.browser = true;
+	process.env = {};
+	process.argv = [];
+	process.version = ''; // empty string to avoid regexp issues
+	process.versions = {};
+	
+	function noop() {}
+	
+	process.on = noop;
+	process.addListener = noop;
+	process.once = noop;
+	process.off = noop;
+	process.removeListener = noop;
+	process.removeAllListeners = noop;
+	process.emit = noop;
+	process.prependListener = noop;
+	process.prependOnceListener = noop;
+	
+	process.listeners = function (name) { return [] }
+	
+	process.binding = function (name) {
+	    throw new Error('process.binding is not supported');
+	};
+	
+	process.cwd = function () { return '/' };
+	process.chdir = function (dir) {
+	    throw new Error('process.chdir is not supported');
+	};
+	process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * 
+	 */
+	
+	function makeEmptyFunction(arg) {
+	  return function () {
+	    return arg;
+	  };
+	}
+	
+	/**
+	 * This function accepts and discards inputs; it has no side effects. This is
+	 * primarily useful idiomatically for overridable function endpoints which
+	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+	 */
+	var emptyFunction = function emptyFunction() {};
+	
+	emptyFunction.thatReturns = makeEmptyFunction;
+	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+	emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+	emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+	emptyFunction.thatReturnsThis = function () {
+	  return this;
+	};
+	emptyFunction.thatReturnsArgument = function (arg) {
+	  return arg;
+	};
+	
+	module.exports = emptyFunction;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+	
+	'use strict';
+	
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+	
+	var validateFormat = function validateFormat(format) {};
+	
+	if (process.env.NODE_ENV !== 'production') {
+	  validateFormat = function validateFormat(format) {
+	    if (format === undefined) {
+	      throw new Error('invariant requires an error message argument');
+	    }
+	  };
+	}
+	
+	function invariant(condition, format, a, b, c, d, e, f) {
+	  validateFormat(format);
+	
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error(format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
+	      error.name = 'Invariant Violation';
+	    }
+	
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	}
+	
+	module.exports = invariant;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+	
+	'use strict';
+	
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+	
+	module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _propTypes = __webpack_require__(8);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var stringOrNumber = _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]);
+	
+	// properties that match media queries
+	var matchers = {
+	  orientation: _propTypes2.default.oneOf(['portrait', 'landscape']),
+	
+	  scan: _propTypes2.default.oneOf(['progressive', 'interlace']),
+	
+	  aspectRatio: _propTypes2.default.string,
+	  deviceAspectRatio: _propTypes2.default.string,
+	
+	  height: stringOrNumber,
+	  deviceHeight: stringOrNumber,
+	
+	  width: stringOrNumber,
+	  deviceWidth: stringOrNumber,
+	
+	  color: _propTypes2.default.bool,
+	
+	  colorIndex: _propTypes2.default.bool,
+	
+	  monochrome: _propTypes2.default.bool,
+	  resolution: stringOrNumber
+	
+	  // media features
+	};var features = _extends({
+	  minAspectRatio: _propTypes2.default.string,
+	  maxAspectRatio: _propTypes2.default.string,
+	  minDeviceAspectRatio: _propTypes2.default.string,
+	  maxDeviceAspectRatio: _propTypes2.default.string,
+	
+	  minHeight: stringOrNumber,
+	  maxHeight: stringOrNumber,
+	  minDeviceHeight: stringOrNumber,
+	  maxDeviceHeight: stringOrNumber,
+	
+	  minWidth: stringOrNumber,
+	  maxWidth: stringOrNumber,
+	  minDeviceWidth: stringOrNumber,
+	  maxDeviceWidth: stringOrNumber,
+	
+	  minColor: _propTypes2.default.number,
+	  maxColor: _propTypes2.default.number,
+	
+	  minColorIndex: _propTypes2.default.number,
+	  maxColorIndex: _propTypes2.default.number,
+	
+	  minMonochrome: _propTypes2.default.number,
+	  maxMonochrome: _propTypes2.default.number,
+	
+	  minResolution: stringOrNumber,
+	  maxResolution: stringOrNumber
+	
+	}, matchers);
+	
+	// media types
+	var types = {
+	  all: _propTypes2.default.bool,
+	  grid: _propTypes2.default.bool,
+	  aural: _propTypes2.default.bool,
+	  braille: _propTypes2.default.bool,
+	  handheld: _propTypes2.default.bool,
+	  print: _propTypes2.default.bool,
+	  projection: _propTypes2.default.bool,
+	  screen: _propTypes2.default.bool,
+	  tty: _propTypes2.default.bool,
+	  tv: _propTypes2.default.bool,
+	  embossed: _propTypes2.default.bool
+	};
+	
+	var all = _extends({}, types, features);
+	
+	// add the type property
+	matchers.type = Object.keys(types);
+	
+	exports.default = {
+	  all: all,
+	  types: types,
+	  matchers: matchers,
+	  features: features
+	};
+	module.exports = exports['default'];
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+	
+	'use strict';
+	
+	var emptyFunction = __webpack_require__(2);
+	
+	/**
+	 * Similar to invariant but only logs a warning if the condition is not met.
+	 * This can be used to log issues in development environments in critical
+	 * paths. Removing the logging code for production environments will keep the
+	 * same logic and follow the same code paths.
+	 */
+	
+	var warning = emptyFunction;
+	
+	if (process.env.NODE_ENV !== 'production') {
+	  (function () {
+	    var printWarning = function printWarning(format) {
+	      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	        args[_key - 1] = arguments[_key];
+	      }
+	
+	      var argIndex = 0;
+	      var message = 'Warning: ' + format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      });
+	      if (typeof console !== 'undefined') {
+	        console.error(message);
+	      }
+	      try {
+	        // --- Welcome to debugging React ---
+	        // This error was thrown as a convenience so that you can use this stack
+	        // to find the callsite that caused this warning to fire.
+	        throw new Error(message);
+	      } catch (x) {}
+	    };
+	
+	    warning = function warning(condition, format) {
+	      if (format === undefined) {
+	        throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+	      }
+	
+	      if (format.indexOf('Failed Composite propType: ') === 0) {
+	        return; // Ignore CompositeComponent proptype check.
+	      }
+	
+	      if (!condition) {
+	        for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+	          args[_key2 - 2] = arguments[_key2];
+	        }
+	
+	        printWarning.apply(undefined, [format].concat(args));
+	      }
+	    };
+	  })();
+	}
+	
+	module.exports = warning;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	var uppercasePattern = /[A-Z]/g;
+	var msPattern = /^ms-/;
+	var cache = {};
+	
+	function hyphenateStyleName(string) {
+	    return string in cache
+	    ? cache[string]
+	    : cache[string] = string
+	      .replace(uppercasePattern, '-$&')
+	      .toLowerCase()
+	      .replace(msPattern, '-ms-');
+	}
+	
+	module.exports = hyphenateStyleName;
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+	
+	if (process.env.NODE_ENV !== 'production') {
+	  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+	    Symbol.for &&
+	    Symbol.for('react.element')) ||
+	    0xeac7;
+	
+	  var isValidElement = function(object) {
+	    return typeof object === 'object' &&
+	      object !== null &&
+	      object.$$typeof === REACT_ELEMENT_TYPE;
+	  };
+	
+	  // By explicitly using `prop-types` you are opting into new development behavior.
+	  // http://fb.me/prop-types-in-prod
+	  var throwOnDirectAccess = true;
+	  module.exports = __webpack_require__(14)(isValidElement, throwOnDirectAccess);
+	} else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(13)();
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	exports.default = function (obj) {
+	  var rules = [];
+	  Object.keys(_mediaQuery2.default.all).forEach(function (k) {
+	    var v = obj[k];
+	    if (v != null) {
+	      rules.push(keyVal(k, v));
+	    }
+	  });
+	  return join(rules);
+	};
+	
+	var _hyphenateStyleName = __webpack_require__(7);
+	
+	var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
+	
+	var _mediaQuery = __webpack_require__(5);
+	
+	var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var negate = function negate(cond) {
+	  return 'not ' + cond;
+	};
+	
+	function keyVal(k, v) {
+	  var realKey = (0, _hyphenateStyleName2.default)(k);
+	
+	  // px shorthand
+	  if (typeof v === 'number') {
+	    v = v + 'px';
+	  }
+	  if (v === true) {
+	    return k;
+	  }
+	  if (v === false) {
+	    return negate(k);
+	  }
+	  return '(' + realKey + ': ' + v + ')';
+	}
+	
+	function join(conds) {
+	  return conds.join(' and ');
+	}
+	
+	module.exports = exports['default'];
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+	/*
+	Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+	Copyrights licensed under the New BSD License.
+	See the accompanying LICENSE file for terms.
+	*/
+	
+	'use strict';
+	
+	exports.match = matchQuery;
+	exports.parse = parseQuery;
+	
+	// -----------------------------------------------------------------------------
+	
+	var RE_MEDIA_QUERY     = /(?:(only|not)?\s*([^\s\(\)]+)(?:\s*and)?\s*)?(.+)?/i,
+	    RE_MQ_EXPRESSION   = /\(\s*([^\s\:\)]+)\s*(?:\:\s*([^\s\)]+))?\s*\)/,
+	    RE_MQ_FEATURE      = /^(?:(min|max)-)?(.+)/,
+	    RE_LENGTH_UNIT     = /(em|rem|px|cm|mm|in|pt|pc)?$/,
+	    RE_RESOLUTION_UNIT = /(dpi|dpcm|dppx)?$/;
+	
+	function matchQuery(mediaQuery, values) {
+	    return parseQuery(mediaQuery).some(function (query) {
+	        var inverse = query.inverse;
+	
+	        // Either the parsed or specified `type` is "all", or the types must be
+	        // equal for a match.
+	        var typeMatch = query.type === 'all' || values.type === query.type;
+	
+	        // Quit early when `type` doesn't match, but take "not" into account.
+	        if ((typeMatch && inverse) || !(typeMatch || inverse)) {
+	            return false;
+	        }
+	
+	        var expressionsMatch = query.expressions.every(function (expression) {
+	            var feature  = expression.feature,
+	                modifier = expression.modifier,
+	                expValue = expression.value,
+	                value    = values[feature];
+	
+	            // Missing or falsy values don't match.
+	            if (!value) { return false; }
+	
+	            switch (feature) {
+	                case 'orientation':
+	                case 'scan':
+	                    return value.toLowerCase() === expValue.toLowerCase();
+	
+	                case 'width':
+	                case 'height':
+	                case 'device-width':
+	                case 'device-height':
+	                    expValue = toPx(expValue);
+	                    value    = toPx(value);
+	                    break;
+	
+	                case 'resolution':
+	                    expValue = toDpi(expValue);
+	                    value    = toDpi(value);
+	                    break;
+	
+	                case 'aspect-ratio':
+	                case 'device-aspect-ratio':
+	                case /* Deprecated */ 'device-pixel-ratio':
+	                    expValue = toDecimal(expValue);
+	                    value    = toDecimal(value);
+	                    break;
+	
+	                case 'grid':
+	                case 'color':
+	                case 'color-index':
+	                case 'monochrome':
+	                    expValue = parseInt(expValue, 10) || 1;
+	                    value    = parseInt(value, 10) || 0;
+	                    break;
+	            }
+	
+	            switch (modifier) {
+	                case 'min': return value >= expValue;
+	                case 'max': return value <= expValue;
+	                default   : return value === expValue;
+	            }
+	        });
+	
+	        return (expressionsMatch && !inverse) || (!expressionsMatch && inverse);
+	    });
+	}
+	
+	function parseQuery(mediaQuery) {
+	    return mediaQuery.split(',').map(function (query) {
+	        query = query.trim();
+	
+	        var captures    = query.match(RE_MEDIA_QUERY),
+	            modifier    = captures[1],
+	            type        = captures[2],
+	            expressions = captures[3] || '',
+	            parsed      = {};
+	
+	        parsed.inverse = !!modifier && modifier.toLowerCase() === 'not';
+	        parsed.type    = type ? type.toLowerCase() : 'all';
+	
+	        // Split expressions into a list.
+	        expressions = expressions.match(/\([^\)]+\)/g) || [];
+	
+	        parsed.expressions = expressions.map(function (expression) {
+	            var captures = expression.match(RE_MQ_EXPRESSION),
+	                feature  = captures[1].toLowerCase().match(RE_MQ_FEATURE);
+	
+	            return {
+	                modifier: feature[1],
+	                feature : feature[2],
+	                value   : captures[2]
+	            };
+	        });
+	
+	        return parsed;
+	    });
+	}
+	
+	// -- Utilities ----------------------------------------------------------------
+	
+	function toDecimal(ratio) {
+	    var decimal = Number(ratio),
+	        numbers;
+	
+	    if (!decimal) {
+	        numbers = ratio.match(/^(\d+)\s*\/\s*(\d+)$/);
+	        decimal = numbers[1] / numbers[2];
+	    }
+	
+	    return decimal;
+	}
+	
+	function toDpi(resolution) {
+	    var value = parseFloat(resolution),
+	        units = String(resolution).match(RE_RESOLUTION_UNIT)[1];
+	
+	    switch (units) {
+	        case 'dpcm': return value / 2.54;
+	        case 'dppx': return value * 96;
+	        default    : return value;
+	    }
+	}
+	
+	function toPx(length) {
+	    var value = parseFloat(length),
+	        units = String(length).match(RE_LENGTH_UNIT)[1];
+	
+	    switch (units) {
+	        case 'em' : return value * 16;
+	        case 'rem': return value * 16;
+	        case 'cm' : return value * 96 / 2.54;
+	        case 'mm' : return value * 96 / 2.54 / 10;
+	        case 'in' : return value * 96;
+	        case 'pt' : return value * 72;
+	        case 'pc' : return value * 72 / 12;
+	        default   : return value;
+	    }
+	}
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var staticMatch = __webpack_require__(10).match;
+	var dynamicMatch = typeof window !== 'undefined' ? window.matchMedia : null;
+	
+	// our fake MediaQueryList
+	function Mql(query, values){
+	  var self = this;
+	  if(dynamicMatch){
+	    var mql = dynamicMatch.call(window, query);
+	    this.matches = mql.matches;
+	    this.media = mql.media;
+	    // TODO: is there a time it makes sense to remove this listener?
+	    mql.addListener(update);
+	  } else {
+	    this.matches = staticMatch(query, values);
+	    this.media = query;
+	  }
+	
+	  this.addListener = addListener;
+	  this.removeListener = removeListener;
+	  this.dispose = dispose;
+	
+	  function addListener(listener){
+	    if(mql){
+	      mql.addListener(listener);
+	    }
+	  }
+	
+	  function removeListener(listener){
+	    if(mql){
+	      mql.removeListener(listener);
+	    }
+	  }
+	
+	  // update ourselves!
+	  function update(evt){
+	    self.matches = evt.matches;
+	    self.media = evt.media;
+	  }
+	
+	  function dispose(){
+	    if(mql){
+	      mql.removeListener(update);
+	    }
+	  }
+	}
+	
+	function matchMedia(query, values){
+	  return new Mql(query, values);
+	}
+	
+	module.exports = matchMedia;
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+	
+	'use strict';
+	
+	if (process.env.NODE_ENV !== 'production') {
+	  var invariant = __webpack_require__(3);
+	  var warning = __webpack_require__(6);
+	  var ReactPropTypesSecret = __webpack_require__(4);
+	  var loggedTypeFailures = {};
+	}
+	
+	/**
+	 * Assert that the values match with the type specs.
+	 * Error messages are memorized and will only be shown once.
+	 *
+	 * @param {object} typeSpecs Map of name to a ReactPropType
+	 * @param {object} values Runtime values that need to be type-checked
+	 * @param {string} location e.g. "prop", "context", "child context"
+	 * @param {string} componentName Name of the component for error messages.
+	 * @param {?Function} getStack Returns the component stack.
+	 * @private
+	 */
+	function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+	  if (process.env.NODE_ENV !== 'production') {
+	    for (var typeSpecName in typeSpecs) {
+	      if (typeSpecs.hasOwnProperty(typeSpecName)) {
+	        var error;
+	        // Prop type validation may throw. In case they do, we don't want to
+	        // fail the render phase where it didn't fail before. So we log it.
+	        // After these have been cleaned up, we'll let them throw.
+	        try {
+	          // This is intentionally an invariant that gets caught. It's the same
+	          // behavior as without this statement except with a better message.
+	          invariant(typeof typeSpecs[typeSpecName] === 'function', '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', location, typeSpecName);
+	          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+	        } catch (ex) {
+	          error = ex;
+	        }
+	        warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', location, typeSpecName, typeof error);
+	        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+	          // Only monitor this failure once because there tends to be a lot of the
+	          // same error.
+	          loggedTypeFailures[error.message] = true;
+	
+	          var stack = getStack ? getStack() : '';
+	
+	          warning(false, 'Failed %s type: %s%s', location, error.message, stack != null ? stack : '');
+	        }
+	      }
+	    }
+	  }
+	}
+	
+	module.exports = checkPropTypes;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+	
+	'use strict';
+	
+	var emptyFunction = __webpack_require__(2);
+	var invariant = __webpack_require__(3);
+	var ReactPropTypesSecret = __webpack_require__(4);
+	
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    invariant(
+	      false,
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+	
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim
+	  };
+	
+	  ReactPropTypes.checkPropTypes = emptyFunction;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+	
+	  return ReactPropTypes;
+	};
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+	
+	'use strict';
+	
+	var emptyFunction = __webpack_require__(2);
+	var invariant = __webpack_require__(3);
+	var warning = __webpack_require__(6);
+	
+	var ReactPropTypesSecret = __webpack_require__(4);
+	var checkPropTypes = __webpack_require__(12);
+	
+	module.exports = function(isValidElement, throwOnDirectAccess) {
+	  /* global Symbol */
+	  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+	  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+	
+	  /**
+	   * Returns the iterator method function contained on the iterable object.
+	   *
+	   * Be sure to invoke the function with the iterable as context:
+	   *
+	   *     var iteratorFn = getIteratorFn(myIterable);
+	   *     if (iteratorFn) {
+	   *       var iterator = iteratorFn.call(myIterable);
+	   *       ...
+	   *     }
+	   *
+	   * @param {?object} maybeIterable
+	   * @return {?function}
+	   */
+	  function getIteratorFn(maybeIterable) {
+	    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+	    if (typeof iteratorFn === 'function') {
+	      return iteratorFn;
+	    }
+	  }
+	
+	  /**
+	   * Collection of methods that allow declaration and validation of props that are
+	   * supplied to React components. Example usage:
+	   *
+	   *   var Props = require('ReactPropTypes');
+	   *   var MyArticle = React.createClass({
+	   *     propTypes: {
+	   *       // An optional string prop named "description".
+	   *       description: Props.string,
+	   *
+	   *       // A required enum prop named "category".
+	   *       category: Props.oneOf(['News','Photos']).isRequired,
+	   *
+	   *       // A prop named "dialog" that requires an instance of Dialog.
+	   *       dialog: Props.instanceOf(Dialog).isRequired
+	   *     },
+	   *     render: function() { ... }
+	   *   });
+	   *
+	   * A more formal specification of how these methods are used:
+	   *
+	   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+	   *   decl := ReactPropTypes.{type}(.isRequired)?
+	   *
+	   * Each and every declaration produces a function with the same signature. This
+	   * allows the creation of custom validation functions. For example:
+	   *
+	   *  var MyLink = React.createClass({
+	   *    propTypes: {
+	   *      // An optional string or URI prop named "href".
+	   *      href: function(props, propName, componentName) {
+	   *        var propValue = props[propName];
+	   *        if (propValue != null && typeof propValue !== 'string' &&
+	   *            !(propValue instanceof URI)) {
+	   *          return new Error(
+	   *            'Expected a string or an URI for ' + propName + ' in ' +
+	   *            componentName
+	   *          );
+	   *        }
+	   *      }
+	   *    },
+	   *    render: function() {...}
+	   *  });
+	   *
+	   * @internal
+	   */
+	
+	  var ANONYMOUS = '<<anonymous>>';
+	
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+	  var ReactPropTypes = {
+	    array: createPrimitiveTypeChecker('array'),
+	    bool: createPrimitiveTypeChecker('boolean'),
+	    func: createPrimitiveTypeChecker('function'),
+	    number: createPrimitiveTypeChecker('number'),
+	    object: createPrimitiveTypeChecker('object'),
+	    string: createPrimitiveTypeChecker('string'),
+	    symbol: createPrimitiveTypeChecker('symbol'),
+	
+	    any: createAnyTypeChecker(),
+	    arrayOf: createArrayOfTypeChecker,
+	    element: createElementTypeChecker(),
+	    instanceOf: createInstanceTypeChecker,
+	    node: createNodeChecker(),
+	    objectOf: createObjectOfTypeChecker,
+	    oneOf: createEnumTypeChecker,
+	    oneOfType: createUnionTypeChecker,
+	    shape: createShapeTypeChecker
+	  };
+	
+	  /**
+	   * inlined Object.is polyfill to avoid requiring consumers ship their own
+	   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+	   */
+	  /*eslint-disable no-self-compare*/
+	  function is(x, y) {
+	    // SameValue algorithm
+	    if (x === y) {
+	      // Steps 1-5, 7-10
+	      // Steps 6.b-6.e: +0 != -0
+	      return x !== 0 || 1 / x === 1 / y;
+	    } else {
+	      // Step 6.a: NaN == NaN
+	      return x !== x && y !== y;
+	    }
+	  }
+	  /*eslint-enable no-self-compare*/
+	
+	  /**
+	   * We use an Error-like object for backward compatibility as people may call
+	   * PropTypes directly and inspect their output. However, we don't use real
+	   * Errors anymore. We don't inspect their stack anyway, and creating them
+	   * is prohibitively expensive if they are created too often, such as what
+	   * happens in oneOfType() for any type before the one that matched.
+	   */
+	  function PropTypeError(message) {
+	    this.message = message;
+	    this.stack = '';
+	  }
+	  // Make `instanceof Error` still work for returned errors.
+	  PropTypeError.prototype = Error.prototype;
+	
+	  function createChainableTypeChecker(validate) {
+	    if (process.env.NODE_ENV !== 'production') {
+	      var manualPropTypeCallCache = {};
+	      var manualPropTypeWarningCount = 0;
+	    }
+	    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+	      componentName = componentName || ANONYMOUS;
+	      propFullName = propFullName || propName;
+	
+	      if (secret !== ReactPropTypesSecret) {
+	        if (throwOnDirectAccess) {
+	          // New behavior only for users of `prop-types` package
+	          invariant(
+	            false,
+	            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	            'Use `PropTypes.checkPropTypes()` to call them. ' +
+	            'Read more at http://fb.me/use-check-prop-types'
+	          );
+	        } else if (process.env.NODE_ENV !== 'production' && typeof console !== 'undefined') {
+	          // Old behavior for people using React.PropTypes
+	          var cacheKey = componentName + ':' + propName;
+	          if (
+	            !manualPropTypeCallCache[cacheKey] &&
+	            // Avoid spamming the console because they are often not actionable except for lib authors
+	            manualPropTypeWarningCount < 3
+	          ) {
+	            warning(
+	              false,
+	              'You are manually calling a React.PropTypes validation ' +
+	              'function for the `%s` prop on `%s`. This is deprecated ' +
+	              'and will throw in the standalone `prop-types` package. ' +
+	              'You may be seeing this warning due to a third-party PropTypes ' +
+	              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.',
+	              propFullName,
+	              componentName
+	            );
+	            manualPropTypeCallCache[cacheKey] = true;
+	            manualPropTypeWarningCount++;
+	          }
+	        }
+	      }
+	      if (props[propName] == null) {
+	        if (isRequired) {
+	          if (props[propName] === null) {
+	            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+	          }
+	          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+	        }
+	        return null;
+	      } else {
+	        return validate(props, propName, componentName, location, propFullName);
+	      }
+	    }
+	
+	    var chainedCheckType = checkType.bind(null, false);
+	    chainedCheckType.isRequired = checkType.bind(null, true);
+	
+	    return chainedCheckType;
+	  }
+	
+	  function createPrimitiveTypeChecker(expectedType) {
+	    function validate(props, propName, componentName, location, propFullName, secret) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== expectedType) {
+	        // `propValue` being instance of, say, date/regexp, pass the 'object'
+	        // check, but we can offer a more precise error message here rather than
+	        // 'of type `object`'.
+	        var preciseType = getPreciseType(propValue);
+	
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createAnyTypeChecker() {
+	    return createChainableTypeChecker(emptyFunction.thatReturnsNull);
+	  }
+	
+	  function createArrayOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+	      }
+	      var propValue = props[propName];
+	      if (!Array.isArray(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+	      }
+	      for (var i = 0; i < propValue.length; i++) {
+	        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+	        if (error instanceof Error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createElementTypeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      if (!isValidElement(propValue)) {
+	        var propType = getPropType(propValue);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createInstanceTypeChecker(expectedClass) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!(props[propName] instanceof expectedClass)) {
+	        var expectedClassName = expectedClass.name || ANONYMOUS;
+	        var actualClassName = getClassName(props[propName]);
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createEnumTypeChecker(expectedValues) {
+	    if (!Array.isArray(expectedValues)) {
+	      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOf, expected an instance of array.') : void 0;
+	      return emptyFunction.thatReturnsNull;
+	    }
+	
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      for (var i = 0; i < expectedValues.length; i++) {
+	        if (is(propValue, expectedValues[i])) {
+	          return null;
+	        }
+	      }
+	
+	      var valuesString = JSON.stringify(expectedValues);
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createObjectOfTypeChecker(typeChecker) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (typeof typeChecker !== 'function') {
+	        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+	      }
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+	      }
+	      for (var key in propValue) {
+	        if (propValue.hasOwnProperty(key)) {
+	          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	          if (error instanceof Error) {
+	            return error;
+	          }
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createUnionTypeChecker(arrayOfTypeCheckers) {
+	    if (!Array.isArray(arrayOfTypeCheckers)) {
+	      process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+	      return emptyFunction.thatReturnsNull;
+	    }
+	
+	    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	      var checker = arrayOfTypeCheckers[i];
+	      if (typeof checker !== 'function') {
+	        warning(
+	          false,
+	          'Invalid argument supplid to oneOfType. Expected an array of check functions, but ' +
+	          'received %s at index %s.',
+	          getPostfixForTypeWarning(checker),
+	          i
+	        );
+	        return emptyFunction.thatReturnsNull;
+	      }
+	    }
+	
+	    function validate(props, propName, componentName, location, propFullName) {
+	      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+	        var checker = arrayOfTypeCheckers[i];
+	        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+	          return null;
+	        }
+	      }
+	
+	      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createNodeChecker() {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      if (!isNode(props[propName])) {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function createShapeTypeChecker(shapeTypes) {
+	    function validate(props, propName, componentName, location, propFullName) {
+	      var propValue = props[propName];
+	      var propType = getPropType(propValue);
+	      if (propType !== 'object') {
+	        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+	      }
+	      for (var key in shapeTypes) {
+	        var checker = shapeTypes[key];
+	        if (!checker) {
+	          continue;
+	        }
+	        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+	        if (error) {
+	          return error;
+	        }
+	      }
+	      return null;
+	    }
+	    return createChainableTypeChecker(validate);
+	  }
+	
+	  function isNode(propValue) {
+	    switch (typeof propValue) {
+	      case 'number':
+	      case 'string':
+	      case 'undefined':
+	        return true;
+	      case 'boolean':
+	        return !propValue;
+	      case 'object':
+	        if (Array.isArray(propValue)) {
+	          return propValue.every(isNode);
+	        }
+	        if (propValue === null || isValidElement(propValue)) {
+	          return true;
+	        }
+	
+	        var iteratorFn = getIteratorFn(propValue);
+	        if (iteratorFn) {
+	          var iterator = iteratorFn.call(propValue);
+	          var step;
+	          if (iteratorFn !== propValue.entries) {
+	            while (!(step = iterator.next()).done) {
+	              if (!isNode(step.value)) {
+	                return false;
+	              }
+	            }
+	          } else {
+	            // Iterator will provide entry [k,v] tuples rather than values.
+	            while (!(step = iterator.next()).done) {
+	              var entry = step.value;
+	              if (entry) {
+	                if (!isNode(entry[1])) {
+	                  return false;
+	                }
+	              }
+	            }
+	          }
+	        } else {
+	          return false;
+	        }
+	
+	        return true;
+	      default:
+	        return false;
+	    }
+	  }
+	
+	  function isSymbol(propType, propValue) {
+	    // Native Symbol.
+	    if (propType === 'symbol') {
+	      return true;
+	    }
+	
+	    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+	    if (propValue['@@toStringTag'] === 'Symbol') {
+	      return true;
+	    }
+	
+	    // Fallback for non-spec compliant Symbols which are polyfilled.
+	    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+	      return true;
+	    }
+	
+	    return false;
+	  }
+	
+	  // Equivalent of `typeof` but with special handling for array and regexp.
+	  function getPropType(propValue) {
+	    var propType = typeof propValue;
+	    if (Array.isArray(propValue)) {
+	      return 'array';
+	    }
+	    if (propValue instanceof RegExp) {
+	      // Old webkits (at least until Android 4.0) return 'function' rather than
+	      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+	      // passes PropTypes.object.
+	      return 'object';
+	    }
+	    if (isSymbol(propType, propValue)) {
+	      return 'symbol';
+	    }
+	    return propType;
+	  }
+	
+	  // This handles more types than `getPropType`. Only used for error messages.
+	  // See `createPrimitiveTypeChecker`.
+	  function getPreciseType(propValue) {
+	    if (typeof propValue === 'undefined' || propValue === null) {
+	      return '' + propValue;
+	    }
+	    var propType = getPropType(propValue);
+	    if (propType === 'object') {
+	      if (propValue instanceof Date) {
+	        return 'date';
+	      } else if (propValue instanceof RegExp) {
+	        return 'regexp';
+	      }
+	    }
+	    return propType;
+	  }
+	
+	  // Returns a string that is postfixed to a warning about an invalid type.
+	  // For example, "undefined" or "of type array"
+	  function getPostfixForTypeWarning(value) {
+	    var type = getPreciseType(value);
+	    switch (type) {
+	      case 'array':
+	      case 'object':
+	        return 'an ' + type;
+	      case 'boolean':
+	      case 'date':
+	      case 'regexp':
+	        return 'a ' + type;
+	      default:
+	        return type;
+	    }
+	  }
+	
+	  // Returns class name of the object, if any.
+	  function getClassName(propValue) {
+	    if (!propValue.constructor || !propValue.constructor.name) {
+	      return ANONYMOUS;
+	    }
+	    return propValue.constructor.name;
+	  }
+	
+	  ReactPropTypes.checkPropTypes = checkPropTypes;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+	
+	  return ReactPropTypes;
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_15__;
+
+/***/ })
+/******/ ])
+});
+;
+//# sourceMappingURL=react-responsive.js.map
+
+/***/ }),
 /* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -14519,6 +16250,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(62);
 
+var _reactResponsive = __webpack_require__(61);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14541,32 +16276,77 @@ var Navigation = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'navigation-component' },
+                null,
                 _react2.default.createElement(
-                    'div',
-                    { className: 'navigation-bar area' },
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
                     _react2.default.createElement(
-                        'p',
-                        { className: 'myname' },
-                        'Kazuma Takada'
-                    ),
+                        'div',
+                        { className: 'navigation-header-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'header-contents-middle' },
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Kazuma Takada'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'navigation-list-middle' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/', className: 'item-middle' },
+                                    'Works'
+                                ),
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/publications', className: 'item-middle' },
+                                    'Publications'
+                                ),
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/profile', className: 'item-middle' },
+                                    'Profile'
+                                )
+                            ),
+                            _react2.default.createElement('hr', null)
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
                     _react2.default.createElement(
-                        'nav',
-                        { className: 'navigation-list' },
+                        'div',
+                        { className: 'navigation-component' },
                         _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/', className: 'item' },
-                            'Works'
-                        ),
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/publications', className: 'item' },
-                            'Publications'
-                        ),
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/profile', className: 'item' },
-                            'Profile'
+                            'div',
+                            { className: 'navigation-bar area' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'myname' },
+                                'Kazuma Takada'
+                            ),
+                            _react2.default.createElement(
+                                'nav',
+                                { className: 'navigation-list' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/', className: 'item' },
+                                    'Works'
+                                ),
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/publications', className: 'item' },
+                                    'Publications'
+                                ),
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/profile', className: 'item' },
+                                    'Profile'
+                                )
+                            )
                         )
                     )
                 )
@@ -14598,6 +16378,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHelmet = __webpack_require__(225);
 
+var _reactResponsive = __webpack_require__(61);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14620,166 +16404,287 @@ var About = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'profile-page' },
+                null,
                 _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Profile'
-                    )
-                ),
-                _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Profile'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'profile-about' },
-                    _react2.default.createElement('img', { src: 'https://i.gyazo.com/0fff108b825bd60ddb349430b2fe131d.jpg' }),
+                    _reactResponsive2.default,
+                    { maxWidth: 1221 },
                     _react2.default.createElement(
                         'div',
-                        { className: 'status' },
+                        { className: 'profile-page-middle' },
                         _react2.default.createElement(
-                            'ul',
+                            _reactHelmet.Helmet,
                             null,
                             _react2.default.createElement(
-                                'li',
-                                { className: 'name' },
-                                '\u9AD9\u7530 \u4E00\u771F',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    'Kazuma Takada'
-                                )
+                                'title',
+                                null,
+                                'Kazuma Takada Profile'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            'Profile'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'profile-about-middle' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'profile-img-middle' },
+                                _react2.default.createElement('img', { src: './src/images/profile.png' })
                             ),
                             _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
+                                'div',
+                                { className: 'status-middle' },
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'name-middle' },
+                                        '\u9AD9\u7530 \u4E00\u771F'
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'name-middle' },
+                                        _react2.default.createElement(
+                                            'small',
+                                            null,
+                                            'Kazuma Takada'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/school.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'http://www.meiji.ac.jp/ims/subject/fms/', target: '_blank', className: 'jump-link' },
+                                                    '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1'
+                                                ),
+                                                ' ',
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'http://keita-lab.jp/', target: '_blank', className: 'jump-link' },
+                                                    '\u6E21\u908A\u7814\u7A76\u5BA4'
+                                                ),
+                                                '\u6240\u5C5E \u5B66\u90E83\u5E74'
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/mail.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                'k222.tkd.fms [at] gmail.com'
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/facebook.png', style: { borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' } }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://www.facebook.com/kazuma.takada.90', target: '_blank', className: 'jump-link' },
+                                                    '\u9AD8\u7530 \u4E00\u771F'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/github.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://github.com/fmsuvM', target: '_blank' },
+                                                    '@fmsuvM'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/twitter.png', style: { width: '30px', height: '30px', marginLeft: '-5px', marginRight: '-5px' } }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://twitter.com/fmsuvM', target: '_blank', className: 'jump-link' },
+                                                    '@fmsuvM'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/instagram.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://www.instagram.com/kazuma__tkd/', target: '_blank', className: 'jump-link' },
+                                                    '@kazuma__tkd'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info-middle' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/medium.png', style: { borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' } }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext-middle' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://medium.com/@fmsuvM', target: '_blank', className: 'jump-link' },
+                                                    '@fmsuvM'
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'bio-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'interests-middle' },
+                                _react2.default.createElement(
+                                    'h5',
+                                    null,
+                                    'Interests'
+                                ),
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/school.png' }),
+                                    'Interaction Design, Digital Fabrication and etc...'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'background-middle' },
+                                _react2.default.createElement(
+                                    'h5',
+                                    null,
+                                    'Background'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'background-contents-middle' },
                                     _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
+                                        'ul',
+                                        null,
                                         _react2.default.createElement(
-                                            'a',
-                                            { href: 'http://www.meiji.ac.jp/ims/subject/fms/', target: '_blank', className: 'jump-link' },
-                                            '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1'
+                                            'div',
+                                            { className: 'per-contents-middle' },
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '1997\u5E74 2\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u795E\u5948\u5DDD\u770C \u938C\u5009\u5E02 \u751F\u307E\u308C'
+                                            )
                                         ),
-                                        ' ',
                                         _react2.default.createElement(
-                                            'a',
-                                            { href: 'http://keita-lab.jp/', target: '_blank', className: 'jump-link' },
-                                            '\u6E21\u908A\u7814\u7A76\u5BA4'
+                                            'div',
+                                            { className: 'per-contents-middle' },
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2009\u5E74 4\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u79C1\u7ACB\u6E58\u5357\u5B66\u5712\u4E2D\u5B66\u9AD8\u7B49\u5B66\u6821\u3000\u5165\u5B66'
+                                            )
                                         ),
-                                        '\u6240\u5C5E \u5B66\u90E83\u5E74'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/mail.png' }),
-                                    _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
-                                        'k222.tkd.fms [at] gmail.com'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/facebook.png', style: { borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' } }),
-                                    _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
                                         _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://www.facebook.com/kazuma.takada.90', target: '_blank', className: 'jump-link' },
-                                            '\u9AD8\u7530 \u4E00\u771F'
-                                        )
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/github.png' }),
-                                    _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
+                                            'div',
+                                            { className: 'per-contents-middle' },
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2015\u5E74 3\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u79C1\u7ACB\u6E58\u5357\u5B66\u5712\u4E2D\u5B66\u9AD8\u7B49\u5B66\u6821\u3000\u5352\u696D'
+                                            )
+                                        ),
                                         _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://github.com/fmsuvM', target: '_blank' },
-                                            '@fmsuvM'
-                                        )
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/twitter.png', style: { width: '30px', height: '30px', marginLeft: '-5px', marginRight: '-5px' } }),
-                                    _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
+                                            'div',
+                                            { className: 'per-contents-middle' },
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2015\u5E74 4\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1\u3000\u5165\u5B66'
+                                            )
+                                        ),
                                         _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://twitter.com/fmsuvM', target: '_blank', className: 'jump-link' },
-                                            '@fmsuvM'
-                                        )
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/instagram.png' }),
-                                    _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://www.instagram.com/kazuma__tkd/', target: '_blank', className: 'jump-link' },
-                                            '@kazuma__tkd'
-                                        )
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'info' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement('img', { src: './src/images/icon/medium.png', style: { borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' } }),
-                                    _react2.default.createElement(
-                                        'span',
-                                        { className: 'infotext' },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://medium.com/@fmsuvM', target: '_blank', className: 'jump-link' },
-                                            '@fmsuvM'
+                                            'div',
+                                            { className: 'per-contents-middle' },
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2019\u5E74 3\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1\u3000\u5352\u696D\u4E88\u5B9A'
+                                            )
                                         )
                                     )
                                 )
@@ -14788,96 +16693,274 @@ var About = function (_Component) {
                     )
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'bio' },
+                    _reactResponsive2.default,
+                    { minWidth: 1222 },
                     _react2.default.createElement(
                         'div',
-                        { className: 'interests' },
+                        { className: 'profile-page' },
                         _react2.default.createElement(
-                            'h5',
+                            _reactHelmet.Helmet,
                             null,
-                            'Interests'
+                            _react2.default.createElement(
+                                'title',
+                                null,
+                                'Kazuma Takada Profile'
+                            )
                         ),
                         _react2.default.createElement(
-                            'p',
+                            'h3',
                             null,
-                            'Interaction Design, Digital Fabrication and etc...'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'background' },
-                        _react2.default.createElement(
-                            'h5',
-                            null,
-                            'Background'
+                            'Profile'
                         ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'background-contents' },
+                            { className: 'profile-about' },
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'profile-img' },
+                                _react2.default.createElement('img', { src: './src/images/profile.png' })
+                            ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'background-year' },
+                                { className: 'status' },
                                 _react2.default.createElement(
                                     'ul',
                                     null,
                                     _react2.default.createElement(
                                         'li',
-                                        null,
-                                        '1997\u5E74 2\u6708'
+                                        { className: 'name' },
+                                        '\u9AD9\u7530 \u4E00\u771F',
+                                        _react2.default.createElement(
+                                            'small',
+                                            null,
+                                            'Kazuma Takada'
+                                        )
                                     ),
                                     _react2.default.createElement(
                                         'li',
-                                        null,
-                                        '2009\u5E74 4\u6708'
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/school.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'http://www.meiji.ac.jp/ims/subject/fms/', target: '_blank', className: 'jump-link' },
+                                                    '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1'
+                                                ),
+                                                ' ',
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'http://keita-lab.jp/', target: '_blank', className: 'jump-link' },
+                                                    '\u6E21\u908A\u7814\u7A76\u5BA4'
+                                                ),
+                                                '\u6240\u5C5E \u5B66\u90E83\u5E74'
+                                            )
+                                        )
                                     ),
                                     _react2.default.createElement(
                                         'li',
-                                        null,
-                                        '2015\u5E74 3\u6708'
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/mail.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                'k222.tkd.fms [at] gmail.com'
+                                            )
+                                        )
                                     ),
                                     _react2.default.createElement(
                                         'li',
-                                        null,
-                                        '2015\u5E74 4\u6708'
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/facebook.png', style: { borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' } }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://www.facebook.com/kazuma.takada.90', target: '_blank', className: 'jump-link' },
+                                                    '\u9AD8\u7530 \u4E00\u771F'
+                                                )
+                                            )
+                                        )
                                     ),
                                     _react2.default.createElement(
                                         'li',
-                                        null,
-                                        '2019\u5E74 3\u6708'
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/github.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://github.com/fmsuvM', target: '_blank' },
+                                                    '@fmsuvM'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/twitter.png', style: { width: '30px', height: '30px', marginLeft: '-5px', marginRight: '-5px' } }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://twitter.com/fmsuvM', target: '_blank', className: 'jump-link' },
+                                                    '@fmsuvM'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/instagram.png' }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://www.instagram.com/kazuma__tkd/', target: '_blank', className: 'jump-link' },
+                                                    '@kazuma__tkd'
+                                                )
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        { className: 'info' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            null,
+                                            _react2.default.createElement('img', { src: './src/images/icon/medium.png', style: { borderTopLeftRadius: '5px', borderTopRightRadius: '5px', borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' } }),
+                                            _react2.default.createElement(
+                                                'span',
+                                                { className: 'infotext' },
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://medium.com/@fmsuvM', target: '_blank', className: 'jump-link' },
+                                                    '@fmsuvM'
+                                                )
+                                            )
+                                        )
                                     )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'bio' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'interests' },
+                                _react2.default.createElement(
+                                    'h5',
+                                    null,
+                                    'Interests'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Interaction Design, Digital Fabrication and etc...'
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'background-year-info' },
+                                { className: 'background' },
                                 _react2.default.createElement(
-                                    'ul',
+                                    'h5',
                                     null,
+                                    'Background'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'background-contents' },
                                     _react2.default.createElement(
-                                        'li',
-                                        null,
-                                        '\u795E\u5948\u5DDD\u770C \u938C\u5009\u5E02 \u751F\u307E\u308C'
+                                        'div',
+                                        { className: 'background-year' },
+                                        _react2.default.createElement(
+                                            'ul',
+                                            null,
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '1997\u5E74 2\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2009\u5E74 4\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2015\u5E74 3\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2015\u5E74 4\u6708'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '2019\u5E74 3\u6708'
+                                            )
+                                        )
                                     ),
                                     _react2.default.createElement(
-                                        'li',
-                                        null,
-                                        '\u79C1\u7ACB\u6E58\u5357\u5B66\u5712\u4E2D\u5B66\u9AD8\u7B49\u5B66\u6821\u3000\u5165\u5B66'
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        null,
-                                        '\u79C1\u7ACB\u6E58\u5357\u5B66\u5712\u4E2D\u5B66\u9AD8\u7B49\u5B66\u6821\u3000\u5352\u696D'
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        null,
-                                        '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1\u3000\u5165\u5B66'
-                                    ),
-                                    _react2.default.createElement(
-                                        'li',
-                                        null,
-                                        '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1\u3000\u5352\u696D\u4E88\u5B9A'
+                                        'div',
+                                        { className: 'background-year-info' },
+                                        _react2.default.createElement(
+                                            'ul',
+                                            null,
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u795E\u5948\u5DDD\u770C \u938C\u5009\u5E02 \u751F\u307E\u308C'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u79C1\u7ACB\u6E58\u5357\u5B66\u5712\u4E2D\u5B66\u9AD8\u7B49\u5B66\u6821\u3000\u5165\u5B66'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u79C1\u7ACB\u6E58\u5357\u5B66\u5712\u4E2D\u5B66\u9AD8\u7B49\u5B66\u6821\u3000\u5352\u696D'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1\u3000\u5165\u5B66'
+                                            ),
+                                            _react2.default.createElement(
+                                                'li',
+                                                null,
+                                                '\u660E\u6CBB\u5927\u5B66 \u7DCF\u5408\u6570\u7406\u5B66\u90E8 \u5148\u7AEF\u30E1\u30C7\u30A3\u30A2\u30B5\u30A4\u30A8\u30F3\u30B9\u5B66\u79D1\u3000\u5352\u696D\u4E88\u5B9A'
+                                            )
+                                        )
                                     )
                                 )
                             )
@@ -14910,6 +16993,10 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactResponsive = __webpack_require__(61);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14928,89 +17015,257 @@ var Publications = function (_Component) {
     }
 
     _createClass(Publications, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                { className: "research-page" },
+                'div',
+                null,
                 _react2.default.createElement(
-                    "h3",
-                    null,
-                    "Publications"
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'research-page-middle' },
+                        _react2.default.createElement(
+                            'h3',
+                            null,
+                            'Publications'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'bachelor-container-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 4'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Coming Soon......'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 3'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Coming Soon......'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 2'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'contents' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        '\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. \u88AB\u5199\u901A\u77E5\uFF1A\u30A2\u30C9\u30DB\u30C3\u30AF\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u3088\u308B\u5199\u771F\u5171\u6709. \u7B2C24\u56DE\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u30B7\u30B9\u30C6\u30E0\u3068\u30BD\u30D5\u30C8\u30A6\u30A7\u30A2\u306B\u95A2\u3059\u308B\u30EF\u30FC\u30AF\u30B7\u30E7\u30C3\u30D7(WISS2016), 2016.',
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.wiss.org/WISS2016Proceedings/demo/3-A18.pdf', target: '_blank' },
+                                            ' ',
+                                            '<PDF>',
+                                            ' '
+                                        ),
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.wiss.org/WISS2016/Demo.html', target: '_blank' },
+                                            ' ',
+                                            '<Web>',
+                                            ' '
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'contents' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        '\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter: Bluetooth\u96FB\u6CE2\u3068\u9854\u8A8D\u8B58\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u57FA\u3065\u304F\u5199\u771F\u5171\u6709. \u7B2C169\u56DE\u30D2\u30E5\u30FC\u30DE\u30F3\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u7814\u7A76\u767A\u8868\u4F1A(HCI169), 2016.',
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.ipsj.or.jp/kenkyukai/event/hci169.html', target: '_blank' },
+                                            ' ',
+                                            '<Web>',
+                                            ' '
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 1'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'contents' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        '\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter : Bluetooth\u96FB\u6CE2\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306E\u691C\u8A0E\u3068\u8A66\u4F5C. \u7B2C20\u56DE\u4E00\u822C\u793E\u56E3\u6CD5\u4EBA\u60C5\u5831\u51E6\u7406\u5B66\u4F1A\u30B7\u30F3\u30DD\u30B8\u30A6\u30E0(\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F32016), 2016.',
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.interaction-ipsj.org/proceedings/2016/data/pdf/2C47.pdf', target: '_blank' },
+                                            ' ',
+                                            '<PDF>',
+                                            ' '
+                                        ),
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.interaction-ipsj.org/2016/program/interactive', target: '_blank' },
+                                            ' ',
+                                            '<Web>',
+                                            ' '
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
                 ),
                 _react2.default.createElement(
-                    "div",
-                    { className: "bachelor-container" },
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
                     _react2.default.createElement(
-                        "div",
-                        { className: "bachelor" },
+                        'div',
+                        { className: 'research-page' },
                         _react2.default.createElement(
-                            "h3",
-                            { className: "title" },
-                            "Bachelor 4"
-                        ),
-                        _react2.default.createElement(
-                            "p",
+                            'h3',
                             null,
-                            "Coming Soon......"
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "bachelor" },
-                        _react2.default.createElement(
-                            "h3",
-                            { className: "title" },
-                            "Bachelor 3"
+                            'Publications'
                         ),
                         _react2.default.createElement(
-                            "p",
-                            null,
-                            "Coming Soon......"
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "bachelor" },
-                        _react2.default.createElement(
-                            "h3",
-                            { className: "title" },
-                            "Bachelor 2"
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "contents" },
+                            'div',
+                            { className: 'bachelor-container' },
                             _react2.default.createElement(
-                                "a",
-                                { href: "https://www.wiss.org/WISS2016/Demo.html" },
-                                "\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. \u88AB\u5199\u901A\u77E5\uFF1A\u30A2\u30C9\u30DB\u30C3\u30AF\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u3088\u308B\u5199\u771F\u5171\u6709. \u7B2C24\u56DE\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u30B7\u30B9\u30C6\u30E0\u3068\u30BD\u30D5\u30C8\u30A6\u30A7\u30A2\u306B\u95A2\u3059\u308B\u30EF\u30FC\u30AF\u30B7\u30E7\u30C3\u30D7(WISS2016), 2016."
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "contents" },
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 4'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Coming Soon......'
+                                )
+                            ),
                             _react2.default.createElement(
-                                "a",
-                                { href: "http://www.ipsj.or.jp/kenkyukai/event/hci169.html" },
-                                "\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter: Bluetooth\u96FB\u6CE2\u3068\u9854\u8A8D\u8B58\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u57FA\u3065\u304F\u5199\u771F\u5171\u6709. \u7B2C169\u56DE\u30D2\u30E5\u30FC\u30DE\u30F3\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u7814\u7A76\u767A\u8868\u4F1A(HCI169), 2016."
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { className: "bachelor" },
-                        _react2.default.createElement(
-                            "h3",
-                            { className: "title" },
-                            "Bachelor 1"
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "contents" },
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 3'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Coming Soon......'
+                                )
+                            ),
                             _react2.default.createElement(
-                                "a",
-                                { href: "http://www.interaction-ipsj.org/2016/program/interactivel" },
-                                "\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter : Bluetooth\u96FB\u6CE2\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306E\u691C\u8A0E\u3068\u8A66\u4F5C. \u7B2C20\u56DE\u4E00\u822C\u793E\u56E3\u6CD5\u4EBA\u60C5\u5831\u51E6\u7406\u5B66\u4F1A\u30B7\u30F3\u30DD\u30B8\u30A6\u30E0(\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F32016), 2016."
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 2'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'contents' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        '\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. \u88AB\u5199\u901A\u77E5\uFF1A\u30A2\u30C9\u30DB\u30C3\u30AF\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u3088\u308B\u5199\u771F\u5171\u6709. \u7B2C24\u56DE\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u30B7\u30B9\u30C6\u30E0\u3068\u30BD\u30D5\u30C8\u30A6\u30A7\u30A2\u306B\u95A2\u3059\u308B\u30EF\u30FC\u30AF\u30B7\u30E7\u30C3\u30D7(WISS2016), 2016.',
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.wiss.org/WISS2016Proceedings/demo/3-A18.pdf', target: '_blank' },
+                                            ' ',
+                                            '<PDF>',
+                                            ' '
+                                        ),
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.wiss.org/WISS2016/Demo.html', target: '_blank' },
+                                            ' ',
+                                            '<Web>',
+                                            ' '
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'contents' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        '\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter: Bluetooth\u96FB\u6CE2\u3068\u9854\u8A8D\u8B58\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306B\u57FA\u3065\u304F\u5199\u771F\u5171\u6709. \u7B2C169\u56DE\u30D2\u30E5\u30FC\u30DE\u30F3\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u7814\u7A76\u767A\u8868\u4F1A(HCI169), 2016.',
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.ipsj.or.jp/kenkyukai/event/hci169.html', target: '_blank' },
+                                            ' ',
+                                            '<Web>',
+                                            ' '
+                                        )
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'bachelor' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { className: 'title' },
+                                    'Bachelor 1'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'contents' },
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        '\u9AD9\u7530\u4E00\u771F, \u6E21\u908A\u6075\u592A. Sharetter : Bluetooth\u96FB\u6CE2\u3092\u5229\u7528\u3057\u305F\u88AB\u5199\u691C\u77E5\u306E\u691C\u8A0E\u3068\u8A66\u4F5C. \u7B2C20\u56DE\u4E00\u822C\u793E\u56E3\u6CD5\u4EBA\u60C5\u5831\u51E6\u7406\u5B66\u4F1A\u30B7\u30F3\u30DD\u30B8\u30A6\u30E0(\u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F32016), 2016.',
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.interaction-ipsj.org/proceedings/2016/data/pdf/2C47.pdf', target: '_blank' },
+                                            ' ',
+                                            '<PDF>',
+                                            ' '
+                                        ),
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.interaction-ipsj.org/2016/program/interactive', target: '_blank' },
+                                            ' ',
+                                            '<Web>',
+                                            ' '
+                                        )
+                                    )
+                                )
                             )
                         )
                     )
@@ -15045,6 +17300,10 @@ var _debug = __webpack_require__(17);
 
 var _debug2 = _interopRequireDefault(_debug);
 
+var _reactResponsive = __webpack_require__(61);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
 var _ProjectCard = __webpack_require__(111);
 
 var _ProjectCard2 = _interopRequireDefault(_ProjectCard);
@@ -15074,11 +17333,31 @@ var Works = function (_Component) {
             // debug(fabnavi);
             return _react2.default.createElement(
                 'div',
-                { className: 'work-list' },
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'bookroof' }),
-                _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' })
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'work-list-middle' },
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'bookroof' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' })
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'work-list' },
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavi' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shogg' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'bookroof' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' })
+                    )
+                )
             );
         }
     }]);
