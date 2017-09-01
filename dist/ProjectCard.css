@@ -6,8 +6,8 @@
   border: solid 1px #3f4551;
   border-radius: 5px;
   margin-top: 30px;
-  transition: all 0.3s ease;
   color: #373c38;
+  transition: all .2s;
   /* mouse hover */ }
   .project-card > .card-image > img {
     width: 300px;
@@ -44,7 +44,7 @@
     position: relative;
     top: -5px;
     left: -5px;
-    box-shadow: 8px 8px 8px 1px #9EA1A3;
+    box-shadow: 6px 6px 1px 1px #e6e6e6;
     transition: all 0.3s ease; }
 
 /*# sourceMappingURL=ProjectCard.css.map */
