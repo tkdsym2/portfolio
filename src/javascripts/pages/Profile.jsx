@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 import MediaQuery from 'react-responsive';
 
 class About extends Component {
@@ -10,13 +10,24 @@ class About extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                        <title>Kazuma Takada Profile</title>
+                        <meta property="og:title" content="Kazuma Takada Portfolio | Profile" />
+                        <meta property="og:type" content="article" />
+                        <meta property="og:url" content="http://fmsuvm.github.io/#/profile" />
+                        <meta property="og:site_name" content="Kazuma Takada Portfolio" />
+                        <meta property="og:description" content="Please visit my portfolio !" />
+                        <meta name="twitter:card" content="summary_large_image" />
+                        <meta name="twitter:site" content="@fmsuvM" />
+                        <meta name="twitter:creator" content="@fmsuvM" />
+                        <meta name="twitter:domain" content="fmsuvM.github.io" />
+                        <meta name="twitter:title" content="Kazuma Takada Profile" />
+                        <meta name="twitter:description" content="Please visit my portfolio !" />
+                        <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
+                </Helmet>
                 <MediaQuery maxWidth={1221}>
                 <div className="profile-page-middle">
-                        <Helmet>
-                            <title>Kazuma Takada Profile</title>
-                        </Helmet>
                         <h3>Profile</h3>
-
                         <div className="profile-about-middle">
                             {/* <img src="https://i.gyazo.com/0fff108b825bd60ddb349430b2fe131d.jpg" /> */}
                             <p className="profile-img-middle"><img src="./src/images/profile.png" /></p>

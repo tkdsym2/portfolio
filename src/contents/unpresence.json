@@ -1,8 +1,6 @@
 {
     "project": {
         "title": "(Un)Presence",
-        "subTitle": "Support system to assemble physical objects using visual instructions",
-        "abstraction": "透明な存在",
-        "description": "fabnaviをSFCにて設置しました"
+        "abstraction": "存在の浮き沈み"
     }
 }

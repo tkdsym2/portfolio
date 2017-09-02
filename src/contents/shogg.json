@@ -1,8 +1,6 @@
 {
     "project": {
         "title": "Shogg",
-        "subTitle": "講義: インタラクションデザインの課題にて製作",
-        "abstraction": "講義: インタラクションデザインの課題にて製作",
-        "description": "た"
+        "abstraction": "卵を割る衝撃を計測して適切なレシピを提案するサービス"
     }
 }
