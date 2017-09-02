@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import MediaQuery from 'react-responsive';
 
 export default class Publications extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                        <title>Kazuma Takada Profile</title>
+                        <meta property="og:title" content="Kazuma Takada Portfolio | Publications" />
+                        <meta property="og:type" content="article" />
+                        <meta property="og:url" content="http://fmsuvm.github.io/#/publications" />
+                        <meta property="og:site_name" content="Kazuma Takada Portfolio" />
+                        <meta property="og:description" content="Please visit my portfolio !" />
+                        <meta name="twitter:card" content="summary_large_image" />
+                        <meta name="twitter:site" content="@fmsuvM" />
+                        <meta name="twitter:creator" content="@fmsuvM" />
+                        <meta name="twitter:domain" content="fmsuvM.github.io" />
+                        <meta name="twitter:title" content="Kazuma Takada Profile" />
+                        <meta name="twitter:description" content="Please visit my portfolio !" />
+                        <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
+                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="research-page-middle">
                         <h3>Publications</h3>

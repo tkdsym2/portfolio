@@ -95,7 +95,8 @@ p.profile-img img {
 }
 
 .bio {
-    // margin-left: 52px;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     color: $aisumicha;
     max-width: 53%;
@@ -115,6 +116,7 @@ p.profile-img img {
             padding: 0px;
             margin: 0px;
             margin-top: 10px;
+            text-align: left;
         }
     }
 

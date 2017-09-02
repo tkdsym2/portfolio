@@ -14,6 +14,19 @@ import Fabnavi from './javascripts/contents/Fabnavi';
 import Shogg from './javascripts/contents/Shogg';
 import BookRoof from './javascripts/contents/BookRoof';
 import Unpresence from './javascripts/contents/Unpresence';
+import ThroughStudio from './javascripts/contents/ThroughStudio';
+import FlexibleInterface from './javascripts/contents/FlexibleInterface';
+import GhostCreator from './javascripts/contents/GhostCreator';
+
+
+import './stylesheets/footer.scss';
+import './stylesheets/index.scss';
+import './stylesheets/navigation.scss';
+import './stylesheets/profile.scss';
+import './stylesheets/ProjectCard.scss';
+import './stylesheets/ProjectDetail.scss';
+import './stylesheets/publications.scss';
+import './stylesheets/works.scss';
 
 const history = createHashHistory();
 
@@ -31,6 +44,9 @@ export default class App extends Component {
                             <Route component={Shogg} path="/detail/shogg"/>
                             <Route component={BookRoof} path="/detail/bookroof"/>
                             <Route component={Unpresence} path="/detail/unpresence"/>
+                            <Route component={ThroughStudio} path="/detail/throughstudio"/>
+                            <Route component={FlexibleInterface} path="/detail/flexibleinterface"/>
+                            <Route component={GhostCreator} path="/detail/ghostcreator"/>
                         </Switch>
                     </Manager>
                 </Router>

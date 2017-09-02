@@ -1,8 +1,6 @@
 {
     "project": {
         "title": "fabnavi in SFC",
-        "subTitle": "Support system to assemble physical objects using visual instructions",
-        "abstraction": "Support system to assemble physical objects using visual instructions",
-        "description": "fabnaviをSFCにて設置しました"
+        "abstraction": "慶應義塾大学 湘南藤沢キャンパス(SFC)に設置されているfabnaviのアップデート"
     }
 }
