@@ -10,6 +10,7 @@ import Works from './javascripts/pages/Works.jsx';
 import Profile from './javascripts/pages/Profile.jsx';
 import Publications from './javascripts/pages/Publications';
 import Manager from './javascripts/pages/Manager';
+
 import Fabnavi from './javascripts/contents/Fabnavi';
 import Shogg from './javascripts/contents/Shogg';
 import BookRoof from './javascripts/contents/BookRoof';
@@ -17,6 +18,16 @@ import Unpresence from './javascripts/contents/Unpresence';
 import ThroughStudio from './javascripts/contents/ThroughStudio';
 import FlexibleInterface from './javascripts/contents/FlexibleInterface';
 import GhostCreator from './javascripts/contents/GhostCreator';
+import FabDesk from './javascripts/contents/FabDesk';
+import FabnaviHakodate from './javascripts/contents/FabnaviHakodate';
+import FabnaviSpace from './javascripts/contents/FabSpace';
+import Hishatsuuti from './javascripts/contents/Hishatsuuti';
+import Icc from './javascripts/contents/Icc';
+import JissenOcreilly from './javascripts/contents/JissenOcreilly';
+import JitsuyouOcreilly from './javascripts/contents/JitsuyouOcreilly';
+import SharetterHci from './javascripts/contents/SharetterHci';
+import ShoukaiOcreilly from './javascripts/contents/ShoukaiOcreilly';
+import ToDoPop from './javascripts/contents/ToDoPop';
 
 
 import './stylesheets/footer.scss';
@@ -47,6 +58,16 @@ export default class App extends Component {
                             <Route component={ThroughStudio} path="/detail/throughstudio"/>
                             <Route component={FlexibleInterface} path="/detail/flexibleinterface"/>
                             <Route component={GhostCreator} path="/detail/ghostcreator"/>
+                            <Route component={FabDesk} path="/detail/fabdesk"/>
+                            <Route component={FabnaviHakodate} path="/detail/fabnavihakodate"/>
+                            <Route component={FabnaviSpace} path="/detail/fabspace"/>
+                            <Route component={Hishatsuuti} path="/detail/hishatsuuti"/>
+                            <Route component={Icc} path="/detail/icc"/>
+                            <Route component={JissenOcreilly} path="/detail/jissenocreilly"/>
+                            <Route component={JitsuyouOcreilly} path="/detail/jitsuyouocreilly"/>
+                            <Route component={SharetterHci} path="/detail/sharetterhci"/>
+                            <Route component={ShoukaiOcreilly} path="/detail/shoukaiocreilly"/>
+                            <Route component={ToDoPop} path="/detail/todopop"/>
                         </Switch>
                     </Manager>
                 </Router>

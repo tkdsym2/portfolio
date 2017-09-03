@@ -4708,11 +4708,22 @@ function updateLink(linkElement, options, obj) {
 
 var map = {
 	"./bookroof.json": 293,
+	"./fabdesk.json": 300,
 	"./fabnavi.json": 294,
+	"./fabnavihakodate.json": 302,
+	"./fabspace.json": 304,
 	"./flexibleinterface.json": 295,
 	"./ghostcreator.json": 296,
+	"./hishatsuuti.json": 306,
+	"./icc.json": 308,
+	"./jissenocreilly.json": 310,
+	"./jitsuyouocreilly.json": 312,
+	"./sharetter.json": 316,
+	"./sharetterhci.json": 314,
 	"./shogg.json": 297,
+	"./shoukaiocreilly.json": 317,
 	"./throughstudio.json": 298,
+	"./todopop.json": 319,
 	"./unpresence.json": 299
 };
 function webpackContext(req) {
@@ -15988,6 +15999,46 @@ var _GhostCreator = __webpack_require__(119);
 
 var _GhostCreator2 = _interopRequireDefault(_GhostCreator);
 
+var _FabDesk = __webpack_require__(301);
+
+var _FabDesk2 = _interopRequireDefault(_FabDesk);
+
+var _FabnaviHakodate = __webpack_require__(303);
+
+var _FabnaviHakodate2 = _interopRequireDefault(_FabnaviHakodate);
+
+var _FabSpace = __webpack_require__(305);
+
+var _FabSpace2 = _interopRequireDefault(_FabSpace);
+
+var _Hishatsuuti = __webpack_require__(307);
+
+var _Hishatsuuti2 = _interopRequireDefault(_Hishatsuuti);
+
+var _Icc = __webpack_require__(309);
+
+var _Icc2 = _interopRequireDefault(_Icc);
+
+var _JissenOcreilly = __webpack_require__(311);
+
+var _JissenOcreilly2 = _interopRequireDefault(_JissenOcreilly);
+
+var _JitsuyouOcreilly = __webpack_require__(313);
+
+var _JitsuyouOcreilly2 = _interopRequireDefault(_JitsuyouOcreilly);
+
+var _SharetterHci = __webpack_require__(315);
+
+var _SharetterHci2 = _interopRequireDefault(_SharetterHci);
+
+var _ShoukaiOcreilly = __webpack_require__(318);
+
+var _ShoukaiOcreilly2 = _interopRequireDefault(_ShoukaiOcreilly);
+
+var _ToDoPop = __webpack_require__(320);
+
+var _ToDoPop2 = _interopRequireDefault(_ToDoPop);
+
 __webpack_require__(286);
 
 __webpack_require__(287);
@@ -16047,7 +16098,17 @@ var App = function (_Component) {
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Unpresence2.default, path: '/detail/unpresence' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _ThroughStudio2.default, path: '/detail/throughstudio' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _FlexibleInterface2.default, path: '/detail/flexibleinterface' }),
-                            _react2.default.createElement(_reactRouterDom.Route, { component: _GhostCreator2.default, path: '/detail/ghostcreator' })
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _GhostCreator2.default, path: '/detail/ghostcreator' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _FabDesk2.default, path: '/detail/fabdesk' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _FabnaviHakodate2.default, path: '/detail/fabnavihakodate' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _FabSpace2.default, path: '/detail/fabspace' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Hishatsuuti2.default, path: '/detail/hishatsuuti' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Icc2.default, path: '/detail/icc' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _JissenOcreilly2.default, path: '/detail/jissenocreilly' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _JitsuyouOcreilly2.default, path: '/detail/jitsuyouocreilly' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _SharetterHci2.default, path: '/detail/sharetterhci' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _ShoukaiOcreilly2.default, path: '/detail/shoukaiocreilly' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _ToDoPop2.default, path: '/detail/todopop' })
                         )
                     )
                 )
@@ -16387,7 +16448,7 @@ var BookRoof = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -16635,7 +16696,7 @@ var Favbnavi = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -16713,8 +16774,8 @@ var Favbnavi = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'movie' },
-                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowfullscreen: true })
+                                { className: 'movie-middle' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -16829,7 +16890,7 @@ var Favbnavi = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'movie' },
-                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowfullscreen: true })
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -17226,7 +17287,7 @@ var FlexibleInterface = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -17694,7 +17755,7 @@ var ThroughStudio = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -17934,7 +17995,7 @@ var Unpresence = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -19358,7 +19419,17 @@ var Works = function (_Component) {
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'ghostcreator' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'throughstudio' }),
-                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' })
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavihakodate' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'todopop' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'hishatsuuti' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'icc' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shoukaiocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabdesk' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabspace' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jitsuyouocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'sharetterhci' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jissenocreilly' })
                     )
                 ),
                 _react2.default.createElement(
@@ -19373,7 +19444,17 @@ var Works = function (_Component) {
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'ghostcreator' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'throughstudio' }),
-                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' })
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavihakodate' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'todopop' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'hishatsuuti' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'icc' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shoukaiocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabdesk' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabspace' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jitsuyouocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'sharetterhci' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jissenocreilly' })
                     )
                 )
             );
@@ -19443,7 +19524,7 @@ exports = module.exports = __webpack_require__(19)(undefined);
 
 
 // module
-exports.push([module.i, ".project-card {\n  position: relative;\n  width: 300px;\n  height: 350px;\n  display: inline-block;\n  border: solid 1px #3f4551;\n  border-radius: 5px;\n  margin-top: 30px;\n  color: #373c38;\n  transition: all .2s;\n  /* mouse hover */ }\n  .project-card > .card-image > img {\n    width: 300px;\n    height: 220px; }\n  .project-card > .card-contents {\n    display: flex;\n    flex-direction: column;\n    padding: 0px;\n    margin: auto;\n    margin-top: -20px;\n    width: 280px;\n    align-items: center; }\n  .project-card > .card-contents > .project-title > h5 {\n    padding: 0px;\n    margin: 0px;\n    margin-top: 30px;\n    font-size: 20px;\n    text-align: left; }\n  .project-card > .card-contents > .project-subtitle > p {\n    font-size: 14px;\n    text-align: left;\n    padding: 0px;\n    margin: 0px;\n    margin-bottom: 30px; }\n  .project-card > .card-contents > hr {\n    text-align: center;\n    border: 0;\n    border-bottom: 1px dashed #9EA1A3;\n    padding: 0px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 10px; }\n  .project-card:hover {\n    position: relative;\n    top: -5px;\n    left: -5px;\n    box-shadow: 6px 6px 1px 1px #e6e6e6;\n    transition: all 0.3s ease; }\n", ""]);
+exports.push([module.i, ".project-card {\n  position: relative;\n  width: 300px;\n  height: 350px;\n  display: inline-block;\n  border: solid 1px #3f4551;\n  border-radius: 5px;\n  margin-top: 30px;\n  color: #373c38;\n  transition: all .2s;\n  /* mouse hover */ }\n  .project-card > .card-image > img {\n    width: 300px;\n    height: 220px; }\n  .project-card > .card-contents {\n    display: flex;\n    flex-direction: column;\n    padding: 0px;\n    margin: auto;\n    margin-top: -20px;\n    width: 280px;\n    align-items: center; }\n  .project-card > .card-contents > .project-title > h5 {\n    padding: 0px;\n    margin: 0px;\n    margin-top: 30px;\n    font-size: 20px;\n    text-align: left; }\n  .project-card > .card-contents > .project-subtitle > p {\n    font-size: 14px;\n    text-align: left;\n    padding: 0px;\n    margin: 0px;\n    margin-bottom: 30px; }\n  .project-card > .card-contents > hr {\n    text-align: center;\n    border: 0;\n    border-bottom: 1px dashed #9EA1A3;\n    padding: 0px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 10px; }\n  .project-card:hover {\n    position: relative;\n    top: -5px;\n    left: -5px;\n    transition: all 0.1s ease;\n    box-shadow: 6px 6px 5px 1px #a3a3a2;\n    transition: all 0.1s ease; }\n", ""]);
 
 // exports
 
@@ -19457,7 +19538,7 @@ exports = module.exports = __webpack_require__(19)(undefined);
 
 
 // module
-exports.push([module.i, ".detail-page {\n  display: block;\n  padding-top: 30px;\n  text-align: center;\n  word-wrap: break-word;\n  color: #373c38; }\n  .detail-page > .project-header {\n    width: 900px;\n    display: inline-block;\n    text-align: center;\n    margin: 0px;\n    padding: 0px; }\n  .detail-page > .project-header > h4 {\n    text-align: left;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page > .project-header > p {\n    text-align: left;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents > .project-images {\n  position: relative;\n  width: 1000px;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents img {\n  width: 900px;\n  height: auto;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents > .project-description {\n  width: 900px;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-bottom: 20px; }\n\n.project-contents > .project-description > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations {\n  width: 900px;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations ul {\n    text-align: left;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n\n.detail-page-middle {\n  display: block;\n  text-align: center;\n  width: 80%;\n  margin-right: auto;\n  margin-left: auto;\n  color: #373c38; }\n  .detail-page-middle > .project-header-middle {\n    display: inline-block;\n    text-align: center; }\n  .detail-page-middle > .project-header-middle > h4 {\n    text-align: center;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page-middle > .project-header-middle > p {\n    text-align: center;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents-middle > .project-images {\n  position: relative;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents-middle img {\n  width: 100%;\n  height: 100%;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents-middle > .project-description-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0px;\n  margin-bottom: 20px;\n  margin-top: 30px; }\n\n.project-contents-middle > .project-description-middle > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations-middle a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations-middle a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations-middle p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations-middle ul {\n    text-align: center;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations-middle li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n", ""]);
+exports.push([module.i, ".detail-page {\n  display: block;\n  padding-top: 30px;\n  text-align: center;\n  word-wrap: break-word;\n  color: #373c38; }\n  .detail-page > .project-header {\n    width: 900px;\n    display: inline-block;\n    text-align: center;\n    margin: 0px;\n    padding: 0px; }\n  .detail-page > .project-header > h4 {\n    text-align: left;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page > .project-header > p {\n    text-align: left;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents > .project-images {\n  position: relative;\n  width: 1000px;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents img {\n  width: 900px;\n  height: auto;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents > .project-description {\n  width: 900px;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-bottom: 20px; }\n\n.project-contents > .project-description > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations {\n  width: 900px;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations ul {\n    text-align: left;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n\n.detail-page-middle {\n  display: block;\n  text-align: center;\n  width: 80%;\n  margin-right: auto;\n  margin-left: auto;\n  color: #373c38; }\n  .detail-page-middle > .project-header-middle {\n    display: inline-block;\n    text-align: center; }\n  .detail-page-middle > .project-header-middle > h4 {\n    text-align: center;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page-middle > .project-header-middle > p {\n    text-align: center;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents-middle > .project-images {\n  position: relative;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents-middle img {\n  width: 100%;\n  height: 100%;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents-middle > .project-description-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0px;\n  margin-bottom: 20px;\n  margin-top: 30px; }\n\n.project-contents-middle > .project-description-middle > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations-middle a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations-middle a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations-middle p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations-middle ul {\n    text-align: center;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations-middle li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n\n.movie-middle {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; }\n\n.movie-middle iframe {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 100%;\n  height: 100%; }\n", ""]);
 
 // exports
 
@@ -36049,6 +36130,2947 @@ module.exports = {
 		"abstraction": "存在の浮き沈み"
 	}
 };
+
+/***/ }),
+/* 300 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Fab Desk",
+		"abstraction": "研究室の工作用スペース作成"
+	}
+};
+
+/***/ }),
+/* 301 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var FabDesk = function (_Component) {
+    _inherits(FabDesk, _Component);
+
+    function FabDesk(props) {
+        _classCallCheck(this, FabDesk);
+
+        var _this = _possibleConstructorReturn(this, (FabDesk.__proto__ || Object.getPrototypeOf(FabDesk)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(FabDesk, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FabDesk;
+}(_react.Component);
+
+exports.default = FabDesk;
+
+/***/ }),
+/* 302 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "fabnavi函館合宿",
+		"abstraction": "SFCにfabnaviを導入するためのフロントエンド合宿"
+	}
+};
+
+/***/ }),
+/* 303 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var FabnaviHakodate = function (_Component) {
+    _inherits(FabnaviHakodate, _Component);
+
+    function FabnaviHakodate(props) {
+        _classCallCheck(this, FabnaviHakodate);
+
+        var _this = _possibleConstructorReturn(this, (FabnaviHakodate.__proto__ || Object.getPrototypeOf(FabnaviHakodate)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(FabnaviHakodate, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FabnaviHakodate;
+}(_react.Component);
+
+exports.default = FabnaviHakodate;
+
+/***/ }),
+/* 304 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Fabrication Space",
+		"abstraction": "研究室のFabricationスペース作成"
+	}
+};
+
+/***/ }),
+/* 305 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var FabSpace = function (_Component) {
+    _inherits(FabSpace, _Component);
+
+    function FabSpace(props) {
+        _classCallCheck(this, FabSpace);
+
+        var _this = _possibleConstructorReturn(this, (FabSpace.__proto__ || Object.getPrototypeOf(FabSpace)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(FabSpace, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+            var imgUrl4 = './src/images/16_9/' + projectName + '/4.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 }),
+                                    _react2.default.createElement('img', { src: imgUrl4 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FabSpace;
+}(_react.Component);
+
+exports.default = FabSpace;
+
+/***/ }),
+/* 306 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "被写通知",
+		"abstraction": "アドホックネットワークを利用した被写検知に基づく写真共有"
+	}
+};
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Hishatsuuti = function (_Component) {
+    _inherits(Hishatsuuti, _Component);
+
+    function Hishatsuuti(props) {
+        _classCallCheck(this, Hishatsuuti);
+
+        var _this = _possibleConstructorReturn(this, (Hishatsuuti.__proto__ || Object.getPrototypeOf(Hishatsuuti)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(Hishatsuuti, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Hishatsuuti;
+}(_react.Component);
+
+exports.default = Hishatsuuti;
+
+/***/ }),
+/* 308 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Snapped Notification",
+		"abstraction": "被写通知のICC展示"
+	}
+};
+
+/***/ }),
+/* 309 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Icc = function (_Component) {
+    _inherits(Icc, _Component);
+
+    function Icc(props) {
+        _classCallCheck(this, Icc);
+
+        var _this = _possibleConstructorReturn(this, (Icc.__proto__ || Object.getPrototypeOf(Icc)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(Icc, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+            var imgUrl4 = './src/images/16_9/' + projectName + '/4.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 }),
+                                    _react2.default.createElement('img', { src: imgUrl4 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Icc;
+}(_react.Component);
+
+exports.default = Icc;
+
+/***/ }),
+/* 310 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "実践 お蔵入り",
+		"abstraction": "Processingから始めるShader入門を執筆"
+	}
+};
+
+/***/ }),
+/* 311 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var JissenOcreilly = function (_Component) {
+    _inherits(JissenOcreilly, _Component);
+
+    function JissenOcreilly(props) {
+        _classCallCheck(this, JissenOcreilly);
+
+        var _this = _possibleConstructorReturn(this, (JissenOcreilly.__proto__ || Object.getPrototypeOf(JissenOcreilly)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(JissenOcreilly, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return JissenOcreilly;
+}(_react.Component);
+
+exports.default = JissenOcreilly;
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "実用 お蔵入り",
+		"abstraction": "React Native ハンドブック for Android を執筆"
+	}
+};
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var JitsuyouOcreily = function (_Component) {
+    _inherits(JitsuyouOcreily, _Component);
+
+    function JitsuyouOcreily(props) {
+        _classCallCheck(this, JitsuyouOcreily);
+
+        var _this = _possibleConstructorReturn(this, (JitsuyouOcreily.__proto__ || Object.getPrototypeOf(JitsuyouOcreily)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(JitsuyouOcreily, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return JitsuyouOcreily;
+}(_react.Component);
+
+exports.default = JitsuyouOcreily;
+
+/***/ }),
+/* 314 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Sharetter",
+		"abstraction": "Bluetooth電波と顔認識を利用した被写検知に基づく写真共有"
+	}
+};
+
+/***/ }),
+/* 315 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var SharetterHci = function (_Component) {
+    _inherits(SharetterHci, _Component);
+
+    function SharetterHci(props) {
+        _classCallCheck(this, SharetterHci);
+
+        var _this = _possibleConstructorReturn(this, (SharetterHci.__proto__ || Object.getPrototypeOf(SharetterHci)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(SharetterHci, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return SharetterHci;
+}(_react.Component);
+
+exports.default = SharetterHci;
+
+/***/ }),
+/* 316 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Sharetter",
+		"abstraction": "Bluetooth電波を利用した被写検知の検討と試作"
+	}
+};
+
+/***/ }),
+/* 317 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "詳解 お蔵入り",
+		"abstraction": "New CLI for React Native を執筆"
+	}
+};
+
+/***/ }),
+/* 318 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var ShoukaiOcreilly = function (_Component) {
+    _inherits(ShoukaiOcreilly, _Component);
+
+    function ShoukaiOcreilly(props) {
+        _classCallCheck(this, ShoukaiOcreilly);
+
+        var _this = _possibleConstructorReturn(this, (ShoukaiOcreilly.__proto__ || Object.getPrototypeOf(ShoukaiOcreilly)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(ShoukaiOcreilly, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ShoukaiOcreilly;
+}(_react.Component);
+
+exports.default = ShoukaiOcreilly;
+
+/***/ }),
+/* 319 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "ToDoPop",
+		"abstraction": "インテリア用スケジュール管理アプリケーション"
+	}
+};
+
+/***/ }),
+/* 320 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(24);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(14);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(13);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+/*
+    * 各プロジェクトのDetailのtemplate
+    * 追加要素があれば，ProjectDetail.scssか新しくfileをつくってclass名が混ざらないように管理
+    * ProjectCardのため，jsonファイルも作るのを忘れない
+*/
+
+var ProjectDetailTemplate = function (_Component) {
+    _inherits(ProjectDetailTemplate, _Component);
+
+    function ProjectDetailTemplate(props) {
+        _classCallCheck(this, ProjectDetailTemplate);
+
+        var _this = _possibleConstructorReturn(this, (ProjectDetailTemplate.__proto__ || Object.getPrototypeOf(ProjectDetailTemplate)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(ProjectDetailTemplate, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(22)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+            var imgUrl4 = './src/images/16_9/' + projectName + '/4.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 }),
+                                    _react2.default.createElement('img', { src: imgUrl4 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/ypdfsInxk-s', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u672C\u6587'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/ypdfsInxk-s', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ProjectDetailTemplate;
+}(_react.Component);
+
+exports.default = ProjectDetailTemplate;
 
 /***/ })
 /******/ ]);

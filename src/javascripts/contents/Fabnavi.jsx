@@ -36,7 +36,7 @@ export default class Favbnavi extends Component {
             infinite: true,
             speed: 1000,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
@@ -81,8 +81,8 @@ export default class Favbnavi extends Component {
                                     　fabnaviのアプリケーションでは，機能の復旧やレイアウトの変更を行いました．Player Modeやユーザが作ったプロジェクト閲覧機能，プロジェクトの編集機能などを実装しました．このフロントエンド開発は公立はこだて未来大学の方2人と，自分，そして外部のエンジニアの方1人で行なっています．GitHubのfabnavi-appリポジトリにて随時アップデート中です．
                                 </p>
                             </div>
-                            <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowfullscreen></iframe>
+                            <div className="movie-middle">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
@@ -119,7 +119,7 @@ export default class Favbnavi extends Component {
                                 </p>
                             </div>
                             <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
