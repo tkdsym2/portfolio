@@ -56,7 +56,8 @@ export default class ShoukaiOcreilly extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    本文
+                                    モバイルアプリケーションのクロスプラットフォーム開発方法はいくつかあるが，著者は大きく2つあると考えている．それは，Xamarinでの開発とReact Nativeでの開発である．前者はMicrosoftを中心に頻繁に活動が行われているようだ．しかし，未だにXamarinで作られている有名なアプリはない気がする．一方，React NativeはFacebookやInstagramといったようなアプリに使われている（Nintendo Switch OnlineがXamarin製らしい）．また，Reactを開発したことがあれば，書き方やデータの扱い方はReact Nativeでも同じなので比較的開発しやすい環境だ．まとめると，著者は圧倒的にReact Nativeを推している．
+                                    さて，2017年3月13日 〜 3月14日にかけて，アメリカのカルフォルニア州にあるサンタクララにてReact Conference 2017（以下React Conf）が開催された．著者はお金も時間もないので残念ながら現地には行けず，日本でLive Streamingを見ていた．React ConfではReactとReact Nativeに関する新しい情報が満載だった．今回はその中で著者がもっとも注目した新しいCLI，Create React Native App について，従来のCLIと比較しながら紹介する．
                                 </p>
                             </div>
                             <div className="movie">
@@ -64,11 +65,8 @@ export default class ShoukaiOcreilly extends Component {
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="https://ocreilly.meiji-ncc.tech/TBF02/" target="_blank"> 詳解 お蔵入り</a></li>
+                                    <li><a href="https://facebook.github.io/react-native/" target="_blank">React Native</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,26 +82,21 @@ export default class ShoukaiOcreilly extends Component {
                             <div className="project-images">
                                 <Slider {...settings}>
                                     <img src={ imgUrl1 }/>
-                                    <img src={ imgUrl2 }/>
-                                    <img src={ imgUrl3 }/>
                                 </Slider>
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    モバイルアプリケーションのクロスプラットフォーム開発方法はいくつかあるが，著者は大きく2つあると考えている．それは，Xamarinでの開発とReact Nativeでの開発である．前者はMicrosoftを中心に頻繁に活動が行われているようだ．しかし，未だにXamarinで作られている有名なアプリはない気がする．一方，React NativeはFacebookやInstagramといったようなアプリに使われている（Nintendo Switch OnlineがXamarin製らしい）．また，Reactを開発したことがあれば，書き方やデータの扱い方はReact Nativeでも同じなので比較的開発しやすい環境だ．まとめると，著者は圧倒的にReact Nativeを推している．
+                                    さて，2017年3月13日 〜 3月14日にかけて，アメリカのカルフォルニア州にあるサンタクララにてReact Conference 2017（以下React Conf）が開催された．著者はお金も時間もないので残念ながら現地には行けず，日本でLive Streamingを見ていた．React ConfではReactとReact Nativeに関する新しい情報が満載だった．今回はその中で著者がもっとも注目した新しいCLI，Create React Native App について，従来のCLIと比較しながら紹介する．
                                 </p>
                             </div>
                             <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="https://ocreilly.meiji-ncc.tech/TBF02/" target="_blank"> 詳解 お蔵入り</a></li>
+                                    <li><a href="https://facebook.github.io/react-native/" target="_blank">React Native</a></li>
                                 </ul>
                             </div>
                         </div>

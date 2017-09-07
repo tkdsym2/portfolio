@@ -62,20 +62,18 @@ export default class Icc extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    本文
+                                    このシステムは撮影者だけではなく，写真に写っている人もその写真を持つことができるシステムである．撮影者が写真を撮ると，被写値（ある被写体が写り込んでいる可能性）を算出する．被写値に基づいて被写体に撮影されたことを通知し，その写真を共有する．写真に写っているのは自分であるのに，持っているのは撮影者（他人）であるという写真の帰属の矛盾を解決するためのシステム．
+                                </p>
+                                <p>
+                                    ICCで展示していた被写値のモデルは，アクリル板に文字や図を彫刻し，アクリル絵具で着色をした．
                                 </p>
                             </div>
                             <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="http://www.ntticc.or.jp/ja/archive/works/snappednotification/" target="_blank">ICC: Snapped Notification</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -97,20 +95,18 @@ export default class Icc extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    このシステムは撮影者だけではなく，写真に写っている人もその写真を持つことができるシステムである．撮影者が写真を撮ると，被写値（ある被写体が写り込んでいる可能性）を算出する．被写値に基づいて被写体に撮影されたことを通知し，その写真を共有する．写真に写っているのは自分であるのに，持っているのは撮影者（他人）であるという写真の帰属の矛盾を解決するためのシステム．
+                                </p>
+                                <p>
+                                    ICCで展示していた被写値のモデルは，アクリル板に文字や図を彫刻し，アクリル絵具で着色をした．
                                 </p>
                             </div>
                             <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="http://www.ntticc.or.jp/ja/archive/works/snappednotification/" target="_blank">ICC: Snapped Notification</a></li>
                                 </ul>
                             </div>
                         </div>

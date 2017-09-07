@@ -59,9 +59,10 @@ export default class FabnaviHakodate extends Component {
                                 </Slider>
                             </div>
                             <div className="project-description-middle">
-                                <p>
-                                    本文
-                                </p>
+                            <p>
+                                fabnaviを慶應義塾大学 湘南藤沢キャンパス(SFC)に導入するために行われたフロントエンドの開発合宿．開催地は北海道函館．公立はこだて未来大学の塚田研究室にいるフロントエンドの2人と自分を含めた3人でfabnaviのアップデートを2泊3日で行った．
+                                合宿終了から約1週間後，SFCにver 1の導入を行った．
+                            </p>
                             </div>
                             <div className="movie">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
@@ -69,11 +70,11 @@ export default class FabnaviHakodate extends Component {
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="https://github.com/fabnavi" target="_blank">fabnavi - GitHub</a></li>
+                                    <li><a href="http://fabnavi.tumblr.com/" target="_blank">fabnavi - Tumbler</a></li>
+                                    <li><a href="http://mobiquitous.com/fabnavi-e.html" target="_blank">About fabnavi</a></li>
+                                    <li><a href="https://www.fun.ac.jp/" target="_blank">公立はこだて未来大学</a></li>
+                                    <li><a href="http://www.sfc.keio.ac.jp/" target="_blank">慶應義塾大学 湘南藤沢キャンパス</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,7 +96,8 @@ export default class FabnaviHakodate extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    fabnaviを慶應義塾大学 湘南藤沢キャンパス(SFC)に導入するために行われたフロントエンドの開発合宿．開催地は北海道函館．公立はこだて未来大学の塚田研究室にいるフロントエンドの2人と自分を含めた3人でfabnaviのアップデートを2泊3日で行った．
+                                    合宿終了から約1週間後，SFCにver 1の導入を行った．
                                 </p>
                             </div>
                             <div className="movie">
@@ -104,11 +106,11 @@ export default class FabnaviHakodate extends Component {
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="https://github.com/fabnavi" target="_blank">fabnavi - GitHub</a></li>
+                                    <li><a href="http://fabnavi.tumblr.com/" target="_blank">fabnavi - Tumbler</a></li>
+                                    <li><a href="http://mobiquitous.com/fabnavi-e.html" target="_blank">About fabnavi</a></li>
+                                    <li><a href="https://www.fun.ac.jp/" target="_blank">公立はこだて未来大学</a></li>
+                                    <li><a href="http://www.sfc.keio.ac.jp/" target="_blank">慶應義塾大学 湘南藤沢キャンパス</a></li>
                                 </ul>
                             </div>
                         </div>

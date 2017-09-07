@@ -60,20 +60,21 @@ export default class Hishatsuuti extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    本文
+                                    写真は撮る人−撮られる人(物)の関係で成り立っている．写真を撮られると，自分が写った写真は，撮影した人の所有するカメラの中に保存される．
+                                    そのため，被写体となった人は自分が写っている写真であるのにも関わらず，撮影者からその写真を提供してもらわない限り，その写真を持つことはできない．
+                                    つまり，写真に写っているのは自分だが，持っているのは他人であるという所有と肖像の帰属の矛盾が生じる．
+                                    そこで本研究では，写真を撮影したら，写った人に自動的に撮影イベントを通知／写真を共有するシステムSharetterを提案する．
+                                    Sharetterでは顔画像認識とBluetoothの電波強度による距離情報を組み合わせ，被写体の写り込んでいる可能性を算出し，それを被写値として定義する．
+                                    その被写値に基づき通知し，写真の共有を行う．
+                                    <br />
+                                    WISS2016の3日目にてデモ発表．
                                 </p>
                             </div>
-                            <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
-                            </div>
+                            
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="https://www.wiss.org/WISS2016/Demo.html" target="_blank">WISS2016</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,20 +96,21 @@ export default class Hishatsuuti extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    写真は撮る人−撮られる人(物)の関係で成り立っている．写真を撮られると，自分が写った写真は，撮影した人の所有するカメラの中に保存される．
+                                    そのため，被写体となった人は自分が写っている写真であるのにも関わらず，撮影者からその写真を提供してもらわない限り，その写真を持つことはできない．
+                                    つまり，写真に写っているのは自分だが，持っているのは他人であるという所有と肖像の帰属の矛盾が生じる．
+                                    そこで本研究では，写真を撮影したら，写った人に自動的に撮影イベントを通知／写真を共有するシステムSharetterを提案する．
+                                    Sharetterでは顔画像認識とBluetoothの電波強度による距離情報を組み合わせ，被写体の写り込んでいる可能性を算出し，それを被写値として定義する．
+                                    その被写値に基づき通知し，写真の共有を行う．
+                                    <br />
+                                    WISS2016の3日目にてデモ発表．
                                 </p>
                             </div>
-                            <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
-                            </div>
+                            
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                <li><a href="https://www.wiss.org/WISS2016/Demo.html" target="_blank">WISS2016</a></li>
                                 </ul>
                             </div>
                         </div>

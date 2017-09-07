@@ -68,7 +68,11 @@ export default class ProjectDetailTemplate extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    本文
+                                    予定を管理するために，手帳やスケジュール管理システムを利用する人は多い.しかし， それらは常に表示されているものではないため，定期的に予定を確認する必要があり，かつ期限が近づいていることを自分で把握する必要がある．
+                                    <br />
+                                    また，スマートフォンやパソコンでスケジュール管理アプリやウェブサービスを利用する場合，リマインダー機能のように，期限が近くなると自分が指定した時間に通知を受け取るように設定できる．しかし，指定した時間に通知に気付ける状態でなければ意味がない．また，数分前・数時間前などに気がついても間に合わないような予定であった場合， 通知を設定する時間がわからないことが多くある.では，常に予定が視界に入ってくるようなシステム・サービスがあればいいのではないかと考えた.
+                                    <br />
+                                    そこで，私たちは ToDoPoP:予定の優先度を視覚的に表示するインテリア用スケジュール管理アプリケーションを提案する．ToDoPoPは，スケジュールを図形の大きさで表示することで，ユーザにイベントが近づいていることを知らせるインテリア用アプリケーションである．このシステムはiPadやその他タブレットPCに常に表示させておき，インテリアとして部屋に設置するのを想定している．学部2年次の講義: コンテンツメディアプログラミング実習IIにて制作．プレゼンテーション最優秀賞．
                                 </p>
                             </div>
                             <div className="movie">
@@ -77,11 +81,7 @@ export default class ProjectDetailTemplate extends Component {
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="http://www.persistent.org/memorium.html" target="_blank">Memorium: 眺めるインタフェースの提案とその試作</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,7 +103,11 @@ export default class ProjectDetailTemplate extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    予定を管理するために，手帳やスケジュール管理システムを利用する人は多い.しかし， それらは常に表示されているものではないため，定期的に予定を確認する必要があり，かつ期限が近づいていることを自分で把握する必要がある．
+                                    <br />
+                                    また，スマートフォンやパソコンでスケジュール管理アプリやウェブサービスを利用する場合，リマインダー機能のように，期限が近くなると自分が指定した時間に通知を受け取るように設定できる．しかし，指定した時間に通知に気付ける状態でなければ意味がない．また，数分前・数時間前などに気がついても間に合わないような予定であった場合， 通知を設定する時間がわからないことが多くある.では，常に予定が視界に入ってくるようなシステム・サービスがあればいいのではないかと考えた.
+                                    <br />
+                                    そこで，私たちは ToDoPoP:予定の優先度を視覚的に表示するインテリア用スケジュール管理アプリケーションを提案する．ToDoPoPは，スケジュールを図形の大きさで表示することで，ユーザにイベントが近づいていることを知らせるインテリア用アプリケーションである．このシステムはiPadやその他タブレットPCに常に表示させておき，インテリアとして部屋に設置するのを想定している．学部2年次の講義: コンテンツメディアプログラミング実習IIにて制作．プレゼンテーション最優秀賞．
                                 </p>
                             </div>
                             <div className="movie">
@@ -112,11 +116,7 @@ export default class ProjectDetailTemplate extends Component {
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
+                                    <li><a href="http://www.persistent.org/memorium.html" target="_blank">Memorium: 眺めるインタフェースの提案とその試作</a></li>
                                 </ul>
                             </div>
                         </div>

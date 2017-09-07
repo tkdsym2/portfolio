@@ -43,21 +43,6 @@ export default class FlexibleInterface extends Component {
 
         return (
             <div>
-                <Helmet>
-                    <title>Kazuma Takada Works-Ghost Creator</title>
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Ghost Creator" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/detail/ghostcreator" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
-                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="detail-page-middle">
                             <div className="project-header-middle">
@@ -72,20 +57,20 @@ export default class FlexibleInterface extends Component {
                                 </div>
                                 <div className="project-description-middle">
                                     <p>
-                                        Coming Soon ...
-                                </p>
+                                        折り紙は，折る対象が複雑であるほど折る動作や開く動作を繰り返す．しかし，テキストの多い説明書では，自分がどの工程にいるかわからなくなる．そこで，HoloLensを装着し，他者の主観視点での折る動作を再生する．その再生される動作に自分の手を重ねて，同じ動きで紙を折る．
+                                    </p>
+                                    <p>
+                                        Ghost CreatorではHoloLensとMyoを使う．HoloLensは手元の録画と再生時に使われる．Myoは紙を折っているユーザが現在どの工程にいるか（折っているか）を計測するために使われる．
+                                    </p>
                                 </div>
                                 <div className="movie">
                                 </div>
                                 <div className="relations-middle">
                                     <p><b>関連リンク</b></p>
-                                    {/* <ul>
-                                        <li><a href="" target="_blank"></a></li>
-                                        <li><a href="" target="_blank"></a></li>
-                                        <li><a href="" target="_blank"></a></li>
-                                        <li><a href="" target="_blank"></a></li>
-                                        <li><a href="" target="_blank"></a></li>
-                                    </ul> */}
+                                    <ul>
+                                        <li><a href="https://www.microsoft.com/ja-jp/store/d/microsoft-hololens-development-edition/8xf18pqz17ts" target="_blank">Microsoft HoloLens</a></li>
+                                        <li><a href="https://jp.myo.com/" target="_blank">Myo</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -104,20 +89,20 @@ export default class FlexibleInterface extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    Coming Soon ...
-                            </p>
+                                    折り紙は，折る対象が複雑であるほど折る動作や開く動作を繰り返す．しかし，テキストの多い説明書では，自分がどの工程にいるかわからなくなる．そこで，HoloLensを装着し，他者の主観視点での折る動作を再生する．その再生される動作に自分の手を重ねて，同じ動きで紙を折る．
+                                </p>
+                                <p>
+                                    Ghost CreatorではHoloLensとMyoを使う．HoloLensは手元の録画と再生時に使われる．Myoは紙を折っているユーザが現在どの工程にいるか（折っているか）を計測するために使われる．
+                                </p>
                             </div>
                             <div className="movie">
                             </div>
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
-                                {/* <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                </ul> */}
+                                <ul>
+                                    <li><a href="https://www.microsoft.com/ja-jp/store/d/microsoft-hololens-development-edition/8xf18pqz17ts" target="_blank">Microsoft HoloLens</a></li>
+                                    <li><a href="https://jp.myo.com/" target="_blank">Myo</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

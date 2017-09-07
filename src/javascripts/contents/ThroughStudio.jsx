@@ -45,21 +45,6 @@ export default class ThroughStudio extends Component {
 
         return (
             <div>
-                <Helmet>
-                    <title>Kazuma Takada Works-Through Studio</title>
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Through Studio" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/detail/throughstudio" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
-                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="detail-page-middle">
                         <div className="project-header-middle">
@@ -76,20 +61,16 @@ export default class ThroughStudio extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                日常生活において，ガラスやアクリルなどの光を透過する物質は様々な用途で使われる．例えば，外を見るための窓や鑑賞用の水槽などがある．透明度は製造段階で決まるため，ガラスやアクリル単体で後から透明度を変えることは出来ない．窓やレンズを通して見える物体や像を見えないようにするには，カーテンや蓋など光を透過しない素材で表面を覆う必要がある．しかし、表面を覆う際の制御はほとんどの場合で縦か横のどちらか一方向にしか行えないので遮光しても望まない結果になることがある。そこで，透明度を制御することで実現したインタラクティブなディスプレイThroughlyを提案する．透明度の制御には吸水性ポリマーを用いる．この物質は，水中では光を透過して，ガラスやアクリルのような振る舞いをするが，空気中にある場合は光を透過しても乱反射によって像が見えないようになる．
+                                日常生活において，ガラスやアクリルなどの光を透過する物質は様々な用途で使われる．例えば，外を見るための窓や鑑賞用の水槽などがある．透明度は製造段階で決まるため，ガラスやアクリル単体で後から透明度を変えることは出来ない．窓やレンズを通して見える物体や像を見えないようにするには，カーテンや蓋など光を透過しない素材で表面を覆う必要がある．しかし，表面を覆う際の制御はほとんどの場合で縦か横のどちらか一方向にしか行えないので遮光しても望まない結果になることがある．そこで，透明度を制御することで実現したインタラクティブなディスプレイThrough Studioを提案する．透明度の制御には吸水性ポリマーを用いる．この物質は，水中では光を透過して，ガラスやアクリルのような振る舞いをするが，空気中にある場合は光を透過しても乱反射によって像が見えないようになる．
                             </p>
                             </div>
                             <div className="movie">
                             </div>
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
-                                {/* <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                </ul> */}
+                                <ul>
+                                    <li><a href="https://youtu.be/C4i7qu7JFMk" target="_blank">未来の科学者たちへ #07 「見えないガラス」</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -110,20 +91,16 @@ export default class ThroughStudio extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                日常生活において，ガラスやアクリルなどの光を透過する物質は様々な用途で使われる．例えば，外を見るための窓や鑑賞用の水槽などがある．透明度は製造段階で決まるため，ガラスやアクリル単体で後から透明度を変えることは出来ない．窓やレンズを通して見える物体や像を見えないようにするには，カーテンや蓋など光を透過しない素材で表面を覆う必要がある．しかし、表面を覆う際の制御はほとんどの場合で縦か横のどちらか一方向にしか行えないので遮光しても望まない結果になることがある。そこで，透明度を制御することで実現したインタラクティブなディスプレイThroughlyを提案する．透明度の制御には吸水性ポリマーを用いる．この物質は，水中では光を透過して，ガラスやアクリルのような振る舞いをするが，空気中にある場合は光を透過しても乱反射によって像が見えないようになる．
+                                日常生活において，ガラスやアクリルなどの光を透過する物質は様々な用途で使われる．例えば，外を見るための窓や鑑賞用の水槽などがある．透明度は製造段階で決まるため，ガラスやアクリル単体で後から透明度を変えることは出来ない．窓やレンズを通して見える物体や像を見えないようにするには，カーテンや蓋など光を透過しない素材で表面を覆う必要がある．しかし，表面を覆う際の制御はほとんどの場合で縦か横のどちらか一方向にしか行えないので遮光しても望まない結果になることがある．そこで，透明度を制御することで実現したインタラクティブなディスプレイThrough Studioを提案する．透明度の制御には吸水性ポリマーを用いる．この物質は，水中では光を透過して，ガラスやアクリルのような振る舞いをするが，空気中にある場合は光を透過しても乱反射によって像が見えないようになる．
                             </p>
                             </div>
                             <div className="movie">
                             </div>
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
-                                {/* <ul>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                    <li><a href="" target="_blank"></a></li>
-                                </ul> */}
+                                <ul>
+                                    <li><a href="https://youtu.be/C4i7qu7JFMk" target="_blank">未来の科学者たちへ #07 「見えないガラス」</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

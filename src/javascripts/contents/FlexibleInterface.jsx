@@ -37,7 +37,7 @@ export default class FlexibleInterface extends Component {
             infinite: true,
             speed: 1000,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
@@ -46,21 +46,6 @@ export default class FlexibleInterface extends Component {
 
         return (
             <div>
-                <Helmet>
-                    <title>Kazuma Takada Works-Flexible Interfaces</title>
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Flexible Interfaces" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/detail/flexibleinterfaces" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
-                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="detail-page-middle">
                         <div className="project-header-middle">
@@ -79,12 +64,12 @@ export default class FlexibleInterface extends Component {
                             <div className="project-description-middle">
                                 <p>
                                     Coming Soon ...
-                            </p>
+                                </p>
                             </div>
                             <div className="movie">
                             </div>
                             <div className="relations-middle">
-                                <p><b>関連リンク</b></p>
+                                {/* <p><b>関連リンク</b></p> */}
                                 {/* <ul>
                                     <li><a href="" target="_blank"></a></li>
                                     <li><a href="" target="_blank"></a></li>
@@ -114,12 +99,12 @@ export default class FlexibleInterface extends Component {
                             <div className="project-description">
                                 <p>
                                     Coming Soon ...
-                            </p>
+                                </p>
                             </div>
                             <div className="movie">
                             </div>
                             <div className="relations">
-                                <p><b>関連リンク</b></p>
+                                {/* <p><b>関連リンク</b></p> */}
                                 {/* <ul>
                                     <li><a href="" target="_blank"></a></li>
                                     <li><a href="" target="_blank"></a></li>

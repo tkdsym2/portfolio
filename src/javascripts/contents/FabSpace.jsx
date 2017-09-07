@@ -62,7 +62,7 @@ export default class FabSpace extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    本文
+                                    Comming Soon...
                                 </p>
                             </div>
                             <div className="movie">
@@ -97,11 +97,10 @@ export default class FabSpace extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    Comming Soon...
                                 </p>
                             </div>
                             <div className="movie">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations">
                                 <p><b>関連リンク</b></p>

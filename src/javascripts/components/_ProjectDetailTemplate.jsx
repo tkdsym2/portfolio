@@ -66,7 +66,7 @@ export default class ProjectDetailTemplate extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    本文
+                                    Comming Soon...
                                 </p>
                             </div>
                             <div className="movie">
@@ -100,7 +100,7 @@ export default class ProjectDetailTemplate extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    本文
+                                    Comming Soon...
                                 </p>
                             </div>
                             <div className="movie">

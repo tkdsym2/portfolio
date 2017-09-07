@@ -45,21 +45,6 @@ export default class Favbnavi extends Component {
 
         return (
             <div>
-                <Helmet>
-                    <title>Kazuma Takada Works-Fabnavi in SFC</title>
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Fabnavi in SFC" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/detail/fabnavi" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
-                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="detail-page-middle">
                         <div className="project-header-middle">
@@ -76,9 +61,10 @@ export default class Favbnavi extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    　SFCのメディアセンターに3月末から設置されているfabnaviの大幅にアップデートしました．fabnaviのプロジェクタを支える台は，より安定させるためにアクリル板で再設計されました．また，上部のミスミアルミフレームに取り付けられているiPhoneの固定具も動かしやすいように再設計されています．この２つは公立はこだて未来大学の方による設計です．
-                                    <br />
-                                    　fabnaviのアプリケーションでは，機能の復旧やレイアウトの変更を行いました．Player Modeやユーザが作ったプロジェクト閲覧機能，プロジェクトの編集機能などを実装しました．このフロントエンド開発は公立はこだて未来大学の方2人と，自分，そして外部のエンジニアの方1人で行なっています．GitHubのfabnavi-appリポジトリにて随時アップデート中です．
+                                    SFCのメディアセンターに3月末から設置されているfabnaviの大幅アップデートをした．fabnaviのプロジェクタを支える台は，より安定させるためにアクリル板で再設計されている．また，上部のミスミアルミフレームに取り付けられているiPhoneの固定具も動かしやすいように再設計されている．この２つは公立はこだて未来大学の方による設計である．
+                                </p>
+                                <p>
+                                    fabnaviのアプリケーションでは，機能の復旧やレイアウトの変更を行った．Player Modeやユーザが作ったプロジェクト閲覧機能，プロジェクトの編集機能などを実装．このフロントエンド開発は公立はこだて未来大学の方2人と，自分，そして外部のエンジニアの方1人で行なっている．GitHubのfabnavi-appリポジトリにて随時アップデート中．
                                 </p>
                             </div>
                             <div className="movie-middle">
@@ -87,7 +73,7 @@ export default class Favbnavi extends Component {
                             <div className="relations-middle">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="https://github.com/fabnavi" target="_blank">GitHub</a></li>
+                                    <li><a href="https://github.com/fabnavi" target="_blank">fabnavi - GitHub</a></li>
                                     <li><a href="http://fabnavi.tumblr.com/" target="_blank">fabnavi - Tumbler</a></li>
                                     <li><a href="http://mobiquitous.com/fabnavi-e.html" target="_blank">About fabnavi</a></li>
                                     <li><a href="https://www.fun.ac.jp/" target="_blank">公立はこだて未来大学</a></li>
@@ -113,9 +99,10 @@ export default class Favbnavi extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    　SFCのメディアセンターに3月末から設置されているfabnaviの大幅にアップデートしました．fabnaviのプロジェクタを支える台は，より安定させるためにアクリル板で再設計されました．また，上部のミスミアルミフレームに取り付けられているiPhoneの固定具も動かしやすいように再設計されています．この２つは公立はこだて未来大学の方による設計です．
-                                    <br />
-                                    　fabnaviのアプリケーションでは，機能の復旧やレイアウトの変更を行いました．Player Modeやユーザが作ったプロジェクト閲覧機能，プロジェクトの編集機能などを実装しました．このフロントエンド開発は公立はこだて未来大学の方2人と，自分，そして外部のエンジニアの方1人で行なっています．GitHubのfabnavi-appリポジトリにて随時アップデート中です．
+                                    SFCのメディアセンターに3月末から設置されているfabnaviの大幅アップデートをした．fabnaviのプロジェクタを支える台は，より安定させるためにアクリル板で再設計されている．また，上部のミスミアルミフレームに取り付けられているiPhoneの固定具も動かしやすいように再設計されている．この２つは公立はこだて未来大学の方による設計である．
+                                </p>
+                                <p>
+                                    fabnaviのアプリケーションでは，機能の復旧やレイアウトの変更を行った．Player Modeやユーザが作ったプロジェクト閲覧機能，プロジェクトの編集機能などを実装．このフロントエンド開発は公立はこだて未来大学の方2人と，自分，そして外部のエンジニアの方1人で行なっている．GitHubのfabnavi-appリポジトリにて随時アップデート中．
                                 </p>
                             </div>
                             <div className="movie">
@@ -124,7 +111,7 @@ export default class Favbnavi extends Component {
                             <div className="relations">
                                 <p><b>関連リンク</b></p>
                                 <ul>
-                                    <li><a href="https://github.com/fabnavi" target="_blank">GitHub</a></li>
+                                    <li><a href="https://github.com/fabnavi" target="_blank">fabnavi - GitHub</a></li>
                                     <li><a href="http://fabnavi.tumblr.com/" target="_blank">fabnavi - Tumbler</a></li>
                                     <li><a href="http://mobiquitous.com/fabnavi-e.html" target="_blank">About fabnavi</a></li>
                                     <li><a href="https://www.fun.ac.jp/" target="_blank">公立はこだて未来大学</a></li>
