@@ -36,7 +36,7 @@ export default class BookRoof extends Component {
             infinite: true,
             speed: 1000,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
@@ -45,21 +45,6 @@ export default class BookRoof extends Component {
 
         return (
             <div>
-                <Helmet>
-                    <title>Kazuma Takada Works - Book Roof</title>
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Book Roof" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/detail/bookroof" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
-                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="detail-page-middle">
                         <div className="project-header-middle">
@@ -76,14 +61,19 @@ export default class BookRoof extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    Coming Soon ...
+                                    Book Roofは本を伏せて置く専用のブックスタンドである．途中まで読んでいたページは伏せて置くことで保持され，Book Roofの上に置くことで「屋根」となり，見た目を損なわない．
+                                    また，Book Roofは読書灯の役割もある．読書を中断するとライトは消え，読書を再開すると周囲の暗さに応じてライトが点灯する．「本を伏せて置く」という無意識の行為に着目している．
+                                </p>
+                                <p>
+                                    Book Roofはレーザーカッターで切り出されたアクリル板で作られている．レーザーカッターを使うことで，Book Roofは様々な本の大きさ（文庫本，新書など）に対応するブックスタンドになる．また，一部が壊れても全て買い直す必要はなく，壊れた部分のみをレーザーカッターで切り出し，再度組み立てればいい設計となっている．
+                                    学部3年次の講義: インタラクションデザインでの課題制作物．
                                 </p>
                             </div>
                             <div className="movie-middle">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QmCKWIE7J-o" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations-middle">
-                                <p><b>関連リンク</b></p>
+                                {/* <p><b>関連リンク</b></p> */}
                                     {/* <ul>
                                         <li><a href="#" target="_blank"></a></li>
                                         <li><a href="#" target="_blank"></a></li>
@@ -111,14 +101,19 @@ export default class BookRoof extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    Coming Soon ...
+                                    Book Roofは本を伏せて置く専用のブックスタンドである．途中まで読んでいたページは伏せて置くことで保持され，Book Roofの上に置くことで「屋根」となり，見た目を損なわない．
+                                    また，Book Roofは読書灯の役割もある．読書を中断するとライトは消え，読書を再開すると周囲の暗さに応じてライトが点灯する．「本を伏せて置く」という無意識の行為に着目している．
+                                </p>
+                                <p>
+                                    Book Roofはレーザーカッターで切り出されたアクリル板で作られている．レーザーカッターを使うことで，Book Roofは様々な本の大きさ（文庫本，新書など）に対応するブックスタンドになる．また，一部が壊れても全て買い直す必要はなく，壊れた部分のみをレーザーカッターで切り出し，再度組み立てればいい設計となっている．
+                                    学部3年次の講義: インタラクションデザインでの課題制作物．
                                 </p>
                             </div>
                             <div className="movie">
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/QmCKWIE7J-o" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="640" height="360" src="https://www.youtube.com/embed/QmCKWIE7J-o" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="relations">
-                                <p><b>関連リンク</b></p>
+                                {/* <p><b>関連リンク</b></p> */}
                                 {/* <ul>
                                     <li><a href="" target="_blank"></a></li>
                                     <li><a href="" target="_blank"></a></li>

@@ -2678,11 +2678,22 @@ function localstorage() {
 
 var map = {
 	"./bookroof.json": 303,
+	"./fabdesk.json": 304,
 	"./fabnavi.json": 305,
+	"./fabnavihakodate.json": 306,
+	"./fabspace.json": 307,
 	"./flexibleinterface.json": 308,
 	"./ghostcreator.json": 309,
+	"./hishatsuuti.json": 310,
+	"./icc.json": 311,
+	"./jissenocreilly.json": 312,
+	"./jitsuyouocreilly.json": 313,
+	"./sharetter.json": 314,
+	"./sharetterhci.json": 315,
 	"./shogg.json": 316,
+	"./shoukaiocreilly.json": 317,
 	"./throughstudio.json": 318,
+	"./todopop.json": 319,
 	"./unpresence.json": 320
 };
 function webpackContext(req) {
@@ -15988,6 +15999,46 @@ var _GhostCreator = __webpack_require__(122);
 
 var _GhostCreator2 = _interopRequireDefault(_GhostCreator);
 
+var _FabDesk = __webpack_require__(117);
+
+var _FabDesk2 = _interopRequireDefault(_FabDesk);
+
+var _FabnaviHakodate = __webpack_require__(120);
+
+var _FabnaviHakodate2 = _interopRequireDefault(_FabnaviHakodate);
+
+var _FabSpace = __webpack_require__(118);
+
+var _FabSpace2 = _interopRequireDefault(_FabSpace);
+
+var _Hishatsuuti = __webpack_require__(123);
+
+var _Hishatsuuti2 = _interopRequireDefault(_Hishatsuuti);
+
+var _Icc = __webpack_require__(124);
+
+var _Icc2 = _interopRequireDefault(_Icc);
+
+var _JissenOcreilly = __webpack_require__(125);
+
+var _JissenOcreilly2 = _interopRequireDefault(_JissenOcreilly);
+
+var _JitsuyouOcreilly = __webpack_require__(126);
+
+var _JitsuyouOcreilly2 = _interopRequireDefault(_JitsuyouOcreilly);
+
+var _SharetterHci = __webpack_require__(127);
+
+var _SharetterHci2 = _interopRequireDefault(_SharetterHci);
+
+var _ShoukaiOcreilly = __webpack_require__(129);
+
+var _ShoukaiOcreilly2 = _interopRequireDefault(_ShoukaiOcreilly);
+
+var _ToDoPop = __webpack_require__(131);
+
+var _ToDoPop2 = _interopRequireDefault(_ToDoPop);
+
 __webpack_require__(296);
 
 __webpack_require__(297);
@@ -16047,7 +16098,17 @@ var App = function (_Component) {
                             _react2.default.createElement(_reactRouterDom.Route, { component: _Unpresence2.default, path: '/detail/unpresence' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _ThroughStudio2.default, path: '/detail/throughstudio' }),
                             _react2.default.createElement(_reactRouterDom.Route, { component: _FlexibleInterface2.default, path: '/detail/flexibleinterface' }),
-                            _react2.default.createElement(_reactRouterDom.Route, { component: _GhostCreator2.default, path: '/detail/ghostcreator' })
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _GhostCreator2.default, path: '/detail/ghostcreator' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _FabDesk2.default, path: '/detail/fabdesk' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _FabnaviHakodate2.default, path: '/detail/fabnavihakodate' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _FabSpace2.default, path: '/detail/fabspace' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Hishatsuuti2.default, path: '/detail/hishatsuuti' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _Icc2.default, path: '/detail/icc' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _JissenOcreilly2.default, path: '/detail/jissenocreilly' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _JitsuyouOcreilly2.default, path: '/detail/jitsuyouocreilly' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _SharetterHci2.default, path: '/detail/sharetterhci' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _ShoukaiOcreilly2.default, path: '/detail/shoukaiocreilly' }),
+                            _react2.default.createElement(_reactRouterDom.Route, { component: _ToDoPop2.default, path: '/detail/todopop' })
                         )
                     )
                 )
@@ -16387,7 +16448,7 @@ var BookRoof = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -16397,27 +16458,6 @@ var BookRoof = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works - Book Roof'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Book Roof' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/bookroof' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
-                ),
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -16458,13 +16498,222 @@ var BookRoof = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    'Coming Soon ...'
+                                    'Book Roof\u306F\u672C\u3092\u4F0F\u305B\u3066\u7F6E\u304F\u5C02\u7528\u306E\u30D6\u30C3\u30AF\u30B9\u30BF\u30F3\u30C9\u3067\u3042\u308B\uFF0E\u9014\u4E2D\u307E\u3067\u8AAD\u3093\u3067\u3044\u305F\u30DA\u30FC\u30B8\u306F\u4F0F\u305B\u3066\u7F6E\u304F\u3053\u3068\u3067\u4FDD\u6301\u3055\u308C\uFF0CBook Roof\u306E\u4E0A\u306B\u7F6E\u304F\u3053\u3068\u3067\u300C\u5C4B\u6839\u300D\u3068\u306A\u308A\uFF0C\u898B\u305F\u76EE\u3092\u640D\u306A\u308F\u306A\u3044\uFF0E \u307E\u305F\uFF0CBook Roof\u306F\u8AAD\u66F8\u706F\u306E\u5F79\u5272\u3082\u3042\u308B\uFF0E\u8AAD\u66F8\u3092\u4E2D\u65AD\u3059\u308B\u3068\u30E9\u30A4\u30C8\u306F\u6D88\u3048\uFF0C\u8AAD\u66F8\u3092\u518D\u958B\u3059\u308B\u3068\u5468\u56F2\u306E\u6697\u3055\u306B\u5FDC\u3058\u3066\u30E9\u30A4\u30C8\u304C\u70B9\u706F\u3059\u308B\uFF0E\u300C\u672C\u3092\u4F0F\u305B\u3066\u7F6E\u304F\u300D\u3068\u3044\u3046\u7121\u610F\u8B58\u306E\u884C\u70BA\u306B\u7740\u76EE\u3057\u3066\u3044\u308B\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Book Roof\u306F\u30EC\u30FC\u30B6\u30FC\u30AB\u30C3\u30BF\u30FC\u3067\u5207\u308A\u51FA\u3055\u308C\u305F\u30A2\u30AF\u30EA\u30EB\u677F\u3067\u4F5C\u3089\u308C\u3066\u3044\u308B\uFF0E\u30EC\u30FC\u30B6\u30FC\u30AB\u30C3\u30BF\u30FC\u3092\u4F7F\u3046\u3053\u3068\u3067\uFF0CBook Roof\u306F\u69D8\u3005\u306A\u672C\u306E\u5927\u304D\u3055\uFF08\u6587\u5EAB\u672C\uFF0C\u65B0\u66F8\u306A\u3069\uFF09\u306B\u5BFE\u5FDC\u3059\u308B\u30D6\u30C3\u30AF\u30B9\u30BF\u30F3\u30C9\u306B\u306A\u308B\uFF0E\u307E\u305F\uFF0C\u4E00\u90E8\u304C\u58CA\u308C\u3066\u3082\u5168\u3066\u8CB7\u3044\u76F4\u3059\u5FC5\u8981\u306F\u306A\u304F\uFF0C\u58CA\u308C\u305F\u90E8\u5206\u306E\u307F\u3092\u30EC\u30FC\u30B6\u30FC\u30AB\u30C3\u30BF\u30FC\u3067\u5207\u308A\u51FA\u3057\uFF0C\u518D\u5EA6\u7D44\u307F\u7ACB\u3066\u308C\u3070\u3044\u3044\u8A2D\u8A08\u3068\u306A\u3063\u3066\u3044\u308B\uFF0E \u5B66\u90E83\u5E74\u6B21\u306E\u8B1B\u7FA9: \u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u30C7\u30B6\u30A4\u30F3\u3067\u306E\u8AB2\u984C\u5236\u4F5C\u7269\uFF0E'
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'movie-middle' },
                                 _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/QmCKWIE7J-o', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement('div', { className: 'relations-middle' })
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Book Roof\u306F\u672C\u3092\u4F0F\u305B\u3066\u7F6E\u304F\u5C02\u7528\u306E\u30D6\u30C3\u30AF\u30B9\u30BF\u30F3\u30C9\u3067\u3042\u308B\uFF0E\u9014\u4E2D\u307E\u3067\u8AAD\u3093\u3067\u3044\u305F\u30DA\u30FC\u30B8\u306F\u4F0F\u305B\u3066\u7F6E\u304F\u3053\u3068\u3067\u4FDD\u6301\u3055\u308C\uFF0CBook Roof\u306E\u4E0A\u306B\u7F6E\u304F\u3053\u3068\u3067\u300C\u5C4B\u6839\u300D\u3068\u306A\u308A\uFF0C\u898B\u305F\u76EE\u3092\u640D\u306A\u308F\u306A\u3044\uFF0E \u307E\u305F\uFF0CBook Roof\u306F\u8AAD\u66F8\u706F\u306E\u5F79\u5272\u3082\u3042\u308B\uFF0E\u8AAD\u66F8\u3092\u4E2D\u65AD\u3059\u308B\u3068\u30E9\u30A4\u30C8\u306F\u6D88\u3048\uFF0C\u8AAD\u66F8\u3092\u518D\u958B\u3059\u308B\u3068\u5468\u56F2\u306E\u6697\u3055\u306B\u5FDC\u3058\u3066\u30E9\u30A4\u30C8\u304C\u70B9\u706F\u3059\u308B\uFF0E\u300C\u672C\u3092\u4F0F\u305B\u3066\u7F6E\u304F\u300D\u3068\u3044\u3046\u7121\u610F\u8B58\u306E\u884C\u70BA\u306B\u7740\u76EE\u3057\u3066\u3044\u308B\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Book Roof\u306F\u30EC\u30FC\u30B6\u30FC\u30AB\u30C3\u30BF\u30FC\u3067\u5207\u308A\u51FA\u3055\u308C\u305F\u30A2\u30AF\u30EA\u30EB\u677F\u3067\u4F5C\u3089\u308C\u3066\u3044\u308B\uFF0E\u30EC\u30FC\u30B6\u30FC\u30AB\u30C3\u30BF\u30FC\u3092\u4F7F\u3046\u3053\u3068\u3067\uFF0CBook Roof\u306F\u69D8\u3005\u306A\u672C\u306E\u5927\u304D\u3055\uFF08\u6587\u5EAB\u672C\uFF0C\u65B0\u66F8\u306A\u3069\uFF09\u306B\u5BFE\u5FDC\u3059\u308B\u30D6\u30C3\u30AF\u30B9\u30BF\u30F3\u30C9\u306B\u306A\u308B\uFF0E\u307E\u305F\uFF0C\u4E00\u90E8\u304C\u58CA\u308C\u3066\u3082\u5168\u3066\u8CB7\u3044\u76F4\u3059\u5FC5\u8981\u306F\u306A\u304F\uFF0C\u58CA\u308C\u305F\u90E8\u5206\u306E\u307F\u3092\u30EC\u30FC\u30B6\u30FC\u30AB\u30C3\u30BF\u30FC\u3067\u5207\u308A\u51FA\u3057\uFF0C\u518D\u5EA6\u7D44\u307F\u7ACB\u3066\u308C\u3070\u3044\u3044\u8A2D\u8A08\u3068\u306A\u3063\u3066\u3044\u308B\uFF0E \u5B66\u90E83\u5E74\u6B21\u306E\u8B1B\u7FA9: \u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u30C7\u30B6\u30A4\u30F3\u3067\u306E\u8AB2\u984C\u5236\u4F5C\u7269\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '640', height: '360', src: 'https://www.youtube.com/embed/QmCKWIE7J-o', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement('div', { className: 'relations' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return BookRoof;
+}(_react.Component);
+
+exports.default = BookRoof;
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var FabDesk = function (_Component) {
+    _inherits(FabDesk, _Component);
+
+    function FabDesk(props) {
+        _classCallCheck(this, FabDesk);
+
+        var _this = _possibleConstructorReturn(this, (FabDesk.__proto__ || Object.getPrototypeOf(FabDesk)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(FabDesk, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -16476,6 +16725,315 @@ var BookRoof = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FabDesk;
+}(_react.Component);
+
+exports.default = FabDesk;
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var FabSpace = function (_Component) {
+    _inherits(FabSpace, _Component);
+
+    function FabSpace(props) {
+        _classCallCheck(this, FabSpace);
+
+        var _this = _possibleConstructorReturn(this, (FabSpace.__proto__ || Object.getPrototypeOf(FabSpace)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(FabSpace, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+            var imgUrl4 = './src/images/16_9/' + projectName + '/4.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 }),
+                                    _react2.default.createElement('img', { src: imgUrl4 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
                                     )
                                 )
                             )
@@ -16522,14 +17080,10 @@ var BookRoof = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    'Coming Soon ...'
+                                    'Comming Soon...'
                                 )
                             ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'movie' },
-                                _react2.default.createElement('iframe', { width: '640', height: '360', src: 'https://www.youtube.com/embed/QmCKWIE7J-o', frameBorder: '0', allowFullScreen: true })
-                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'relations' },
@@ -16541,6 +17095,35 @@ var BookRoof = function (_Component) {
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
                                     )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
                                 )
                             )
                         )
@@ -16550,14 +17133,12 @@ var BookRoof = function (_Component) {
         }
     }]);
 
-    return BookRoof;
+    return FabSpace;
 }(_react.Component);
 
-exports.default = BookRoof;
+exports.default = FabSpace;
 
 /***/ }),
-/* 117 */,
-/* 118 */,
 /* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16637,7 +17218,7 @@ var Favbnavi = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -16647,27 +17228,6 @@ var Favbnavi = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works-Fabnavi in SFC'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Fabnavi in SFC' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/fabnavi' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
-                ),
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -16708,15 +17268,18 @@ var Favbnavi = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    '\u3000SFC\u306E\u30E1\u30C7\u30A3\u30A2\u30BB\u30F3\u30BF\u30FC\u306B3\u6708\u672B\u304B\u3089\u8A2D\u7F6E\u3055\u308C\u3066\u3044\u308Bfabnavi\u306E\u5927\u5E45\u306B\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3057\u307E\u3057\u305F\uFF0Efabnavi\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30BF\u3092\u652F\u3048\u308B\u53F0\u306F\uFF0C\u3088\u308A\u5B89\u5B9A\u3055\u305B\u308B\u305F\u3081\u306B\u30A2\u30AF\u30EA\u30EB\u677F\u3067\u518D\u8A2D\u8A08\u3055\u308C\u307E\u3057\u305F\uFF0E\u307E\u305F\uFF0C\u4E0A\u90E8\u306E\u30DF\u30B9\u30DF\u30A2\u30EB\u30DF\u30D5\u30EC\u30FC\u30E0\u306B\u53D6\u308A\u4ED8\u3051\u3089\u308C\u3066\u3044\u308BiPhone\u306E\u56FA\u5B9A\u5177\u3082\u52D5\u304B\u3057\u3084\u3059\u3044\u3088\u3046\u306B\u518D\u8A2D\u8A08\u3055\u308C\u3066\u3044\u307E\u3059\uFF0E\u3053\u306E\uFF12\u3064\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B9\u306B\u3088\u308B\u8A2D\u8A08\u3067\u3059\uFF0E',
-                                    _react2.default.createElement('br', null),
-                                    '\u3000fabnavi\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3067\u306F\uFF0C\u6A5F\u80FD\u306E\u5FA9\u65E7\u3084\u30EC\u30A4\u30A2\u30A6\u30C8\u306E\u5909\u66F4\u3092\u884C\u3044\u307E\u3057\u305F\uFF0EPlayer Mode\u3084\u30E6\u30FC\u30B6\u304C\u4F5C\u3063\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u95B2\u89A7\u6A5F\u80FD\uFF0C\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u7DE8\u96C6\u6A5F\u80FD\u306A\u3069\u3092\u5B9F\u88C5\u3057\u307E\u3057\u305F\uFF0E\u3053\u306E\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u958B\u767A\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B92\u4EBA\u3068\uFF0C\u81EA\u5206\uFF0C\u305D\u3057\u3066\u5916\u90E8\u306E\u30A8\u30F3\u30B8\u30CB\u30A2\u306E\u65B91\u4EBA\u3067\u884C\u306A\u3063\u3066\u3044\u307E\u3059\uFF0EGitHub\u306Efabnavi-app\u30EA\u30DD\u30B8\u30C8\u30EA\u306B\u3066\u968F\u6642\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u4E2D\u3067\u3059\uFF0E'
+                                    'SFC\u306E\u30E1\u30C7\u30A3\u30A2\u30BB\u30F3\u30BF\u30FC\u306B3\u6708\u672B\u304B\u3089\u8A2D\u7F6E\u3055\u308C\u3066\u3044\u308Bfabnavi\u306E\u5927\u5E45\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u3057\u305F\uFF0Efabnavi\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30BF\u3092\u652F\u3048\u308B\u53F0\u306F\uFF0C\u3088\u308A\u5B89\u5B9A\u3055\u305B\u308B\u305F\u3081\u306B\u30A2\u30AF\u30EA\u30EB\u677F\u3067\u518D\u8A2D\u8A08\u3055\u308C\u3066\u3044\u308B\uFF0E\u307E\u305F\uFF0C\u4E0A\u90E8\u306E\u30DF\u30B9\u30DF\u30A2\u30EB\u30DF\u30D5\u30EC\u30FC\u30E0\u306B\u53D6\u308A\u4ED8\u3051\u3089\u308C\u3066\u3044\u308BiPhone\u306E\u56FA\u5B9A\u5177\u3082\u52D5\u304B\u3057\u3084\u3059\u3044\u3088\u3046\u306B\u518D\u8A2D\u8A08\u3055\u308C\u3066\u3044\u308B\uFF0E\u3053\u306E\uFF12\u3064\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B9\u306B\u3088\u308B\u8A2D\u8A08\u3067\u3042\u308B\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'fabnavi\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3067\u306F\uFF0C\u6A5F\u80FD\u306E\u5FA9\u65E7\u3084\u30EC\u30A4\u30A2\u30A6\u30C8\u306E\u5909\u66F4\u3092\u884C\u3063\u305F\uFF0EPlayer Mode\u3084\u30E6\u30FC\u30B6\u304C\u4F5C\u3063\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u95B2\u89A7\u6A5F\u80FD\uFF0C\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u7DE8\u96C6\u6A5F\u80FD\u306A\u3069\u3092\u5B9F\u88C5\uFF0E\u3053\u306E\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u958B\u767A\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B92\u4EBA\u3068\uFF0C\u81EA\u5206\uFF0C\u305D\u3057\u3066\u5916\u90E8\u306E\u30A8\u30F3\u30B8\u30CB\u30A2\u306E\u65B91\u4EBA\u3067\u884C\u306A\u3063\u3066\u3044\u308B\uFF0EGitHub\u306Efabnavi-app\u30EA\u30DD\u30B8\u30C8\u30EA\u306B\u3066\u968F\u6642\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u4E2D\uFF0E'
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'movie' },
-                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowfullscreen: true })
+                                { className: 'movie-middle' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -16739,7 +17302,7 @@ var Favbnavi = function (_Component) {
                                         _react2.default.createElement(
                                             'a',
                                             { href: 'https://github.com/fabnavi', target: '_blank' },
-                                            'GitHub'
+                                            'fabnavi - GitHub'
                                         )
                                     ),
                                     _react2.default.createElement(
@@ -16823,15 +17386,18 @@ var Favbnavi = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    '\u3000SFC\u306E\u30E1\u30C7\u30A3\u30A2\u30BB\u30F3\u30BF\u30FC\u306B3\u6708\u672B\u304B\u3089\u8A2D\u7F6E\u3055\u308C\u3066\u3044\u308Bfabnavi\u306E\u5927\u5E45\u306B\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3057\u307E\u3057\u305F\uFF0Efabnavi\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30BF\u3092\u652F\u3048\u308B\u53F0\u306F\uFF0C\u3088\u308A\u5B89\u5B9A\u3055\u305B\u308B\u305F\u3081\u306B\u30A2\u30AF\u30EA\u30EB\u677F\u3067\u518D\u8A2D\u8A08\u3055\u308C\u307E\u3057\u305F\uFF0E\u307E\u305F\uFF0C\u4E0A\u90E8\u306E\u30DF\u30B9\u30DF\u30A2\u30EB\u30DF\u30D5\u30EC\u30FC\u30E0\u306B\u53D6\u308A\u4ED8\u3051\u3089\u308C\u3066\u3044\u308BiPhone\u306E\u56FA\u5B9A\u5177\u3082\u52D5\u304B\u3057\u3084\u3059\u3044\u3088\u3046\u306B\u518D\u8A2D\u8A08\u3055\u308C\u3066\u3044\u307E\u3059\uFF0E\u3053\u306E\uFF12\u3064\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B9\u306B\u3088\u308B\u8A2D\u8A08\u3067\u3059\uFF0E',
-                                    _react2.default.createElement('br', null),
-                                    '\u3000fabnavi\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3067\u306F\uFF0C\u6A5F\u80FD\u306E\u5FA9\u65E7\u3084\u30EC\u30A4\u30A2\u30A6\u30C8\u306E\u5909\u66F4\u3092\u884C\u3044\u307E\u3057\u305F\uFF0EPlayer Mode\u3084\u30E6\u30FC\u30B6\u304C\u4F5C\u3063\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u95B2\u89A7\u6A5F\u80FD\uFF0C\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u7DE8\u96C6\u6A5F\u80FD\u306A\u3069\u3092\u5B9F\u88C5\u3057\u307E\u3057\u305F\uFF0E\u3053\u306E\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u958B\u767A\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B92\u4EBA\u3068\uFF0C\u81EA\u5206\uFF0C\u305D\u3057\u3066\u5916\u90E8\u306E\u30A8\u30F3\u30B8\u30CB\u30A2\u306E\u65B91\u4EBA\u3067\u884C\u306A\u3063\u3066\u3044\u307E\u3059\uFF0EGitHub\u306Efabnavi-app\u30EA\u30DD\u30B8\u30C8\u30EA\u306B\u3066\u968F\u6642\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u4E2D\u3067\u3059\uFF0E'
+                                    'SFC\u306E\u30E1\u30C7\u30A3\u30A2\u30BB\u30F3\u30BF\u30FC\u306B3\u6708\u672B\u304B\u3089\u8A2D\u7F6E\u3055\u308C\u3066\u3044\u308Bfabnavi\u306E\u5927\u5E45\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u3057\u305F\uFF0Efabnavi\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30BF\u3092\u652F\u3048\u308B\u53F0\u306F\uFF0C\u3088\u308A\u5B89\u5B9A\u3055\u305B\u308B\u305F\u3081\u306B\u30A2\u30AF\u30EA\u30EB\u677F\u3067\u518D\u8A2D\u8A08\u3055\u308C\u3066\u3044\u308B\uFF0E\u307E\u305F\uFF0C\u4E0A\u90E8\u306E\u30DF\u30B9\u30DF\u30A2\u30EB\u30DF\u30D5\u30EC\u30FC\u30E0\u306B\u53D6\u308A\u4ED8\u3051\u3089\u308C\u3066\u3044\u308BiPhone\u306E\u56FA\u5B9A\u5177\u3082\u52D5\u304B\u3057\u3084\u3059\u3044\u3088\u3046\u306B\u518D\u8A2D\u8A08\u3055\u308C\u3066\u3044\u308B\uFF0E\u3053\u306E\uFF12\u3064\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B9\u306B\u3088\u308B\u8A2D\u8A08\u3067\u3042\u308B\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'fabnavi\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3067\u306F\uFF0C\u6A5F\u80FD\u306E\u5FA9\u65E7\u3084\u30EC\u30A4\u30A2\u30A6\u30C8\u306E\u5909\u66F4\u3092\u884C\u3063\u305F\uFF0EPlayer Mode\u3084\u30E6\u30FC\u30B6\u304C\u4F5C\u3063\u305F\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u95B2\u89A7\u6A5F\u80FD\uFF0C\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u7DE8\u96C6\u6A5F\u80FD\u306A\u3069\u3092\u5B9F\u88C5\uFF0E\u3053\u306E\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u958B\u767A\u306F\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u65B92\u4EBA\u3068\uFF0C\u81EA\u5206\uFF0C\u305D\u3057\u3066\u5916\u90E8\u306E\u30A8\u30F3\u30B8\u30CB\u30A2\u306E\u65B91\u4EBA\u3067\u884C\u306A\u3063\u3066\u3044\u308B\uFF0EGitHub\u306Efabnavi-app\u30EA\u30DD\u30B8\u30C8\u30EA\u306B\u3066\u968F\u6642\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u4E2D\uFF0E'
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'movie' },
-                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowfullscreen: true })
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
                             ),
                             _react2.default.createElement(
                                 'div',
@@ -16854,7 +17420,7 @@ var Favbnavi = function (_Component) {
                                         _react2.default.createElement(
                                             'a',
                                             { href: 'https://github.com/fabnavi', target: '_blank' },
-                                            'GitHub'
+                                            'fabnavi - GitHub'
                                         )
                                     ),
                                     _react2.default.createElement(
@@ -16908,7 +17474,329 @@ var Favbnavi = function (_Component) {
 exports.default = Favbnavi;
 
 /***/ }),
-/* 120 */,
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var FabnaviHakodate = function (_Component) {
+    _inherits(FabnaviHakodate, _Component);
+
+    function FabnaviHakodate(props) {
+        _classCallCheck(this, FabnaviHakodate);
+
+        var _this = _possibleConstructorReturn(this, (FabnaviHakodate.__proto__ || Object.getPrototypeOf(FabnaviHakodate)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(FabnaviHakodate, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'fabnavi\u3092\u6176\u61C9\u7FA9\u587E\u5927\u5B66 \u6E58\u5357\u85E4\u6CA2\u30AD\u30E3\u30F3\u30D1\u30B9(SFC)\u306B\u5C0E\u5165\u3059\u308B\u305F\u3081\u306B\u884C\u308F\u308C\u305F\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u306E\u958B\u767A\u5408\u5BBF\uFF0E\u958B\u50AC\u5730\u306F\u5317\u6D77\u9053\u51FD\u9928\uFF0E\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u585A\u7530\u7814\u7A76\u5BA4\u306B\u3044\u308B\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u306E2\u4EBA\u3068\u81EA\u5206\u3092\u542B\u3081\u305F3\u4EBA\u3067fabnavi\u306E\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u30922\u6CCA3\u65E5\u3067\u884C\u3063\u305F\uFF0E \u5408\u5BBF\u7D42\u4E86\u304B\u3089\u7D041\u9031\u9593\u5F8C\uFF0CSFC\u306Bver 1\u306E\u5C0E\u5165\u3092\u884C\u3063\u305F\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://github.com/fabnavi', target: '_blank' },
+                                            'fabnavi - GitHub'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://fabnavi.tumblr.com/', target: '_blank' },
+                                            'fabnavi - Tumbler'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://mobiquitous.com/fabnavi-e.html', target: '_blank' },
+                                            'About fabnavi'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.fun.ac.jp/', target: '_blank' },
+                                            '\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.sfc.keio.ac.jp/', target: '_blank' },
+                                            '\u6176\u61C9\u7FA9\u587E\u5927\u5B66 \u6E58\u5357\u85E4\u6CA2\u30AD\u30E3\u30F3\u30D1\u30B9'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'fabnavi\u3092\u6176\u61C9\u7FA9\u587E\u5927\u5B66 \u6E58\u5357\u85E4\u6CA2\u30AD\u30E3\u30F3\u30D1\u30B9(SFC)\u306B\u5C0E\u5165\u3059\u308B\u305F\u3081\u306B\u884C\u308F\u308C\u305F\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u306E\u958B\u767A\u5408\u5BBF\uFF0E\u958B\u50AC\u5730\u306F\u5317\u6D77\u9053\u51FD\u9928\uFF0E\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66\u306E\u585A\u7530\u7814\u7A76\u5BA4\u306B\u3044\u308B\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u306E2\u4EBA\u3068\u81EA\u5206\u3092\u542B\u3081\u305F3\u4EBA\u3067fabnavi\u306E\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u30922\u6CCA3\u65E5\u3067\u884C\u3063\u305F\uFF0E \u5408\u5BBF\u7D42\u4E86\u304B\u3089\u7D041\u9031\u9593\u5F8C\uFF0CSFC\u306Bver 1\u306E\u5C0E\u5165\u3092\u884C\u3063\u305F\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/fq0-6UXIzjU', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://github.com/fabnavi', target: '_blank' },
+                                            'fabnavi - GitHub'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://fabnavi.tumblr.com/', target: '_blank' },
+                                            'fabnavi - Tumbler'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://mobiquitous.com/fabnavi-e.html', target: '_blank' },
+                                            'About fabnavi'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.fun.ac.jp/', target: '_blank' },
+                                            '\u516C\u7ACB\u306F\u3053\u3060\u3066\u672A\u6765\u5927\u5B66'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.sfc.keio.ac.jp/', target: '_blank' },
+                                            '\u6176\u61C9\u7FA9\u587E\u5927\u5B66 \u6E58\u5357\u85E4\u6CA2\u30AD\u30E3\u30F3\u30D1\u30B9'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return FabnaviHakodate;
+}(_react.Component);
+
+exports.default = FabnaviHakodate;
+
+/***/ }),
 /* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16989,7 +17877,7 @@ var FlexibleInterface = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -16999,27 +17887,6 @@ var FlexibleInterface = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works-Flexible Interfaces'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Flexible Interfaces' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/flexibleinterfaces' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
-                ),
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -17065,19 +17932,7 @@ var FlexibleInterface = function (_Component) {
                                 )
                             ),
                             _react2.default.createElement('div', { className: 'movie' }),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'relations-middle' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement(
-                                        'b',
-                                        null,
-                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
-                                    )
-                                )
-                            )
+                            _react2.default.createElement('div', { className: 'relations-middle' })
                         )
                     )
                 ),
@@ -17126,19 +17981,7 @@ var FlexibleInterface = function (_Component) {
                                 )
                             ),
                             _react2.default.createElement('div', { className: 'movie' }),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'relations' },
-                                _react2.default.createElement(
-                                    'p',
-                                    null,
-                                    _react2.default.createElement(
-                                        'b',
-                                        null,
-                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
-                                    )
-                                )
-                            )
+                            _react2.default.createElement('div', { className: 'relations' })
                         )
                     )
                 )
@@ -17229,7 +18072,7 @@ var FlexibleInterface = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -17239,27 +18082,6 @@ var FlexibleInterface = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works-Ghost Creator'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Ghost Creator' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/ghostcreator' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
-                ),
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -17298,7 +18120,12 @@ var FlexibleInterface = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    'Coming Soon ...'
+                                    '\u6298\u308A\u7D19\u306F\uFF0C\u6298\u308B\u5BFE\u8C61\u304C\u8907\u96D1\u3067\u3042\u308B\u307B\u3069\u6298\u308B\u52D5\u4F5C\u3084\u958B\u304F\u52D5\u4F5C\u3092\u7E70\u308A\u8FD4\u3059\uFF0E\u3057\u304B\u3057\uFF0C\u30C6\u30AD\u30B9\u30C8\u306E\u591A\u3044\u8AAC\u660E\u66F8\u3067\u306F\uFF0C\u81EA\u5206\u304C\u3069\u306E\u5DE5\u7A0B\u306B\u3044\u308B\u304B\u308F\u304B\u3089\u306A\u304F\u306A\u308B\uFF0E\u305D\u3053\u3067\uFF0CHoloLens\u3092\u88C5\u7740\u3057\uFF0C\u4ED6\u8005\u306E\u4E3B\u89B3\u8996\u70B9\u3067\u306E\u6298\u308B\u52D5\u4F5C\u3092\u518D\u751F\u3059\u308B\uFF0E\u305D\u306E\u518D\u751F\u3055\u308C\u308B\u52D5\u4F5C\u306B\u81EA\u5206\u306E\u624B\u3092\u91CD\u306D\u3066\uFF0C\u540C\u3058\u52D5\u304D\u3067\u7D19\u3092\u6298\u308B\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Ghost Creator\u3067\u306FHoloLens\u3068Myo\u3092\u4F7F\u3046\uFF0EHoloLens\u306F\u624B\u5143\u306E\u9332\u753B\u3068\u518D\u751F\u6642\u306B\u4F7F\u308F\u308C\u308B\uFF0EMyo\u306F\u7D19\u3092\u6298\u3063\u3066\u3044\u308B\u30E6\u30FC\u30B6\u304C\u73FE\u5728\u3069\u306E\u5DE5\u7A0B\u306B\u3044\u308B\u304B\uFF08\u6298\u3063\u3066\u3044\u308B\u304B\uFF09\u3092\u8A08\u6E2C\u3059\u308B\u305F\u3081\u306B\u4F7F\u308F\u308C\u308B\uFF0E'
                                 )
                             ),
                             _react2.default.createElement('div', { className: 'movie' }),
@@ -17312,6 +18139,28 @@ var FlexibleInterface = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.microsoft.com/ja-jp/store/d/microsoft-hololens-development-edition/8xf18pqz17ts', target: '_blank' },
+                                            'Microsoft HoloLens'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://jp.myo.com/', target: '_blank' },
+                                            'Myo'
+                                        )
                                     )
                                 )
                             )
@@ -17356,7 +18205,12 @@ var FlexibleInterface = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    'Coming Soon ...'
+                                    '\u6298\u308A\u7D19\u306F\uFF0C\u6298\u308B\u5BFE\u8C61\u304C\u8907\u96D1\u3067\u3042\u308B\u307B\u3069\u6298\u308B\u52D5\u4F5C\u3084\u958B\u304F\u52D5\u4F5C\u3092\u7E70\u308A\u8FD4\u3059\uFF0E\u3057\u304B\u3057\uFF0C\u30C6\u30AD\u30B9\u30C8\u306E\u591A\u3044\u8AAC\u660E\u66F8\u3067\u306F\uFF0C\u81EA\u5206\u304C\u3069\u306E\u5DE5\u7A0B\u306B\u3044\u308B\u304B\u308F\u304B\u3089\u306A\u304F\u306A\u308B\uFF0E\u305D\u3053\u3067\uFF0CHoloLens\u3092\u88C5\u7740\u3057\uFF0C\u4ED6\u8005\u306E\u4E3B\u89B3\u8996\u70B9\u3067\u306E\u6298\u308B\u52D5\u4F5C\u3092\u518D\u751F\u3059\u308B\uFF0E\u305D\u306E\u518D\u751F\u3055\u308C\u308B\u52D5\u4F5C\u306B\u81EA\u5206\u306E\u624B\u3092\u91CD\u306D\u3066\uFF0C\u540C\u3058\u52D5\u304D\u3067\u7D19\u3092\u6298\u308B\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Ghost Creator\u3067\u306FHoloLens\u3068Myo\u3092\u4F7F\u3046\uFF0EHoloLens\u306F\u624B\u5143\u306E\u9332\u753B\u3068\u518D\u751F\u6642\u306B\u4F7F\u308F\u308C\u308B\uFF0EMyo\u306F\u7D19\u3092\u6298\u3063\u3066\u3044\u308B\u30E6\u30FC\u30B6\u304C\u73FE\u5728\u3069\u306E\u5DE5\u7A0B\u306B\u3044\u308B\u304B\uFF08\u6298\u3063\u3066\u3044\u308B\u304B\uFF09\u3092\u8A08\u6E2C\u3059\u308B\u305F\u3081\u306B\u4F7F\u308F\u308C\u308B\uFF0E'
                                 )
                             ),
                             _react2.default.createElement('div', { className: 'movie' }),
@@ -17370,6 +18224,28 @@ var FlexibleInterface = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.microsoft.com/ja-jp/store/d/microsoft-hololens-development-edition/8xf18pqz17ts', target: '_blank' },
+                                            'Microsoft HoloLens'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://jp.myo.com/', target: '_blank' },
+                                            'Myo'
+                                        )
                                     )
                                 )
                             )
@@ -17386,11 +18262,1299 @@ var FlexibleInterface = function (_Component) {
 exports.default = FlexibleInterface;
 
 /***/ }),
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Hishatsuuti = function (_Component) {
+    _inherits(Hishatsuuti, _Component);
+
+    function Hishatsuuti(props) {
+        _classCallCheck(this, Hishatsuuti);
+
+        var _this = _possibleConstructorReturn(this, (Hishatsuuti.__proto__ || Object.getPrototypeOf(Hishatsuuti)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(Hishatsuuti, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u5199\u771F\u306F\u64AE\u308B\u4EBA\u2212\u64AE\u3089\u308C\u308B\u4EBA(\u7269)\u306E\u95A2\u4FC2\u3067\u6210\u308A\u7ACB\u3063\u3066\u3044\u308B\uFF0E\u5199\u771F\u3092\u64AE\u3089\u308C\u308B\u3068\uFF0C\u81EA\u5206\u304C\u5199\u3063\u305F\u5199\u771F\u306F\uFF0C\u64AE\u5F71\u3057\u305F\u4EBA\u306E\u6240\u6709\u3059\u308B\u30AB\u30E1\u30E9\u306E\u4E2D\u306B\u4FDD\u5B58\u3055\u308C\u308B\uFF0E \u305D\u306E\u305F\u3081\uFF0C\u88AB\u5199\u4F53\u3068\u306A\u3063\u305F\u4EBA\u306F\u81EA\u5206\u304C\u5199\u3063\u3066\u3044\u308B\u5199\u771F\u3067\u3042\u308B\u306E\u306B\u3082\u95A2\u308F\u3089\u305A\uFF0C\u64AE\u5F71\u8005\u304B\u3089\u305D\u306E\u5199\u771F\u3092\u63D0\u4F9B\u3057\u3066\u3082\u3089\u308F\u306A\u3044\u9650\u308A\uFF0C\u305D\u306E\u5199\u771F\u3092\u6301\u3064\u3053\u3068\u306F\u3067\u304D\u306A\u3044\uFF0E \u3064\u307E\u308A\uFF0C\u5199\u771F\u306B\u5199\u3063\u3066\u3044\u308B\u306E\u306F\u81EA\u5206\u3060\u304C\uFF0C\u6301\u3063\u3066\u3044\u308B\u306E\u306F\u4ED6\u4EBA\u3067\u3042\u308B\u3068\u3044\u3046\u6240\u6709\u3068\u8096\u50CF\u306E\u5E30\u5C5E\u306E\u77DB\u76FE\u304C\u751F\u3058\u308B\uFF0E \u305D\u3053\u3067\u672C\u7814\u7A76\u3067\u306F\uFF0C\u5199\u771F\u3092\u64AE\u5F71\u3057\u305F\u3089\uFF0C\u5199\u3063\u305F\u4EBA\u306B\u81EA\u52D5\u7684\u306B\u64AE\u5F71\u30A4\u30D9\u30F3\u30C8\u3092\u901A\u77E5\uFF0F\u5199\u771F\u3092\u5171\u6709\u3059\u308B\u30B7\u30B9\u30C6\u30E0Sharetter\u3092\u63D0\u6848\u3059\u308B\uFF0E Sharetter\u3067\u306F\u9854\u753B\u50CF\u8A8D\u8B58\u3068Bluetooth\u306E\u96FB\u6CE2\u5F37\u5EA6\u306B\u3088\u308B\u8DDD\u96E2\u60C5\u5831\u3092\u7D44\u307F\u5408\u308F\u305B\uFF0C\u88AB\u5199\u4F53\u306E\u5199\u308A\u8FBC\u3093\u3067\u3044\u308B\u53EF\u80FD\u6027\u3092\u7B97\u51FA\u3057\uFF0C\u305D\u308C\u3092\u88AB\u5199\u5024\u3068\u3057\u3066\u5B9A\u7FA9\u3059\u308B\uFF0E \u305D\u306E\u88AB\u5199\u5024\u306B\u57FA\u3065\u304D\u901A\u77E5\u3057\uFF0C\u5199\u771F\u306E\u5171\u6709\u3092\u884C\u3046\uFF0E',
+                                    _react2.default.createElement('br', null),
+                                    'WISS2016\u306E3\u65E5\u76EE\u306B\u3066\u30C7\u30E2\u767A\u8868\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.wiss.org/WISS2016/Demo.html', target: '_blank' },
+                                            'WISS2016'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u5199\u771F\u306F\u64AE\u308B\u4EBA\u2212\u64AE\u3089\u308C\u308B\u4EBA(\u7269)\u306E\u95A2\u4FC2\u3067\u6210\u308A\u7ACB\u3063\u3066\u3044\u308B\uFF0E\u5199\u771F\u3092\u64AE\u3089\u308C\u308B\u3068\uFF0C\u81EA\u5206\u304C\u5199\u3063\u305F\u5199\u771F\u306F\uFF0C\u64AE\u5F71\u3057\u305F\u4EBA\u306E\u6240\u6709\u3059\u308B\u30AB\u30E1\u30E9\u306E\u4E2D\u306B\u4FDD\u5B58\u3055\u308C\u308B\uFF0E \u305D\u306E\u305F\u3081\uFF0C\u88AB\u5199\u4F53\u3068\u306A\u3063\u305F\u4EBA\u306F\u81EA\u5206\u304C\u5199\u3063\u3066\u3044\u308B\u5199\u771F\u3067\u3042\u308B\u306E\u306B\u3082\u95A2\u308F\u3089\u305A\uFF0C\u64AE\u5F71\u8005\u304B\u3089\u305D\u306E\u5199\u771F\u3092\u63D0\u4F9B\u3057\u3066\u3082\u3089\u308F\u306A\u3044\u9650\u308A\uFF0C\u305D\u306E\u5199\u771F\u3092\u6301\u3064\u3053\u3068\u306F\u3067\u304D\u306A\u3044\uFF0E \u3064\u307E\u308A\uFF0C\u5199\u771F\u306B\u5199\u3063\u3066\u3044\u308B\u306E\u306F\u81EA\u5206\u3060\u304C\uFF0C\u6301\u3063\u3066\u3044\u308B\u306E\u306F\u4ED6\u4EBA\u3067\u3042\u308B\u3068\u3044\u3046\u6240\u6709\u3068\u8096\u50CF\u306E\u5E30\u5C5E\u306E\u77DB\u76FE\u304C\u751F\u3058\u308B\uFF0E \u305D\u3053\u3067\u672C\u7814\u7A76\u3067\u306F\uFF0C\u5199\u771F\u3092\u64AE\u5F71\u3057\u305F\u3089\uFF0C\u5199\u3063\u305F\u4EBA\u306B\u81EA\u52D5\u7684\u306B\u64AE\u5F71\u30A4\u30D9\u30F3\u30C8\u3092\u901A\u77E5\uFF0F\u5199\u771F\u3092\u5171\u6709\u3059\u308B\u30B7\u30B9\u30C6\u30E0Sharetter\u3092\u63D0\u6848\u3059\u308B\uFF0E Sharetter\u3067\u306F\u9854\u753B\u50CF\u8A8D\u8B58\u3068Bluetooth\u306E\u96FB\u6CE2\u5F37\u5EA6\u306B\u3088\u308B\u8DDD\u96E2\u60C5\u5831\u3092\u7D44\u307F\u5408\u308F\u305B\uFF0C\u88AB\u5199\u4F53\u306E\u5199\u308A\u8FBC\u3093\u3067\u3044\u308B\u53EF\u80FD\u6027\u3092\u7B97\u51FA\u3057\uFF0C\u305D\u308C\u3092\u88AB\u5199\u5024\u3068\u3057\u3066\u5B9A\u7FA9\u3059\u308B\uFF0E \u305D\u306E\u88AB\u5199\u5024\u306B\u57FA\u3065\u304D\u901A\u77E5\u3057\uFF0C\u5199\u771F\u306E\u5171\u6709\u3092\u884C\u3046\uFF0E',
+                                    _react2.default.createElement('br', null),
+                                    'WISS2016\u306E3\u65E5\u76EE\u306B\u3066\u30C7\u30E2\u767A\u8868\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.wiss.org/WISS2016/Demo.html', target: '_blank' },
+                                            'WISS2016'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Hishatsuuti;
+}(_react.Component);
+
+exports.default = Hishatsuuti;
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var Icc = function (_Component) {
+    _inherits(Icc, _Component);
+
+    function Icc(props) {
+        _classCallCheck(this, Icc);
+
+        var _this = _possibleConstructorReturn(this, (Icc.__proto__ || Object.getPrototypeOf(Icc)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(Icc, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+            var imgUrl4 = './src/images/16_9/' + projectName + '/4.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 }),
+                                    _react2.default.createElement('img', { src: imgUrl4 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u3053\u306E\u30B7\u30B9\u30C6\u30E0\u306F\u64AE\u5F71\u8005\u3060\u3051\u3067\u306F\u306A\u304F\uFF0C\u5199\u771F\u306B\u5199\u3063\u3066\u3044\u308B\u4EBA\u3082\u305D\u306E\u5199\u771F\u3092\u6301\u3064\u3053\u3068\u304C\u3067\u304D\u308B\u30B7\u30B9\u30C6\u30E0\u3067\u3042\u308B\uFF0E\u64AE\u5F71\u8005\u304C\u5199\u771F\u3092\u64AE\u308B\u3068\uFF0C\u88AB\u5199\u5024\uFF08\u3042\u308B\u88AB\u5199\u4F53\u304C\u5199\u308A\u8FBC\u3093\u3067\u3044\u308B\u53EF\u80FD\u6027\uFF09\u3092\u7B97\u51FA\u3059\u308B\uFF0E\u88AB\u5199\u5024\u306B\u57FA\u3065\u3044\u3066\u88AB\u5199\u4F53\u306B\u64AE\u5F71\u3055\u308C\u305F\u3053\u3068\u3092\u901A\u77E5\u3057\uFF0C\u305D\u306E\u5199\u771F\u3092\u5171\u6709\u3059\u308B\uFF0E\u5199\u771F\u306B\u5199\u3063\u3066\u3044\u308B\u306E\u306F\u81EA\u5206\u3067\u3042\u308B\u306E\u306B\uFF0C\u6301\u3063\u3066\u3044\u308B\u306E\u306F\u64AE\u5F71\u8005\uFF08\u4ED6\u4EBA\uFF09\u3067\u3042\u308B\u3068\u3044\u3046\u5199\u771F\u306E\u5E30\u5C5E\u306E\u77DB\u76FE\u3092\u89E3\u6C7A\u3059\u308B\u305F\u3081\u306E\u30B7\u30B9\u30C6\u30E0\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'ICC\u3067\u5C55\u793A\u3057\u3066\u3044\u305F\u88AB\u5199\u5024\u306E\u30E2\u30C7\u30EB\u306F\uFF0C\u30A2\u30AF\u30EA\u30EB\u677F\u306B\u6587\u5B57\u3084\u56F3\u3092\u5F6B\u523B\u3057\uFF0C\u30A2\u30AF\u30EA\u30EB\u7D75\u5177\u3067\u7740\u8272\u3092\u3057\u305F\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.ntticc.or.jp/ja/archive/works/snappednotification/', target: '_blank' },
+                                            'ICC: Snapped Notification'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u3053\u306E\u30B7\u30B9\u30C6\u30E0\u306F\u64AE\u5F71\u8005\u3060\u3051\u3067\u306F\u306A\u304F\uFF0C\u5199\u771F\u306B\u5199\u3063\u3066\u3044\u308B\u4EBA\u3082\u305D\u306E\u5199\u771F\u3092\u6301\u3064\u3053\u3068\u304C\u3067\u304D\u308B\u30B7\u30B9\u30C6\u30E0\u3067\u3042\u308B\uFF0E\u64AE\u5F71\u8005\u304C\u5199\u771F\u3092\u64AE\u308B\u3068\uFF0C\u88AB\u5199\u5024\uFF08\u3042\u308B\u88AB\u5199\u4F53\u304C\u5199\u308A\u8FBC\u3093\u3067\u3044\u308B\u53EF\u80FD\u6027\uFF09\u3092\u7B97\u51FA\u3059\u308B\uFF0E\u88AB\u5199\u5024\u306B\u57FA\u3065\u3044\u3066\u88AB\u5199\u4F53\u306B\u64AE\u5F71\u3055\u308C\u305F\u3053\u3068\u3092\u901A\u77E5\u3057\uFF0C\u305D\u306E\u5199\u771F\u3092\u5171\u6709\u3059\u308B\uFF0E\u5199\u771F\u306B\u5199\u3063\u3066\u3044\u308B\u306E\u306F\u81EA\u5206\u3067\u3042\u308B\u306E\u306B\uFF0C\u6301\u3063\u3066\u3044\u308B\u306E\u306F\u64AE\u5F71\u8005\uFF08\u4ED6\u4EBA\uFF09\u3067\u3042\u308B\u3068\u3044\u3046\u5199\u771F\u306E\u5E30\u5C5E\u306E\u77DB\u76FE\u3092\u89E3\u6C7A\u3059\u308B\u305F\u3081\u306E\u30B7\u30B9\u30C6\u30E0\uFF0E'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'ICC\u3067\u5C55\u793A\u3057\u3066\u3044\u305F\u88AB\u5199\u5024\u306E\u30E2\u30C7\u30EB\u306F\uFF0C\u30A2\u30AF\u30EA\u30EB\u677F\u306B\u6587\u5B57\u3084\u56F3\u3092\u5F6B\u523B\u3057\uFF0C\u30A2\u30AF\u30EA\u30EB\u7D75\u5177\u3067\u7740\u8272\u3092\u3057\u305F\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.ntticc.or.jp/ja/archive/works/snappednotification/', target: '_blank' },
+                                            'ICC: Snapped Notification'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Icc;
+}(_react.Component);
+
+exports.default = Icc;
+
+/***/ }),
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var JissenOcreilly = function (_Component) {
+    _inherits(JissenOcreilly, _Component);
+
+    function JissenOcreilly(props) {
+        _classCallCheck(this, JissenOcreilly);
+
+        var _this = _possibleConstructorReturn(this, (JissenOcreilly.__proto__ || Object.getPrototypeOf(JissenOcreilly)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(JissenOcreilly, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return JissenOcreilly;
+}(_react.Component);
+
+exports.default = JissenOcreilly;
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var JitsuyouOcreily = function (_Component) {
+    _inherits(JitsuyouOcreily, _Component);
+
+    function JitsuyouOcreily(props) {
+        _classCallCheck(this, JitsuyouOcreily);
+
+        var _this = _possibleConstructorReturn(this, (JitsuyouOcreily.__proto__ || Object.getPrototypeOf(JitsuyouOcreily)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(JitsuyouOcreily, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u30B9\u30DE\u30FC\u30C8\u30D5\u30A9\u30F3\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u306F\uFF0CAndroid\u3067\u306FJava\u30FBKotlin\uFF0CiOS\u3067\u306FObjective-C\u30FBSwift\u3068\u305D\u308C\u305E\u308C\u5225\u8A00\u8A9E\u3067\u958B\u767A\u3059\u308B\u3082\u306E\u3067\u3042\u3063\u305F\uFF0E\u3057\u304B\u3057\uFF0CXamarin\uFF08C#\uFF09\u3084\u4ECA\u56DE\u7D39\u4ECB\u3059\u308BReact Native\uFF08JavaScript\u30FBJSX\uFF09\u306A\u3069\u306E\u30AF\u30ED\u30B9\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u3067\u306E\u958B\u767A\u304C\u8FD1\u5E74\u6D41\u884C\u308A\u59CB\u3081\u305F\uFF0E \u8457\u8005\u306F\u7814\u7A76\u3067Android\u3092\u4F7F\u3046\u305F\u3081\uFF0CJava\u3068\u8AD6\u6587\u3092\u6CE3\u304D\u306A\u304C\u3089\u66F8\u3044\u3066\u3044\u305F\uFF0E\u305D\u3093\u306A\u4E2D\uFF0C\u300C\u7814\u7A76\u306E\u30B7\u30B9\u30C6\u30E0\u3092React Native\u306B\u79FB\u690D\u3059\u308B\u305E\uFF01\u300D\u3068\u3044\u3046\u8B0E\u306E\u6C17\u6301\u3061\u304C\u6E67\u304D\u4E0A\u304C\u3063\u3066\u3057\u307E\u3063\u305F\uFF0EReact Natice\u306F\u672A\u3060\u306B\u65E5\u672C\u8A9E\u306E\u8CC7\u6599\u304C\u5C11\u306A\u304F\uFF0C\u30D6\u30ED\u30B0\u8A18\u4E8B\u3082\u3055\u307B\u3069\u306A\u3044\uFF0E\u305D\u3053\u3067\u4ECA\u56DE\u306F\u79FB\u690D\u9014\u4E2D\u3067\u30CF\u30DE\u3063\u305F\u90E8\u5206\u3084\uFF0C\u4F7F\u7528\u3057\u305F\u4FBF\u5229\u306A\u30E9\u30A4\u30D6\u30E9\u30EA\u3092\u7D39\u4ECB\u3059\u308B\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://ocreilly.meiji-ncc.tech/C91/', target: '_blank' },
+                                            ' \u5B9F\u7528 \u304A\u8535\u5165\u308A'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://facebook.github.io/react-native/', target: '_blank' },
+                                            'React Native'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u30B9\u30DE\u30FC\u30C8\u30D5\u30A9\u30F3\u306E\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u306F\uFF0CAndroid\u3067\u306FJava\u30FBKotlin\uFF0CiOS\u3067\u306FObjective-C\u30FBSwift\u3068\u305D\u308C\u305E\u308C\u5225\u8A00\u8A9E\u3067\u958B\u767A\u3059\u308B\u3082\u306E\u3067\u3042\u3063\u305F\uFF0E\u3057\u304B\u3057\uFF0CXamarin\uFF08C#\uFF09\u3084\u4ECA\u56DE\u7D39\u4ECB\u3059\u308BReact Native\uFF08JavaScript\u30FBJSX\uFF09\u306A\u3069\u306E\u30AF\u30ED\u30B9\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u3067\u306E\u958B\u767A\u304C\u8FD1\u5E74\u6D41\u884C\u308A\u59CB\u3081\u305F\uFF0E \u8457\u8005\u306F\u7814\u7A76\u3067Android\u3092\u4F7F\u3046\u305F\u3081\uFF0CJava\u3068\u8AD6\u6587\u3092\u6CE3\u304D\u306A\u304C\u3089\u66F8\u3044\u3066\u3044\u305F\uFF0E\u305D\u3093\u306A\u4E2D\uFF0C\u300C\u7814\u7A76\u306E\u30B7\u30B9\u30C6\u30E0\u3092React Native\u306B\u79FB\u690D\u3059\u308B\u305E\uFF01\u300D\u3068\u3044\u3046\u8B0E\u306E\u6C17\u6301\u3061\u304C\u6E67\u304D\u4E0A\u304C\u3063\u3066\u3057\u307E\u3063\u305F\uFF0EReact Natice\u306F\u672A\u3060\u306B\u65E5\u672C\u8A9E\u306E\u8CC7\u6599\u304C\u5C11\u306A\u304F\uFF0C\u30D6\u30ED\u30B0\u8A18\u4E8B\u3082\u3055\u307B\u3069\u306A\u3044\uFF0E\u305D\u3053\u3067\u4ECA\u56DE\u306F\u79FB\u690D\u9014\u4E2D\u3067\u30CF\u30DE\u3063\u305F\u90E8\u5206\u3084\uFF0C\u4F7F\u7528\u3057\u305F\u4FBF\u5229\u306A\u30E9\u30A4\u30D6\u30E9\u30EA\u3092\u7D39\u4ECB\u3059\u308B\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://ocreilly.meiji-ncc.tech/C91/', target: '_blank' },
+                                            ' \u5B9F\u7528 \u304A\u8535\u5165\u308A'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://facebook.github.io/react-native/', target: '_blank' },
+                                            'React Native'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return JitsuyouOcreily;
+}(_react.Component);
+
+exports.default = JitsuyouOcreily;
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var SharetterHci = function (_Component) {
+    _inherits(SharetterHci, _Component);
+
+    function SharetterHci(props) {
+        _classCallCheck(this, SharetterHci);
+
+        var _this = _possibleConstructorReturn(this, (SharetterHci.__proto__ || Object.getPrototypeOf(SharetterHci)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(SharetterHci, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Comming Soon...'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'movie' }),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement('a', { href: '', target: '_blank' })
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return SharetterHci;
+}(_react.Component);
+
+exports.default = SharetterHci;
+
+/***/ }),
 /* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17479,26 +19643,190 @@ var Favbnavi = function (_Component) {
                 'div',
                 null,
                 _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
                     _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works-Shogg'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Shogg' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/shogg' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Shogg\u306F\u5375\u3092\u5272\u308B\u77AC\u9593\u306E\u885D\u6483\u3092\u30BB\u30F3\u30B7\u30F3\u30B0\u3057\u3066\uFF0C\u5375\u3092\u4F7F\u3063\u305F\u6599\u7406\u30EC\u30B7\u30D4\u3092\u63D0\u6848\u3059\u308B\u30B5\u30FC\u30D3\u30B9\u3067\u3042\u308B\uFF0E\u5375\u304C\u5272\u308C\u308B\u77AC\u9593\u306E\u885D\u6483\u529B\u3092\u8A08\u6E2C\u3057\uFF0C\u30E6\u30FC\u30B6\u306E\u72B6\u614B\u3092\u628A\u63E1\u3059\u308B\uFF0E\u885D\u6483\u304C\u5F37\u3044\u5834\u5408\u306F\u6599\u7406\u306B\u6163\u308C\u3066\u3044\u306A\u3044\u306E\u304B\uFF0C\u75B2\u308C\u3066\u3044\u308B\u304B\u3068\u3044\u3046\u3088\u3046\u306B\u5224\u65AD\u3055\u308C\u308B\uFF0E\u305D\u306E\u6642\u306E\u30E6\u30FC\u30B6\u306B\u3068\u3063\u3066\u624B\u9593\u306B\u306A\u3089\u306A\u3044\uFF0C\u307E\u305F\u306F\u5C11\u3057\u96E3\u3057\u3044\u306E\u6599\u7406\u3092\u9069\u5B9C\u63D0\u6848\u3059\u308B\uFF0E \u5B66\u90E83\u5E74\u6B21\u306E\u8B1B\u7FA9: \u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u30C7\u30B6\u30A4\u30F3\u3067\u306E\u500B\u4EBA\u8AB2\u984C\u5236\u4F5C\u7269\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'relations-middle' })
+                        )
+                    )
                 ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    'Shogg\u306F\u5375\u3092\u5272\u308B\u77AC\u9593\u306E\u885D\u6483\u3092\u30BB\u30F3\u30B7\u30F3\u30B0\u3057\u3066\uFF0C\u5375\u3092\u4F7F\u3063\u305F\u6599\u7406\u30EC\u30B7\u30D4\u3092\u63D0\u6848\u3059\u308B\u30B5\u30FC\u30D3\u30B9\u3067\u3042\u308B\uFF0E\u5375\u304C\u5272\u308C\u308B\u77AC\u9593\u306E\u885D\u6483\u529B\u3092\u8A08\u6E2C\u3057\uFF0C\u30E6\u30FC\u30B6\u306E\u72B6\u614B\u3092\u628A\u63E1\u3059\u308B\uFF0E\u885D\u6483\u304C\u5F37\u3044\u5834\u5408\u306F\u6599\u7406\u306B\u6163\u308C\u3066\u3044\u306A\u3044\u306E\u304B\uFF0C\u75B2\u308C\u3066\u3044\u308B\u304B\u3068\u3044\u3046\u3088\u3046\u306B\u5224\u65AD\u3055\u308C\u308B\uFF0E\u305D\u306E\u6642\u306E\u30E6\u30FC\u30B6\u306B\u3068\u3063\u3066\u624B\u9593\u306B\u306A\u3089\u306A\u3044\uFF0C\u307E\u305F\u306F\u5C11\u3057\u96E3\u3057\u3044\u306E\u6599\u7406\u3092\u9069\u5B9C\u63D0\u6848\u3059\u308B\uFF0E \u5B66\u90E83\u5E74\u6B21\u306E\u8B1B\u7FA9: \u30A4\u30F3\u30BF\u30E9\u30AF\u30B7\u30E7\u30F3\u30C7\u30B6\u30A4\u30F3\u3067\u306E\u8AB2\u984C\u5236\u4F5C\u7269\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement('div', { className: 'relations' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Favbnavi;
+}(_react.Component);
+
+exports.default = Favbnavi;
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+var ShoukaiOcreilly = function (_Component) {
+    _inherits(ShoukaiOcreilly, _Component);
+
+    function ShoukaiOcreilly(props) {
+        _classCallCheck(this, ShoukaiOcreilly);
+
+        var _this = _possibleConstructorReturn(this, (ShoukaiOcreilly.__proto__ || Object.getPrototypeOf(ShoukaiOcreilly)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(ShoukaiOcreilly, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -17537,9 +19865,10 @@ var Favbnavi = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    'Comming Soon ...'
+                                    '\u30E2\u30D0\u30A4\u30EB\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u306E\u30AF\u30ED\u30B9\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u958B\u767A\u65B9\u6CD5\u306F\u3044\u304F\u3064\u304B\u3042\u308B\u304C\uFF0C\u8457\u8005\u306F\u5927\u304D\u304F2\u3064\u3042\u308B\u3068\u8003\u3048\u3066\u3044\u308B\uFF0E\u305D\u308C\u306F\uFF0CXamarin\u3067\u306E\u958B\u767A\u3068React Native\u3067\u306E\u958B\u767A\u3067\u3042\u308B\uFF0E\u524D\u8005\u306FMicrosoft\u3092\u4E2D\u5FC3\u306B\u983B\u7E41\u306B\u6D3B\u52D5\u304C\u884C\u308F\u308C\u3066\u3044\u308B\u3088\u3046\u3060\uFF0E\u3057\u304B\u3057\uFF0C\u672A\u3060\u306BXamarin\u3067\u4F5C\u3089\u308C\u3066\u3044\u308B\u6709\u540D\u306A\u30A2\u30D7\u30EA\u306F\u306A\u3044\u6C17\u304C\u3059\u308B\uFF0E\u4E00\u65B9\uFF0CReact Native\u306FFacebook\u3084Instagram\u3068\u3044\u3063\u305F\u3088\u3046\u306A\u30A2\u30D7\u30EA\u306B\u4F7F\u308F\u308C\u3066\u3044\u308B\uFF08Nintendo Switch Online\u304CXamarin\u88FD\u3089\u3057\u3044\uFF09\uFF0E\u307E\u305F\uFF0CReact\u3092\u958B\u767A\u3057\u305F\u3053\u3068\u304C\u3042\u308C\u3070\uFF0C\u66F8\u304D\u65B9\u3084\u30C7\u30FC\u30BF\u306E\u6271\u3044\u65B9\u306FReact Native\u3067\u3082\u540C\u3058\u306A\u306E\u3067\u6BD4\u8F03\u7684\u958B\u767A\u3057\u3084\u3059\u3044\u74B0\u5883\u3060\uFF0E\u307E\u3068\u3081\u308B\u3068\uFF0C\u8457\u8005\u306F\u5727\u5012\u7684\u306BReact Native\u3092\u63A8\u3057\u3066\u3044\u308B\uFF0E \u3055\u3066\uFF0C2017\u5E743\u670813\u65E5 \u301C 3\u670814\u65E5\u306B\u304B\u3051\u3066\uFF0C\u30A2\u30E1\u30EA\u30AB\u306E\u30AB\u30EB\u30D5\u30A9\u30EB\u30CB\u30A2\u5DDE\u306B\u3042\u308B\u30B5\u30F3\u30BF\u30AF\u30E9\u30E9\u306B\u3066React Conference 2017\uFF08\u4EE5\u4E0BReact Conf\uFF09\u304C\u958B\u50AC\u3055\u308C\u305F\uFF0E\u8457\u8005\u306F\u304A\u91D1\u3082\u6642\u9593\u3082\u306A\u3044\u306E\u3067\u6B8B\u5FF5\u306A\u304C\u3089\u73FE\u5730\u306B\u306F\u884C\u3051\u305A\uFF0C\u65E5\u672C\u3067Live Streaming\u3092\u898B\u3066\u3044\u305F\uFF0EReact Conf\u3067\u306FReact\u3068React Native\u306B\u95A2\u3059\u308B\u65B0\u3057\u3044\u60C5\u5831\u304C\u6E80\u8F09\u3060\u3063\u305F\uFF0E\u4ECA\u56DE\u306F\u305D\u306E\u4E2D\u3067\u8457\u8005\u304C\u3082\u3063\u3068\u3082\u6CE8\u76EE\u3057\u305F\u65B0\u3057\u3044CLI\uFF0CCreate React Native App \u306B\u3064\u3044\u3066\uFF0C\u5F93\u6765\u306ECLI\u3068\u6BD4\u8F03\u3057\u306A\u304C\u3089\u7D39\u4ECB\u3059\u308B\uFF0E'
                                 )
                             ),
+                            _react2.default.createElement('div', { className: 'movie' }),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'relations-middle' },
@@ -17550,6 +19879,28 @@ var Favbnavi = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://ocreilly.meiji-ncc.tech/TBF02/', target: '_blank' },
+                                            ' \u8A73\u89E3 \u304A\u8535\u5165\u308A'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://facebook.github.io/react-native/', target: '_blank' },
+                                            'React Native'
+                                        )
                                     )
                                 )
                             )
@@ -17594,9 +19945,10 @@ var Favbnavi = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    'Comming Soon ...'
+                                    '\u30E2\u30D0\u30A4\u30EB\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u306E\u30AF\u30ED\u30B9\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u958B\u767A\u65B9\u6CD5\u306F\u3044\u304F\u3064\u304B\u3042\u308B\u304C\uFF0C\u8457\u8005\u306F\u5927\u304D\u304F2\u3064\u3042\u308B\u3068\u8003\u3048\u3066\u3044\u308B\uFF0E\u305D\u308C\u306F\uFF0CXamarin\u3067\u306E\u958B\u767A\u3068React Native\u3067\u306E\u958B\u767A\u3067\u3042\u308B\uFF0E\u524D\u8005\u306FMicrosoft\u3092\u4E2D\u5FC3\u306B\u983B\u7E41\u306B\u6D3B\u52D5\u304C\u884C\u308F\u308C\u3066\u3044\u308B\u3088\u3046\u3060\uFF0E\u3057\u304B\u3057\uFF0C\u672A\u3060\u306BXamarin\u3067\u4F5C\u3089\u308C\u3066\u3044\u308B\u6709\u540D\u306A\u30A2\u30D7\u30EA\u306F\u306A\u3044\u6C17\u304C\u3059\u308B\uFF0E\u4E00\u65B9\uFF0CReact Native\u306FFacebook\u3084Instagram\u3068\u3044\u3063\u305F\u3088\u3046\u306A\u30A2\u30D7\u30EA\u306B\u4F7F\u308F\u308C\u3066\u3044\u308B\uFF08Nintendo Switch Online\u304CXamarin\u88FD\u3089\u3057\u3044\uFF09\uFF0E\u307E\u305F\uFF0CReact\u3092\u958B\u767A\u3057\u305F\u3053\u3068\u304C\u3042\u308C\u3070\uFF0C\u66F8\u304D\u65B9\u3084\u30C7\u30FC\u30BF\u306E\u6271\u3044\u65B9\u306FReact Native\u3067\u3082\u540C\u3058\u306A\u306E\u3067\u6BD4\u8F03\u7684\u958B\u767A\u3057\u3084\u3059\u3044\u74B0\u5883\u3060\uFF0E\u307E\u3068\u3081\u308B\u3068\uFF0C\u8457\u8005\u306F\u5727\u5012\u7684\u306BReact Native\u3092\u63A8\u3057\u3066\u3044\u308B\uFF0E \u3055\u3066\uFF0C2017\u5E743\u670813\u65E5 \u301C 3\u670814\u65E5\u306B\u304B\u3051\u3066\uFF0C\u30A2\u30E1\u30EA\u30AB\u306E\u30AB\u30EB\u30D5\u30A9\u30EB\u30CB\u30A2\u5DDE\u306B\u3042\u308B\u30B5\u30F3\u30BF\u30AF\u30E9\u30E9\u306B\u3066React Conference 2017\uFF08\u4EE5\u4E0BReact Conf\uFF09\u304C\u958B\u50AC\u3055\u308C\u305F\uFF0E\u8457\u8005\u306F\u304A\u91D1\u3082\u6642\u9593\u3082\u306A\u3044\u306E\u3067\u6B8B\u5FF5\u306A\u304C\u3089\u73FE\u5730\u306B\u306F\u884C\u3051\u305A\uFF0C\u65E5\u672C\u3067Live Streaming\u3092\u898B\u3066\u3044\u305F\uFF0EReact Conf\u3067\u306FReact\u3068React Native\u306B\u95A2\u3059\u308B\u65B0\u3057\u3044\u60C5\u5831\u304C\u6E80\u8F09\u3060\u3063\u305F\uFF0E\u4ECA\u56DE\u306F\u305D\u306E\u4E2D\u3067\u8457\u8005\u304C\u3082\u3063\u3068\u3082\u6CE8\u76EE\u3057\u305F\u65B0\u3057\u3044CLI\uFF0CCreate React Native App \u306B\u3064\u3044\u3066\uFF0C\u5F93\u6765\u306ECLI\u3068\u6BD4\u8F03\u3057\u306A\u304C\u3089\u7D39\u4ECB\u3059\u308B\uFF0E'
                                 )
                             ),
+                            _react2.default.createElement('div', { className: 'movie' }),
                             _react2.default.createElement(
                                 'div',
                                 { className: 'relations' },
@@ -17608,6 +19960,28 @@ var Favbnavi = function (_Component) {
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
                                     )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://ocreilly.meiji-ncc.tech/TBF02/', target: '_blank' },
+                                            ' \u8A73\u89E3 \u304A\u8535\u5165\u308A'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://facebook.github.io/react-native/', target: '_blank' },
+                                            'React Native'
+                                        )
+                                    )
                                 )
                             )
                         )
@@ -17617,13 +19991,12 @@ var Favbnavi = function (_Component) {
         }
     }]);
 
-    return Favbnavi;
+    return ShoukaiOcreilly;
 }(_react.Component);
 
-exports.default = Favbnavi;
+exports.default = ShoukaiOcreilly;
 
 /***/ }),
-/* 129 */,
 /* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17703,7 +20076,7 @@ var ThroughStudio = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -17713,27 +20086,6 @@ var ThroughStudio = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works-Through Studio'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | Through Studio' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/throughstudio' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
-                ),
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -17774,7 +20126,7 @@ var ThroughStudio = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    '\u65E5\u5E38\u751F\u6D3B\u306B\u304A\u3044\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306A\u3069\u306E\u5149\u3092\u900F\u904E\u3059\u308B\u7269\u8CEA\u306F\u69D8\u3005\u306A\u7528\u9014\u3067\u4F7F\u308F\u308C\u308B\uFF0E\u4F8B\u3048\u3070\uFF0C\u5916\u3092\u898B\u308B\u305F\u3081\u306E\u7A93\u3084\u9451\u8CDE\u7528\u306E\u6C34\u69FD\u306A\u3069\u304C\u3042\u308B\uFF0E\u900F\u660E\u5EA6\u306F\u88FD\u9020\u6BB5\u968E\u3067\u6C7A\u307E\u308B\u305F\u3081\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u5358\u4F53\u3067\u5F8C\u304B\u3089\u900F\u660E\u5EA6\u3092\u5909\u3048\u308B\u3053\u3068\u306F\u51FA\u6765\u306A\u3044\uFF0E\u7A93\u3084\u30EC\u30F3\u30BA\u3092\u901A\u3057\u3066\u898B\u3048\u308B\u7269\u4F53\u3084\u50CF\u3092\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u3059\u308B\u306B\u306F\uFF0C\u30AB\u30FC\u30C6\u30F3\u3084\u84CB\u306A\u3069\u5149\u3092\u900F\u904E\u3057\u306A\u3044\u7D20\u6750\u3067\u8868\u9762\u3092\u8986\u3046\u5FC5\u8981\u304C\u3042\u308B\uFF0E\u3057\u304B\u3057\u3001\u8868\u9762\u3092\u8986\u3046\u969B\u306E\u5236\u5FA1\u306F\u307B\u3068\u3093\u3069\u306E\u5834\u5408\u3067\u7E26\u304B\u6A2A\u306E\u3069\u3061\u3089\u304B\u4E00\u65B9\u5411\u306B\u3057\u304B\u884C\u3048\u306A\u3044\u306E\u3067\u906E\u5149\u3057\u3066\u3082\u671B\u307E\u306A\u3044\u7D50\u679C\u306B\u306A\u308B\u3053\u3068\u304C\u3042\u308B\u3002\u305D\u3053\u3067\uFF0C\u900F\u660E\u5EA6\u3092\u5236\u5FA1\u3059\u308B\u3053\u3068\u3067\u5B9F\u73FE\u3057\u305F\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u306A\u30C7\u30A3\u30B9\u30D7\u30EC\u30A4Throughly\u3092\u63D0\u6848\u3059\u308B\uFF0E\u900F\u660E\u5EA6\u306E\u5236\u5FA1\u306B\u306F\u5438\u6C34\u6027\u30DD\u30EA\u30DE\u30FC\u3092\u7528\u3044\u308B\uFF0E\u3053\u306E\u7269\u8CEA\u306F\uFF0C\u6C34\u4E2D\u3067\u306F\u5149\u3092\u900F\u904E\u3057\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306E\u3088\u3046\u306A\u632F\u308B\u821E\u3044\u3092\u3059\u308B\u304C\uFF0C\u7A7A\u6C17\u4E2D\u306B\u3042\u308B\u5834\u5408\u306F\u5149\u3092\u900F\u904E\u3057\u3066\u3082\u4E71\u53CD\u5C04\u306B\u3088\u3063\u3066\u50CF\u304C\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u306A\u308B\uFF0E'
+                                    '\u65E5\u5E38\u751F\u6D3B\u306B\u304A\u3044\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306A\u3069\u306E\u5149\u3092\u900F\u904E\u3059\u308B\u7269\u8CEA\u306F\u69D8\u3005\u306A\u7528\u9014\u3067\u4F7F\u308F\u308C\u308B\uFF0E\u4F8B\u3048\u3070\uFF0C\u5916\u3092\u898B\u308B\u305F\u3081\u306E\u7A93\u3084\u9451\u8CDE\u7528\u306E\u6C34\u69FD\u306A\u3069\u304C\u3042\u308B\uFF0E\u900F\u660E\u5EA6\u306F\u88FD\u9020\u6BB5\u968E\u3067\u6C7A\u307E\u308B\u305F\u3081\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u5358\u4F53\u3067\u5F8C\u304B\u3089\u900F\u660E\u5EA6\u3092\u5909\u3048\u308B\u3053\u3068\u306F\u51FA\u6765\u306A\u3044\uFF0E\u7A93\u3084\u30EC\u30F3\u30BA\u3092\u901A\u3057\u3066\u898B\u3048\u308B\u7269\u4F53\u3084\u50CF\u3092\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u3059\u308B\u306B\u306F\uFF0C\u30AB\u30FC\u30C6\u30F3\u3084\u84CB\u306A\u3069\u5149\u3092\u900F\u904E\u3057\u306A\u3044\u7D20\u6750\u3067\u8868\u9762\u3092\u8986\u3046\u5FC5\u8981\u304C\u3042\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u8868\u9762\u3092\u8986\u3046\u969B\u306E\u5236\u5FA1\u306F\u307B\u3068\u3093\u3069\u306E\u5834\u5408\u3067\u7E26\u304B\u6A2A\u306E\u3069\u3061\u3089\u304B\u4E00\u65B9\u5411\u306B\u3057\u304B\u884C\u3048\u306A\u3044\u306E\u3067\u906E\u5149\u3057\u3066\u3082\u671B\u307E\u306A\u3044\u7D50\u679C\u306B\u306A\u308B\u3053\u3068\u304C\u3042\u308B\uFF0E\u305D\u3053\u3067\uFF0C\u900F\u660E\u5EA6\u3092\u5236\u5FA1\u3059\u308B\u3053\u3068\u3067\u5B9F\u73FE\u3057\u305F\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u306A\u30C7\u30A3\u30B9\u30D7\u30EC\u30A4Through Studio\u3092\u63D0\u6848\u3059\u308B\uFF0E\u900F\u660E\u5EA6\u306E\u5236\u5FA1\u306B\u306F\u5438\u6C34\u6027\u30DD\u30EA\u30DE\u30FC\u3092\u7528\u3044\u308B\uFF0E\u3053\u306E\u7269\u8CEA\u306F\uFF0C\u6C34\u4E2D\u3067\u306F\u5149\u3092\u900F\u904E\u3057\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306E\u3088\u3046\u306A\u632F\u308B\u821E\u3044\u3092\u3059\u308B\u304C\uFF0C\u7A7A\u6C17\u4E2D\u306B\u3042\u308B\u5834\u5408\u306F\u5149\u3092\u900F\u904E\u3057\u3066\u3082\u4E71\u53CD\u5C04\u306B\u3088\u3063\u3066\u50CF\u304C\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u306A\u308B\uFF0E'
                                 )
                             ),
                             _react2.default.createElement('div', { className: 'movie' }),
@@ -17788,6 +20140,19 @@ var ThroughStudio = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://youtu.be/C4i7qu7JFMk', target: '_blank' },
+                                            '\u672A\u6765\u306E\u79D1\u5B66\u8005\u305F\u3061\u3078 #07 \u300C\u898B\u3048\u306A\u3044\u30AC\u30E9\u30B9\u300D'
+                                        )
                                     )
                                 )
                             )
@@ -17834,7 +20199,7 @@ var ThroughStudio = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    '\u65E5\u5E38\u751F\u6D3B\u306B\u304A\u3044\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306A\u3069\u306E\u5149\u3092\u900F\u904E\u3059\u308B\u7269\u8CEA\u306F\u69D8\u3005\u306A\u7528\u9014\u3067\u4F7F\u308F\u308C\u308B\uFF0E\u4F8B\u3048\u3070\uFF0C\u5916\u3092\u898B\u308B\u305F\u3081\u306E\u7A93\u3084\u9451\u8CDE\u7528\u306E\u6C34\u69FD\u306A\u3069\u304C\u3042\u308B\uFF0E\u900F\u660E\u5EA6\u306F\u88FD\u9020\u6BB5\u968E\u3067\u6C7A\u307E\u308B\u305F\u3081\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u5358\u4F53\u3067\u5F8C\u304B\u3089\u900F\u660E\u5EA6\u3092\u5909\u3048\u308B\u3053\u3068\u306F\u51FA\u6765\u306A\u3044\uFF0E\u7A93\u3084\u30EC\u30F3\u30BA\u3092\u901A\u3057\u3066\u898B\u3048\u308B\u7269\u4F53\u3084\u50CF\u3092\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u3059\u308B\u306B\u306F\uFF0C\u30AB\u30FC\u30C6\u30F3\u3084\u84CB\u306A\u3069\u5149\u3092\u900F\u904E\u3057\u306A\u3044\u7D20\u6750\u3067\u8868\u9762\u3092\u8986\u3046\u5FC5\u8981\u304C\u3042\u308B\uFF0E\u3057\u304B\u3057\u3001\u8868\u9762\u3092\u8986\u3046\u969B\u306E\u5236\u5FA1\u306F\u307B\u3068\u3093\u3069\u306E\u5834\u5408\u3067\u7E26\u304B\u6A2A\u306E\u3069\u3061\u3089\u304B\u4E00\u65B9\u5411\u306B\u3057\u304B\u884C\u3048\u306A\u3044\u306E\u3067\u906E\u5149\u3057\u3066\u3082\u671B\u307E\u306A\u3044\u7D50\u679C\u306B\u306A\u308B\u3053\u3068\u304C\u3042\u308B\u3002\u305D\u3053\u3067\uFF0C\u900F\u660E\u5EA6\u3092\u5236\u5FA1\u3059\u308B\u3053\u3068\u3067\u5B9F\u73FE\u3057\u305F\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u306A\u30C7\u30A3\u30B9\u30D7\u30EC\u30A4Throughly\u3092\u63D0\u6848\u3059\u308B\uFF0E\u900F\u660E\u5EA6\u306E\u5236\u5FA1\u306B\u306F\u5438\u6C34\u6027\u30DD\u30EA\u30DE\u30FC\u3092\u7528\u3044\u308B\uFF0E\u3053\u306E\u7269\u8CEA\u306F\uFF0C\u6C34\u4E2D\u3067\u306F\u5149\u3092\u900F\u904E\u3057\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306E\u3088\u3046\u306A\u632F\u308B\u821E\u3044\u3092\u3059\u308B\u304C\uFF0C\u7A7A\u6C17\u4E2D\u306B\u3042\u308B\u5834\u5408\u306F\u5149\u3092\u900F\u904E\u3057\u3066\u3082\u4E71\u53CD\u5C04\u306B\u3088\u3063\u3066\u50CF\u304C\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u306A\u308B\uFF0E'
+                                    '\u65E5\u5E38\u751F\u6D3B\u306B\u304A\u3044\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306A\u3069\u306E\u5149\u3092\u900F\u904E\u3059\u308B\u7269\u8CEA\u306F\u69D8\u3005\u306A\u7528\u9014\u3067\u4F7F\u308F\u308C\u308B\uFF0E\u4F8B\u3048\u3070\uFF0C\u5916\u3092\u898B\u308B\u305F\u3081\u306E\u7A93\u3084\u9451\u8CDE\u7528\u306E\u6C34\u69FD\u306A\u3069\u304C\u3042\u308B\uFF0E\u900F\u660E\u5EA6\u306F\u88FD\u9020\u6BB5\u968E\u3067\u6C7A\u307E\u308B\u305F\u3081\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u5358\u4F53\u3067\u5F8C\u304B\u3089\u900F\u660E\u5EA6\u3092\u5909\u3048\u308B\u3053\u3068\u306F\u51FA\u6765\u306A\u3044\uFF0E\u7A93\u3084\u30EC\u30F3\u30BA\u3092\u901A\u3057\u3066\u898B\u3048\u308B\u7269\u4F53\u3084\u50CF\u3092\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u3059\u308B\u306B\u306F\uFF0C\u30AB\u30FC\u30C6\u30F3\u3084\u84CB\u306A\u3069\u5149\u3092\u900F\u904E\u3057\u306A\u3044\u7D20\u6750\u3067\u8868\u9762\u3092\u8986\u3046\u5FC5\u8981\u304C\u3042\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u8868\u9762\u3092\u8986\u3046\u969B\u306E\u5236\u5FA1\u306F\u307B\u3068\u3093\u3069\u306E\u5834\u5408\u3067\u7E26\u304B\u6A2A\u306E\u3069\u3061\u3089\u304B\u4E00\u65B9\u5411\u306B\u3057\u304B\u884C\u3048\u306A\u3044\u306E\u3067\u906E\u5149\u3057\u3066\u3082\u671B\u307E\u306A\u3044\u7D50\u679C\u306B\u306A\u308B\u3053\u3068\u304C\u3042\u308B\uFF0E\u305D\u3053\u3067\uFF0C\u900F\u660E\u5EA6\u3092\u5236\u5FA1\u3059\u308B\u3053\u3068\u3067\u5B9F\u73FE\u3057\u305F\u30A4\u30F3\u30BF\u30E9\u30AF\u30C6\u30A3\u30D6\u306A\u30C7\u30A3\u30B9\u30D7\u30EC\u30A4Through Studio\u3092\u63D0\u6848\u3059\u308B\uFF0E\u900F\u660E\u5EA6\u306E\u5236\u5FA1\u306B\u306F\u5438\u6C34\u6027\u30DD\u30EA\u30DE\u30FC\u3092\u7528\u3044\u308B\uFF0E\u3053\u306E\u7269\u8CEA\u306F\uFF0C\u6C34\u4E2D\u3067\u306F\u5149\u3092\u900F\u904E\u3057\u3066\uFF0C\u30AC\u30E9\u30B9\u3084\u30A2\u30AF\u30EA\u30EB\u306E\u3088\u3046\u306A\u632F\u308B\u821E\u3044\u3092\u3059\u308B\u304C\uFF0C\u7A7A\u6C17\u4E2D\u306B\u3042\u308B\u5834\u5408\u306F\u5149\u3092\u900F\u904E\u3057\u3066\u3082\u4E71\u53CD\u5C04\u306B\u3088\u3063\u3066\u50CF\u304C\u898B\u3048\u306A\u3044\u3088\u3046\u306B\u306A\u308B\uFF0E'
                                 )
                             ),
                             _react2.default.createElement('div', { className: 'movie' }),
@@ -17848,6 +20213,19 @@ var ThroughStudio = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://youtu.be/C4i7qu7JFMk', target: '_blank' },
+                                            '\u672A\u6765\u306E\u79D1\u5B66\u8005\u305F\u3061\u3078 #07 \u300C\u898B\u3048\u306A\u3044\u30AC\u30E9\u30B9\u300D'
+                                        )
                                     )
                                 )
                             )
@@ -17864,7 +20242,273 @@ var ThroughStudio = function (_Component) {
 exports.default = ThroughStudio;
 
 /***/ }),
-/* 131 */,
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = __webpack_require__(11);
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+var _debug = __webpack_require__(8);
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _reactResponsive = __webpack_require__(7);
+
+var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var debug = (0, _debug2.default)('ProjectDetail:jsx:');
+
+/*
+    * 各プロジェクトのDetailのtemplate
+    * 追加要素があれば，ProjectDetail.scssか新しくfileをつくってclass名が混ざらないように管理
+    * ProjectCardのため，jsonファイルも作るのを忘れない
+*/
+
+var ProjectDetailTemplate = function (_Component) {
+    _inherits(ProjectDetailTemplate, _Component);
+
+    function ProjectDetailTemplate(props) {
+        _classCallCheck(this, ProjectDetailTemplate);
+
+        var _this = _possibleConstructorReturn(this, (ProjectDetailTemplate.__proto__ || Object.getPrototypeOf(ProjectDetailTemplate)).call(this, props));
+
+        _this.state = {
+            title: '',
+            abstraction: ''
+        };
+        return _this;
+    }
+
+    _createClass(ProjectDetailTemplate, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var projectName = this.props.match.path.split('/')[2];
+            var data = __webpack_require__(9)("./" + projectName + '.json');
+            this.setState({
+                title: data.project.title,
+                abstraction: data.project.abstraction
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var projectName = this.props.match.path.split('/')[2];
+            var imgUrl1 = './src/images/16_9/' + projectName + '/1.png';
+            var imgUrl2 = './src/images/16_9/' + projectName + '/2.png';
+            var imgUrl3 = './src/images/16_9/' + projectName + '/3.png';
+            var imgUrl4 = './src/images/16_9/' + projectName + '/4.png';
+
+            var settings = {
+                dots: true,
+                fade: true,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                pauseOnHover: true
+            };
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { maxWidth: 1049 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page-middle' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header-middle' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents-middle' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images-middle' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 }),
+                                    _react2.default.createElement('img', { src: imgUrl4 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u4E88\u5B9A\u3092\u7BA1\u7406\u3059\u308B\u305F\u3081\u306B\uFF0C\u624B\u5E33\u3084\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u7BA1\u7406\u30B7\u30B9\u30C6\u30E0\u3092\u5229\u7528\u3059\u308B\u4EBA\u306F\u591A\u3044.\u3057\u304B\u3057\uFF0C \u305D\u308C\u3089\u306F\u5E38\u306B\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3082\u306E\u3066\u3099\u306F\u306A\u3044\u305F\u3081\uFF0C\u5B9A\u671F\u7684\u306B\u4E88\u5B9A\u3092\u78BA\u8A8D\u3059\u308B\u5FC5\u8981\u304B\u3099\u3042\u308A\uFF0C\u304B\u3064\u671F\u9650\u304B\u3099\u8FD1\u3064\u3099\u3044\u3066\u3044\u308B\u3053\u3068\u3092\u81EA\u5206\u3066\u3099\u628A\u63E1\u3059\u308B\u5FC5\u8981\u304B\u3099\u3042\u308B\uFF0E',
+                                    _react2.default.createElement('br', null),
+                                    '\u307E\u305F\uFF0C\u30B9\u30DE\u30FC\u30C8\u30D5\u30A9\u30F3\u3084\u30CF\u309A\u30BD\u30B3\u30F3\u3066\u3099\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u7BA1\u7406\u30A2\u30D5\u309A\u30EA\u3084\u30A6\u30A7\u30D5\u3099\u30B5\u30FC\u30D2\u3099\u30B9\u3092\u5229\u7528\u3059\u308B\u5834\u5408\uFF0C\u30EA\u30DE\u30A4\u30F3\u30BF\u3099\u30FC\u6A5F\u80FD\u306E\u3088\u3046\u306B\uFF0C\u671F\u9650\u304B\u3099\u8FD1\u304F\u306A\u308B\u3068\u81EA\u5206\u304B\u3099\u6307\u5B9A\u3057\u305F\u6642\u9593\u306B\u901A\u77E5\u3092\u53D7\u3051\u53D6\u308B\u3088\u3046\u306B\u8A2D\u5B9A\u3066\u3099\u304D\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u6307\u5B9A\u3057\u305F\u6642\u9593\u306B\u901A\u77E5\u306B\u6C17\u4ED8\u3051\u308B\u72B6\u614B\u3066\u3099\u306A\u3051\u308C\u306F\u3099\u610F\u5473\u304B\u3099\u306A\u3044\uFF0E\u307E\u305F\uFF0C\u6570\u5206\u524D\u30FB\u6570\u6642\u9593\u524D\u306A\u3068\u3099\u306B\u6C17\u304B\u3099\u3064\u3044\u3066\u3082\u9593\u306B\u5408\u308F\u306A\u3044\u3088\u3046\u306A\u4E88\u5B9A\u3066\u3099\u3042\u3063\u305F\u5834\u5408\uFF0C \u901A\u77E5\u3092\u8A2D\u5B9A\u3059\u308B\u6642\u9593\u304B\u3099\u308F\u304B\u3089\u306A\u3044\u3053\u3068\u304B\u3099\u591A\u304F\u3042\u308B.\u3066\u3099\u306F\uFF0C\u5E38\u306B\u4E88\u5B9A\u304B\u3099\u8996\u754C\u306B\u5165\u3063\u3066\u304F\u308B\u3088\u3046\u306A\u30B7\u30B9\u30C6\u30E0\u30FB\u30B5\u30FC\u30D2\u3099\u30B9\u304B\u3099\u3042\u308C\u306F\u3099\u3044\u3044\u306E\u3066\u3099\u306F\u306A\u3044\u304B\u3068\u8003\u3048\u305F.',
+                                    _react2.default.createElement('br', null),
+                                    '\u305D\u3053\u3066\u3099\uFF0C\u79C1\u305F\u3061\u306F ToDoPoP:\u4E88\u5B9A\u306E\u512A\u5148\u5EA6\u3092\u8996\u899A\u7684\u306B\u8868\u793A\u3059\u308B\u30A4\u30F3\u30C6\u30EA\u30A2\u7528\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u7BA1\u7406\u30A2\u30D5\u309A\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u63D0\u6848\u3059\u308B\uFF0EToDoPoP\u306F\uFF0C\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u3092\u56F3\u5F62\u306E\u5927\u304D\u3055\u3066\u3099\u8868\u793A\u3059\u308B\u3053\u3068\u3066\u3099\uFF0C\u30E6\u30FC\u30B5\u3099\u306B\u30A4\u30D8\u3099\u30F3\u30C8\u304B\u3099\u8FD1\u3065\u3044\u3066\u3044\u308B\u3053\u3068\u3092\u77E5\u3089\u305B\u308B\u30A4\u30F3\u30C6\u30EA\u30A2\u7528\u30A2\u30D5\u309A\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3066\u3099\u3042\u308B\uFF0E\u3053\u306E\u30B7\u30B9\u30C6\u30E0\u306FiPad\u3084\u305D\u306E\u4ED6\u30BF\u30D5\u3099\u30EC\u30C3\u30C8PC\u306B\u5E38\u306B\u8868\u793A\u3055\u305B\u3066\u304A\u304D\uFF0C\u30A4\u30F3\u30C6\u30EA\u30A2\u3068\u3057\u3066\u90E8\u5C4B\u306B\u8A2D\u7F6E\u3059\u308B\u306E\u3092\u60F3\u5B9A\u3057\u3066\u3044\u308B\uFF0E\u5B66\u90E82\u5E74\u6B21\u306E\u8B1B\u7FA9: \u30B3\u30F3\u30C6\u30F3\u30C4\u30E1\u30C7\u30A3\u30A2\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u5B9F\u7FD2II\u306B\u3066\u5236\u4F5C\uFF0E\u30D7\u30EC\u30BC\u30F3\u30C6\u30FC\u30B7\u30E7\u30F3\u6700\u512A\u79C0\u8CDE\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/ypdfsInxk-s', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations-middle' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.persistent.org/memorium.html', target: '_blank' },
+                                            'Memorium: \u773A\u3081\u308B\u30A4\u30F3\u30BF\u30D5\u30A7\u30FC\u30B9\u306E\u63D0\u6848\u3068\u305D\u306E\u8A66\u4F5C'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    _reactResponsive2.default,
+                    { minWidth: 1050 },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'detail-page' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-header' },
+                            _react2.default.createElement(
+                                'h4',
+                                null,
+                                this.state.title
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.state.abstraction
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'project-contents' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-images' },
+                                _react2.default.createElement(
+                                    _reactSlick2.default,
+                                    settings,
+                                    _react2.default.createElement('img', { src: imgUrl1 }),
+                                    _react2.default.createElement('img', { src: imgUrl2 }),
+                                    _react2.default.createElement('img', { src: imgUrl3 })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'project-description' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    '\u4E88\u5B9A\u3092\u7BA1\u7406\u3059\u308B\u305F\u3081\u306B\uFF0C\u624B\u5E33\u3084\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u7BA1\u7406\u30B7\u30B9\u30C6\u30E0\u3092\u5229\u7528\u3059\u308B\u4EBA\u306F\u591A\u3044.\u3057\u304B\u3057\uFF0C \u305D\u308C\u3089\u306F\u5E38\u306B\u8868\u793A\u3055\u308C\u3066\u3044\u308B\u3082\u306E\u3066\u3099\u306F\u306A\u3044\u305F\u3081\uFF0C\u5B9A\u671F\u7684\u306B\u4E88\u5B9A\u3092\u78BA\u8A8D\u3059\u308B\u5FC5\u8981\u304B\u3099\u3042\u308A\uFF0C\u304B\u3064\u671F\u9650\u304B\u3099\u8FD1\u3064\u3099\u3044\u3066\u3044\u308B\u3053\u3068\u3092\u81EA\u5206\u3066\u3099\u628A\u63E1\u3059\u308B\u5FC5\u8981\u304B\u3099\u3042\u308B\uFF0E',
+                                    _react2.default.createElement('br', null),
+                                    '\u307E\u305F\uFF0C\u30B9\u30DE\u30FC\u30C8\u30D5\u30A9\u30F3\u3084\u30CF\u309A\u30BD\u30B3\u30F3\u3066\u3099\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u7BA1\u7406\u30A2\u30D5\u309A\u30EA\u3084\u30A6\u30A7\u30D5\u3099\u30B5\u30FC\u30D2\u3099\u30B9\u3092\u5229\u7528\u3059\u308B\u5834\u5408\uFF0C\u30EA\u30DE\u30A4\u30F3\u30BF\u3099\u30FC\u6A5F\u80FD\u306E\u3088\u3046\u306B\uFF0C\u671F\u9650\u304B\u3099\u8FD1\u304F\u306A\u308B\u3068\u81EA\u5206\u304B\u3099\u6307\u5B9A\u3057\u305F\u6642\u9593\u306B\u901A\u77E5\u3092\u53D7\u3051\u53D6\u308B\u3088\u3046\u306B\u8A2D\u5B9A\u3066\u3099\u304D\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u6307\u5B9A\u3057\u305F\u6642\u9593\u306B\u901A\u77E5\u306B\u6C17\u4ED8\u3051\u308B\u72B6\u614B\u3066\u3099\u306A\u3051\u308C\u306F\u3099\u610F\u5473\u304B\u3099\u306A\u3044\uFF0E\u307E\u305F\uFF0C\u6570\u5206\u524D\u30FB\u6570\u6642\u9593\u524D\u306A\u3068\u3099\u306B\u6C17\u304B\u3099\u3064\u3044\u3066\u3082\u9593\u306B\u5408\u308F\u306A\u3044\u3088\u3046\u306A\u4E88\u5B9A\u3066\u3099\u3042\u3063\u305F\u5834\u5408\uFF0C \u901A\u77E5\u3092\u8A2D\u5B9A\u3059\u308B\u6642\u9593\u304B\u3099\u308F\u304B\u3089\u306A\u3044\u3053\u3068\u304B\u3099\u591A\u304F\u3042\u308B.\u3066\u3099\u306F\uFF0C\u5E38\u306B\u4E88\u5B9A\u304B\u3099\u8996\u754C\u306B\u5165\u3063\u3066\u304F\u308B\u3088\u3046\u306A\u30B7\u30B9\u30C6\u30E0\u30FB\u30B5\u30FC\u30D2\u3099\u30B9\u304B\u3099\u3042\u308C\u306F\u3099\u3044\u3044\u306E\u3066\u3099\u306F\u306A\u3044\u304B\u3068\u8003\u3048\u305F.',
+                                    _react2.default.createElement('br', null),
+                                    '\u305D\u3053\u3066\u3099\uFF0C\u79C1\u305F\u3061\u306F ToDoPoP:\u4E88\u5B9A\u306E\u512A\u5148\u5EA6\u3092\u8996\u899A\u7684\u306B\u8868\u793A\u3059\u308B\u30A4\u30F3\u30C6\u30EA\u30A2\u7528\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u7BA1\u7406\u30A2\u30D5\u309A\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3092\u63D0\u6848\u3059\u308B\uFF0EToDoPoP\u306F\uFF0C\u30B9\u30B1\u30B7\u3099\u30E5\u30FC\u30EB\u3092\u56F3\u5F62\u306E\u5927\u304D\u3055\u3066\u3099\u8868\u793A\u3059\u308B\u3053\u3068\u3066\u3099\uFF0C\u30E6\u30FC\u30B5\u3099\u306B\u30A4\u30D8\u3099\u30F3\u30C8\u304B\u3099\u8FD1\u3065\u3044\u3066\u3044\u308B\u3053\u3068\u3092\u77E5\u3089\u305B\u308B\u30A4\u30F3\u30C6\u30EA\u30A2\u7528\u30A2\u30D5\u309A\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3066\u3099\u3042\u308B\uFF0E\u3053\u306E\u30B7\u30B9\u30C6\u30E0\u306FiPad\u3084\u305D\u306E\u4ED6\u30BF\u30D5\u3099\u30EC\u30C3\u30C8PC\u306B\u5E38\u306B\u8868\u793A\u3055\u305B\u3066\u304A\u304D\uFF0C\u30A4\u30F3\u30C6\u30EA\u30A2\u3068\u3057\u3066\u90E8\u5C4B\u306B\u8A2D\u7F6E\u3059\u308B\u306E\u3092\u60F3\u5B9A\u3057\u3066\u3044\u308B\uFF0E\u5B66\u90E82\u5E74\u6B21\u306E\u8B1B\u7FA9: \u30B3\u30F3\u30C6\u30F3\u30C4\u30E1\u30C7\u30A3\u30A2\u30D7\u30ED\u30B0\u30E9\u30DF\u30F3\u30B0\u5B9F\u7FD2II\u306B\u3066\u5236\u4F5C\uFF0E\u30D7\u30EC\u30BC\u30F3\u30C6\u30FC\u30B7\u30E7\u30F3\u6700\u512A\u79C0\u8CDE\uFF0E'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'movie' },
+                                _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/ypdfsInxk-s', frameBorder: '0', allowFullScreen: true })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'relations' },
+                                _react2.default.createElement(
+                                    'p',
+                                    null,
+                                    _react2.default.createElement(
+                                        'b',
+                                        null,
+                                        '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'http://www.persistent.org/memorium.html', target: '_blank' },
+                                            'Memorium: \u773A\u3081\u308B\u30A4\u30F3\u30BF\u30D5\u30A7\u30FC\u30B9\u306E\u63D0\u6848\u3068\u305D\u306E\u8A66\u4F5C'
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ProjectDetailTemplate;
+}(_react.Component);
+
+exports.default = ProjectDetailTemplate;
+
+/***/ }),
 /* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17944,7 +20588,7 @@ var Unpresence = function (_Component) {
                 infinite: true,
                 speed: 1000,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true,
@@ -17954,27 +20598,6 @@ var Unpresence = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    _reactHelmet.Helmet,
-                    null,
-                    _react2.default.createElement(
-                        'title',
-                        null,
-                        'Kazuma Takada Works-(Un) Presence'
-                    ),
-                    _react2.default.createElement('meta', { property: 'og:title', content: 'Kazuma Takada Portfolio | (Un) Presence' }),
-                    _react2.default.createElement('meta', { property: 'og:type', content: 'article' }),
-                    _react2.default.createElement('meta', { property: 'og:url', content: 'http://fmsuvm.github.io/#/detail/unpresence' }),
-                    _react2.default.createElement('meta', { property: 'og:site_name', content: 'Kazuma Takada Portfolio' }),
-                    _react2.default.createElement('meta', { property: 'og:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:card', content: 'summary_large_image' }),
-                    _react2.default.createElement('meta', { name: 'twitter:site', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:creator', content: '@fmsuvM' }),
-                    _react2.default.createElement('meta', { name: 'twitter:domain', content: 'fmsuvM.github.io' }),
-                    _react2.default.createElement('meta', { name: 'twitter:title', content: 'Kazuma Takada Profile' }),
-                    _react2.default.createElement('meta', { name: 'twitter:description', content: 'Please visit my portfolio !' }),
-                    _react2.default.createElement('meta', { name: 'twitter:image', content: 'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png' })
-                ),
                 _react2.default.createElement(
                     _reactResponsive2.default,
                     { maxWidth: 1049 },
@@ -18015,7 +20638,7 @@ var Unpresence = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    '\u3053\u306E\u4F5C\u54C1\u3067\u306F\u300C\u73FE\u5B9F\u3067\u900F\u660E\u611F\u3092\u5229\u7528\u3059\u308B\u3053\u3068\u300D\u3092\u76EE\u7684\u3068\u3057\u3066\u3044\u308B\uFF0E\u6C34\u306E\u4E2D\u3067\u900F\u660E\u611F\u3092\u51FA\u3059\u305F\u3081\u306B\uFF0C\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\uFF08\u6D88\u81ED\u30D3\u30FC\u30BA\uFF09\u3092\u4F7F\u3046\u3053\u3068\u306B\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u304C\u6C34\u3092\u5438\u3046\u3068\uFF0C\u305D\u306E\u6642\u9593\u304C\u9577\u3044\u307B\u3069\u30B5\u30A4\u30BA\u304C\u5927\u304D\u304F\u306A\u308B\uFF0E\u6642\u9593\u5DEE\u3067\u5927\u304D\u3055\u304C\u5909\u308F\u308B\u3053\u3068\u3092\u5229\u7528\u3057\u3066\uFF0C\u69D8\u3005\u306A\u6642\u9593\u3067\u6C34\u3092\u5438\u308F\u305B\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u306E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u3092\u751F\u6210\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u306F\u6C34\u3068\u307B\u307C\u540C\u3058\u5C48\u6298\u7387\u306B\u306A\u308B\u306E\u3067\uFF0C\u6C34\u306E\u4E2D\u3067\u306F\u307B\u307C\u898B\u3048\u306A\u304F\u306A\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u5149\u306E\u53CD\u5C04\u3067\u8F2A\u90ED\u304C\u5149\u3063\u305F\u308A\u3057\u3066\u5C11\u3057\u898B\u3048\u308B\u304C\uFF0C\u3053\u308C\u306F\u8996\u8074\u8005\u306B\u4F55\u304B\u3042\u308B\u3068\u601D\u308F\u305B\u308B\u8868\u73FE\u3067\u3082\u3042\u308B\uFF0E \u3053\u306E\u5FAE\u5999\u306A\u5869\u6885\u306E\u900F\u660E\u611F\u3068\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u3092\u5229\u7528\u3057\u3066\uFF0C\u900F\u660E\u306B\u306A\u3063\u305F\u77AC\u9593\u306B\u898B\u3048\u306A\u304B\u3063\u305F\u30E2\u30CE\u304C\u898B\u3048\u308B\u3088\u3046\u306B\u306A\u308A\uFF0C\u898B\u3048\u306A\u3044\u30E2\u30CE\u306B\u3076\u3064\u304B\u3063\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u65B9\u5411\u306B\u9032\u3093\u3067\u3044\u304F\uFF0C\u3068\u3044\u3046\u8868\u73FE\u3092\u3057\u3066\u3044\u308B\uFF0E'
+                                    '\u3053\u306E\u4F5C\u54C1\u3067\u306F\u300C\u73FE\u5B9F\u3067\u900F\u660E\u611F\u3092\u5229\u7528\u3059\u308B\u3053\u3068\u300D\u3092\u76EE\u7684\u3068\u3057\u3066\u3044\u308B\uFF0E\u6C34\u306E\u4E2D\u3067\u900F\u660E\u611F\u3092\u51FA\u3059\u305F\u3081\u306B\uFF0C\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\uFF08\u6D88\u81ED\u30D3\u30FC\u30BA\uFF09\u3092\u4F7F\u3046\u3053\u3068\u306B\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u304C\u6C34\u3092\u5438\u3046\u3068\uFF0C\u305D\u306E\u6642\u9593\u304C\u9577\u3044\u307B\u3069\u30B5\u30A4\u30BA\u304C\u5927\u304D\u304F\u306A\u308B\uFF0E\u6642\u9593\u5DEE\u3067\u5927\u304D\u3055\u304C\u5909\u308F\u308B\u3053\u3068\u3092\u5229\u7528\u3057\u3066\uFF0C\u69D8\u3005\u306A\u6642\u9593\u3067\u6C34\u3092\u5438\u308F\u305B\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u306E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u3092\u751F\u6210\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u306F\u6C34\u3068\u307B\u307C\u540C\u3058\u5C48\u6298\u7387\u306B\u306A\u308B\u306E\u3067\uFF0C\u6C34\u306E\u4E2D\u3067\u306F\u307B\u307C\u898B\u3048\u306A\u304F\u306A\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u5149\u306E\u53CD\u5C04\u3067\u8F2A\u90ED\u304C\u5149\u3063\u305F\u308A\u3057\u3066\u5C11\u3057\u898B\u3048\u308B\u304C\uFF0C\u3053\u308C\u306F\u8996\u8074\u8005\u306B\u4F55\u304B\u3042\u308B\u3068\u601D\u308F\u305B\u308B\u8868\u73FE\u3067\u3082\u3042\u308B\uFF0E \u3053\u306E\u5FAE\u5999\u306A\u5869\u6885\u306E\u900F\u660E\u611F\u3068\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u3092\u5229\u7528\u3057\u3066\uFF0C\u900F\u660E\u306B\u306A\u3063\u305F\u77AC\u9593\u306B\u898B\u3048\u306A\u304B\u3063\u305F\u30E2\u30CE\u304C\u898B\u3048\u308B\u3088\u3046\u306B\u306A\u308A\uFF0C\u898B\u3048\u306A\u3044\u30E2\u30CE\u306B\u3076\u3064\u304B\u3063\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u65B9\u5411\u306B\u9032\u3093\u3067\u3044\u304F\uFF0C\u3068\u3044\u3046\u8868\u73FE\u3092\u3057\u3066\u3044\u308B\uFF0E\u5B66\u90E83\u5E74\u6B21\u306E\u8B1B\u7FA9: \u6620\u50CF\u30FB\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u8868\u73FE\u306E\u500B\u4EBA\u8AB2\u984C\u5236\u4F5C\u7269\uFF0E'
                                 )
                             ),
                             _react2.default.createElement(
@@ -18033,6 +20656,19 @@ var Unpresence = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://youtu.be/C4i7qu7JFMk', target: '_blank' },
+                                            '\u672A\u6765\u306E\u79D1\u5B66\u8005\u305F\u3061\u3078 #07 \u300C\u898B\u3048\u306A\u3044\u30AC\u30E9\u30B9\u300D'
+                                        )
                                     )
                                 )
                             )
@@ -18079,7 +20715,7 @@ var Unpresence = function (_Component) {
                                 _react2.default.createElement(
                                     'p',
                                     null,
-                                    '\u3053\u306E\u4F5C\u54C1\u3067\u306F\u300C\u73FE\u5B9F\u3067\u900F\u660E\u611F\u3092\u5229\u7528\u3059\u308B\u3053\u3068\u300D\u3092\u76EE\u7684\u3068\u3057\u3066\u3044\u308B\uFF0E\u6C34\u306E\u4E2D\u3067\u900F\u660E\u611F\u3092\u51FA\u3059\u305F\u3081\u306B\uFF0C\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\uFF08\u6D88\u81ED\u30D3\u30FC\u30BA\uFF09\u3092\u4F7F\u3046\u3053\u3068\u306B\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u304C\u6C34\u3092\u5438\u3046\u3068\uFF0C\u305D\u306E\u6642\u9593\u304C\u9577\u3044\u307B\u3069\u30B5\u30A4\u30BA\u304C\u5927\u304D\u304F\u306A\u308B\uFF0E\u6642\u9593\u5DEE\u3067\u5927\u304D\u3055\u304C\u5909\u308F\u308B\u3053\u3068\u3092\u5229\u7528\u3057\u3066\uFF0C\u69D8\u3005\u306A\u6642\u9593\u3067\u6C34\u3092\u5438\u308F\u305B\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u306E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u3092\u751F\u6210\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u306F\u6C34\u3068\u307B\u307C\u540C\u3058\u5C48\u6298\u7387\u306B\u306A\u308B\u306E\u3067\uFF0C\u6C34\u306E\u4E2D\u3067\u306F\u307B\u307C\u898B\u3048\u306A\u304F\u306A\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u5149\u306E\u53CD\u5C04\u3067\u8F2A\u90ED\u304C\u5149\u3063\u305F\u308A\u3057\u3066\u5C11\u3057\u898B\u3048\u308B\u304C\uFF0C\u3053\u308C\u306F\u8996\u8074\u8005\u306B\u4F55\u304B\u3042\u308B\u3068\u601D\u308F\u305B\u308B\u8868\u73FE\u3067\u3082\u3042\u308B\uFF0E \u3053\u306E\u5FAE\u5999\u306A\u5869\u6885\u306E\u900F\u660E\u611F\u3068\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u3092\u5229\u7528\u3057\u3066\uFF0C\u900F\u660E\u306B\u306A\u3063\u305F\u77AC\u9593\u306B\u898B\u3048\u306A\u304B\u3063\u305F\u30E2\u30CE\u304C\u898B\u3048\u308B\u3088\u3046\u306B\u306A\u308A\uFF0C\u898B\u3048\u306A\u3044\u30E2\u30CE\u306B\u3076\u3064\u304B\u3063\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u65B9\u5411\u306B\u9032\u3093\u3067\u3044\u304F\uFF0C\u3068\u3044\u3046\u8868\u73FE\u3092\u3057\u3066\u3044\u308B\uFF0E'
+                                    '\u3053\u306E\u4F5C\u54C1\u3067\u306F\u300C\u73FE\u5B9F\u3067\u900F\u660E\u611F\u3092\u5229\u7528\u3059\u308B\u3053\u3068\u300D\u3092\u76EE\u7684\u3068\u3057\u3066\u3044\u308B\uFF0E\u6C34\u306E\u4E2D\u3067\u900F\u660E\u611F\u3092\u51FA\u3059\u305F\u3081\u306B\uFF0C\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\uFF08\u6D88\u81ED\u30D3\u30FC\u30BA\uFF09\u3092\u4F7F\u3046\u3053\u3068\u306B\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u304C\u6C34\u3092\u5438\u3046\u3068\uFF0C\u305D\u306E\u6642\u9593\u304C\u9577\u3044\u307B\u3069\u30B5\u30A4\u30BA\u304C\u5927\u304D\u304F\u306A\u308B\uFF0E\u6642\u9593\u5DEE\u3067\u5927\u304D\u3055\u304C\u5909\u308F\u308B\u3053\u3068\u3092\u5229\u7528\u3057\u3066\uFF0C\u69D8\u3005\u306A\u6642\u9593\u3067\u6C34\u3092\u5438\u308F\u305B\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u306E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u3092\u751F\u6210\u3057\u305F\uFF0E\u5438\u6C34\u30DD\u30EA\u30DE\u30FC\u306F\u6C34\u3068\u307B\u307C\u540C\u3058\u5C48\u6298\u7387\u306B\u306A\u308B\u306E\u3067\uFF0C\u6C34\u306E\u4E2D\u3067\u306F\u307B\u307C\u898B\u3048\u306A\u304F\u306A\u308B\uFF0E\u3057\u304B\u3057\uFF0C\u5149\u306E\u53CD\u5C04\u3067\u8F2A\u90ED\u304C\u5149\u3063\u305F\u308A\u3057\u3066\u5C11\u3057\u898B\u3048\u308B\u304C\uFF0C\u3053\u308C\u306F\u8996\u8074\u8005\u306B\u4F55\u304B\u3042\u308B\u3068\u601D\u308F\u305B\u308B\u8868\u73FE\u3067\u3082\u3042\u308B\uFF0E \u3053\u306E\u5FAE\u5999\u306A\u5869\u6885\u306E\u900F\u660E\u611F\u3068\u30E9\u30F3\u30C0\u30E0\u306A\u30B5\u30A4\u30BA\u3092\u5229\u7528\u3057\u3066\uFF0C\u900F\u660E\u306B\u306A\u3063\u305F\u77AC\u9593\u306B\u898B\u3048\u306A\u304B\u3063\u305F\u30E2\u30CE\u304C\u898B\u3048\u308B\u3088\u3046\u306B\u306A\u308A\uFF0C\u898B\u3048\u306A\u3044\u30E2\u30CE\u306B\u3076\u3064\u304B\u3063\u3066\u30E9\u30F3\u30C0\u30E0\u306A\u65B9\u5411\u306B\u9032\u3093\u3067\u3044\u304F\uFF0C\u3068\u3044\u3046\u8868\u73FE\u3092\u3057\u3066\u3044\u308B\uFF0E\u5B66\u90E83\u5E74\u6B21\u306E\u8B1B\u7FA9: \u6620\u50CF\u30FB\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u8868\u73FE\u306E\u500B\u4EBA\u8AB2\u984C\u5236\u4F5C\u7269\uFF0E'
                                 )
                             ),
                             _react2.default.createElement(
@@ -18097,6 +20733,19 @@ var Unpresence = function (_Component) {
                                         'b',
                                         null,
                                         '\u95A2\u9023\u30EA\u30F3\u30AF'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'ul',
+                                    null,
+                                    _react2.default.createElement(
+                                        'li',
+                                        null,
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://youtu.be/C4i7qu7JFMk', target: '_blank' },
+                                            '\u672A\u6765\u306E\u79D1\u5B66\u8005\u305F\u3061\u3078 #07 \u300C\u898B\u3048\u306A\u3044\u30AC\u30E9\u30B9\u300D'
+                                        )
                                     )
                                 )
                             )
@@ -19368,7 +22017,17 @@ var Works = function (_Component) {
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'ghostcreator' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'throughstudio' }),
-                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' })
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavihakodate' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'todopop' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'hishatsuuti' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'icc' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shoukaiocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabdesk' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabspace' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jitsuyouocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'sharetterhci' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jissenocreilly' })
                     )
                 ),
                 _react2.default.createElement(
@@ -19383,7 +22042,17 @@ var Works = function (_Component) {
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'unpresence' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'ghostcreator' }),
                         _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'throughstudio' }),
-                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' })
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'flexibleinterface' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabnavihakodate' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'todopop' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'hishatsuuti' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'icc' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'shoukaiocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabdesk' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'fabspace' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jitsuyouocreilly' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'sharetterhci' }),
+                        _react2.default.createElement(_ProjectCard2.default, { className: 'project-card', projectName: 'jissenocreilly' })
                     )
                 )
             );
@@ -19453,7 +22122,7 @@ exports = module.exports = __webpack_require__(21)(undefined);
 
 
 // module
-exports.push([module.i, ".project-card {\n  position: relative;\n  width: 300px;\n  height: 350px;\n  display: inline-block;\n  border: solid 1px #3f4551;\n  border-radius: 5px;\n  margin-top: 30px;\n  color: #373c38;\n  transition: all .2s;\n  /* mouse hover */ }\n  .project-card > .card-image > img {\n    width: 300px;\n    height: 220px; }\n  .project-card > .card-contents {\n    display: flex;\n    flex-direction: column;\n    padding: 0px;\n    margin: auto;\n    margin-top: -20px;\n    width: 280px;\n    align-items: center; }\n  .project-card > .card-contents > .project-title > h5 {\n    padding: 0px;\n    margin: 0px;\n    margin-top: 30px;\n    font-size: 20px;\n    text-align: left; }\n  .project-card > .card-contents > .project-subtitle > p {\n    font-size: 14px;\n    text-align: left;\n    padding: 0px;\n    margin: 0px;\n    margin-bottom: 30px; }\n  .project-card > .card-contents > hr {\n    text-align: center;\n    border: 0;\n    border-bottom: 1px dashed #9EA1A3;\n    padding: 0px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 10px; }\n  .project-card:hover {\n    position: relative;\n    top: -5px;\n    left: -5px;\n    box-shadow: 6px 6px 1px 1px #e6e6e6;\n    transition: all 0.3s ease; }\n", ""]);
+exports.push([module.i, ".project-card {\n  position: relative;\n  width: 300px;\n  height: 350px;\n  display: inline-block;\n  border: solid 1px #3f4551;\n  border-radius: 5px;\n  margin-top: 30px;\n  color: #373c38;\n  transition: all .2s;\n  /* mouse hover */ }\n  .project-card > .card-image > img {\n    width: 300px;\n    height: 220px; }\n  .project-card > .card-contents {\n    display: flex;\n    flex-direction: column;\n    padding: 0px;\n    margin: auto;\n    margin-top: -20px;\n    width: 280px;\n    align-items: center; }\n  .project-card > .card-contents > .project-title > h5 {\n    padding: 0px;\n    margin: 0px;\n    margin-top: 30px;\n    font-size: 20px;\n    text-align: left; }\n  .project-card > .card-contents > .project-subtitle > p {\n    font-size: 14px;\n    text-align: left;\n    padding: 0px;\n    margin: 0px;\n    margin-bottom: 30px; }\n  .project-card > .card-contents > hr {\n    text-align: center;\n    border: 0;\n    border-bottom: 1px dashed #9EA1A3;\n    padding: 0px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 10px; }\n  .project-card:hover {\n    position: relative;\n    top: -5px;\n    left: -5px;\n    transition: all 0.1s ease;\n    box-shadow: 6px 6px 5px 1px #a3a3a2;\n    transition: all 0.1s ease; }\n", ""]);
 
 // exports
 
@@ -19467,7 +22136,7 @@ exports = module.exports = __webpack_require__(21)(undefined);
 
 
 // module
-exports.push([module.i, ".detail-page {\n  display: block;\n  padding-top: 30px;\n  text-align: center;\n  word-wrap: break-word;\n  color: #373c38; }\n  .detail-page > .project-header {\n    width: 900px;\n    display: inline-block;\n    text-align: center;\n    margin: 0px;\n    padding: 0px; }\n  .detail-page > .project-header > h4 {\n    text-align: left;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page > .project-header > p {\n    text-align: left;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents > .project-images {\n  position: relative;\n  width: 1000px;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents img {\n  width: 900px;\n  height: auto;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents > .project-description {\n  width: 900px;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-bottom: 20px; }\n\n.project-contents > .project-description > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations {\n  width: 900px;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations ul {\n    text-align: left;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n\n.detail-page-middle {\n  display: block;\n  text-align: center;\n  width: 80%;\n  margin-right: auto;\n  margin-left: auto;\n  color: #373c38; }\n  .detail-page-middle > .project-header-middle {\n    display: inline-block;\n    text-align: center; }\n  .detail-page-middle > .project-header-middle > h4 {\n    text-align: center;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page-middle > .project-header-middle > p {\n    text-align: center;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents-middle > .project-images {\n  position: relative;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents-middle img {\n  width: 100%;\n  height: 100%;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents-middle > .project-description-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0px;\n  margin-bottom: 20px;\n  margin-top: 30px; }\n\n.project-contents-middle > .project-description-middle > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations-middle a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations-middle a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations-middle p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations-middle ul {\n    text-align: center;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations-middle li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n", ""]);
+exports.push([module.i, ".detail-page {\n  display: block;\n  padding-top: 30px;\n  text-align: center;\n  word-wrap: break-word;\n  color: #373c38; }\n  .detail-page > .project-header {\n    width: 900px;\n    display: inline-block;\n    text-align: center;\n    margin: 0px;\n    padding: 0px; }\n  .detail-page > .project-header > h4 {\n    text-align: left;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page > .project-header > p {\n    text-align: left;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents > .project-images {\n  position: relative;\n  width: 1000px;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents img {\n  width: 900px;\n  height: auto;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents > .project-description {\n  width: 52%;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-bottom: 20px; }\n\n.project-contents > .project-description > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations {\n  width: 52%;\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations ul {\n    text-align: left;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n\n.detail-page-middle {\n  display: block;\n  text-align: center;\n  width: 80%;\n  margin-right: auto;\n  margin-left: auto;\n  color: #373c38; }\n  .detail-page-middle > .project-header-middle {\n    display: inline-block;\n    text-align: center; }\n  .detail-page-middle > .project-header-middle > h4 {\n    text-align: center;\n    font-size: 26px;\n    margin-top: 0px;\n    margin-bottom: 0px; }\n  .detail-page-middle > .project-header-middle > p {\n    text-align: center;\n    font-size: 17px;\n    margin: 0px;\n    margin-top: 10px;\n    margin-bottom: 20px; }\n\n.project-contents-middle > .project-images {\n  position: relative;\n  margin: auto;\n  margin-top: 20px;\n  margin-bottom: 30px; }\n\n.project-contents-middle img {\n  width: 100%;\n  height: 100%;\n  border-radius: 5px;\n  align-self: center; }\n\n.project-contents-middle > .project-description-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0px;\n  margin-bottom: 20px;\n  margin-top: 30px; }\n\n.project-contents-middle > .project-description-middle > p {\n  text-align: left;\n  font-size: 15px; }\n\n.relations-middle {\n  display: inline-block;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px; }\n  .relations-middle a {\n    text-decoration: none;\n    color: #3a8fb7; }\n  .relations-middle a:hover {\n    color: #c9396d;\n    transition: all 0.4s 0s ease; }\n  .relations-middle p {\n    text-align: left;\n    margin-bottom: 8px; }\n  .relations-middle ul {\n    text-align: center;\n    list-style: none;\n    margin: 0px;\n    padding: 0px; }\n  .relations-middle li {\n    margin: 0px;\n    padding: 0px;\n    margin-top: 4px;\n    margin-bottom: 4px; }\n\n.movie-middle {\n  position: relative;\n  width: 100%;\n  padding-top: 56.25%; }\n\n.movie-middle iframe {\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 100%;\n  height: 100%; }\n", ""]);
 
 // exports
 
@@ -35995,7 +38664,17 @@ module.exports = {
 };
 
 /***/ }),
-/* 304 */,
+/* 304 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Fab Desk",
+		"abstraction": "研究室の工作用スペース作成"
+	}
+};
+
+/***/ }),
 /* 305 */
 /***/ (function(module, exports) {
 
@@ -36007,15 +38686,35 @@ module.exports = {
 };
 
 /***/ }),
-/* 306 */,
-/* 307 */,
+/* 306 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "fabnavi函館合宿",
+		"abstraction": "SFCにfabnaviを導入するためのフロントエンド合宿"
+	}
+};
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Fabrication Space",
+		"abstraction": "研究室のFabricationスペース作成"
+	}
+};
+
+/***/ }),
 /* 308 */
 /***/ (function(module, exports) {
 
 module.exports = {
 	"project": {
 		"title": "Flexible Interface",
-		"abstraction": "物体間に入れて紐づくインターフェイス"
+		"abstraction": "Coming Soon ..."
 	}
 };
 
@@ -36031,12 +38730,72 @@ module.exports = {
 };
 
 /***/ }),
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
+/* 310 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "被写通知",
+		"abstraction": "アドホックネットワークを利用した被写検知に基づく写真共有"
+	}
+};
+
+/***/ }),
+/* 311 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Snapped Notification",
+		"abstraction": "被写通知のICC展示"
+	}
+};
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "実践 お蔵入り",
+		"abstraction": "Processingから始めるShader入門を執筆"
+	}
+};
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "実用 お蔵入り",
+		"abstraction": "React Native ハンドブック for Android を執筆"
+	}
+};
+
+/***/ }),
+/* 314 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Sharetter",
+		"abstraction": "Bluetooth電波を利用した被写検知の検討と試作"
+	}
+};
+
+/***/ }),
+/* 315 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "Sharetter",
+		"abstraction": "Bluetooth電波と顔認識を利用した被写検知に基づく写真共有"
+	}
+};
+
+/***/ }),
 /* 316 */
 /***/ (function(module, exports) {
 
@@ -36048,7 +38807,17 @@ module.exports = {
 };
 
 /***/ }),
-/* 317 */,
+/* 317 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "詳解 お蔵入り",
+		"abstraction": "New CLI for React Native を執筆"
+	}
+};
+
+/***/ }),
 /* 318 */
 /***/ (function(module, exports) {
 
@@ -36060,7 +38829,17 @@ module.exports = {
 };
 
 /***/ }),
-/* 319 */,
+/* 319 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"project": {
+		"title": "ToDoPop",
+		"abstraction": "インテリア用スケジュール管理アプリケーション"
+	}
+};
+
+/***/ }),
 /* 320 */
 /***/ (function(module, exports) {
 
