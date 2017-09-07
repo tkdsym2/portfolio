@@ -40,6 +40,16 @@ export default class Works extends Component {
                         <ProjectCard className="project-card" projectName="ghostcreator" />
                         <ProjectCard className="project-card" projectName="throughstudio" />
                         <ProjectCard className="project-card" projectName="flexibleinterface" />
+                        <ProjectCard className="project-card" projectName="fabnavihakodate" />
+                        <ProjectCard className="project-card" projectName="todopop" />
+                        <ProjectCard className="project-card" projectName="hishatsuuti" />
+                        <ProjectCard className="project-card" projectName="icc" />
+                        <ProjectCard className="project-card" projectName="shoukaiocreilly" />
+                        <ProjectCard className="project-card" projectName="fabdesk" />
+                        <ProjectCard className="project-card" projectName="fabspace" />
+                        <ProjectCard className="project-card" projectName="jitsuyouocreilly" />
+                        <ProjectCard className="project-card" projectName="sharetterhci" />
+                        <ProjectCard className="project-card" projectName="jissenocreilly" />
                     </div>
                 </MediaQuery>
                 <MediaQuery minWidth={1050}>
@@ -51,6 +61,16 @@ export default class Works extends Component {
                         <ProjectCard className="project-card" projectName="ghostcreator" />
                         <ProjectCard className="project-card" projectName="throughstudio" />
                         <ProjectCard className="project-card" projectName="flexibleinterface" />
+                        <ProjectCard className="project-card" projectName="fabnavihakodate" />
+                        <ProjectCard className="project-card" projectName="todopop" />
+                        <ProjectCard className="project-card" projectName="hishatsuuti" />
+                        <ProjectCard className="project-card" projectName="icc" />
+                        <ProjectCard className="project-card" projectName="shoukaiocreilly" />
+                        <ProjectCard className="project-card" projectName="fabdesk" />
+                        <ProjectCard className="project-card" projectName="fabspace" />
+                        <ProjectCard className="project-card" projectName="jitsuyouocreilly" />
+                        <ProjectCard className="project-card" projectName="sharetterhci" />
+                        <ProjectCard className="project-card" projectName="jissenocreilly" />
                     </div>
                 </MediaQuery>
             </div>

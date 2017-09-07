@@ -44,7 +44,8 @@
     position: relative;
     top: -5px;
     left: -5px;
-    box-shadow: 6px 6px 1px 1px #e6e6e6;
-    transition: all 0.3s ease; }
+    transition: all 0.1s ease;
+    box-shadow: 6px 6px 5px 1px #a3a3a2;
+    transition: all 0.1s ease; }
 
 /*# sourceMappingURL=ProjectCard.css.map */

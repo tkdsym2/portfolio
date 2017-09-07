@@ -43,21 +43,6 @@ export default class Favbnavi extends Component {
 
         return (
             <div>
-                <Helmet>
-                    <title>Kazuma Takada Works-Shogg</title>
-                    <meta property="og:title" content="Kazuma Takada Portfolio | Shogg" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:url" content="http://fmsuvm.github.io/#/detail/shogg" />
-                    <meta property="og:site_name" content="Kazuma Takada Portfolio" />
-                    <meta property="og:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:site" content="@fmsuvM" />
-                    <meta name="twitter:creator" content="@fmsuvM" />
-                    <meta name="twitter:domain" content="fmsuvM.github.io" />
-                    <meta name="twitter:title" content="Kazuma Takada Profile" />
-                    <meta name="twitter:description" content="Please visit my portfolio !" />
-                    <meta name="twitter:image" content="https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png" />
-                </Helmet>
                 <MediaQuery maxWidth={1049}>
                     <div className="detail-page-middle">
                         <div className="project-header-middle">
@@ -72,14 +57,15 @@ export default class Favbnavi extends Component {
                             </div>
                             <div className="project-description-middle">
                                 <p>
-                                    Comming Soon ...
+                                    Shoggは卵を割る瞬間の衝撃をセンシングして，卵を使った料理レシピを提案するサービスである．卵が割れる瞬間の衝撃力を計測し，ユーザの状態を把握する．衝撃が強い場合は料理に慣れていないのか，疲れているかというように判断される．その時のユーザにとって手間にならない，または少し難しいの料理を適宜提案する．
+                                    学部3年次の講義: インタラクションデザインでの個人課題制作物．
                                 </p>
                             </div>
                             {/* <div className="movie">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div> */}
                             <div className="relations-middle">
-                                <p><b>関連リンク</b></p>
+                                {/* <p><b>関連リンク</b></p> */}
                                 {/* <ul>
                                     <li><a href="https://github.com/fabnavi" target="_blank">GitHub</a></li>
                                     <li><a href="http://fabnavi.tumblr.com/" target="_blank">fabnavi - Tumbler</a></li>
@@ -105,14 +91,15 @@ export default class Favbnavi extends Component {
                             </div>
                             <div className="project-description">
                                 <p>
-                                    Comming Soon ...
+                                    Shoggは卵を割る瞬間の衝撃をセンシングして，卵を使った料理レシピを提案するサービスである．卵が割れる瞬間の衝撃力を計測し，ユーザの状態を把握する．衝撃が強い場合は料理に慣れていないのか，疲れているかというように判断される．その時のユーザにとって手間にならない，または少し難しいの料理を適宜提案する．
+                                    学部3年次の講義: インタラクションデザインでの課題制作物．
                                 </p>
                             </div>
                             {/* <div className="movie">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fq0-6UXIzjU" frameBorder="0" allowFullScreen></iframe>
                             </div> */}
                             <div className="relations">
-                                <p><b>関連リンク</b></p>
+                                {/* <p><b>関連リンク</b></p> */}
                                 {/* <ul>
                                     <li><a href="https://github.com/fabnavi" target="_blank">GitHub</a></li>
                                     <li><a href="http://fabnavi.tumblr.com/" target="_blank">fabnavi - Tumbler</a></li>
