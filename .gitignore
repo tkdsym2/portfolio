@@ -43,3 +43,9 @@ jspm_packages
 
 # Nuxt generate
 dist
+
+# Vsc
+.vscode
+
+# package lock json
+package-lock.json
