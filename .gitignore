@@ -1,3 +1,5 @@
+### https://raw.github.com/github/gitignore/8f35779cefbabdca21cfc4cda55abb1290d59fd9/Node.gitignore
+
 # Logs
 logs
 *.log
@@ -36,11 +38,8 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-# ignore libs
-/lib/
+# Nuxt build
+.nuxt
 
-# ignore .vscode
-.vscode
-
-# ignore sass-cache
-.sass-caches
+# Nuxt generate
+dist
