@@ -18,6 +18,7 @@ module.exports = {
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     },
+    css: ['~/style/global.css'],
     /*
     ** Customize the progress bar color
     */
