@@ -1,8 +1,8 @@
 <template lang="pug">
-  div.content
-    h1.title Top Page. Background is movie
-    p
-        nuxt-link(to="/Main") hoge
+  div
+    Header(:hoge="hoge")
+    h1 welcome!
+    nuxt-link(to="/about") About Page
 </template>
 
 <script>

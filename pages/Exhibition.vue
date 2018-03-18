@@ -1,6 +1,6 @@
 <template lang="pug">
   div.content
-    h1.title Profile Page
+    h1.title Ex Page
     p
         nuxt-link(to="/") Top Page
 </template>
