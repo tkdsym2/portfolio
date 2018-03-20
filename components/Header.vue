@@ -27,7 +27,7 @@ export default {
     align-items: stretch;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 85%;
 
 .navigation-component
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
