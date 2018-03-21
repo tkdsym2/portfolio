@@ -1,49 +1,60 @@
 {
-	"name": "fmsuvm.github.io",
-	"version": "1.0.0",
-	"description": "## Ref",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "nuxt",
-		"build": "nuxt build",
-		"generate": "nuxt generate",
-		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-		"lint:fix": "eslint --fix .js,.vue --ignore-path .gitignore ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/fmsuvM/fmsuvM.github.io.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/fmsuvM/fmsuvM.github.io/issues"
-	},
-	"homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
-	"dependencies": {
-		"ajv": "^6.3.0",
-		"axios": "^0.18.0",
-		"bootstrap-vue": "^2.0.0-rc.2",
-		"bulma": "^0.6.2",
-		"eslint-plugin-html": "^4.0.2",
-		"eslint-plugin-import": "^2.9.0",
-		"eslint-plugin-node": "^6.0.1",
-		"eslint-plugin-promise": "^3.7.0",
-		"jquery": "^3.3.1",
-		"nuxt": "^1.4.0",
-		"postcss-hexrgba": "^1.0.0",
-		"postcss-nested": "^3.0.0",
-		"postcss-responsive-type": "^1.0.0"
-	},
-	"devDependencies": {
-		"babel-eslint": "^8.2.2",
-		"eslint": "^4.18.2",
-		"eslint-loader": "^2.0.0",
-		"eslint-plugin-vue": "^4.3.0",
-		"node-sass": "^4.7.2",
-		"pug": "^2.0.0-beta6",
-		"pug-loader": "^2.3.0",
-		"sass-loader": "^6.0.7"
-	}
+    "name": "fmsuvm.github.io",
+    "version": "1.0.0",
+    "description": "## Ref",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "lint:fix": "eslint --fix .js,.vue --ignore-path .gitignore .",
+        "md:compile":
+            "processmd contents/projects/*.md --stdout --outputDir contents/dist/ > contents/summary.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fmsuvM/fmsuvM.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fmsuvM/fmsuvM.github.io/issues"
+    },
+    "homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
+    "dependencies": {
+        "ajv": "^6.3.0",
+        "axios": "^0.18.0",
+        "bootstrap-vue": "^2.0.0-rc.2",
+        "bulma": "^0.6.2",
+        "debug": "^3.1.0",
+        "eslint-plugin-html": "^4.0.2",
+        "eslint-plugin-import": "^2.9.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.7.0",
+        "hast-to-hyperscript": "^4.0.0",
+        "hyperscript": "^2.0.2",
+        "jquery": "^3.3.1",
+        "mdast-util-to-hast": "^3.0.0",
+        "nuxt": "^1.4.0",
+        "path": "^0.12.7",
+        "postcss-hexrgba": "^1.0.0",
+        "postcss-nested": "^3.0.0",
+        "postcss-responsive-type": "^1.0.0",
+        "remark-parse": "^5.0.0",
+        "to-vfile": "^2.2.0",
+        "unified": "^6.1.6"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.2",
+        "eslint": "^4.18.2",
+        "eslint-loader": "^2.0.0",
+        "eslint-plugin-vue": "^4.3.0",
+        "node-sass": "^4.7.2",
+        "processmd": "^4.2.0",
+        "pug": "^2.0.0-beta6",
+        "pug-loader": "^2.3.0",
+        "sass-loader": "^6.0.7"
+    }
 }
