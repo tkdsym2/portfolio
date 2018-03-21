@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "project1",
+            "path": "project1",
+            "summary": "this is project 1"
+        },
+        {
+            "id": 2,
+            "title": "project2",
+            "path": "project2",
+            "summary": "this is project 2"
+        }
+    ]
+}

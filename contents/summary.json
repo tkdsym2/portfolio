@@ -1,0 +1,26 @@
+{
+  "fileMap": {
+    "contents/dist/project2.json": {
+      "title": "project 2",
+      "id": 2,
+      "dir": "contents/dist",
+      "base": "project2.json",
+      "ext": ".json",
+      "sourceBase": "project2.md",
+      "sourceExt": ".md"
+    },
+    "contents/dist/project1.json": {
+      "title": "project 1",
+      "id": 1,
+      "dir": "contents/dist",
+      "base": "project1.json",
+      "ext": ".json",
+      "sourceBase": "project1.md",
+      "sourceExt": ".md"
+    }
+  },
+  "sourceFileArray": [
+    "contents/projects/project1.md",
+    "contents/projects/project2.md"
+  ]
+}
