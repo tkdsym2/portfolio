@@ -2,7 +2,7 @@
 .research-page {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: $page-width;
   margin: auto;
   padding: 0px;
   text-align: center;
@@ -43,50 +43,10 @@
     margin: 0px;
     padding: 0px;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: left;
   }
   & > .domestic-conf > p {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    text-align: left;
-  }
-}
-
-.bachelor-container {
-  padding: 0px;
-  margin: 0px;
-  word-wrap: break-word;
-  text-align: center;
-  & > .bachelor {
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto;
-  }
-  & > .bachelor > .title {
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
-    border-bottom: solid 1.5px;
-    padding-bottom: 3px;
-    width: 120px;
-    border-color: #1e88a8;
-    text-align: left;
-  }
-  & > .bachelor > .contents {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-  & > .bachelor > p {
     margin: 0px;
     padding: 0px;
     margin-top: 20px;
