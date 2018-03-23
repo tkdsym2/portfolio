@@ -1,10 +1,12 @@
+<style src="~/style/pages/worksIndex.scss" lang="scss" scoped></style>
+
 <template lang="pug">
-  div.content
-    h1.title Works Page
+  div.works-page
+    h3 Works
+    div.contents
+        Card(v-for="proj in projects" v-bind:project="proj" v-bind:key="proj.id")
     p
         nuxt-link(to="/") Top Page
-    div
-        Card(v-for="proj in projects" v-bind:project="proj" v-bind:key="proj.id")
 </template>
 
 <script>
