@@ -1,10 +1,14 @@
 <style src="~/style/components/card.scss" lang="scss" scoped></style>
 
 <template lang="pug">
-    div.card-component
-        h3 {{ project.title }}
-        p {{ project.summary }}
-        nuxt-link(:to="{ path: '/Works/' + project.path}") read more
+    section.card-container
+        nuxt-link.card(:to="{ path: '/Works/' + project.path}")
+            div.thumbnail
+                img(:src="project.thumbnail")
+                article
+                    h1 {{ project.title }}
+                    p {{ project.summary }}
+                    span 2015
 </template>
 
 <script>
@@ -18,6 +22,15 @@ export default {
             type: Object,
             required: true
         }
+    },
+    asyncData(context) {
+        debug('context', context);
+        debug('thumbnail: ', context.props.project.thumbnail);
+        return {};
+    },
+    data() {
+        debug('hoge');
+        return {};
     }
 };
 </script>
