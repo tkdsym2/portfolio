@@ -1,0 +1,45 @@
+@import "style/var.scss";
+.project-page {
+    display: flex;
+    flex-direction: column;
+    width: $page-width/1.3;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+    h3 {
+        font-size: 28px;
+        padding-bottom: 10px;
+        color: $aisumicha;
+    }
+    .title {
+        width: $page-width;
+        text-align: left;
+    }
+    .subtitle {
+        width: $page-width;
+        text-align: left;
+    }
+    .abstract {
+        width: $page-width;
+        text-align: left;
+    }
+    .description {
+        text-align: left;
+    }
+    .authors {
+        width: $page-width;
+        text-align: left;
+    }
+    .member {
+        text-align: left;
+    }
+    .references {
+        width: $page-width;
+        text-align: left;
+    }
+    img {
+        width: 100%;
+    }
+}

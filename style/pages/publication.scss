@@ -1,69 +1,69 @@
 @import "style/var.scss";
 .research-page {
-  display: flex;
-  flex-direction: column;
-  width: $page-width;
-  margin: auto;
-  padding: 0px;
-  text-align: center;
-  justify-content: center;
-  word-wrap: break-word;
-  h3 {
-    font-size: 28px;
-    padding-bottom: 10px;
-    color: $aisumicha;
-  }
+    display: flex;
+    flex-direction: column;
+    width: $page-width;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+    h3 {
+        font-size: 28px;
+        padding-bottom: 10px;
+        color: $aisumicha;
+    }
 }
 
 .publications-container {
-  padding: 0px;
-  margin: 0px;
-  word-wrap: break-word;
-  text-align: center;
-  & > .domestic-conf {
+    padding: 0px;
+    margin: 0px;
+    word-wrap: break-word;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto;
-  }
-  & > .domestic-conf > .title {
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
-    border-bottom: solid 1.5px;
-    padding-bottom: 3px;
-    width: 250px;
-    border-color: #1e88a8;
-    text-align: left;
-    margin-bottom: 30px;
-  }
-  & > .domestic-conf > .contents {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  & > .domestic-conf > p {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    text-align: left;
-  }
+    &>.domestic-conf {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+    &>.domestic-conf>.title {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        border-bottom: solid 1.5px;
+        padding-bottom: 3px;
+        width: 250px;
+        border-color: #1e88a8;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    &>.domestic-conf>.contents {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    &>.domestic-conf>p {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
 }
 
 .publication-link {
-  font-size: 16px;
-  padding-top: 10px;
-  text-decoration: none;
-  color: #3a8fb7;
+    font-size: 16px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #3a8fb7;
 }
 
 .publication-link:hover {
-  color: #c9396d;
-  transition: all 0.4s 0s ease;
+    color: #c9396d;
+    transition: all 0.4s 0s ease;
 }
