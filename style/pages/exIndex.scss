@@ -1,0 +1,26 @@
+@import "style/var.scss";
+.exhibition-page {
+    width: $page-width;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+        font-size: 28px;
+        padding-bottom: 10px;
+        color: $aisumicha;
+    }
+}
+
+.contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    @media (min-width: 30em) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 60em) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
