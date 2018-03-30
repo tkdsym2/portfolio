@@ -1,11 +1,19 @@
 ---
 id: 2
 title: exUI
-abstract: hogehoge
-ground: 銀座 METoA
-ofiicial: hoge
+subTitle: IoTで変わるモノ・サービス・街とのタッチポイント
+abstract:
+grounds: 銀座 METoA
+exName: Smooth Access City
+exSubName: 都市の未来へ、行ってみよう
+official: http://www.metoa.jp/event/smooth-access-city/
+personal:
+path: metoa
+dateStart: 2018年 3月 6日
+dateFinish:
+thumbnail: https://lh3.googleusercontent.com/rYtemYFcSMma_IkuZhL7lJutZbjhvLjcC2J089pSU2MBIUMVYvgI1Bv55F74heWW38Rq5NlrcYexzUW8TQBA07f6oUKHeEDRznF2XbU-fmPHC2gZqSIvDyasXL3XrBJ5wzLWqQS_DRgQDI4nYrHZX6JDXWrDfMVulzQ1oPPjW4oiFUvVw4jRS4i-mH_23FicDeCircXSlYDo5j3PQO2lVbrz9Izvbl3DRjf3_ZrBT-k-OAOOgPsMlhU3mH6WYxVkRilfQLl4RTIB0JUTllH_E-B_bTakagy8baccoM3LA-oItfLNI1A91BLDsnvD4qYzZg3iS2QToXnA4CQHwAvCoprRGy_7CK9pxz6ErMFCCFqd1EOb_VoQ1rP6PU5OpM_7RhrJ6dV7bfojCHSwaEzs2bIT2-dc6ET2KPTYzVZ4-4Zh0CCUd9qHoTvAaoM7JOwBnM7hP-CaXx9XbntVN2EWGngRGvFo7niVeZvR6W7X__-0W_GK-UlPe8pPSNFHSzyohFhawwYBcIReR1JxNdUQV-OnmXMT4WfDin6LcuG-Y4bXaRzKaebZJbUCnXQQ3GoFNLvca1dwSzA6IHeh63pKd-X5k5xUbcknXaUqF1-7=w1342-h1006-rw
 ---
 
-## temp
+## 概要 {.description}
 
-something
+このシステムは撮影者だけではなく，写真に写っている人もその写真を持つことができるシステムである．撮影者が写真を撮ると，被写値（ある被写体が写り込んでいる可能性）を算出する．被写値に基づいて被写体に撮影されたことを通知し，その写真を共有する．写真に写っているのは自分であるのに，持っているのは撮影者（他人）であるという写真の帰属の矛盾を解決するためのシステム．

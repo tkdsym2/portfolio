@@ -1,11 +1,19 @@
 ---
 id: 3
-title: 渡邊研究室展示会2018
-abstract: hogehoge
-ground: 明治大学 中野キャンパス 6F クロスフィールドラウンジ
-ofiicial: hoge
+title: exUI
+subTitle: IoTによるユーザインタフェースの外在化がもたらす新たなタッチポイントとプロダクトデザイン
+abstract: 
+grounds: 明治大学中野キャンパス 6階 クロスフィールドラウンジ
+exName: IoT時代のインタラクションデザイン
+exSubName: 渡邊恵太研究室共同研究成果発表展
+official: http://keita-lab.jp/exhibition/
+personal:
+path: openlab2018
+dateStart: 2018年 3月 15日
+dateFinish: 2018年 3月 17日
+thumbnail: https://lh3.googleusercontent.com/DqEf-aM2Cb-XtGJrFacJyORjQf0WkMxcgLhq_vgvy8JXlxCE6J7jK6StXqY7_ciEnSav-u9EbcX96zUQ7y9PGl_PWJ_envbkanQtCOeyBAWxMbjG-fFjcaWnToZhRcTF9OWcw8PwqiOqvZmvP9AMo8WMrXACk3iXWG5FhTvM5KPAfyFNLniiZjULZ-IKF-sH3Ema8LozmWd0LTIv3uQ0bOVbpA52_lChuqCp-SDUvGAQkUYu1aVxDo3EdGbbzXGk-CsfU1UdmUYeAm1zHBrAASM-M79htdbQ3YKWMiDN9OU4C3T87uBvE6iGhXGlsWHL4vim4mpcrsZOh4s79bU7xNpBCatH6EdcvEGe_a-yy19tA95O0RZ4NjIApWbNkZtnv7fXnmlH5uGq2erZmJcbp02NE11otVB7nviMLJ-jojPYPOwUjC6SogL8Ou7Z-voQuCKGR7ZnqQbbeGj6ZEHH8LaSROgHR5TwoS1e7NGE5No_1jZ2vGKEbj33232fsG4XYDn0F0LJ5oEyAIVRWTU0UF3-p9MTNG81g6g-tQNjcOS3cSNFPIMDUr73cWECsjB16F5EuWKrWV8HBrXtYK_mfQqxp6miEwollpgrCdNj=w1342-h1006-rw
 ---
 
-## temp
+## 概要 {.description}
 
-something
+このシステムは撮影者だけではなく，写真に写っている人もその写真を持つことができるシステムである．撮影者が写真を撮ると，被写値（ある被写体が写り込んでいる可能性）を算出する．被写値に基づいて被写体に撮影されたことを通知し，その写真を共有する．写真に写っているのは自分であるのに，持っているのは撮影者（他人）であるという写真の帰属の矛盾を解決するためのシステム．
