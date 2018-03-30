@@ -11,7 +11,7 @@
 
 <script>
 import Card from '~/components/Card.vue';
-import data from '~/contents/path.json';
+import { sourceFileArray } from '~/contents/summary.json';
 import Debug from 'debug';
 
 const debug = Debug('works:index');
@@ -24,8 +24,25 @@ export default {
         title: 'Home Page'
     },
     data() {
+        const _projects = sourceFileArray.filter(element => {
+            return element.match(/projects/);
+        });
+        const _contents = _projects.map(element => {
+            const refactorEl = element.split('.')[0];
+            return refactorEl.split('/')[2];
+        });
+        const contents = _contents
+            .map(element => {
+                const params = {};
+                return Object.assign(
+                    {},
+                    require(`~/contents/dist/projects/${element}.json`),
+                    params
+                );
+            })
+            .reverse();
         return {
-            projects: data.projects
+            projects: contents
         };
     }
 };
