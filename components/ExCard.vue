@@ -2,14 +2,18 @@
 
 <template lang="pug">
     section.card-container
-        nuxt-link(:to="{ path: '/Exhibition/' + exhibition.path}") hoge
-        //- nuxt-link.card(:to="{ path: '/Exhibition/' + ex.path}")
-        //-     div.thumbnail
-        //-         img(:src="project.thumbnail")
-        //-         article
-        //-             h1 {{ project.title }}
-        //-             p {{ project.summary }}
-        //-             span 2015
+        nuxt-link.ex-card(:to="{ path: '/Exhibition/' + exhibition.path}")
+            div.ex-header
+                h2.ex-name {{ exhibition.exName }}
+                h3.ex-subname {{ exhibition.exSubName }}
+                hr.card-hr
+            img.ex-image(:src="exhibition.thumbnail")
+            article.ex-contents
+                h3.ex-title {{ exhibition.title }}
+                h3.ex-subtitle {{ exhibition.subTitle }}
+                p.abstract {{ exhibition.abstract }}
+                h5.ex-grounds 場所：{{ exhibition.grounds }}
+                span.date {{ exhibition.dateStart }} 〜 {{ exhibition.dateFinish }}
 </template>
 
 <script>
@@ -30,7 +34,7 @@ export default {
         return {};
     },
     data() {
-        debug('hoge');
+        debug('hoge: ', this._props.exhibition);
         return {};
     }
 };

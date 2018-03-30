@@ -1,0 +1,94 @@
+@import "style/var.scss";
+$line-height: 1.5;
+.ex-card {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+    grid-template-columns: 5fr 3fr;
+    grid-row-gap: auto;
+    grid-column-gap: auto;
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    transition: all 0.1s ease-in;
+    position: relative;
+    &:hover {
+        top: -2px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.ex-header {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    .ex-name {
+        font-size: 22px;
+        margin: 0px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .ex-subname {
+        font-size: 18px;
+        margin: 0px;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    .card-hr {
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+.ex-image {
+    grid-row: 2;
+    grid-column: 1;
+    margin: 5px 15px 15px 15px;
+    padding: 0px;
+    width: 90%;
+    border-radius: 2%;
+}
+
+.ex-contents {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: auto;
+    grid-gap: 0;
+    margin: 0 15px 0 0;
+    .ex-title {
+        font-size: 20px;
+        margin: 0;
+        margin-right: 15px;
+    }
+    .ex-subtitle {
+        font-size: 17px;
+        margin: 0;
+        margin-top: -20px;
+    }
+    .abstract {
+        font-size: 15px;
+        margin: 0;
+        margin-right: 15px;
+        margin-top: -35px;
+        letter-spacing: 0.05em;
+        line-height: 2em;
+    }
+    .ex-grounds {
+        font-size: 13px;
+        margin: 0;
+        margin-right: 15px;
+        margin-top: 40px;
+    }
+    .date {
+        font-size: 11px;
+        font-weight: bold;
+        color: #999;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
