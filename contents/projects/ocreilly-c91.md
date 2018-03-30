@@ -1,0 +1,26 @@
+---
+id: 3
+title: 実用　お蔵入り
+subtitle: React Native ハンドブック for Android
+thumbnail: https://lh3.googleusercontent.com/X0SCF90SlQWzsM4P0QRp6UDuBtX7GTKP9czXJAqskSQVX79yGWFnswBsj6_z3Ec2qi0WYKpMKcnMpFu6o0vJdc9orMY1M7L2DV1vlmgmAjsPTTCfZ2GdGT43AnFV3lx3OCdYqNWruBbOieYFGXZ-y5lsnT5gbhAqQJd0Ddh0YkhvsqspVeuVXhOemp2YNIclwxtAcc5RelPT93hCH9jQBqXvNjctraRet0wiaRpwMdX75CbBS8qI17ChN-gfut_ab4Y5mfCtIK2RyCiBPpRdZgDOZByiP17i4l4KtjxvKUwjYzuB0lwYjoXtVJMwdUiGKGOePL4PVHL8ull-nvrF0F8ouz3ouZR91bFmku-NpuqE3-nlNFgqHY91yOiibQyuDVg6sLcRzIAypwFDK5kiMgR9vejEhtl4EYKqxOwYfecMLYw2zJOSbvy78ggoLSPMVOeM-BuC22E0RA36vSxqs_HQIuupD_uYfcuRtYP9OnP6G0d6L5xxn4YM4A3Hi0f408NH3g3u0Py7A-xjhim4pngIaRaNP63iY-9sw1wtUEtFc4TKh-9qzCxiZ4Fn1p1Ikx9V1lZ-qNMwaO5dtFTH7YK36vdhz9E2Olz9DlzN=w1024-h768-rw
+path: ocreilly-C91
+date: 2016-12-28
+---
+
+### 実践　お蔵入り {.title}
+
+#### Processingから始めるShader入門 {.subtitle}
+
+![Ocreilly-C91](https://lh3.googleusercontent.com/qztAv6hfDjJebwt6FN0nd-zL35iqcjLyiDR55QrDicXWLs2Wt_lTUY4cwBnMJg5UuuxAQqlQuja3t452gOZWHENdZyiF7DL1VXtLaYOI2dRXAO-BTcsO7LM1YFbolwL9awz3ZYy80f2K0G_ALtybjRbt-0EeY4AkViQU_-XEE1jVglcJR018E2w5UehzRGnCc4VF3JK7IlynMUmdURkn4jqd5Ci6ErVmh2gmrKQJOs1Bj7P-JdcJvMOxpvnvxZG_2mb-eeWYkEpZfp546NvhzegUWPiSRmxOEtpKIfvs6OU3igaYxCPIflAigNhjlV6pitQWUTpNi_s1HaTRdLl6rqwYWDV_GzvG6tQLiwSw29Xh37B5wYFaePGYnGAOrYIuK7ieiRocwfPk5WgNY6l5sKP1RokuF3uHB19d0n6hW8_JMlkKXxWwtI3SD6itpCK6HjQ1y_1CN-tl6-peHOLz1mOAqC0u_ziHMZsduMw0k3zOJkQW7LrLJX2Id5qje2SO71sEXfG9hQDYIQTU6uO8e4VmZpF5dwyiSvZfV15eAZr4tLY0eRXqPCUK6PIkmGeh_XY6n3vchtbdFXZrFa6fzbU8CoqRyJQV6OxBKcab=w1789-h1006-rw "Ocreilly") {.thumbnail}
+
+### 概要 {.abstract}
+
+スマートフォンのアプリケーションは，AndroidではJava・Kotlin，iOSではObjective-C・Swiftとそれぞれ別言語で開発するものであった．しかし，Xamarin（C#）や今回紹介するReact Native（JavaScript・JSX）などのクロスプラットフォームでの開発が近年流行り始めた． 著者は研究でAndroidを使うため，Javaと論文を泣きながら書いていた．そんな中，「研究のシステムをReact Nativeに移植するぞ！」という謎の気持ちが湧き上がってしまった．React Naticeは未だに日本語の資料が少なく，ブログ記事もさほどない．そこで今回は移植途中でハマった部分や，使用した便利なライブラリを紹介する． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ

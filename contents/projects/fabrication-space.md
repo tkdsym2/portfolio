@@ -1,0 +1,26 @@
+---
+id: 4
+title: Fabrication Space
+subtitle: 研究室のFabrication Spaceの構築
+thumbnail: https://lh3.googleusercontent.com/PRGQtKE0iSMiHXrBMZl87QDRTBETH7KEaS38TYoGw_US7DgL4ZIMyunM8Jk9UiuLNmrv_sOsNqJsg8gYm1L95mnoPlDCX935SLJvDvjZZipnuB8UuVHReDFqO9TYtNojMoZaysLfrK7MEwU-XPe4UrCmHwkavc-sUg1asB1tWZKvMpXSvp3pPGI0QpfkNN6TiSd307GG9mFqTIEDurq_Hko0iDh_Uw1_-O4chjm1_kXhYTyOwb_dFOYHJpvX5pbwlLt4NVJlNaZJvRg3a8JtugbzMJ77hMNRDbsFzrZ6Wc3b8atBkh9T1wOXCIR3_q_jTZubw51FgfMp3Lytjw4nyC9s6GEZKZvKuaYFINYpqJycBhzRhZ-zeCkZzSgXMhXSd6gpWKs__if6cpAgmnd-kTxETTf8N5xAd1SY1YU_ld3-lIyQKuxxYH0uoctf_OgeFVbXRryj0Wooeg-bcpfQtk-1qbhaCUBBn-Z1OeQc3o3QdxURpCJ3gGkMlEJoAaJVsLxzi_oJKUanv9IUShHmJsWRXwoOHSjb24u_RPjoISuNi9oX-ZklXyCnXYNagfFLoKBwaZ0FVWa7EfF68-58cKkKL2NwH_YAaLR1My_Z=w1024-h768-rw
+path: fabrication-space
+date: 2016-12-06
+---
+
+### Fabrication Space {.title}
+
+#### 研究室のFabrication Spaceの構築 {.subtitle}
+
+![fabrication-space](https://lh3.googleusercontent.com/pVl0yUCXrFvMJRsnVQQmW5cXjCu7EJzZvrIdz5HqrEjag6FBFod6Ve1-gVE2SAsOTN-U_F6LwKxOjcNQMaIHB6mjrBvKtW-vMroFA75haR4y8kw4TwhCJbzQL7LkUuORGyv1J1pkBmEILtXW0e2_wXvRdJWs2cjJwkpNUvMQV1Jc_UxgFyAvN_ykeUfofV8382-TMO_8Ry98Ukhpjtfnmv38Qvy9Bx7ho0QqKUyNw25Uyhho0tG1ut6iuJg6Z5fDD74w_hL30Q2QwBEZb2Ew9HnODysqZOezF7jewPj3jZkGnReffzNdxPb_ApCz95938V6t9kgRFYCLf8dpmmmrew7wcBz_7jAuXd8WkQo6Uzh_z8oE6ZIbqSqHS1ks4rTs9mYAEz1c1j5IzeKsLPN5qD0fkGQb90w3H7iBtddttrilsZIeqdaKwMos103xl6KUSS7w1tJ9Oz_WWs5Z3NBlico1ruQJigsSFdupnaOKexVMNEZqjBPBJV6l-evmDJuUwT47lMLXFGHHsB9Z_fYm-ooBrqSsR3_hscPVOuMNB-6uaDpFVral6Fd20qyaK5kS7PYevfoFlvykUthEthIZtirFAjIl2YpnZuU-VvWK=w1789-h1006-rw "fabrication-space") {.thumbnail}
+
+### 概要 {.abstract}
+
+スマートフォンのアプリケーションは，AndroidではJava・Kotlin，iOSではObjective-C・Swiftとそれぞれ別言語で開発するものであった．しかし，Xamarin（C#）や今回紹介するReact Native（JavaScript・JSX）などのクロスプラットフォームでの開発が近年流行り始めた． 著者は研究でAndroidを使うため，Javaと論文を泣きながら書いていた．そんな中，「研究のシステムをReact Nativeに移植するぞ！」という謎の気持ちが湧き上がってしまった．React Naticeは未だに日本語の資料が少なく，ブログ記事もさほどない．そこで今回は移植途中でハマった部分や，使用した便利なライブラリを紹介する． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ

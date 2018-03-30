@@ -1,0 +1,28 @@
+---
+id: 7
+title: Snapped Notification
+subtitle: ICC展示
+thumbnail: https://lh3.googleusercontent.com/3p8ZmSkqCYRpPyfqciNQ9KpRfgxky6VNCXvPdmFujOh7aiOzZigqalMbBn30KyuPk0VgDUzp1OM2JZHMlafcS-qWLmZAPCd704K6S1rYii5vadwatyCInu4ce3_uQWuHLUbPkUAfuqye-zCkCpONrQhrMCAoEvtzWYawTA4wMjKIXLm4H_t7ThD64XPzTd3-DxM1CyJYedJDsep3vjsmv-3rC8K2lHGVR5t1fbtib4bf7E_OG0t5VnyngEixfkLLMmBlyGkq1kJ30U9ll0yGqnKSPmArwzlYNaK6jdbF_cK06IzVJQ9MCwisp6KZBW-uSWqqOlgd8KhgTXHTn0vt7_ReoSaLaViugr-kIuEU2C290bcC_Oj-Ak0MOH7FGBDXmP5IUZ4-PYnr97iir0-lPD2mIaHp1OHkVd2YCD4_ETVTf17OVCSWHpQGLWuoI9gZbVhbTXJHyjdInlPgzVSApqbSrbP2Hsd0FFV1eCf6FHyaPBAuZ_YRU5QLBpl25SqibDG1G5SP2f-yFhZMi0AhMQh2fRIIGyTAFHBVx0d4X6j3ixEqO-4W025VO6J0Pc9kkeAwEubu2nA_AVIyAzuuxUJSCUHY8X4DeDojkxjX=w1024-h768-rw
+path: snapped-notification
+date: 2016-10-25
+---
+
+### Snapped Notification {.title}
+
+#### ICC展示 {.subtitle}
+
+![icc](https://lh3.googleusercontent.com/xKQkyBWMI5t7OIgeXD3OgajXPtiDlOoFv1ijJueEM1Hz6GX1D-d-KnTFda1l4Z1amLjPYpTbZmMxAIK5YB9gnrI_dmGL4S6WAtbNT8ZwR9DoXyPekoT7L2hgqyMZKbJkUf12C5rs0nP4L_9XeQdC0SYvOr8damPSrxmns2XDooW1zZMFcM_AvlT9EzHrfmx6NBhoKNngNT_80-YZoJRViPizcpGhFVyhVIBwlvjelucSC3fAagApTp-9ioXEIz_e0tw2w6eSFAZAOIKa5CtFP3rYMoyRG4jhEBCUJ14R1DWh6vuPXQxHvXHCZTwhsCXgRtpKzNUfBehGHn7IgQ4HU-ORf7cEPe0adwQnC4aVBEBNSIwN0-kp98XOuXH_Der9TcbrjC5cqmEez2t6WaDAd2DPqQz2qv9vArdpN4wPS-lEp7m8xx0L-8dxvK6uXFVA6dvrHBv5dULNqMIqqTrpkeqkZZhb5VZ_LlRoPuJ9LMFvVayPbybnUvIiKqOeea_D6klSDD0UVBLcifhpaZSETvpW6h_UAhLuhM5tmuqybENyPRsTVgaz0CHkEIKr4mjnKn3h2T6yV0q3CAZJZBZqkQD191jyVAwgJJWp_fby=w615-h346-rw "icc") {.thumbnail}
+
+### 概要 {.abstract}
+
+このシステムは撮影者だけではなく，写真に写っている人もその写真を持つことができるシステムである．撮影者が写真を撮ると，被写値（ある被写体が写り込んでいる可能性）を算出する．被写値に基づいて被写体に撮影されたことを通知し，その写真を共有する．写真に写っているのは自分であるのに，持っているのは撮影者（他人）であるという写真の帰属の矛盾を解決するためのシステム．
+
+ICCで展示していた被写値のモデルは，アクリル板に文字や図を彫刻し，アクリル絵具で着色をした． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ

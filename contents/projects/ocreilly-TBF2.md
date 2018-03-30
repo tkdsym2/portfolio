@@ -1,0 +1,26 @@
+---
+id: 6
+title: 詳解　お蔵入り
+subtitle: New CLI for React Native
+thumbnail: https://lh3.googleusercontent.com/ZZjsT6hGgDLDrZIpe7yZz812JeFUmppyW6e365sbS_gOCbiE7sICsAIFhTMx_Gk-RNQ7EqWyR3-yL1VZeSt9cO9PzgJZUbnMA0poxqGavOOftEjXgvL3oehFdKOQLxvuFcMraIs4zO3M-szkDQximQEpEMDW2_gYuEMrKdRi5fu1fpyKcoA4yluNBbIt9JoxKl4WfD6L3-LRysbtQulKL73-L3trut3RH2D3uBcwV8kLqQPY_NGYGosdgd9bp7mfaTYx0VDG1FUEDoWM6mku71j1crzu7RWyb_5ePk3BGnXTjAcXtD8-d1bZyFOVV_kuXW3Etkzdj0jSIZmaJMAEZIJwU3W5CHJGqfKYUNTn7Zaks2lfJqga_aH0hyWOunsqNEO9joc0_OH8djgynoWn4yXJI4YIFqoIIx7aVLj9R2T9NNfAhHuHwg5M1cm7f9Cul1oemhLqYHb8cRCPrS5k5I6_lSxGWWyfR9wzwm57AhbxI1Mfr9R5b1DXbQRx9NEXWmY2dUW8U_mGFLiRZ6OCMLHbTAsn5Q0Tjs9J0gtEjWpCUAXkfRgBhl_wIxOQL81mbamh8FyQAy1asYmgu6PwMtnpGi2emF7qri-3PdyX=w391-h293-rw
+path: ocreilly-TBF2
+date: 2017-04-09
+---
+
+### 詳解　お蔵入り {.title}
+
+#### New CLI for React Native {.subtitle}
+
+![Ocreilly-TBF2](https://lh3.googleusercontent.com/RASs59eqbyO-t5TcEhjJ9yCSSR17VjKblavJkzy1ekqfPyBA1mVDH8dAhzbWSXda-Lm9Yb25vcuVlKlGcDr3QFhFD8lGDjSIHTrxrhEqwyZAVlgN4f0shQBwOsLaG8Nq5DVxzZElPUBiBuycqsRBSafnp187Y3bEISyrSK1KUvDMRAkiGQGywEJyO94z4DWHSigaui7wRX6XQKtWlfHHVY5phge1whWW9RKLaFdbXWd3Y7OT-VfBJwKBCKbgk2ySdc874FerSinhAsU4Xgn8zx5iWksmceODVWjwp8Xqc-vmyPAGRk1REdySnzHb7kNtw8A7soBCS6rMq5U8dbJE2beReOgorSOj-Mpi9kSjfnAPVXSlr6b3CYSGzCUPVWAMxQ6CCYKnNIuoon6D2am3OWwbmQLlIc3l_ZOkXAZ8ENKspsepd9qwbK7pFMYiQtfn2yf9nYJ3mK4a2J281NQW1bFrREgcSS5tGJBTER5U7PdKNndTuRk631bWUAZ7T4YUyTXbSN8f6M2Ng5kf0P1yCpTuSXI1-4iQGsM1V37qzGUzOGd4PqrqbWcMbRbDY-IgWMx3_gJqj9h4Z020j21gEFg48YZJgH_DzyDy9d2d=w1789-h1006-rw "Ocreilly") {.thumbnail}
+
+### 概要 {.abstract}
+
+モバイルアプリケーションのクロスプラットフォーム開発方法はいくつかあるが，著者は大きく2つあると考えている．それは，Xamarinでの開発とReact Nativeでの開発である．前者はMicrosoftを中心に頻繁に活動が行われているようだ．しかし，未だにXamarinで作られている有名なアプリはない気がする．一方，React NativeはFacebookやInstagramといったようなアプリに使われている（Nintendo Switch OnlineがXamarin製らしい）．また，Reactを開発したことがあれば，書き方やデータの扱い方はReact Nativeでも同じなので比較的開発しやすい環境だ．まとめると，著者は圧倒的にReact Nativeを推している． さて，2017年3月13日 〜 3月14日にかけて，アメリカのカルフォルニア州にあるサンタクララにてReact Conference 2017（以下React Conf）が開催された．著者はお金も時間もないので残念ながら現地には行けず，日本でLive Streamingを見ていた．React ConfではReactとReact Nativeに関する新しい情報が満載だった．今回はその中で著者がもっとも注目した新しいCLI，Create React Native App について，従来のCLIと比較しながら紹介する． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ
