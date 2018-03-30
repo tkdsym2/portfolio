@@ -7,7 +7,7 @@
                 img(:src="project.thumbnail")
                 article
                     h1 {{ project.title }}
-                    p {{ project.summary }}
+                    p {{ project.subtitle }}
                     span 2015
 </template>
 
