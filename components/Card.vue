@@ -29,7 +29,6 @@ export default {
         return {};
     },
     data() {
-        debug('hoge');
         return {};
     }
 };

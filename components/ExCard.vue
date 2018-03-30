@@ -34,7 +34,6 @@ export default {
         return {};
     },
     data() {
-        debug('hoge: ', this._props.exhibition);
         return {};
     }
 };
