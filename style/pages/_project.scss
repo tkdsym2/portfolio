@@ -8,38 +8,80 @@
     text-align: center;
     justify-content: center;
     word-wrap: break-word;
-    h3 {
-        font-size: 28px;
-        padding-bottom: 10px;
-        color: $aisumicha;
-    }
     .title {
         width: $page-width;
         text-align: left;
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $aisumicha;
+        letter-spacing: 2px;
     }
     .subtitle {
         width: $page-width;
+        font-size: 22px;
         text-align: left;
+        color: $aisumicha;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
     }
     .abstract {
         width: $page-width;
         text-align: left;
+        font-size: 22px;
+        color: $aisumicha;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
     }
     .description {
         text-align: left;
+        font-size: 15px;
+        color: $aisumicha;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
     }
     .authors {
         width: $page-width;
         text-align: left;
+        font-size: 22px;
+        color: $aisumicha;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
     }
     .member {
         text-align: left;
+        color: $aisumicha;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
     }
     .references {
         width: $page-width;
         text-align: left;
+        font-size: 22px;
+        color: $aisumicha;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
     }
     img {
-        width: 100%;
+        width: 90%;
+        border-radius: 5px;
     }
 }
