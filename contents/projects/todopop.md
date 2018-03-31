@@ -23,7 +23,7 @@ date: 2017-01-11
 
 高田一真, 高橋拓, 國松祥一 {.member}
 
-<div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/ypdfsInxk-s" frameBorder="0" allowFullScreen></iframe></div>
+@[youtube](ypdfsInxk-s)
 
 ### 関連リンク {.references}
 

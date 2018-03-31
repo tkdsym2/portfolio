@@ -37,6 +37,7 @@
         "hyperscript": "^2.0.2",
         "jquery": "^3.3.1",
         "markdown-it-attrs": "^1.2.1",
+        "markdown-it-block-embed": "0.0.3",
         "markdown-it-link-attributes": "^2.0.0",
         "mdast-util-to-hast": "^3.0.0",
         "nuxt": "^1.4.0",
