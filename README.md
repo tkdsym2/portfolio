@@ -15,3 +15,20 @@
 > 12-30 秒くらいがベスト
 
 これで絵コンテを作る
+
+## processmd memo  
+
+markdown-it-attrsを使えるように、markdwon-itに設定する必要がある
+
+`node_modules/processmd/index.js` の `function processmd` 内で呼び出す。
+
+```javascript
+
+/* 前略 */
+const markdownItAttrs = require('markdown-it-attrs');
+
+/* 中略 */
+MarkdownIt.use(markdownItAttrs);
+
+/* 後略 */
+```
