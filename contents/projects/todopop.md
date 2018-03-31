@@ -9,7 +9,7 @@ date: 2017-01-11
 
 ### ToDoPoP {.title}
 
-#### インテリア用スケジュール管理アプリケーション {.subtitle}
+### インテリア用スケジュール管理アプリケーション {.subtitle}
 
 ![todopop](https://lh3.googleusercontent.com/2puCxadrQN6kX7w8zIW72ZY78-_E1p77hth5qO0OgtTHfjZjnbVTeB5AojVIGjK_wbncUVP_6Yx-Uli7gWdA_lkc1cGI_tj5VmTjCn3P8kaS5E0cIP6y8fvFYKqY801zZgkXQvMKjEcRxUkFXmaIFsvLmFafsKmxzbe2hQFl-6LxkHHJbKCitD0G5huqcriNDETU_1lrvxIRcbEjb57V7hHqwqC_X-tx4Co7Fpt5Qm0d1HRwQhSXoHaqqHvhyeznnadUbse1T292bJcE8GFFS95vGv05oQ4r-C3_KePeGXsKJ9JBiY-17ZuWtEV5v1cZqAuqOhDSpEypNMBjxva9l452VT7hSw8RUr6TL7u1DTW7xP3S6PEXJbTk0wLmzG8DSplUFx8Y0YziEMisQv5d12MTOXUoeStPy9h8TFORoyJ_FyhBgunrHvf0CxRUOb-Eo0YPWcYf8XXIp7jS-m0YVxW5mfp_y-iJnoGuXWln8ydOvMqFtgTEdoRTrBfqpTy9nhksM-MG_5W8whANLZxZuzFVZ4oQxyIw7GfZpnOCNVNr7FDwnyNqoaDS5pI6kMg0PQqvA-hMya0Hnsjk4CqMFpdgkB6LxqDhvSohXAfO=w718-h404-rw "todopop") {.thumbnail}
 
@@ -23,6 +23,8 @@ date: 2017-01-11
 
 高田一真, 高橋拓, 國松祥一 {.member}
 
+<div class="movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/ypdfsInxk-s" frameBorder="0" allowFullScreen></iframe></div>
+
 ### 関連リンク {.references}
 
-* ほげ
+1. [Memorium: 眺めるインタフェースの提案とその試作](http://www.persistent.org/memorium.html) {.link}
