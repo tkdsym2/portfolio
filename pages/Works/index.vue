@@ -31,18 +31,19 @@ export default {
             const refactorEl = element.split('.')[0];
             return refactorEl.split('/')[2];
         });
-        const contents = _contents
-            .map(element => {
-                const params = {};
-                return Object.assign(
-                    {},
-                    require(`~/contents/dist/projects/${element}.json`),
-                    params
-                );
-            })
-            .reverse();
+        const contents = _contents.map(element => {
+            const params = {};
+            return Object.assign(
+                {},
+                require(`~/contents/dist/projects/${element}.json`),
+                params
+            );
+        });
+        const sortedContents = contents.sort((a, b) => {
+            return a.date < b.date ? 1 : -1;
+        });
         return {
-            projects: contents
+            projects: sortedContents
         };
     }
 };
