@@ -10,10 +10,8 @@
         "generate": "nuxt generate",
         "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
         "lint:fix": "eslint --fix .js,.vue --ignore-path .gitignore .",
-        "article:compile":
-            "processmd contents/**/*.md --stdout output --outputDir contents/dist/ > contents/summary.json",
-        "article:compile:watch":
-            "processmd contents/**/*.md --watch --stdout output --outputDir contents/dist/ > contents/summary.json"
+        "article:compile": "processmd contents/**/*.md --stdout output --outputDir contents/dist/ > contents/summary.json",
+        "article:compile:watch": "processmd contents/**/*.md --watch --stdout output --outputDir contents/dist/ > contents/summary.json"
     },
     "repository": {
         "type": "git",
