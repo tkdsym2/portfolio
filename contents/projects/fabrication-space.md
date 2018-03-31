@@ -1,0 +1,26 @@
+---
+id: 4
+title: Fabrication Space
+subtitle: 研究室Fabricationスペースの構築
+thumbnail: https://lh3.googleusercontent.com/ahKZVt0nR8Vl9lqoJntYwdJGJT5sL6_g_rlhtjg4f_MBm7yvmrRzYrLgvjvZ0_bCbL_9MNGqZUGNrXiaenE_GQD0aZmbhqjn9UYr8MsNrTmNEK84qs94xdbnqKfTCpyMMrRwIX_-Sme2Ip5Jqww0XTfD9AVmdL0MdCblfh98PS2NqDJE77HpIoKVeZc7xv425c9-RvDlJzOJ8O0C95gT5fV6zyv8wEAovytJY64-ptEYfNuHvxbKOSF7l4nMcS63nT_sBL8MCzGh7vBpreDe8xro55wzlQxXBYBsyojzQgqQWb6s_b3GNbeC-JKbAlE0eO9anVZZfB86PxR5TRUktdsT27UzfY4R3vdv8xj6dREJOuRJilmeY68Qn4ElbODyxtwsxetazmMB4fEhkd_7IkvAMPyAfQ1V5LYSP4R1731mx3MzHZHCe_cs_y_J7EwDjGr5YyZNpRtqWG06wzp1okTPrCAnJmRDj1pV7_3eTPj99ndisAR46XtCi5oce2ji4wj_THJkSrPBZ3L4Ke97YiH4cErEXinb8UpFc5AE6OSCBYvulvTrMAKjW0omHbREVi2o5ZfHU_CSN-MT1Y5k3KhYd-G_IaUbDdfqaXmL=w1024-h768-rw
+path: fabricatoin-space,
+date: 2016-12-06
+---
+
+### Fabrication Space {.title}
+
+#### 研究室Fabricationスペースの構築 {.subtitle}
+
+![fab-space](https://lh3.googleusercontent.com/zQFqz6yzbxuShQFa86hiLnIwVHmE4EAULfZQrZNu55e3fnY_W_4qQclt1iiW6DCsQPHs0X3kjzsPecjFQaduxdvzF4NHroUeiZ7cF9n8vgnM_96CW_k6KkgM9XCsfD7rv42I_FbRcyyHmJqy6vlvrAz12eTnYYprOwR9ndHpzEFY4OTJA8PJFcezzxcVi00gGi6sLBWNsc91sQu9RUAns8KNPQ_Fs2l_JM-FCMKRhFTuS4uMT6UdIJNNKTEc-aOvkMLs4FexdRDBVxtG0waW7v5mUQWB1nV0LtuTUDRxS4F3vDaM-wsqtlo9LsAcFUlhhIiZgvcCGYX9z6uJ1W3OZ56IHk-A8J6yDH4X8PSY0a1ZrHB0TXGw6YOX3T3CYbQDsfC8xvhFIMuJeXdi3v1w0KiX1NnI3GeiG6hN7sDdKxp4yHC2P7p7b_AQwhloEbNYX3n_3pAgfNdzZLbwP5M-HZhIG3YcmOWlOgVEqrXYFxnh4qLmw7nFg5dqNDH38J7m89gVxz3836TnqG46RIKHrvrjcmkCW8Emb2Kkw6d7-2d_2_Sj9tQbsRUp4fYGM51JonGhSQ_iVjzDtFJpuOmHC5pfmj5h8yoezRzu8x_S=w1920-h1080-rw "fab-space") {.thumbnail}
+
+### 概要 {.abstract}
+
+本研究では写真に撮られた可能性を検知し写真をその場で共有するシステム Sharetter を提案する. 写真は写っ ているのは自分だが, 持っているのは他人である所有や肖像の帰属の矛盾がある. そのため, 写真は撮影者に権利が あるのか, 被写体に権利があるかの問題, 肖像権の問題や, 盗撮が問題になることがある. そこで Shatter は，撮影時に 周辺の被写体に写真を撮られた可能性があることを即座に通知し，かつその撮影写真を共有する. これにより周辺の 人が自分が写真に撮られたこと知ることが可能になる.またすぐに撮影者の撮影した写真を得ることができる.本論 文では Shatter の試作を通じ, 実際に使用しての考察および議論を行う. {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ

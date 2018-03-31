@@ -1,0 +1,26 @@
+---
+id: 16
+title: Assemble Tree
+subtitle: オブジェクトの組み立て工程を木構造にした設計図の検討と試作
+thumbnail: https://lh3.googleusercontent.com/-RiqYaWUXZ62Ym6TT0-Qr4Rs0GZsZSFn3RXpvsIo8KNfsKpyte3dvVS8863MyF7UbZeJQdbSCh77-SDFOPNRRsfoQ4sri05-IogzJ6PE300D6AJXVeKRmVlGQrFRyLK25PTekeUl6VVFaj_2L4ElilaFd8w5ddFnvyX0v9fgjjG1bbtA_KWyMkYgr4rZYEUS1Owo1eShDjX4EpWKTxrqxHY0ZWCDDH5D7WX4Hzkhlw3DYwVEWMGyd59Q03tfjTYXwWzDW-TSEanq-AxRSlP9HDVKjkLPoVmnofbvmgjUNYlDhW08Qb_-3x2fKQ0jJUkNjfGLICfwKPVaKvAgOumzeQwG3xVY_gS6S3_mY1JSWK9g126DpAe-6Kdwk2OihZCZppvu1dO_r-xZkFWr4T1vmLLZmu-VE9HEl-aFEybUT6eNpHlHny9J3M17-cw-DfCDIcq4z7N2ytlk-GIfgokpizN3N2v71g4eooycQw8SfvWV8gGPgQznOLmO5Wzw2fJDBFwX09BmEOWUlaMCE1xEQCjstK5fWyBAGa0b7hvrQP0AfeyPBKBavk2VnhQ2e47nkpLmmwsjQPs-dZbcySOXYFBGWTTzEv6Sq-OsXd5j=w309-h231-rw
+path: assemble-tree
+date: 2017-08-05
+---
+
+### Assemble Tree {.title}
+
+#### オブジェクトの組み立て工程を木構造にした設計図の検討と試作 {.subtitle}
+
+![at](https://lh3.googleusercontent.com/-RiqYaWUXZ62Ym6TT0-Qr4Rs0GZsZSFn3RXpvsIo8KNfsKpyte3dvVS8863MyF7UbZeJQdbSCh77-SDFOPNRRsfoQ4sri05-IogzJ6PE300D6AJXVeKRmVlGQrFRyLK25PTekeUl6VVFaj_2L4ElilaFd8w5ddFnvyX0v9fgjjG1bbtA_KWyMkYgr4rZYEUS1Owo1eShDjX4EpWKTxrqxHY0ZWCDDH5D7WX4Hzkhlw3DYwVEWMGyd59Q03tfjTYXwWzDW-TSEanq-AxRSlP9HDVKjkLPoVmnofbvmgjUNYlDhW08Qb_-3x2fKQ0jJUkNjfGLICfwKPVaKvAgOumzeQwG3xVY_gS6S3_mY1JSWK9g126DpAe-6Kdwk2OihZCZppvu1dO_r-xZkFWr4T1vmLLZmu-VE9HEl-aFEybUT6eNpHlHny9J3M17-cw-DfCDIcq4z7N2ytlk-GIfgokpizN3N2v71g4eooycQw8SfvWV8gGPgQznOLmO5Wzw2fJDBFwX09BmEOWUlaMCE1xEQCjstK5fWyBAGa0b7hvrQP0AfeyPBKBavk2VnhQ2e47nkpLmmwsjQPs-dZbcySOXYFBGWTTzEv6Sq-OsXd5j=w309-h231-rw "at") {.thumbnail}
+
+### 概要 {.abstract}
+
+Comming Soon ... {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ

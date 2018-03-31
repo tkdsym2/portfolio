@@ -1,0 +1,27 @@
+---
+id: 8
+title: 被写通知
+subtitle: アドホックネットワークを利用した被写検知に基づく写真共有
+thumbnail: https://lh3.googleusercontent.com/mQwLKCs009Z_yeekqWyhtbbwCuJtpLerq6AQk26hungZa-sDHrFRJqO6VmePCYD66ZJuwjRVW-vZ5l6kjkPzDcvpVodSdoO4OWhSKP0YA2aRqpEM-wTWw0_X9cDdeNFvKwHV0m5N-2toIhEOseZsbiIMySYH58JM9sY0qjyIgLjMsuVUt4-TiDQ1-DCjSC98jlmE1NAH_h3rvY2iFsv5PbVepvccBJFX1smUcprP4Hgt6MJ0BLC6pFRaHtPf3ds2Rr4fqSRbqrE7U55tLy3eYMhHksj44nF_b-FfUYYdKfyM6ZeTYNxET_dcMTaBlUFo_OpjcMqGW9GBrzXCQWt8vlPj6RFnJD0GDiEKyKRJkTpRwb3oRCcrzhGJq-U_ulGDA5YORSdTwG52vntrCawHPECZcIc1TbRP47KnNh6K0s1J_ANVVEr7apbo6XsZ8emIVUUBO3kfI27yNCff74ikdg56xE8FGX4xbgS8G-UQlvo6dpcAOBfREQD-zVzzAxVOqF6YjG0Bp6HDRiK5fAJ-4H8jS3VLu1oC8gO-e1IqjuWpI3VCQXpf66Upxt51ZSgl4IVv8zdErygn1YJVM6dMLGvT3RuDEXpvP7STslto=w1024-h768-rw
+path: snapped-notification-wiss
+date: 2016-12-16
+---
+
+### 被写通知 {.title}
+
+#### アドホックネットワークを利用した被写検知に基づく写真共有 {.subtitle}
+
+![wiss](https://lh3.googleusercontent.com/n9nJiKP_j2nkK0w6AFcQbeTQQAO0gpahmoqdWn0JST3walPWZMYqVmDpTTlXfK0bvhqk7T5C4fw90Y5X1dFSOjKj8emKNv5yxIIFT1ouSwmRAzxoXcQ6Ieofy_vTGYPNnQDaoehmseyCY8s20O9iHY0OT0WmJJBgMSlK71eyL7Dovdelf11ZgvCdk708_6-PY3QjwVosMqs0saqvuPCbrmoqnVToyhUxKousywUBEDq7cJWG1eWLyGC-5BhLY9x1xmQd6gN57OYUG95TzaP4sv-pLQzTy1KeCeDWBAN3fsTiAEUJK4aapveYjBXXA4XEWiiT9rV2EF-o15vUW4NMopVMgf39SiboIAszcbI3GaudwaTc1d1jRSQiimj0aC18OFhAj_Mat4LJT8rore4n2nTlGEjNuglQAovVkylz2DcKsG4bovZPkSNSpte80EN6HIXe2MK6MWXmjHwKICOWJuDTNe5GAgJhrTk_ufaX14tQi6sbBz0l9_6lc2FxzFHqWo_x89gBIS9K7KtaqYBSE-PZl-1IDPBCWDH17i6yd-CARz5InhH_A7ycxrjnF5J4-fRT-F6TIfXIsdxGMTFAAFFGWiW7KuzIFhnigkB5=w1920-h1080-rw "wiss") {.thumbnail}
+
+### 概要 {.abstract}
+
+写真は撮る人−撮られる人(物)の関係で成り立っている．写真を撮られると，自分が写った写真は，撮影した人の所有するカメラの中に保存される． そのため，被写体となった人は自分が写っている写真であるのにも関わらず，撮影者からその写真を提供してもらわない限り，その写真を持つことはできない． つまり，写真に写っているのは自分だが，持っているのは他人であるという所有と肖像の帰属の矛盾が生じる． そこで本研究では，写真を撮影したら，写った人に自動的に撮影イベントを通知／写真を共有するシステムSharetterを提案する． Sharetterでは顔画像認識とBluetoothの電波強度による距離情報を組み合わせ，被写体の写り込んでいる可能性を算出し，それを被写値として定義する． その被写値に基づき通知し，写真の共有を行う．
+WISS2016の3日目にてデモ発表 {.description}
+
+### Authors {.authors}
+
+高田一真, 渡邊恵太 {.member}
+
+### 関連リンク {.references}
+
+* ほげ
