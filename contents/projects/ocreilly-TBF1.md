@@ -21,6 +21,6 @@ date: 2016-06-25
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. [O'CREILLY - 技術書典](https://ocreilly.meiji-ncc.tech/TBF01/) {.link}

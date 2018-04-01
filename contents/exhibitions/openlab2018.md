@@ -9,11 +9,31 @@ exSubName: 渡邊恵太研究室共同研究成果発表展
 official: http://keita-lab.jp/exhibition/
 personal:
 path: openlab2018
-dateStart: 2018年 3月 15日
-dateFinish: 2018年 3月 17日
+dateStart: 2018-03-15
+dateFinish: 2018-03-17
 thumbnail: https://lh3.googleusercontent.com/DqEf-aM2Cb-XtGJrFacJyORjQf0WkMxcgLhq_vgvy8JXlxCE6J7jK6StXqY7_ciEnSav-u9EbcX96zUQ7y9PGl_PWJ_envbkanQtCOeyBAWxMbjG-fFjcaWnToZhRcTF9OWcw8PwqiOqvZmvP9AMo8WMrXACk3iXWG5FhTvM5KPAfyFNLniiZjULZ-IKF-sH3Ema8LozmWd0LTIv3uQ0bOVbpA52_lChuqCp-SDUvGAQkUYu1aVxDo3EdGbbzXGk-CsfU1UdmUYeAm1zHBrAASM-M79htdbQ3YKWMiDN9OU4C3T87uBvE6iGhXGlsWHL4vim4mpcrsZOh4s79bU7xNpBCatH6EdcvEGe_a-yy19tA95O0RZ4NjIApWbNkZtnv7fXnmlH5uGq2erZmJcbp02NE11otVB7nviMLJ-jojPYPOwUjC6SogL8Ou7Z-voQuCKGR7ZnqQbbeGj6ZEHH8LaSROgHR5TwoS1e7NGE5No_1jZ2vGKEbj33232fsG4XYDn0F0LJ5oEyAIVRWTU0UF3-p9MTNG81g6g-tQNjcOS3cSNFPIMDUr73cWECsjB16F5EuWKrWV8HBrXtYK_mfQqxp6miEwollpgrCdNj=w1342-h1006-rw
 ---
 
-## 概要 {.description}
+### exUI {.title}
 
-このシステムは撮影者だけではなく，写真に写っている人もその写真を持つことができるシステムである．撮影者が写真を撮ると，被写値（ある被写体が写り込んでいる可能性）を算出する．被写値に基づいて被写体に撮影されたことを通知し，その写真を共有する．写真に写っているのは自分であるのに，持っているのは撮影者（他人）であるという写真の帰属の矛盾を解決するためのシステム．
+#### IoTによるユーザインタフェースの外在化がもたらす新たなタッチポイントとプロダクトデザイン {.subtitle}
+
+![exui](https://lh3.googleusercontent.com/ZO5QLIlGqneTDHONtqmz9q49odXBuLpXSfOE4nHmYs_8ujHml9Ep70zNVp4qi0Cb5-H6ibWVoGYAv7TlPTsEDgwz4mtUbb45IFGnsbrQ51n9SPVE3Y9VDJcwQCvRezkCx8QWFkGoMN-DI6N_yoPS8TognVRiiwnmAMjtjTse1kb0TCuxCtDRdwzpSuqbCqOIK2nZu3L8ZuN5N_BTPDri04hCT_I9ssRQAFfSyNKSO9Qm9ND3vt1QpYfjKXNh7q9N1LueDQBYI08M40qEg2limVffOYEhDcFPkzuKUA17DI7N9YRFEEw6hP4A4MW9MNn0viYRJW4mAJjTpXFZ1nRnM3KraaAo40czv_w9DiLZJMqNGiYxSFH_WMO1D5C-MMFRKkNlPHlWKKfosxYdsW-bVBAL613tEDbNbxuw-E3t6A3PqjWsjLfedIMdcaJ46mV-1VSQDwmJnz0kL63zfTTExkCakQzm9WL9GLfebrQ0xMYaKq4lnrBagR9zoqDblGevfvEuRhbZ0UB8nA1Wk4mYC4N1Oq0T83uCm-gEwuICMqNkeHVKFRc8MjL0XPgXWcFzPfPuUl7pn80SJtNbjd_imfEf2t4lWBgD9IUPes1D=w1509-h1006-rw "exui") {.thumbnail}
+
+### Abstract {.abstract}
+
+ユーザインタフェース（UI)を外在化した家電・機器のあり方、exUIがもたらす、新しい人と機器の関係を研究しています。IoT, Web, ARすべてがシームレスに統合され、物を再定義し、新しい体験や価値を提供します。 {.description}
+
+家電を始め、物には操作するためのボタンや画面、ユーザインタフェースがありました。今回のプロジェクトでは、このユーザインタフェースを一切プロダクトから無くしUIレスプロダクトにし、すべての操作をスマートフォンから提供する手法を提案します。これを外在化したUI＝exUIと定義しました。 {.description}
+
+インターネットがものに繋がるようになると、ユーザインタフェースはモノについている必要がなくなります。スマートフォンや他の機器から制御できるようになるからです。そしてプロダクトの表面には、ユーザインタフェースをなくすことができます。その結果、複雑なボタンやラベルを排除した美しいプロダクトデザインにできるばかりでなく、ボタンや画面の部品を省略できるため製造コスト的にもメリットがあります。 {.description}
+
+さらに、exUIはプロダクトの外観だけでなく、モノの定義、価値、体験を大きく変えます。たとえば、スピーカーに、電波のチューニングUIがついてればラジオです。早送り巻き戻しがついていれば、音楽プレイヤーかもしれません。このようにUIがその製品の定義や価値を決めていると言えます。exUIによって、そのUIはプロダクトからなくなり、ソフトウェアで定義できるようになります。そのため、ハードとしてスピーカーだけあれば、ラジオにも音楽プレイヤーにも、拡声器にソフトウェア次第で定義できるようになります。。 {.description}
+
+### Author {.authors}
+
+三菱電機 x 明治大学 渡邊研究室 {.member}
+
+### References {.references}
+
+1. [IoT時代のインタラクションデザイン - 渡邊恵太研究室共同研究成果発表](http://keita-lab.jp/exhibition/) {.link}

@@ -13,7 +13,7 @@ date: 2017-06-12
 
 ![ts](https://lh3.googleusercontent.com/C5FDEoOCZXedzp_KmN6HTBPfY08PDvCrlaOvaaOTP7ASDfdYmjXOmMOdxpVo2cHv0OuD2eANEjntMU6Ukjazy3Tx_M5f4xl0DGqK_oNM8lMXYiedNbX7A_8AvikfGIU9pmGr_wkny9Kmnkfd0jsi63rvMWNLUCCLn1gm6W6OtfFVCtfYtwpOtj2OUabXGKp8WQFutDoFLtjF7V8rmnnnmpsh8AUCPC7DTGn9gxT3ZG0EXiAH8gzz5j4HH5GtPIJUZ9C0U2w9R46dgUnz5J_LpVGT7ACbfhqljdF6qOJBexfcNutGG83UvJksu-jhEmoHahBBMWtHNrZvCXNFZ6nrgg9jSXpXoXpLeq52e3njBEHGaKuPAK642_ED7Unp3xN1RXfRneptnAVBEFPDRBP6KA3_3-5bjd0Ue3TkaOlvElMA4j5ow1xGsW30r8YcnygYb-w9yAMTnZcMD2erzyTAhICOTvcENNwnA9QPv_LGZuWO50SddsZ_Nqeg9PR2xd-wWfIJ3k4sPYprfhDBON3zjIOfTd-Nvtxx8WubJtbxfIpuqrfNtG8gT5ZQYjc0gF5yDscgIM8ZgVvhAs_cxeZTFpH1eV3QWio67jf9ZctU=w1920-h1080-rw "ts") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
 日常生活において，ガラスやアクリルなどの光を透過する物質は様々な用途で使われる．例えば，外を見るための窓や鑑賞用の水槽などがある．透明度は製造段階で決まるため，ガラスやアクリル単体で後から透明度を変えることは出来ない．窓やレンズを通して見える物体や像を見えないようにするには，カーテンや蓋など光を透過しない素材で表面を覆う必要がある．しかし，表面を覆う際の制御はほとんどの場合で縦か横のどちらか一方向にしか行えないので遮光しても望まない結果になることがある．そこで，透明度を制御することで実現したインタラクティブなディスプレイThrough Studioを提案する．透明度の制御には吸水性ポリマーを用いる．この物質は，水中では光を透過して，ガラスやアクリルのような振る舞いをするが，空気中にある場合は光を透過しても乱反射によって像が見えないようになる． {.description}
 
@@ -21,6 +21,6 @@ date: 2017-06-12
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. [未来の科学者たちへ #07 「見えないガラス」](https://www.youtube.com/watch?v=C4i7qu7JFMk&feature=youtu.be) {.link}

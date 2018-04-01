@@ -13,7 +13,7 @@ date: 2017-06-08
 
 ![br](https://lh3.googleusercontent.com/jd-aRMO0CO5sEeMF3YBUrJFS_82Lrwq2xNYW0OaFulImfvW8rnLu1zYhmfeu8Z3bqrLtGPP9L1W2Y0CFEyJZ11xgGdm4ZrfF_R8OrrxY5U5IqZS57ajUIRbtmIBrB3DlGn3AXl3uAgSDUuxfewHfsqbVZp4GJG9_f4QI5GiZ6_AutM-hQcR2el_fU6hpjgeITyKgv_wSQxnHO6DCa3emX7F44T0pHp4JEwNVSGvQX_pr8rHMWvCTXbgIrIiIr9k6Va_jl3Fu6PZMDz1Z0YUhw1_8cKGPptkbUSgx2vXl_fAtkiXBElxcR3XWL59yVMtgJ7_lrW8SNOMx9PgQa1W8NzKYgKa2OAIwmj0cpHxaao3hmQchtlfSh1aY0wogtGcw6T3TF38IXosbcYudjQ-a1816y-jsPpKilg1vB-8wnnpxpRCJruxr3z4KJKtkPmvW2hplGuxWiXTWd7qehcyI4Mve336342b5ooYCvAIXbm1tR3ey_tHtfJb1X2qGLT5JD8u67msceAf4R63xNQzQD7_f0_3DqoQf5qfPQSnAChWcIPvKiRvbKq1COoKo2g2eOT9NZqAeJwHoKUT0mZq4vHoRhEdwM_2Qy6bvO1sx=w1920-h1080-rw "br") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
 Book Roofは本を伏せて置く専用のブックスタンドである．途中まで読んでいたページは伏せて置くことで保持され，Book Roofの上に置くことで「屋根」となり，見た目を損なわない． また，Book Roofは読書灯の役割もある．読書を中断するとライトは消え，読書を再開すると周囲の暗さに応じてライトが点灯する．「本を伏せて置く」という無意識の行為に着目している． {.description}
 
@@ -23,6 +23,8 @@ Book Roofはレーザーカッターで切り出されたアクリル板で作�
 
 高田一真, 木崎俊也 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. ... {.link}
+
+@[youtube](QmCKWIE7J-o)

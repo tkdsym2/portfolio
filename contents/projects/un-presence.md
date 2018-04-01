@@ -13,7 +13,7 @@ date: 2017-05-27
 
 ![up](https://lh3.googleusercontent.com/jVuQXOn9MGoRnFxUeRibOuldk_t2UhAEjCEzUcVx174UV419nCZ3ixfw4tOFIoxVZkLJalCYJPKp6F3z6WCBdRmjF90Rd1fQEJjmhECSMjDWN26uke2MnJsSDunI2_Ena-5grWyiF4kFrQ-H-PxzRlsdn_VYdj8D8NLjptNhrn0FBn7eo7yeV1XrgEPWs5v59T_qa5x3WTVRZeXw8kqQYIxQoRwXxCD_eaoM0xJVGiJwOhUxiarT7oGUsfIFWRFzmQPWmp8uWWrNxdGL8yN_ISk6Z7hnrOe_Qqn1KLrWfpHkTGNGUqxSew4LF1BnUJ8Fbm9uT1n3sDzrE1m3fcH9I75f6N-QziM5PUfN-kB5T6ly365FUDSjjS_KuzYfnDz2YGWEU3dyLwe2GP8cOq58Gf9RloawgeUAM3E0hcuMUmVR0GDRZi8Eg8mQ1dnGzlCNP8YgS8yjrB59B1iZfmsbdJYyFg_qMeKBUmWRDzDb1Reoxb_xyVJbRU4ExKeKJxoqs15STBtDkPy9rsSVR5KjVnQByCo9J_r_XLgpLFVWj1IOkyncrQZ2YuUnfP2dCi3-cHhCwiUG_LbdUOeMxkafRnzxk4DAF-_5KO_9qgVt=w1920-h1080-no "up") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
 この作品では「現実で透明感を利用すること」を目的としている．水の中で透明感を出すために，吸水ポリマー（消臭ビーズ）を使うことにした．吸水ポリマーが水を吸うと，その時間が長いほどサイズが大きくなる．時間差で大きさが変わることを利用して，様々な時間で水を吸わせてランダムなサイズの吸水ポリマーを生成した．吸水ポリマーは水とほぼ同じ屈折率になるので，水の中ではほぼ見えなくなる．しかし，光の反射で輪郭が光ったりして少し見えるが，これは視聴者に何かあると思わせる表現でもある． この微妙な塩梅の透明感とランダムなサイズを利用して，透明になった瞬間に見えなかったモノが見えるようになり，見えないモノにぶつかってランダムな方向に進んでいく，という表現をしている．学部3年次の講義: 映像・アニメーション表現の個人課題制作物． {.description}
 
@@ -21,6 +21,8 @@ date: 2017-05-27
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. [未来の科学者たちへ #07 「見えないガラス」](https://www.youtube.com/watch?v=C4i7qu7JFMk&feature=youtu.be) {.link}
+
+@[youtube](DZiIGaBSnP4)

@@ -13,14 +13,14 @@ date: 2017-07-15
 
 ![sg](https://lh3.googleusercontent.com/IS0GI-XT3jw3iW9hjLSw5x8kDoqEpmpg8qYv_iGsZbGax9oblCiGAWDptRQkemk4rDxEtKSnnSWgMSrFx8SdCo75iECmKelMwzZAlvNORaxWCIiWNBkuXIClry6uXDwtRC3UnrGTei36icG8tADKnFjHno1rezln-lk7NCA6DLWXqdciTvBOdBw1Z7hTzyZosj7rVj35psawG80CZNJW87Oqyk-9EjhDKmD6cuZP4ZFofW_GoSdlhUZ-W_qIXQeudlnHLyvPd60MVEaSZhncxgERtwkdyDdl9A4qzelpp88QJYykzElVkrS1De_2u0qL0Ax8oMkstMX9msjsc6aHhRPFggt4ri-Cb---o6Ntmb3cOTfPsDT3S21p4yLi23UYjwj6K0a0Fh9I8FETZVQ6qD6xF13blOJyh9IcQp0wljZjDCSi6T9pw0Jbn80FtPphg7XzgE1XKB8t60e9NeETbyIhr71yuEWsilipkcKardRhMzDZMlNEQJaj3RwwykV0OOW5nmsf4ZjgkUnQPLba0o1BUp-s0D3tdfzWeUQZtQbfK3W7YOKiBSqXGUKqOjsgUPK7XDxhmQ1SM7dsKH1OzWX3-aPyZyglgbPfbsTH=w718-h404-rw "sg") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
 Shoggは卵を割る瞬間の衝撃をセンシングして，卵を使った料理レシピを提案するサービスである．卵が割れる瞬間の衝撃力を計測し，ユーザの状態を把握する．衝撃が強い場合は料理に慣れていないのか，疲れているかというように判断される．その時のユーザにとって手間にならない，または少し難しいの料理を適宜提案する． 学部3年次の講義: インタラクションデザインでの課題制作物． {.description}
 
-### Authors {.authors}
+### Author {.authors}
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. none {.no-link}

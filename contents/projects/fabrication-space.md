@@ -13,14 +13,14 @@ date: 2016-12-06
 
 ![fab-space](https://lh3.googleusercontent.com/zQFqz6yzbxuShQFa86hiLnIwVHmE4EAULfZQrZNu55e3fnY_W_4qQclt1iiW6DCsQPHs0X3kjzsPecjFQaduxdvzF4NHroUeiZ7cF9n8vgnM_96CW_k6KkgM9XCsfD7rv42I_FbRcyyHmJqy6vlvrAz12eTnYYprOwR9ndHpzEFY4OTJA8PJFcezzxcVi00gGi6sLBWNsc91sQu9RUAns8KNPQ_Fs2l_JM-FCMKRhFTuS4uMT6UdIJNNKTEc-aOvkMLs4FexdRDBVxtG0waW7v5mUQWB1nV0LtuTUDRxS4F3vDaM-wsqtlo9LsAcFUlhhIiZgvcCGYX9z6uJ1W3OZ56IHk-A8J6yDH4X8PSY0a1ZrHB0TXGw6YOX3T3CYbQDsfC8xvhFIMuJeXdi3v1w0KiX1NnI3GeiG6hN7sDdKxp4yHC2P7p7b_AQwhloEbNYX3n_3pAgfNdzZLbwP5M-HZhIG3YcmOWlOgVEqrXYFxnh4qLmw7nFg5dqNDH38J7m89gVxz3836TnqG46RIKHrvrjcmkCW8Emb2Kkw6d7-2d_2_Sj9tQbsRUp4fYGM51JonGhSQ_iVjzDtFJpuOmHC5pfmj5h8yoezRzu8x_S=w1920-h1080-rw "fab-space") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
-本研究では写真に撮られた可能性を検知し写真をその場で共有するシステム Sharetter を提案する. 写真は写っ ているのは自分だが, 持っているのは他人である所有や肖像の帰属の矛盾がある. そのため, 写真は撮影者に権利が あるのか, 被写体に権利があるかの問題, 肖像権の問題や, 盗撮が問題になることがある. そこで Shatter は，撮影時に 周辺の被写体に写真を撮られた可能性があることを即座に通知し，かつその撮影写真を共有する. これにより周辺の 人が自分が写真に撮られたこと知ることが可能になる.またすぐに撮影者の撮影した写真を得ることができる.本論 文では Shatter の試作を通じ, 実際に使用しての考察および議論を行う. {.description}
+Coming Soon... {.description}
 
 ### Authors {.authors}
 
-高田一真 {.member}
+高田一真, 原健太, 中屋裕登, 片倉翔平, 八木康輔, 大内泰良, 渡邊恵太 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. [ミスミ アルミフレーム](https://jp.misumi-ec.com/vona2/mech/M1500000000/M1501000000/M1501010000/)

@@ -13,7 +13,7 @@ date: 2017-04-09
 
 ![ocreilly](https://lh3.googleusercontent.com/OurdShbM_83vfQKbfcJ0YD_aPMl14yD54TG5Jq0b0WfU6nE2FCCcK5KgSrLaq4jpykaXOl45L2oMzJL8SJjaiAGOmS5lHHeZl_ZAdFD4qrlukka6vG9BDzvN1pufKx5_aUb56waTPR_BQFzJ2kNB_h1qB1hL68tu9rkER3NxwF08pUr526gZBDK9VrGTfn8DcLbFMK3kEv6vpCpZHw-5G7rLqKUHHWcifWUA0NfuVEjASJR9Nhhbx1_r5nVcGcnd2NrefwKzBPLtdYNYyBHOUL9wU4E8is2zLRszySroKdC_3nxauhJs17BJEJXHX44bopabiobF2KZdBsThD3jcx5on-MfO58Cb6cP7uIBFyRo2MTBCC9R8Nxks87MErrpDHU6wKoUds5tq7wpabX3k_Y3kbyJu9UCKr8RLz8f567CMy-klpOrEstfN2eF_fRuJC3cUFxoOXBL5ll7VyUBNV679pB_hzGJD1D8LkC7VHqnTwaSzIoR8UASFMm9M6RPSuxjgrv7qWQuVZ4Zj9RSee3CrLz3hRw4V_eyhpxeJBMecqZ-UWbOenz-3tcTzqzF1uk7UDLX1Phhq0_ckIvfZ6UElMb2uTMtmVxy6B5Jb=w1920-h1080-rw "ocreilly") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
 モバイルアプリケーションのクロスプラットフォーム開発方法はいくつかあるが，著者は大きく2つあると考えている．それは，Xamarinでの開発とReact Nativeでの開発である．前者はMicrosoftを中心に頻繁に活動が行われているようだ．しかし，未だにXamarinで作られている有名なアプリはない気がする．一方，React NativeはFacebookやInstagramといったようなアプリに使われている（Nintendo Switch OnlineがXamarin製らしい）．また，Reactを開発したことがあれば，書き方やデータの扱い方はReact Nativeでも同じなので比較的開発しやすい環境だ．まとめると，著者は圧倒的にReact Nativeを推している． さて，2017年3月13日 〜 3月14日にかけて，アメリカのカルフォルニア州にあるサンタクララにてReact Conference 2017（以下React Conf）が開催された．著者はお金も時間もないので残念ながら現地には行けず，日本でLive Streamingを見ていた．React ConfではReactとReact Nativeに関する新しい情報が満載だった．今回はその中で著者がもっとも注目した新しいCLI，Create React Native App について，従来のCLIと比較しながら紹介する {.description}
 
@@ -21,6 +21,6 @@ date: 2017-04-09
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. [O'CREILLY - 技術書典02](https://ocreilly.meiji-ncc.tech/TBF02/) {.link}

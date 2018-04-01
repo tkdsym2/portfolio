@@ -25,4 +25,5 @@ Ghost CreatorではHoloLensとMyoを使う．HoloLensは手元の録画と再生
 
 ### 関連リンク {.references}
 
-* ほげ
+1. [Microsoft HoloLens](https://www.microsoft.com/ja-jp/hololens) {.link}
+2. [Myo](https://jp.myo.com/) {.link}

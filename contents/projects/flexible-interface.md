@@ -13,14 +13,14 @@ date: 2017-04-03
 
 ![fi](https://lh3.googleusercontent.com/FTDsGnINIrMdWVF1MIvqNV3fezYj4gbuR3-eR-ZmKGXbOkzcJWGRIEo3foRiczivbi2EZDPr7u80LbGMEfMDrUWyXNUIQiMBlyRggjswNwQFnWq5H1ozeLQEk9vMxeU9tq7HLDAXMzAmTsH9bhyHs8syw5fy7G1--KoiOxsrT2dQ65Y1I1bsBKJQbk_IQHJYLEZyimUbCPMH7xBdKGZic8wnhxrTYXF9uoLm8zLHxZvpw4EoBYjXhj_IitlOXZaIdnjulIViX-NVVpY-oCHe8_kd8dJAMsTQO0Vvhfqwu89bvKgiAjrbL2FTd_7AvgDkyKi1QCKeN4nSf4svZzT8cGy63P3wvLdY1tZiHsAauklpaM71VlzbBbKQ5xQYirn-NJ1qPOPR5OIvJcwTHfvLUz2Xh6pcgYG4FQZBkT9rFO5K3zceIy-0cfIqucrhknixoPGJ0a8gX2rXtV-Fh-rrg1GN5CRjsbGhaqatmRuBOVCf6SFZuxmNLpZUZ2I8AleqxRDpL-HZ3y0-LcbQYhPQgSoguRBXdKZuWuSoJINZtSIyXmzQFRlg8xj55a_uIq_MLAcVhw5zP_GFdJcAWmjqnRv7MakC8ZSgr-cN7fWw=w1920-h1080-rw "fi") {.thumbnail}
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
-comming soon... {.description}
+Coming soon... {.description}
 
 ### Authors {.authors}
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
-* ほげ
+1. none {.no-link}
