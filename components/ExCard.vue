@@ -4,16 +4,17 @@
     section.card-container
         nuxt-link.ex-card(:to="{ path: '/Exhibition/' + exhibition.path}")
             div.ex-header
-                h2.ex-name {{ exhibition.exName }}
-                h3.ex-subname {{ exhibition.exSubName }}
+                h2.ex-name {{ exhibition.title }}
+                h3.ex-subname {{ exhibition.subTitle }}
                 hr.card-hr
             img.ex-image(:src="exhibition.thumbnail")
             article.ex-contents
-                h3.ex-title {{ exhibition.title }}
-                h3.ex-subtitle {{ exhibition.subTitle }}
-                p.abstract {{ exhibition.abstract }}
-                h5.ex-grounds 場所：{{ exhibition.grounds }}
-                span.date {{ exhibition.dateStart }} 〜 {{ exhibition.dateFinish }}
+                div.up
+                    h3.ex-title {{ exhibition.exName }}
+                    h3.ex-subtitle {{ exhibition.exSubName }}
+                div.down
+                    h5.ex-grounds 場所：{{ exhibition.grounds }}
+                    p.date {{ refactorDate(exhibition.dateStart) }} 〜 {{ refactorDate(exhibition.dateFinish) }}
 </template>
 
 <script>
@@ -35,6 +36,13 @@ export default {
     },
     data() {
         return {};
+    },
+    methods: {
+        refactorDate: date => {
+            const _date = new Date(date);
+            const _month = _date.getMonth() + 1;
+            return `${_date.getFullYear()}. ${_month}. ${_date.getDate()}.`;
+        }
     }
 };
 </script>
