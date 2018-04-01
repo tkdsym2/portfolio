@@ -14,7 +14,7 @@
                 img(src="~/static/icon/twitter.png" style="width: 30px; height: 30px; margin-left: -5px; margin-right: -5px; margin-top: -5px;")
     p.copyright
         span.copyright-mark &copy;
-        span.author 2018 Kazuma Takada
+        span.author 2017 Kazuma Takada
 </template>
 
 <script>
