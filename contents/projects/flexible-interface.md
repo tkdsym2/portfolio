@@ -1,0 +1,26 @@
+---
+id: 10
+title: Flexible Interface
+subtitle:
+thumbnail: https://lh3.googleusercontent.com/NzEWfre2cVVKfhMP2q2bQcV0S4PB3il3oZtHLsZadJDxjk-6zFVpBBLttxQy7ZiBNyt4lvlFsqLPFkEBsNGTWH-wWNBxjZVWlnI-rYuc7kluQOyVm-a4kDa3KTPYc5i40qXANAJnvMMWEqEVhPWCSKfvFONZ1s1h72gEYNm_hbqoOiXcqC3mgAqOUn78QJtZ12N4QE9aV_y2rHDVK_-We9eDDpgqetfy7jbAyP-O0r2dWTWWjiteklCRIgOJC3VtByTZMnFnPRQCvxFHZyIvJjy2hhvoITjIzKOvsvNbawJUZs-pouFcry45t0qDearfZyhqaEQQesCoApj8iiI9OQADtqahLjyUbLS2MaR9QU2X18F8Oo2yR_v1s9jS0k87iR1qqMuCwA-qGcusFueUmIOZJAl2VcLgLVJA5ID2Oyd4yYxUFKsaoTie4lCCFecPZ_NBd92UMV7eV-kdU1EWCE1PbiHmVhTBn_9SsFja1JasHGARxkJQcCEbz98_Z_nzbap6swm0ZwL_XRXYo6oJhY_nhofvu1xYsSpulRTpNnT99eljTDxsLF3G_RqiyJZifHYdcTS5LvQ3MCs0_uyE9PL5eJnDrHfYix3r5VFf=w478-h358-rw
+path: flexible-interface
+date: 2017-04-03
+---
+
+### Flexible Interface {.title}
+
+#### ... {.subtitle}
+
+![fi](https://lh3.googleusercontent.com/FTDsGnINIrMdWVF1MIvqNV3fezYj4gbuR3-eR-ZmKGXbOkzcJWGRIEo3foRiczivbi2EZDPr7u80LbGMEfMDrUWyXNUIQiMBlyRggjswNwQFnWq5H1ozeLQEk9vMxeU9tq7HLDAXMzAmTsH9bhyHs8syw5fy7G1--KoiOxsrT2dQ65Y1I1bsBKJQbk_IQHJYLEZyimUbCPMH7xBdKGZic8wnhxrTYXF9uoLm8zLHxZvpw4EoBYjXhj_IitlOXZaIdnjulIViX-NVVpY-oCHe8_kd8dJAMsTQO0Vvhfqwu89bvKgiAjrbL2FTd_7AvgDkyKi1QCKeN4nSf4svZzT8cGy63P3wvLdY1tZiHsAauklpaM71VlzbBbKQ5xQYirn-NJ1qPOPR5OIvJcwTHfvLUz2Xh6pcgYG4FQZBkT9rFO5K3zceIy-0cfIqucrhknixoPGJ0a8gX2rXtV-Fh-rrg1GN5CRjsbGhaqatmRuBOVCf6SFZuxmNLpZUZ2I8AleqxRDpL-HZ3y0-LcbQYhPQgSoguRBXdKZuWuSoJINZtSIyXmzQFRlg8xj55a_uIq_MLAcVhw5zP_GFdJcAWmjqnRv7MakC8ZSgr-cN7fWw=w1920-h1080-rw "fi") {.thumbnail}
+
+### 概要 {.abstract}
+
+comming soon... {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ

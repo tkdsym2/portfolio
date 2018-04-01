@@ -8,7 +8,7 @@
                 article
                     h1 {{ project.title }}
                     p {{ project.subtitle }}
-                    span 2015
+                    span {{ refactorDate(project.date) }}
 </template>
 
 <script>
@@ -30,6 +30,13 @@ export default {
     },
     data() {
         return {};
+    },
+    methods: {
+        refactorDate: date => {
+            const _date = new Date(date);
+            const _month = _date.getMonth() + 1;
+            return `${_date.getFullYear()}年 ${_month}月 ${_date.getDate()}日`;
+        }
     }
 };
 </script>

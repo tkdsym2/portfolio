@@ -10,10 +10,8 @@
         "generate": "nuxt generate",
         "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
         "lint:fix": "eslint --fix .js,.vue --ignore-path .gitignore .",
-        "article:compile":
-            "processmd contents/**/*.md --stdout output --outputDir contents/dist/ > contents/summary.json",
-        "article:compile:watch":
-            "processmd contents/**/*.md --watch --stdout output --outputDir contents/dist/ > contents/summary.json"
+        "article:compile": "processmd contents/**/*.md --stdout output --outputDir contents/dist/ > contents/summary.json",
+        "article:compile:watch": "processmd contents/**/*.md --watch --stdout output --outputDir contents/dist/ > contents/summary.json"
     },
     "repository": {
         "type": "git",
@@ -39,6 +37,8 @@
         "hyperscript": "^2.0.2",
         "jquery": "^3.3.1",
         "markdown-it-attrs": "^1.2.1",
+        "markdown-it-block-embed": "0.0.3",
+        "markdown-it-link-attributes": "^2.0.0",
         "mdast-util-to-hast": "^3.0.0",
         "nuxt": "^1.4.0",
         "path": "^0.12.7",

@@ -1,0 +1,26 @@
+---
+id: 13
+title: (Un)Presence
+subtitle: 存在の浮き沈み
+thumbnail: https://lh3.googleusercontent.com/2IvT0-P9lfLTO87SXFhr4RS8DLBSCXdgxYt9ysam1x9g7MR2PfKpPg5PJaCua-NDlNFWzHpdDmrMmU7EOJxHi2ZTnxqOLME1ASOs2dDShNtYRp2mT05kLbb0Jtoj-DnnXBI0c9g8UATV8OkF2kqJkqBRjc1i9xmUxVV9AP2_wGOPAd_W2_BetY5hVqaJmtAH0UhQha17ciB4HGI3qPNZKHyl8mbAYjmPsG805FGYCtOrN5ivFDOrS1wX-QHF8Kks1p0i1UFQuj77oaR2chPIzDnufGVBoYfTummmTv3BowThhhnFjStBPPeSBJJ5oEDdHrsnfdu29osnUk566OPbNs98c26S3DmLcZdUX-qvDozKSWjvuLP7U0gC7bAYtUOTBuNPTcOCiUmScvXwsr_2PDQYGBLjXAr_fZKNCnjAfDinQn1lmKA_Oy8An9TpuB3CG26JQD8Gm-p3fqgphJcebLGVy1aUw4XeBloK8rW_iLQtHj9bJFFzmWeSjOa8IzVfu2V4eh0zk4Lp4Rqhsdoi6pNfDsqLAb5NASaABkUo9YzrMWAnR2G86e7-fOH79aVw7s8TqDKKRmPG3BiNCp7uP9uxy7alMEmii_JUAZ2B=w477-h358-rw
+path: un-presence
+date: 2017-05-27
+---
+
+### (Un)Presence {.title}
+
+#### 存在の浮き沈み {.subtitle}
+
+![up](https://lh3.googleusercontent.com/jVuQXOn9MGoRnFxUeRibOuldk_t2UhAEjCEzUcVx174UV419nCZ3ixfw4tOFIoxVZkLJalCYJPKp6F3z6WCBdRmjF90Rd1fQEJjmhECSMjDWN26uke2MnJsSDunI2_Ena-5grWyiF4kFrQ-H-PxzRlsdn_VYdj8D8NLjptNhrn0FBn7eo7yeV1XrgEPWs5v59T_qa5x3WTVRZeXw8kqQYIxQoRwXxCD_eaoM0xJVGiJwOhUxiarT7oGUsfIFWRFzmQPWmp8uWWrNxdGL8yN_ISk6Z7hnrOe_Qqn1KLrWfpHkTGNGUqxSew4LF1BnUJ8Fbm9uT1n3sDzrE1m3fcH9I75f6N-QziM5PUfN-kB5T6ly365FUDSjjS_KuzYfnDz2YGWEU3dyLwe2GP8cOq58Gf9RloawgeUAM3E0hcuMUmVR0GDRZi8Eg8mQ1dnGzlCNP8YgS8yjrB59B1iZfmsbdJYyFg_qMeKBUmWRDzDb1Reoxb_xyVJbRU4ExKeKJxoqs15STBtDkPy9rsSVR5KjVnQByCo9J_r_XLgpLFVWj1IOkyncrQZ2YuUnfP2dCi3-cHhCwiUG_LbdUOeMxkafRnzxk4DAF-_5KO_9qgVt=w1920-h1080-no "up") {.thumbnail}
+
+### 概要 {.abstract}
+
+この作品では「現実で透明感を利用すること」を目的としている．水の中で透明感を出すために，吸水ポリマー（消臭ビーズ）を使うことにした．吸水ポリマーが水を吸うと，その時間が長いほどサイズが大きくなる．時間差で大きさが変わることを利用して，様々な時間で水を吸わせてランダムなサイズの吸水ポリマーを生成した．吸水ポリマーは水とほぼ同じ屈折率になるので，水の中ではほぼ見えなくなる．しかし，光の反射で輪郭が光ったりして少し見えるが，これは視聴者に何かあると思わせる表現でもある． この微妙な塩梅の透明感とランダムなサイズを利用して，透明になった瞬間に見えなかったモノが見えるようになり，見えないモノにぶつかってランダムな方向に進んでいく，という表現をしている．学部3年次の講義: 映像・アニメーション表現の個人課題制作物． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### 関連リンク {.references}
+
+* ほげ
