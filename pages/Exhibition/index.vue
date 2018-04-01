@@ -20,8 +20,61 @@ export default {
     components: {
         ExCard
     },
-    head: {
-        title: 'Home Page'
+    head() {
+        return {
+            title: 'Exhibitions',
+            meta: [
+                {
+                    property: 'og:title',
+                    content: 'Kazuma Takada\'s Portfolio | Exhibition'
+                },
+                {
+                    property: 'og:type',
+                    content: 'article'
+                },
+                {
+                    property: 'og:url',
+                    content: 'http://tkd.work/Exhibition'
+                },
+                {
+                    property: 'og:site_name',
+                    content: 'Kazuma Takada\'s Portfolio | Exhibition'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:card',
+                    content: 'summary_large_image'
+                },
+                {
+                    name: 'twitter:site',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:creator',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:domain',
+                    content: 'tkd.work/Exhibition'
+                },
+                {
+                    name: 'twitter:title',
+                    content: 'Kazuma Takada Portfolio | Exhibition'
+                },
+                {
+                    name: 'twitter:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:image',
+                    content:
+                        'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png'
+                }
+            ]
+        };
     },
     data() {
         const _exhibitions = sourceFileArray.filter(element => {

@@ -20,8 +20,61 @@ export default {
     components: {
         Card
     },
-    head: {
-        title: 'Home Page'
+    head() {
+        return {
+            title: 'Works',
+            meta: [
+                {
+                    property: 'og:title',
+                    content: 'Kazuma Takada\'s Portfolio | Works'
+                },
+                {
+                    property: 'og:type',
+                    content: 'article'
+                },
+                {
+                    property: 'og:url',
+                    content: 'http://tkd.work/Works'
+                },
+                {
+                    property: 'og:site_name',
+                    content: 'Kazuma Takada\'s Portfolio | Works'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:card',
+                    content: 'summary_large_image'
+                },
+                {
+                    name: 'twitter:site',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:creator',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:domain',
+                    content: 'tkd.work/Works'
+                },
+                {
+                    name: 'twitter:title',
+                    content: 'Kazuma Takada Portfolio | Works'
+                },
+                {
+                    name: 'twitter:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:image',
+                    content:
+                        'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png'
+                }
+            ]
+        };
     },
     data() {
         const _projects = sourceFileArray.filter(element => {

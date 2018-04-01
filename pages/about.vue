@@ -15,7 +15,7 @@
                         img(src="~/static/icon/school.png")
                         span.infotext
                             a.jump-link(href="http://www.meiji.ac.jp/ims/subject/fms/" target="_blank") 明治大学 総合数理学部 先端メディアサイエンス学科
-                            a.jump-link(href="http://keita-lab.jp/" target="_blank") 渡邊研究室 所属 学部3年
+                            a.jump-link(href="http://keita-lab.jp/" target="_blank") 渡邊恵太研究室 所属 学部4年
                 li.info
                     p
                         img(src="~/static/icon/mail.png")
@@ -76,8 +76,61 @@
 
 <script>
 export default {
-    head: {
-        title: 'Home Page'
+    head() {
+        return {
+            title: 'Profile',
+            meta: [
+                {
+                    property: 'og:title',
+                    content: 'Kazuma Takada\'s Portfolio | Profile'
+                },
+                {
+                    property: 'og:type',
+                    content: 'article'
+                },
+                {
+                    property: 'og:url',
+                    content: 'http://tkd.work/About'
+                },
+                {
+                    property: 'og:site_name',
+                    content: 'Kazuma Takada\'s Profile | Profile'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:card',
+                    content: 'summary_large_image'
+                },
+                {
+                    name: 'twitter:site',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:creator',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:domain',
+                    content: 'tkd.work/About'
+                },
+                {
+                    name: 'twitter:title',
+                    content: 'Kazuma Takada Portfolio | Profile'
+                },
+                {
+                    name: 'twitter:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:image',
+                    content:
+                        'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png'
+                }
+            ]
+        };
     }
 };
 </script>

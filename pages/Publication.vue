@@ -47,4 +47,63 @@
                     a.publication-link(href="http://www.interaction-ipsj.org/2016/program/interactive" target='_blank') [Web]
 </template>
 
-<script></script>
+<script>
+export default {
+    head() {
+        return {
+            title: 'Publication',
+            meta: [
+                {
+                    property: 'og:title',
+                    content: 'Kazuma Takada\'s Portfolio | Publication'
+                },
+                {
+                    property: 'og:type',
+                    content: 'article'
+                },
+                {
+                    property: 'og:url',
+                    content: 'http://tkd.work/Publication'
+                },
+                {
+                    property: 'og:site_name',
+                    content: 'Kazuma Takada\'s Profile | Publication'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:card',
+                    content: 'summary_large_image'
+                },
+                {
+                    name: 'twitter:site',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:creator',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:domain',
+                    content: 'tkd.work/Publication'
+                },
+                {
+                    name: 'twitter:title',
+                    content: 'Kazuma Takada Portfolio | Publication'
+                },
+                {
+                    name: 'twitter:description',
+                    content: 'Please visit my portfolio !'
+                },
+                {
+                    name: 'twitter:image',
+                    content:
+                        'https://i.gyazo.com/123efba36bfa12ae7f415b59c2dae32a.png'
+                }
+            ]
+        };
+    }
+};
+</script>

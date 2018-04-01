@@ -38,8 +38,64 @@ export default {
             return _style;
         }
     },
-    head: {
-        title: 'Home Page'
+    head() {
+        return {
+            title: `Exhibition | ${this.summaryData.data.title}`,
+            meta: [
+                {
+                    property: 'og:title',
+                    content: `Exhibition | ${this.summaryData.data.title}`
+                },
+                {
+                    property: 'og:type',
+                    content: 'article'
+                },
+                {
+                    property: 'og:url',
+                    content: `http://tkd.work/Exhibition/${
+                        this.summaryData.data.path
+                    }`
+                },
+                {
+                    property: 'og:site_name',
+                    content: 'Kazuma Takada\'s Portfolio | Exhibition'
+                },
+                {
+                    property: 'og:description',
+                    content: `${this.summaryData.data.abstract}`
+                },
+                {
+                    name: 'twitter:card',
+                    content: 'summary_large_image'
+                },
+                {
+                    name: 'twitter:site',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:creator',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:domain',
+                    content: `http://tkd.work/Exhibition/${
+                        this.summaryData.data.path
+                    }`
+                },
+                {
+                    name: 'twitter:title',
+                    content: `Exhibition | ${this.summaryData.data.title}`
+                },
+                {
+                    name: 'twitter:description',
+                    content: `${this.summaryData.data.abstract}`
+                },
+                {
+                    name: 'twitter:image',
+                    content: `${this.summaryData.data.thumbnail}`
+                }
+            ]
+        };
     }
 };
 </script>

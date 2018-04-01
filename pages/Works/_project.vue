@@ -37,6 +37,65 @@ export default {
         style() {
             return _style;
         }
+    },
+    head() {
+        return {
+            title: `Project | ${this.summaryData.data.title}`,
+            meta: [
+                {
+                    property: 'og:title',
+                    content: `Works | ${this.summaryData.data.title}`
+                },
+                {
+                    property: 'og:type',
+                    content: 'article'
+                },
+                {
+                    property: 'og:url',
+                    content: `http://tkd.work/Works/${
+                        this.summaryData.data.path
+                    }`
+                },
+                {
+                    property: 'og:site_name',
+                    content: `${this.summaryData.data.title}`
+                },
+                {
+                    property: 'og:description',
+                    content: `${this.summaryData.data.subtitle}`
+                },
+                {
+                    name: 'twitter:card',
+                    content: 'summary_large_image'
+                },
+                {
+                    name: 'twitter:site',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:creator',
+                    content: '@fmsuvM'
+                },
+                {
+                    name: 'twitter:domain',
+                    content: `http://tkd.work/Works/${
+                        this.summaryData.data.path
+                    }`
+                },
+                {
+                    name: 'twitter:title',
+                    content: `Project | ${this.summaryData.data.title}`
+                },
+                {
+                    name: 'twitter:description',
+                    content: `${this.summaryData.data.subtitle}`
+                },
+                {
+                    name: 'twitter:image',
+                    content: `${this.summaryData.data.thumbnail}`
+                }
+            ]
+        };
     }
 };
 </script>

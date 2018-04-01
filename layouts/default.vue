@@ -16,7 +16,18 @@ export default {
         Footer
     },
     head: {
-        title: 'Home Page'
+        title: 'Kazuma Takada\'s Portfolio',
+        link: [
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css?family=Noto+Sans'
+            },
+            {
+                rel: 'stylesheet',
+                href:
+                    'https://fonts.googleapis.com/earlyaccess/notosansjapanese.css'
+            }
+        ]
     },
     data: () => {
         return {
