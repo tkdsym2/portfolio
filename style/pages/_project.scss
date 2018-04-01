@@ -80,6 +80,23 @@
         margin-bottom: 10px;
         letter-spacing: 1px;
     }
+    ol {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .link {
+        text-align: left;
+    }
+    a {
+        text-decoration: none;
+        color: $tikusa;
+        font-size: 16px;
+    }
+    a:hover {
+        color: $benihiwa;
+        font-size: 16px;
+        transition: all 0.4s 0s ease;
+    }
     img {
         width: 90%;
         border-radius: 5px;
