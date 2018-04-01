@@ -3,6 +3,7 @@
     width: 100%;
     background: white;
     text-decoration: none;
+    border-radius: 3px;
     color: #444;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -16,6 +17,7 @@
     }
     img {
         width: 100%;
+        border-radius: 3px;
     }
     article {
         padding: 20px;

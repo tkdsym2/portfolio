@@ -40,7 +40,7 @@ export default {
     },
     head() {
         return {
-            title: `Project | ${this.summaryData.data.title}`,
+            title: `Works | ${this.summaryData.data.title}`,
             meta: [
                 {
                     property: 'og:title',
