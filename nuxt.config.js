@@ -5,24 +5,32 @@ module.exports = {
     head: {
         title: 'fmsuvM portfolio',
         meta: [
-            { charset: 'utf-8' },
             {
+                charset: 'utf-8'
+            }, {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
-            },
-            {
+            }, {
                 hid: 'description',
                 name: 'description',
-                content: 'Nuxt.js project'
+                content: 'Kazuma Takada\'s Portfolio'
             }
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        link: [
+            {
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: 'favicon.ico'
+            }
+        ]
     },
     css: ['~/style/global.css'],
     /*
     ** Customize the progress bar color
     */
-    loading: { color: '#3B8070' },
+    loading: {
+        color: '#3B8070'
+    },
     /*
     ** Build configuration
     */
@@ -30,14 +38,12 @@ module.exports = {
         /*
       ** Run ESLint on save
       */
-        extend(config, { isDev, isClient }) {
-            if(isDev && isClient) {
-                config.module.rules.push({
-                    enforce: 'pre',
-                    test: /\.(js|vue)$/,
-                    loader: 'eslint-loader',
-                    exclude: /(node_modules)/
-                });
+        extend(config, {isDev, isClient}) {
+            if (isDev && isClient) {
+                config
+                    .module
+                    .rules
+                    .push({enforce: 'pre', test: /\.(js|vue)$/, loader: 'eslint-loader', exclude: /(node_modules)/});
             }
         }
     }
