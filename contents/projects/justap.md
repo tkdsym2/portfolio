@@ -1,0 +1,26 @@
+---
+id: 19
+title: JusTap
+subtitle: ちょうどいい量の水を出す蛇口
+thumbnail: https://lh3.googleusercontent.com/aZ7VaxLnwPrWeW0s3znvGxTcDd0OcbdszCHFrKtV9DdvCR-tXftSnaQuVsDkmm0Dv-BBcHreBVpAajTjI2wf-iNYRQVqYCSWT8KciraQUKq51QesBbVvw-L4w-3Dd04LcA7U860gz8f6zY1RBuCKdV6F3CkzHMdGvUhzeAzV8bfNP6Xe3V2n4azcudwJTh7v2O4radVa0KcDwYkxQEtrJdPrvRr3MGRVIfMj4vOpvS2W0TnqnlgOxoIwaZHlYjTQ8meqvcuskJWf5uwbZfVcxJ0ojYECqyp-gC_VC0VNCW8b0Qse6si7KfZVpTErGgbXbV-GDtNXaQR-b8Mh7E6nt6F0ifJBUSMhF3Hu99X1O71cwXO-AO4pvz3lgQVYRkj_koHB9RD5c9-UI3wil4DK48xWxU3V8fBAEdKYOE8wPkEy4ReymcT-XDuFo8I5wgzB-3zAWiu8m0b6hIgg_GtAdG7RI_HIjs-H_Dm9_WLUd6F9LjJsih-2b8-UzWbJH5ZYxM6kHqJZSVc_49DidxZmO31IKTJPDxo3CaruqEam4kfl1DOB25DD6NRcgxf6TjzjZCmP0JdDWiOWkMYXyhDkY9n62YH-TnP5i66jb4xk=w1509-h1006-rw
+path: justap
+date: 2018-03-15
+---
+
+### JusTap {.title}
+
+#### ちょうどいい量の水を出す蛇口 {.subtitle}
+
+![justap](https://lh3.googleusercontent.com/EX5yolxLoRJ4whOzI9rx9c-IGrKFvldiDrhUHcFnp1vnXIDQdwc4Aeu8rCRWLTQNzTALi2cBQKJ6wub_sBG63Mz9RdaPwH_tydHXXHypACCcges_5wbOhqtCVZEz2r1UFrqQbK4c-ajTVFEzpw1Ndw5KglCgx6LGzV36WfxU9pz8TuVzcl1HmH2vg8L2uSYe4eKP1NECsRXn14FIEQ2R__9Wl_bT21wUVNS3jhizxDdaSsQbPYLLlYFrkDpVTS5bY5cN0qcUy_C8aZQJOxBuNXlpqkOR42ZD-dRbs6PgDvrjBrqIRdnnwzi2f_RdkPXevXVQedFjbhc5mnu3aV9BLbOo8XPW03tz6J0SoXP720s5gsqZYIXcOhhAFoCaBbBbbivFad1DDDGxG6DZCHe0IeIPWkt6YOEmj1edZ6CYzEW0Sg6R9AtKXDUjzLC0zVPHOlPy2DPZ422HSCGA13kyZSTre-P7qv35b4FF2KcJUrz21wMFzK8uQKUMVBVyPlmFXsBxz0Cz7guWm8flwXNuorxQcNBetajKpvt5AIrNU82kKVeFHNGCX7SYfyGAOH14fCqhFU7BAH2JDW-2Wq9xlWl9QxAX_MOeSDsdB1vx=w1789-h1006-rw "justap") {.thumbnail}
+
+### Abstract  {.abstract}
+
+ハンドルのないスマートな蛇口．「自動で出る」のその先へ．個人や物を識別し，ちょうどいい量，ちょうどいい暖かさ，無駄なく水をパーソナライズする． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### References {.references}
+
+1. none {.no-link}
