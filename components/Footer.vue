@@ -1,3 +1,5 @@
+<style src="~/style/components/footer.scss" lang="scss" scoped></style>
+
 <template lang="pug">
   div.footer
     hr
@@ -19,45 +21,3 @@
 
 <script>
 </script>
-
-<style lang="sass" scoped>
-.footer
-    color: #373c38;
-    p
-        text-align: center;
-        font-size: 12px;
-
-.footer-list
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 15px;
-    img
-        width: 20px;
-        height: 20px;
-    & > .list-item
-        padding-left: 10px;
-        padding-right: 10px;
-
-.copyright
-    padding: 0px;
-    margin: 0px;
-    margin-top: -20px;
-    text-align: center;
-
-span.copyright-mark
-    padding: 0px;
-    margin: 0px;
-    font-size: 16px;
-    vertical-align: middle;
-
-
-span.author
-    padding: 0px;
-    margin: 0px;
-    vertical-align: middle;
-    font-size: 10px;
-    padding-top: 5px;
-</style>
