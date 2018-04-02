@@ -22,7 +22,6 @@
 
 <style lang="sass" scoped>
 .footer
-    margin-top: 30px;
     color: #373c38;
     p
         text-align: center;
