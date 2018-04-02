@@ -1,11 +1,18 @@
 @import "style/var.scss";
 .profile-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: $page-width;
     margin: auto;
     text-align: center;
     padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0px;
     word-wrap: break-word;
@@ -17,8 +24,12 @@
 }
 
 .profile-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -61,6 +72,8 @@ p.profile-img img {
     a:hover {
         color: $benihiwa;
         font-size: 16px;
+        -webkit-transition: all 0.4s 0s ease;
+        -o-transition: all 0.4s 0s ease;
         transition: all 0.4s 0s ease;
     }
     .infotext {
@@ -85,10 +98,17 @@ p.profile-img img {
 }
 
 .bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     margin: auto;
     color: $aisumicha;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .interests {
         display: inline-block;
@@ -131,6 +151,8 @@ p.profile-img img {
             text-align: left;
         }
         .background-contents {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             margin: 0px;
             padding: 0px;
