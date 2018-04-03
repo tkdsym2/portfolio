@@ -1,0 +1,88 @@
+@import "style/var.scss";
+@media (min-width: 20em) {
+    .top-page {
+        position: relative;
+        background: #000;
+        height: 200px;
+        h5 {
+            position: absolute;
+            color: white;
+            font-size: 1em;
+            top: 40%;
+            left: 50%;
+            letter-spacing: 2px;
+            -ms-transform: translate(-50%, -40%);
+            -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .button-group {
+        visibility: hidden;
+    }
+    img {
+        width: 100%;
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 60em) {
+    .top-page {
+        position: relative;
+        background: #000;
+        height: 100%;
+        h5 {
+            position: absolute;
+            color: white;
+            font-size: 3em;
+            top: 40%;
+            left: 50%;
+            letter-spacing: 2px;
+            -ms-transform: translate(-50%, -40%);
+            -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .button-group {
+        position: absolute;
+        visibility: visible;
+        top: 60%;
+        left: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-transform: translate(-50%, -40%);
+        -webkit-transform: translate(-50%, -40%);
+        transform: translate(-50%, -40%);
+        margin: 0;
+        padding: 0;
+        .border-btn {
+            display: inline-block;
+            padding: 0.3em 1em;
+            margin-right: 1em;
+            text-decoration: none;
+            color: $usuasagi;
+            font-size: 1.5em;
+            border: solid 2px $usuasagi;
+            border-radius: 5px;
+            -webkit-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s;
+        }
+        .border-btn:hover {
+            background: $usuasagi;
+            color: white;
+        }
+    }
+    img {
+        width: 100%;
+        opacity: 0.7;
+    }
+}

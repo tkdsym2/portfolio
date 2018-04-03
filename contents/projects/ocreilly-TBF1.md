@@ -1,0 +1,26 @@
+---
+id: 2
+title: 実践　お蔵入り
+subtitle: Processingから始めるShader入門
+thumbnail: https://lh3.googleusercontent.com/5lnk6jzVoUy-MZXShON9Wk_deioUgimIzlq4a4MwjayQuaOfkCx3wTtK_LEnS2QsuKzGa7G40qrO2ACof_bWdhJTYJF7KKEwwLzKdRsyN1YyViphYqsiN-8oVp8JBc5mN8oOR3_O6BL-DH3UxzYPvfwFQkY78sN5KWf84uqBVzFF1ffC0EQU2msO5IRvsYDVuJoZLS9JB94Vjq0Gq1WeJ5MbE-qzPKoDT2t6YUKFXogeHsimlR6XjTrquS0wK0-5Dbc0U8S795hark06BH5GzNfnsMskyzVReoav4znenSEARD9UDl3w_yM-iDdwaan4FSZ1qo8qsC9GhwK2YqNh7noCExXWILqFmTEEx2LK-vlBgOaLyt_xotL_VFJUQD2Sdfnm8caSuauQuR5GK6lvssd9xIroOYyfw9a28ywSU9HtpfVDVE8vWi38eOh_zuh6O7KJTxHyDLMjiW4aN8rpAWeHqRrDxnCJ1yC1HH94TOCoK9wTRNj6Y6PN2_9tu78hwrLFTSH7rZ1FfXa-Ne8loGvbFPn5gNeeorbsebxF1U95ZGbWaFB2DmvTUQ9LKVWJD_bkou94M-eTrb8ctGe7TIXxDZyNlSw36ysE0H04=w1200-h900-rp
+path: ocreilly-TBF1
+date: 2016-06-25
+images:
+    - https://lh3.googleusercontent.com/BxiPdxinUF-5UUivxMpJdSklsPZtnazYIHMtTU8sCzGmAxqqdeMI4GyWZ9VYfuAfiDQWyq0qAapeD4TuT3TI4HgbQy638QzrzAOwA64tA37Z-R_Dmmk31P9lSRQkqUKZaORGyMRqDkwtyzU2KzyjZWoci6k4az7OcJK-u--qDA3IAk8pNDuhlyx2jQRNRfOWJDNWwnzJTJkTA2xDGuawjFGx8taEaQ_-9URDHeSHUwVOT1V1LjVZ03X9nvLWFb6ap4lKCAPVX7_VO941NsTIiMGl16k0k4EPkqkRIiXpWlA4iAQro0MV16DDkH8Vi6ggg4O_MbR5lGNztytT54Y1qt3OrxVu6IFwBkfQoI4_TZ9Fsr5c4HoyqBHogGD2uCzXurScbpkMCw8Pp5UvuVwEEn0oThPi9B-d5OTn9a3v8LHTtzppGUJmyh8bn2N1HmlJ-0-wzrey-AXYR3DeR_m6DywLHq4_buybgjQwXrkK9AZZlOiPdalbJk35gwhH0LL4cTcI8SN-AUWZd4AWjIvbIYZ_VkFgxi9w5Q6nYnYxrXukkDnWE9-a1NFmP1bR2ijPqATD_v8BDMPuMztwbotlIPWPAbSJZSutTxB5ldfb=w1200-h900-rp
+---
+
+### Abstract {.abstract}
+
+ProcessingとGLSLで気軽にShaderを始めましょう． 今回は簡単な画像処理とGLSLを使ったエフェクトについて書いています． {.description}
+
+### System {.system}
+
+ProcessingとGLSLを使用． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### References {.references}
+
+1. [O'CREILLY - 技術書典](https://ocreilly.meiji-ncc.tech/TBF01/) {.link}

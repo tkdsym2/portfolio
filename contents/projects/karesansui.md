@@ -1,0 +1,28 @@
+---
+id: 20
+title: kAResansui
+subtitle: 風が奏でる日本庭園
+thumbnail: https://lh3.googleusercontent.com/4dnEjOe7oE6iHSZToeN_kh82XMp9N9j8pxtnPu8dYLBMr3bN3feRGRgs43gNnaUuLV_S58AtSZ8McRQrSad-STVAYOsHKS13F0L07a0K48QuEOdRnZpc_Lw62Zaz1miZFnQxk_bXzz9zaDed0tgfGlhE6Ch7FNse045D4VHfgL95D6qh4mKdNe6XrGOUTaDS1OVODCLzmWRLjoYHaRpNgyPaXhhpgqSTxadMVgvRJ4kZY4T27rLVtZ2yeaB4RQWsdI8vAOmNJkk39dseArsAilofwYoZu2vY2sx2RFHPGJU8JrAyqzu-_TAcPmtE_10f_XRGoRYUO2bb5qri3S3X2jpARkxmRyT5dKylFY2IrKGntw6bO35D9YTe36e07rQcqpflhiOaZ4pWlSPKWe_MQepCZ1g2QKP90hQjFtCru--cBMZ4DY9DolI0EwDobkFiTwKObGkSpJ9sTLhpy5KgsYHwfBX1CfhpdGzo_9yq17trDSU52Ge_pzc2J_Oug-Y9RteJmEokx7_uhOekhFriuOYNpzJQSC0YRwfvbSWZxXhld36imvh6QbkpJ3v0MN3pIx-IbujjnUZTfuXCYsFIU5hAxOjTdpbXD25o53U=w1342-h1006-rp
+path: karesansui
+date: 2018-01-20
+images:
+    - https://lh3.googleusercontent.com/wzhQyXgCRZvTnXAXh5Bhp_qaTp2MHLGM2FnlbBbtmH49KUAeX80lsOJjUvqScgO5c6fphVxdIxU7makTqlk5NMsiYXbb3CzqkRr-8QZ6-i7RMPR3SRfmENdE5tIrnIbXcyVkCuLTJLxdhLex9gVihkoS1qFYxBdb54ykoFuW8CIt3jv8Yz9ChPHX5t2QfjVXhNO62m9uSkKbw-d7dFhy982mPTrxYgV2q5woHbV3hmRex5MzyQ-xhMwuDlG2vVQMALyGwLvtBUeWLUxQ7Bkj2KveG3GKd67uVDHBIUjFBps3s5mavoXMvE6JEFoe7tz7TDT1LUecHLXRBWeAyVHJn8nysZnzXxTta576qWY3PlUFq6FuemILFwDQUZjOkdqwU7-AleecJCPpVnjTa1--VvU5LuH0aMfqMefQX_oxDswSIq_nmX3QhMgof9pbg1wL6Y0_wHQBWGWZB17uMvSITSH-8g-2XJF54J37P9CEQE5cqaYZGYTXMvbF4jNMvYeN7WSPvj6v4XFFhafDKbrWBo4kyFLWY3c2COrsgxCZBFLY8B7la49rIlSRGqVD13puX7t7MaARW2Edo2zgnoLNxKILkTQcHojWk4TMWkxw=w1789-h1006-rp
+---
+
+### Abstract  {.abstract}
+
+枯山水は，水を用いずに石の組み合わせや地形の工程などによって，自然の情景を表現した日本庭園の様式の一つである．kAResansuiは，枯山水に存在する石と砂を楽譜とし，「風」を用いて演奏を試みる作品である． {.description}
+
+展示は鳥と風車，そしてViewerで構成されている．鳥の向きで風が流れる方向を表し，風車の回転速度が風の速さを示す．そして，2つの指標の間にスマートフォンをかざすと，風に奏でられている枯山水が表れる．2017年度コンピュータ．ミュージック最終成果物． {.description}
+
+### System {.system}
+
+鳥を3Dプリンタで出力し，Webmoに取り付けることで風の方向を決定している．風の速さはサーボモータの回転速度で決定．この２つをProcessinで管理／石に当たっているかいないかを処理する．判定自体はProcessingで行い，実際に音を出しているのはSonic Piである． {.description}
+
+### Authors {.authors}
+
+高田一真 {.member}
+
+### References {.references}
+
+1. none {.no-link}
