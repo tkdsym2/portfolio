@@ -9,17 +9,21 @@ images:
     - https://lh3.googleusercontent.com/HQ5bNbFc3ptOoxZF52QGgMDCR8pKpLRukEiY9LGKNIe-8MOR_VpVwriK_6LYPJ5TTRPXdfL_-pOtDmht2xe-JfyYlHyzqhG2cYxyqnbtjpd7-t_TajXnH01y6afDX_GwZsVckv8xpFRVvS8Gzk8FeziLKVPxKL027ibglRaGR2mymWsyBBpi5wzqNpNlYQWMVtVHSVr4GAJO29RC3ypjAmc_Gv7DhVY8-IVNpksezMh5P8oR-6zkLtPvDMa82V1_SSdvdNTMZ4RyxhtqYKBNqTms7kgArhzMDyhjskjuWMdfunW8ifMDgb0JJEG-9OUcLX_NU69XxXA00o7R4ibw7U03NS0VsDlWl0AZv6fJZDdF4pcby-xLmF4tMfFEfT-e45niCY6ixdoaVQEA3c9rxRb7LbMDQ2-V_zlSoCCRRzs6fqBqFqhMIEAXZ8GCDMhXtPmZnhx1-AD5BLp12wR-4pxxgqKANuk_GbDYuy7wBWZSzkuWYvAJCgaKBWIwAou7ung2a9XLmgbbyY_yOTQiWEETUHZ_fOXooxgD5002R0t0kr85P3e-WLn0yTFGAMNxqpss_T5lW2s8uPwM20pDRFEdZt_NkhzcIOLswIh8=w718-h404-rp
 ---
 
-### 概要 {.abstract}
+### Abstract {.abstract}
 
 折り紙は，折る対象が複雑であるほど折る動作や開く動作を繰り返す．しかし，テキストの多い説明書では，自分がどの工程にいるかわからなくなる．そこで，HoloLensを装着し，他者の主観視点での折る動作を再生する．その再生される動作に自分の手を重ねて，同じ動きで紙を折る． {.description}
 
 Ghost CreatorではHoloLensとMyoを使う．HoloLensは手元の録画と再生時に使われる．Myoは紙を折っているユーザが現在どの工程にいるか（折っているか）を計測するために使われる． {.description}
 
+### System {.system}
+
+HoloLensで折り紙を折っているときを主観視点で記録する．再生する時は，記録した映像を半透明にしてユーザに提示．折り紙を折っているか／折っていないかはMyoを装着して，筋肉の動きを監視．この動きをもとに工程を自動生成する． {.description}
+
 ### Authors {.authors}
 
 高田一真 {.member}
 
-### 関連リンク {.references}
+### References {.references}
 
 1. [Microsoft HoloLens](https://www.microsoft.com/ja-jp/hololens) {.link}
 2. [Myo](https://jp.myo.com/) {.link}

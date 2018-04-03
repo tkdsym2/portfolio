@@ -12,11 +12,15 @@ images:
 
 ### Abstract {.abstract}
 
-Coming Soon... {.description}
+研究室ではんだ付けや3Dプリンタで出力したものを加工するせんようのスペース．今までは研究室のあちこちでこういった作業が行われ機材が分散していたが，これを作ることで汚れる場所は制限され，機材の分散を抑えることが可能になった． {.description}
 
-### Authors {.authors}
+### System {.system}
 
-高田一真, 原健太, 中屋裕登, 片倉翔平, 八木康輔, 大内泰良, 渡邊恵太 {.member}
+ミスミのアルミフレームで予め机となりうる枠組みを作っておく．その上に加工した板を載せ，ネジなどで固定した． {.description}
+
+### Makers {.authors}
+
+高田一真, 原健太 {.member}
 
 ### References {.references}
 

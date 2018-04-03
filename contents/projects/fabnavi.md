@@ -16,6 +16,14 @@ images:
 
 fabnavi とは，モノづくりの過程を手軽に記録／共有／再生することで，次世代の「ファブ」の基盤となることを目指すシステムである．2014年から始まり，現在まで続くプロジェクト．ハードウェアとソフトウェアを常にアップデートし続け，明治大学 中野キャンパス，公立はこだて未来大学，fablab 仙台，慶應SFC メディアセンターの4箇所に導入されている．様々な地域でのモノづくり文化を共有し，ファブの知見を広げていく道の途中． {.description}
 
+### System {.system}
+
+プロジェクタとiPod Touchが一体となっているハードを使って，ユーザはプロジェクトの共有／記録／再生を行う．記録にはiPod TouchのApplication，共有と再生にはプロジェクタに投影されるApplicationを用いる．Frontend Applicationは明治側が担当．iOS Applicationは未来大側が担当．Backendとインフラは両大学 + αで運営中． {.description}
+
+1. Frontend Application ... electron, Reactで構成．担当：高田, 仲松 {.link}
+2. iOS Application ... 担当：会津，田口 {.link}
+3. fabnavi server ... docker, rails, awsを用いてAPIを構成しプロジェクトを管理．担当：仲松 {.link}
+
 ### Authors {.authors}
 
 塚田浩二, 渡邊恵太, 沖真帆, 高田一真, 会津慎弥, 仲松聡, 田口克也 {.member}

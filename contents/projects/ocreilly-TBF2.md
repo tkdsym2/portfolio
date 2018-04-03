@@ -13,6 +13,10 @@ images:
 
 モバイルアプリケーションのクロスプラットフォーム開発方法はいくつかあるが，著者は大きく2つあると考えている．それは，Xamarinでの開発とReact Nativeでの開発である．前者はMicrosoftを中心に頻繁に活動が行われているようだ．しかし，未だにXamarinで作られている有名なアプリはない気がする．一方，React NativeはFacebookやInstagramといったようなアプリに使われている（Nintendo Switch OnlineがXamarin製らしい）．また，Reactを開発したことがあれば，書き方やデータの扱い方はReact Nativeでも同じなので比較的開発しやすい環境だ．まとめると，著者は圧倒的にReact Nativeを推している． さて，2017年3月13日 〜 3月14日にかけて，アメリカのカルフォルニア州にあるサンタクララにてReact Conference 2017（以下React Conf）が開催された．著者はお金も時間もないので残念ながら現地には行けず，日本でLive Streamingを見ていた．React ConfではReactとReact Nativeに関する新しい情報が満載だった．今回はその中で著者がもっとも注目した新しいCLI，Create React Native App について，従来のCLIと比較しながら紹介する {.description}
 
+### System {.system}
+
+React Nativeのみの開発と，Expoを使った開発を使用． {.description}
+
 ### Authors {.authors}
 
 高田一真 {.member}
