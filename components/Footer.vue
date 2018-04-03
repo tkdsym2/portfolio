@@ -3,7 +3,7 @@
 <template lang="pug">
   div.footer
     hr
-    p kazuma.takada222 [at] gmail.com
+    p k222.tkd.fms [at] gmail.com
     ul.footer-list
         li.list-item
             a(href="https://www.facebook.com/kazuma.takada.90" target="_blank")
