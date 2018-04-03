@@ -4,7 +4,7 @@
   div.navigation-component
    div.navigation-bar.area
     nuxt-link.myname(to="/") Kazuma Takada's Portfolio
-    nav.navigation-list
+    div.navigation-list
       nuxt-link.item(to="/Works") Works
       nuxt-link.item(to="/Publication") Publication
       nuxt-link.item(to="/Exhibition") Exhibition

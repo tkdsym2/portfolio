@@ -2,7 +2,6 @@
 
 <template lang="pug">
 .profile-page
-    h3 Profile
     .profile-about
         p.profile-img
             img(src="https://lh3.googleusercontent.com/97VqscGVOZKo7vyduP11ewKgOPBK4IxuHsUk2-JAd9AMu7UaG7M36pXRVrP3xMMjw7fptCyCSWklcYH1MFppeQar2bku4PVimdnhOM_eLnJi82NGSTdaRUT0iwGUctMJ3TVp_xz_OOT6nMFIGmJozHeAYj9bwk2IWLLZZ_Ije9fXNKxO1duuVmEle9YEFdYgd3s4y8uAssteZhoecNPOHRe7o0txDQL--IoXcX5bxXH6qhvbMvRxIUjMe2ptj-L2vue6Lgk97lFxrjBU_6fnCLadmhKJvhhJ9PpRdpY2dJBrp6ER8N1katOeh1yiAxbXDXQo8jm2iDIoHsXNGOXENNIDEzaXoDP-Z-e1Uy363ARdjt_rS-UOwUZtB1P21U6qmwGRTuNbuaLeuClZQDs2VyHDaPVWvCpa-WDgvMagqqH5e-67ngFwiTAs1lg90L7OYars_7KdiQsi_F2yKF8nEt1-mYJt2iUdqq-bu_Dwj9MCrJyqK5bt5fzjU69NarkG4unrtxrWqLQ1zowzcZReQcjDg979aT8oKTXReYfoB9JiGiKk9ABAtfv-FB-Tbi9rDBO-kEzbGilGxFz6IchmO9vYGoFFfKoiu4zSzaRl=s704-rp")
