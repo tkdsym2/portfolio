@@ -69,8 +69,8 @@
                         li 私立湘南学園中学高等学校&emsp;卒業
                         li 明治大学 総合数理学部 先端メディアサイエンス学科&emsp;入学
                         li 明治大学 総合数理学部 先端メディアサイエンス学科&emsp;卒業予定
-    //- p
-    //-     nuxt-link(to="/") Top Page
+    p
+        nuxt-link(to="/") Top Page
 </template>
 
 <script>

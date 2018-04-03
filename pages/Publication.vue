@@ -45,6 +45,8 @@
                     | &nbsp;&nbsp;&nbsp;&nbsp;第20回一般社団法人情報処理学会シンポジウム(インタラクション2016), 2016.
                     a.publication-link(href="http://www.interaction-ipsj.org/proceedings/2016/data/pdf/2C47.pdf" target='_blank') &nbsp;&nbsp;[PDF]&nbsp;
                     a.publication-link(href="http://www.interaction-ipsj.org/2016/program/interactive" target='_blank') [Web]
+    p
+        nuxt-link(to="/") Top Page
 </template>
 
 <script>

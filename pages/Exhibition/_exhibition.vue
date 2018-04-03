@@ -6,6 +6,8 @@
             a(href='#' v-for="image in summaryData.data.images")
                 img.thumbnail(v-bind:src="image")
         div(v-html="summaryData.data.bodyHtml" v-bind:style="style")
+        p
+            nuxt-link(to="/Exhibition") 戻る
 </template>
 
 <script>
