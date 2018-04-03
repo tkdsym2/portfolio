@@ -5,7 +5,7 @@
         nuxt-link.ex-card(:to="{ path: '/Exhibition/' + exhibition.path}")
             div.ex-header
                 h2.ex-name {{ exhibition.title }}
-                h3.ex-subname {{ exhibition.subTitle }}
+                h3.ex-subname {{ exhibition.subtitle }}
                 hr.card-hr
             img.ex-image(:src="exhibition.thumbnail")
             article.ex-contents
