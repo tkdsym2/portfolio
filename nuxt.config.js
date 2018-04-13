@@ -24,7 +24,6 @@ module.exports = {
         }]
     },
     css: ['~/style/global.css'],
-    mode: 'spa',
     /*
      ** Customize the progress bar color
      */
