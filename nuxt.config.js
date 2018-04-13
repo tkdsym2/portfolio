@@ -31,7 +31,7 @@ module.exports = {
         color: '#3B8070'
     },
     router: {
-        base: 'tkd.work'
+        base: '/'
     },
     /*
      ** Build configuration
