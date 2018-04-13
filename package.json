@@ -8,6 +8,7 @@
         "dev": "nuxt",
         "build": "nuxt build",
         "generate": "nuxt generate",
+        "deploy": "nuxt generate && push-dir --dir=dist --branch=master --cleanup",
         "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
         "lint:fix": "eslint --fix .js,.vue --ignore-path .gitignore .",
         "article:compile": "processmd contents/**/*.md --stdout output --outputDir contents/dist/ > contents/summary.json",
