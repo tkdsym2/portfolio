@@ -1,0 +1,30 @@
+{
+  "devFiles": [],
+  "pages": {
+    "/cowsay": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.b608df73616093fb69f7.js",
+      "static/runtime/main-fb227617259d47a8922b.js"
+    ],
+    "/index": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.b608df73616093fb69f7.js",
+      "static/runtime/main-fb227617259d47a8922b.js"
+    ],
+    "/_app": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.b608df73616093fb69f7.js",
+      "static/runtime/main-fb227617259d47a8922b.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.b608df73616093fb69f7.js",
+      "static/runtime/main-fb227617259d47a8922b.js"
+    ],
+    "/": [
+      "static/runtime/webpack-42652fa8b82c329c0559.js",
+      "static/chunks/commons.b608df73616093fb69f7.js",
+      "static/runtime/main-fb227617259d47a8922b.js"
+    ]
+  }
+}
