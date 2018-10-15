@@ -44,8 +44,14 @@ dist
 # Nuxt build
 .nuxt
 
+# Next Build
+.next
+
 # Vsc
 .vscode
 
 # package lock json
 package-lock.json
+
+# DS_Store
+.DS_Store
