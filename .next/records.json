@@ -519,17 +519,21 @@
       "static/gB77~DlmqHVndr9UkJWAZ/pages/cowsay.js": 7,
       "static/gB77~DlmqHVndr9UkJWAZ/pages/index.js": 8,
       "static/gB77~DlmqHVndr9UkJWAZ/pages/_app.js": 9,
-      "static/gB77~DlmqHVndr9UkJWAZ/pages/_error.js": 10
+      "static/gB77~DlmqHVndr9UkJWAZ/pages/_error.js": 10,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/cowsay.js": 3,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/index.js": 4,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/_app.js": 5,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/_error.js": 6
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
       2,
-      7,
-      8,
-      9
+      3,
+      4,
+      5,
+      6
     ]
   }
 }

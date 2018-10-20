@@ -52,15 +52,20 @@
       "static/gB77~DlmqHVndr9UkJWAZ/pages/index.js": 6,
       "static/gB77~DlmqHVndr9UkJWAZ/pages/_app.js": 7,
       "static/gB77~DlmqHVndr9UkJWAZ/pages/_error.js": 8,
-      "static/gB77~DlmqHVndr9UkJWAZ/pages/_document.js": 9
+      "static/gB77~DlmqHVndr9UkJWAZ/pages/_document.js": 9,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/cowsay.js": 0,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/index.js": 1,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/_app.js": 2,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/_error.js": 3,
+      "static/kwmhDYnNB5sy2h~AEwyDb/pages/_document.js": 4
     },
     "bySource": {},
     "usedIds": [
-      5,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      2,
+      3,
+      4
     ]
   }
 }
