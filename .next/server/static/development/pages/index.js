@@ -108,14 +108,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/kazuma/workspace/portfolio/portfolio/components/Navigator.js";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.js";
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var children = _ref.children,
       _ref$title = _ref.title,
-      title = _ref$title === void 0 ? "This is the default title" : _ref$title;
+      title = _ref$title === void 0 ? "default title" : _ref$title;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
@@ -226,14 +226,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Navigator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Navigator */ "./components/Navigator.js");
 /* harmony import */ var _style___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/_ */ "./style/_.js");
-var _jsxFileName = "/Users/kazuma/workspace/portfolio/portfolio/pages/index.js";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/index.js";
 
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "yaap",
+    title: "portfolio",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
