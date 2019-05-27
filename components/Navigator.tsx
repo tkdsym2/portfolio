@@ -1,7 +1,12 @@
+import * as React from 'react'
 import Link from "next/link";
 import Head from "next/head";
 
-export default ({ children, title = "default title" }) => (
+type Props = {
+  title?: string
+}
+
+const Navigator: React.FunctionComponent<Props> = ({ children, title = 'default'}) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -25,5 +30,7 @@ export default ({ children, title = "default title" }) => (
     {children}
 
     <footer>{"I`m here to stay"}</footer>
-  </div>
-);
+    </div>
+)
+
+export default Navigator;
