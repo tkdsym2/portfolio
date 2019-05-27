@@ -1,9 +1,15 @@
 // import Link from 'next/link';
-import Navigator from '../components/Navigator';
+import * as React from 'react'
+import Navigator from '../components/Navigator'
 import { Test } from '../style/_';
+import { NextComponentType } from 'next';
 
-export default() => (
-    <Navigator title="portfolio">
-        <Test>hello hello</Test>
-    </Navigator>
-);
+const IndexPage: NextComponentType = () => {
+    return (
+        <Navigator title="portfolio">
+            <Test>hello hello</Test>
+        </Navigator>
+    )
+}
+
+export default IndexPage
