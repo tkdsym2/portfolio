@@ -111,10 +111,10 @@ var Navigator = function Navigator(_ref) {
   }, "Contact")))), children, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("footer", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 30
     },
     __self: this
-  }, "I`m here to stay"));
+  }, 'I`m here to stay'));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navigator);
