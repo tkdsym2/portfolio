@@ -93,10 +93,10 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Navigator.js":
-/*!*********************************!*\
-  !*** ./components/Navigator.js ***!
-  \*********************************/
+/***/ "./components/Navigator.tsx":
+/*!**********************************!*\
+  !*** ./components/Navigator.tsx ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -108,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.js";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.tsx";
 
 
 
@@ -211,10 +211,10 @@ var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.js"
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/index.tsx":
+/*!*************************!*\
+  !*** ./pages/index.tsx ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -222,24 +222,22 @@ var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.js"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Navigator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Navigator */ "./components/Navigator.js");
-/* harmony import */ var _style___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/_ */ "./style/_.js");
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/index.js";
+/* harmony import */ var _components_Navigator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Navigator */ "./components/Navigator.tsx");
+/* harmony import */ var _style___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/_ */ "./style/_.js");
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/index.tsx";
 
-
+// import Link from 'next/link';
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navigator__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "portfolio",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_style___WEBPACK_IMPORTED_MODULE_3__["Test"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_style___WEBPACK_IMPORTED_MODULE_2__["Test"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -280,13 +278,13 @@ var Test = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p(_templateO
 /***/ }),
 
 /***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/*!*******************************!*\
+  !*** multi ./pages/index.tsx ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! ./pages/index.tsx */"./pages/index.tsx");
 
 
 /***/ }),
