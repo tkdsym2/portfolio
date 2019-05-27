@@ -9,7 +9,9 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "lint:pages": "eslint -c ./.eslintrc ./pages/**"
+    "lint:pages": "eslint -c ./.eslintrc ./pages/**",
+    "lint:components": "eslint -c ./.eslintrc ./components/**",
+    "lint:components:fix": "eslint -c ./.eslintrc ./components/** --fix"
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,12 @@
     "@types/next": "^8.0.5",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "@typescript-eslint/typescript-estree": "^1.9.0",
     "babel-plugin-styled-components": "^1.10.0",
-    "eslint-plugin-react": "^7.13.0"
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "typescript": "^3.4.5"
   }
 }
