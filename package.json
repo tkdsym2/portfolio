@@ -9,7 +9,9 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "lint:pages": "eslint -c ./.eslintrc ./pages/**"
+    "lint:pages": "eslint -c ./.eslintrc ./pages/**",
+    "lint:components": "eslint -c ./.eslintrc ./components/**",
+    "lint:components:fix": "eslint -c ./.eslintrc ./components/** --fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
     "cowsay-browser": "^1.1.8",
     "next": "^7.0.2",
     "react": "^16.5.2",
@@ -29,6 +32,15 @@
     "styled-components": "^3.4.10"
   },
   "devDependencies": {
-    "eslint-plugin-react": "^7.13.0"
+    "@types/next": "^8.0.5",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "@typescript-eslint/typescript-estree": "^1.9.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "typescript": "^3.4.5"
   }
 }
