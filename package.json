@@ -22,9 +22,9 @@
   "homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
   "dependencies": {
     "cowsay-browser": "^1.1.8",
-    "next": "^7.0.2",
+    "next": "^8.0.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "styled-components": "^3.4.10"
+    "styled-components": "^4.1.3"
   }
 }
