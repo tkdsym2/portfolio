@@ -8,7 +8,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "lint:pages": "eslint -c ./.eslintrc ./pages/**",
+    "lint:components": "eslint -c ./.eslintrc ./components/**",
+    "lint:components:fix": "eslint -c ./.eslintrc ./components/** --fix"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/fmsuvM/fmsuvM.github.io#readme",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
     "cowsay-browser": "^1.1.8",
     "next": "^8.0.3",
     "react": "^16.5.2",
