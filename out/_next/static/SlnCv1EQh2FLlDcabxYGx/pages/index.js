@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{224:function(e,t,n){__NEXT_REGISTER_PAGE("/",function(){return e.exports=n(256),{page:e.exports.default}})},256:function(e,t,n){"use strict";n.r(t);var o=n(0),a=n.n(o),l=(n(26),n(250)),r=n(255);t.default=function(){return a.a.createElement(l.a,{title:"portfolio"},a.a.createElement(r.a,null,"hello hello"))}}},[[224,1,0]]]);
