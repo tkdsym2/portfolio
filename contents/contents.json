@@ -1,0 +1,53 @@
+{
+  "research": [
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "Dummy Cursor Experiment",
+      "year": "2019~"
+    },
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "fabnavi",
+      "year": "2016~"
+    },
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "Snapped Notification",
+      "year": "2015~2016"
+    }
+  ],
+  "exhibition": [
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "Dummy Cursor Experiment",
+      "year": "2019~"
+    },
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "fabnavi",
+      "year": "2016~"
+    },
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "Snapped Notification",
+      "year": "2015~2016"
+    }
+  ],
+  "others": [
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "Dummy Cursor Experiment",
+      "year": "2019~"
+    },
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "fabnavi",
+      "year": "2016~"
+    },
+    {
+      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "title": "Snapped Notification",
+      "year": "2015~2016"
+    }
+  ]
+}
