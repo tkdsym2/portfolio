@@ -1,7 +1,25 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-export const NavFrame = styled.nav`
+export const NavFrame = styled.header`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+const HeaderTitle = styled.p`
+  color: #000000;
+  font-size: 2.4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  margin: 0.5em 1.2em 1em 1.2em;
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+export const MenuFrame = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,5 +67,13 @@ export const StyledLink = ({href, children, ...props}) => (
   <Link href={href} passHref>
     {props.active ? (<ActiveLink>{children}</ActiveLink>) : 
     (<NoActiveLink active={props.active}>{children}</NoActiveLink>)}
+  </Link>
+)
+
+export const StyledTitle = ({ href, children, ...props }) => (
+  <Link href={href} passHref>
+    <HeaderTitle>
+      {children}
+    </HeaderTitle>
   </Link>
 )
