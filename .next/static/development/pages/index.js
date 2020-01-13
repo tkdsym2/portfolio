@@ -233,22 +233,23 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var Navigator = function Navigator(_ref) {
   var router = _ref.router;
-  return __jsx("div", {
+  return __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["NavFrame"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, __jsx("header", {
+  }, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledTitle"], {
+    href: "/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["NavFrame"], {
+  }, "tkd.work"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["MenuFrame"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: this
   }, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
@@ -256,15 +257,15 @@ var Navigator = function Navigator(_ref) {
     active: router.pathname === '/' ? true : false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
-  }, "Home"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
+  }, "Works"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
     href: "/publication",
     active: router.pathname === '/publication' ? true : false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, "Publications"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
@@ -272,13 +273,364 @@ var Navigator = function Navigator(_ref) {
     active: router.pathname === '/bio' ? true : false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
-  }, "Bio"))));
+  }, "Bio")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Navigator));
+
+/***/ }),
+
+/***/ "./components/Works.jsx":
+/*!******************************!*\
+  !*** ./components/Works.jsx ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _MediaComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MediaComponent */ "./components/MediaComponent.jsx");
+/* harmony import */ var _components_works_ResearchProjects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/works/ResearchProjects */ "./components/works/ResearchProjects.jsx");
+/* harmony import */ var _components_works_Exhibitions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/works/Exhibitions */ "./components/works/Exhibitions.jsx");
+/* harmony import */ var _components_works_Others__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/works/Others */ "./components/works/Others.jsx");
+/* harmony import */ var _styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/works/works_desktop */ "./styles/works/works_desktop.js");
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Works.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+var MobileWorks = function MobileWorks() {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Research Projects"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Exhibition"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Others"));
+};
+
+var TabletWorks = function TabletWorks() {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "Research Projects"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Exhibition"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Others"));
+};
+
+var DesktopWorks = function DesktopWorks() {
+  return __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_5__["DesktopFrame"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, __jsx(_components_works_ResearchProjects__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }), __jsx(_components_works_Exhibitions__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }), __jsx(_components_works_Others__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }));
+};
+
+var Works = Object(_MediaComponent__WEBPACK_IMPORTED_MODULE_1__["default"])(MobileWorks, TabletWorks, DesktopWorks);
+/* harmony default export */ __webpack_exports__["default"] = (Works);
+
+/***/ }),
+
+/***/ "./components/works/Card.jsx":
+/*!***********************************!*\
+  !*** ./components/works/Card.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_works_Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/works/Card */ "./styles/works/Card.js");
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/works/Card.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var Card = function Card(_ref) {
+  var content = _ref.content;
+  return __jsx(_styles_works_Card__WEBPACK_IMPORTED_MODULE_1__["CardFrame"], {
+    href: "/work?title=".concat(content.title),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx(_styles_works_Card__WEBPACK_IMPORTED_MODULE_1__["CardImage"], {
+    src: content.thumb,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx(_styles_works_Card__WEBPACK_IMPORTED_MODULE_1__["CardTitle"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, content.title), __jsx(_styles_works_Card__WEBPACK_IMPORTED_MODULE_1__["CardYear"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, content.year));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
+/***/ "./components/works/Exhibitions.jsx":
+/*!******************************************!*\
+  !*** ./components/works/Exhibitions.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card */ "./components/works/Card.jsx");
+/* harmony import */ var _styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/works/works_desktop */ "./styles/works/works_desktop.js");
+/* harmony import */ var _contents_contents_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../contents/contents.json */ "./contents/contents.json");
+var _contents_contents_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../contents/contents.json */ "./contents/contents.json", 1);
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/works/Exhibitions.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var Exhibitions = function Exhibitions() {
+  return __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["ContentsFrame"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "Exhibitions"), __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["ContentsList"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, _contents_contents_json__WEBPACK_IMPORTED_MODULE_3__.exhibition.map(function (content, index) {
+    return __jsx(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: index,
+      content: content,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    });
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Exhibitions);
+
+/***/ }),
+
+/***/ "./components/works/Others.jsx":
+/*!*************************************!*\
+  !*** ./components/works/Others.jsx ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card */ "./components/works/Card.jsx");
+/* harmony import */ var _styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/works/works_desktop */ "./styles/works/works_desktop.js");
+/* harmony import */ var _contents_contents_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../contents/contents.json */ "./contents/contents.json");
+var _contents_contents_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../contents/contents.json */ "./contents/contents.json", 1);
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/works/Others.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var Others = function Others() {
+  return __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["ContentsFrame"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "Others"), __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["ContentsList"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, _contents_contents_json__WEBPACK_IMPORTED_MODULE_3__.others.map(function (content, index) {
+    return __jsx(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: index,
+      content: content,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    });
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Others);
+
+/***/ }),
+
+/***/ "./components/works/ResearchProjects.jsx":
+/*!***********************************************!*\
+  !*** ./components/works/ResearchProjects.jsx ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card */ "./components/works/Card.jsx");
+/* harmony import */ var _styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/works/works_desktop */ "./styles/works/works_desktop.js");
+/* harmony import */ var _contents_contents_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../contents/contents.json */ "./contents/contents.json");
+var _contents_contents_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../contents/contents.json */ "./contents/contents.json", 1);
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/works/ResearchProjects.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var ResearchProjects = function ResearchProjects() {
+  return __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["ContentsFrame"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "Research Projects"), __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_MODULE_2__["ContentsList"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, _contents_contents_json__WEBPACK_IMPORTED_MODULE_3__.research.map(function (content, index) {
+    return __jsx(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: index,
+      content: content,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    });
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ResearchProjects);
+
+/***/ }),
+
+/***/ "./contents/contents.json":
+/*!********************************!*\
+  !*** ./contents/contents.json ***!
+  \********************************/
+/*! exports provided: research, exhibition, others, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"research\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}],\"exhibition\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}],\"others\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}]}");
 
 /***/ }),
 
@@ -12804,10 +13156,14 @@ if ( true && typeof window !== 'undefined' && typeof navigator !== 'undefined' &
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_AppLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/AppLayout */ "./components/AppLayout.jsx");
-/* harmony import */ var _components_MediaComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/MediaComponent */ "./components/MediaComponent.jsx");
+/* harmony import */ var _components_Works__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Works */ "./components/Works.jsx");
+/* harmony import */ var _styles_pages_Index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/pages/Index */ "./styles/pages/Index.js");
+/* harmony import */ var _components_AppLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/AppLayout */ "./components/AppLayout.jsx");
+/* harmony import */ var _components_MediaComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MediaComponent */ "./components/MediaComponent.jsx");
 var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/index.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -12816,13 +13172,13 @@ var MobileHome = function MobileHome() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
   }, "Mobile"));
@@ -12832,36 +13188,36 @@ var TabletHome = function TabletHome() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 19
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
   }, "tablet"));
 };
 
 var DesktopHome = function DesktopHome() {
-  return __jsx("div", {
+  return __jsx(_styles_pages_Index__WEBPACK_IMPORTED_MODULE_2__["DesktopFrame"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 27
     },
     __self: this
-  }, __jsx("p", {
+  }, __jsx(_components_Works__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 28
     },
     __self: this
-  }, "welcome"));
+  }));
 };
 
-var Home = Object(_components_MediaComponent__WEBPACK_IMPORTED_MODULE_2__["default"])(MobileHome, TabletHome, DesktopHome);
-/* harmony default export */ __webpack_exports__["default"] = (Object(_components_AppLayout__WEBPACK_IMPORTED_MODULE_1__["default"])(Home));
+var Home = Object(_components_MediaComponent__WEBPACK_IMPORTED_MODULE_4__["default"])(MobileHome, TabletHome, DesktopHome);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_components_AppLayout__WEBPACK_IMPORTED_MODULE_3__["default"])(Home));
 
 /***/ }),
 
@@ -12869,13 +13225,15 @@ var Home = Object(_components_MediaComponent__WEBPACK_IMPORTED_MODULE_2__["defau
 /*!****************************************!*\
   !*** ./styles/components/Navigator.js ***!
   \****************************************/
-/*! exports provided: NavFrame, StyledLink */
+/*! exports provided: NavFrame, MenuFrame, StyledLink, StyledTitle */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavFrame", function() { return NavFrame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuFrame", function() { return MenuFrame; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledLink", function() { return StyledLink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledTitle", function() { return StyledTitle; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
@@ -12888,17 +13246,25 @@ var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/styles/components/Naviga
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
-var NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav.withConfig({
+var NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header.withConfig({
   displayName: "Navigator__NavFrame",
   componentId: "i7m243-0"
+})(["display:flex;flex-direction:column;justify-content:center;align-items:center;"]);
+var HeaderTitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+  displayName: "Navigator__HeaderTitle",
+  componentId: "i7m243-1"
+})(["color:#000000;font-size:2.4rem;font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.5em 1.2em 1em 1.2em;&:hover{cursor:pointer;}"]);
+var MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav.withConfig({
+  displayName: "Navigator__MenuFrame",
+  componentId: "i7m243-2"
 })(["display:flex;flex-direction:row;justify-content:center;"]);
 var NoActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "Navigator__NoActiveLink",
-  componentId: "i7m243-1"
+  componentId: "i7m243-3"
 })(["color:#000000;font-size:1.2rem;font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;&:after{position:absolute;top:1.1em;bottom:0;left:0;content:'';width:0;height:3px;background-color:#2ecc71;transition:.3s;}&:hover::after{width:100%;}&:hover{cursor:pointer;color:red;}"]);
 var ActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "Navigator__ActiveLink",
-  componentId: "i7m243-2"
+  componentId: "i7m243-4"
 })(["color:green;font-size:1.2rem;font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;"]);
 var StyledLink = function StyledLink(_ref) {
   var href = _ref.href,
@@ -12910,24 +13276,163 @@ var StyledLink = function StyledLink(_ref) {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 67
     },
     __self: this
   }, props.active ? __jsx(ActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 68
     },
     __self: this
   }, children) : __jsx(NoActiveLink, {
     active: props.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 69
     },
     __self: this
   }, children));
 };
+var StyledTitle = function StyledTitle(_ref2) {
+  var href = _ref2.href,
+      children = _ref2.children,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, ["href", "children"]);
+
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: href,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, __jsx(HeaderTitle, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, children));
+};
+
+/***/ }),
+
+/***/ "./styles/pages/Index.js":
+/*!*******************************!*\
+  !*** ./styles/pages/Index.js ***!
+  \*******************************/
+/*! exports provided: DesktopFrame */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesktopFrame", function() { return DesktopFrame; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var DesktopFrame = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "Index__DesktopFrame",
+  componentId: "mj786f-0"
+})(["display:flex;flex-direction:column;justify-content:center;margin:0.2rem 17rem 1rem 17rem;"]);
+
+/***/ }),
+
+/***/ "./styles/works/Card.js":
+/*!******************************!*\
+  !*** ./styles/works/Card.js ***!
+  \******************************/
+/*! exports provided: CardFrame, CardImage, CardTitle, CardYear */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardFrame", function() { return CardFrame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardImage", function() { return CardImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardTitle", function() { return CardTitle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardYear", function() { return CardYear; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/styles/works/Card.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+var StyledCardFrame = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "Card__StyledCardFrame",
+  componentId: "zbmkhj-0"
+})(["width:22rem;display:flex;flex-direction:column;margin:0;margin:0.5rem 0 0.5rem 0;&:hover{cursor:pointer;}"]);
+var CardFrame = function CardFrame(_ref) {
+  var href = _ref.href,
+      children = _ref.children,
+      props = Object(_babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["href", "children"]);
+
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: href,
+    passHref: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx(StyledCardFrame, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, children));
+};
+var CardImage = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
+  displayName: "Card__CardImage",
+  componentId: "zbmkhj-1"
+})(["width:22rem;"]);
+var CardTitle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+  displayName: "Card__CardTitle",
+  componentId: "zbmkhj-2"
+})(["color:#000000;font-size:1.5rem;font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0;margin:0.5rem 0 0 0;"]);
+var CardYear = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+  displayName: "Card__CardYear",
+  componentId: "zbmkhj-3"
+})(["color:#666666;font-size:1.2rem;font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0;margin:0.2rem 0 0 0;"]);
+
+/***/ }),
+
+/***/ "./styles/works/works_desktop.js":
+/*!***************************************!*\
+  !*** ./styles/works/works_desktop.js ***!
+  \***************************************/
+/*! exports provided: DesktopFrame, ContentsFrame, Header, ContentsList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DesktopFrame", function() { return DesktopFrame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentsFrame", function() { return ContentsFrame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentsList", function() { return ContentsList; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var DesktopFrame = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "works_desktop__DesktopFrame",
+  componentId: "sc-5kv61v-0"
+})(["display:flex;flex-direction:column;"]);
+var ContentsFrame = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "works_desktop__ContentsFrame",
+  componentId: "sc-5kv61v-1"
+})(["display:flex;flex-direction:column;margin:2.5rem 0 2.5rem 0;"]);
+var Header = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
+  displayName: "works_desktop__Header",
+  componentId: "sc-5kv61v-2"
+})(["color:#000000;font-size:1.7rem;font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.3rem 0 0.1rem 0;"]);
+var ContentsList = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "works_desktop__ContentsList",
+  componentId: "sc-5kv61v-3"
+})(["display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;&:after{content:\"\";display:block;width:22rem;height:0;}"]);
 
 /***/ }),
 
