@@ -10,7 +10,7 @@ const Navigator = ({ router }) => (
     </StyledTitle>
     <MenuFrame>
       <StyledLink href="/" active={router.pathname === '/' ? true:false}>
-        Home
+        Works
       </StyledLink>
       <StyledLink href="/publication" active={router.pathname === '/publication' ? true:false}>
         Publications
