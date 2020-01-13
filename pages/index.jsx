@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Works from '../components/Works';
+import { DesktopFrame } from '../styles/pages/Index';
+
 import withAppLayout from '../components/AppLayout';
 import withMediaComponent from '../components/MediaComponent';
 
@@ -21,14 +24,11 @@ const TabletHome = () => {
 
 const DesktopHome = () => {
   return (
-    <div>
-      <p>welcome</p>
-    </div>
+    <DesktopFrame>
+      <Works />
+    </DesktopFrame>
   )
 }
-
-
-
 
 const Home = withMediaComponent(MobileHome, TabletHome, DesktopHome)
 export default withAppLayout(Home)
