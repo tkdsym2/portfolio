@@ -1,11 +1,12 @@
 import React from 'react';
 
 import withAppLayout from '../components/AppLayout';
+import Publications from '../components/Publications';
+
+import { DesktopFrame } from '../styles/pages/Index'
 
 const Publication = () => (
-  <div>
-    publication page
-  </div>
+    <Publications />
 )
 
 export default withAppLayout(Publication);

@@ -31,5 +31,5 @@ const DesktopWorks = () => (
   </DesktopFrame>
 )
 
-const Works = withMediaComponent(MobileWorks, TabletWorks, DesktopWorks);
-export default Works
+// const Works = withMediaComponent(MobileWorks, TabletWorks, DesktopWorks);
+export default DesktopWorks

@@ -447,10 +447,10 @@ const DesktopWorks = () => __jsx(_styles_works_works_desktop__WEBPACK_IMPORTED_M
     lineNumber: 30
   },
   __self: undefined
-}));
+})); // const Works = withMediaComponent(MobileWorks, TabletWorks, DesktopWorks);
 
-const Works = Object(_MediaComponent__WEBPACK_IMPORTED_MODULE_1__["default"])(MobileWorks, TabletWorks, DesktopWorks);
-/* harmony default export */ __webpack_exports__["default"] = (Works);
+
+/* harmony default export */ __webpack_exports__["default"] = (DesktopWorks);
 
 /***/ }),
 
@@ -674,7 +674,7 @@ const ResearchProjects = () => __jsx(_styles_works_works_desktop__WEBPACK_IMPORT
 /*! exports provided: research, exhibition, others, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"research\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}],\"exhibition\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}],\"others\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}]}");
+module.exports = JSON.parse("{\"research\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}],\"exhibition\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}],\"others\":[{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Dummy Cursor Experiment\",\"year\":\"2019~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"fabnavi\",\"year\":\"2016~\"},{\"thumb\":\"https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg\",\"title\":\"Snapped Notification\",\"year\":\"2015~2016\"}]}");
 
 /***/ }),
 
@@ -2667,7 +2667,7 @@ const TabletHome = () => {
 };
 
 const DesktopHome = () => {
-  return __jsx(_styles_pages_Index__WEBPACK_IMPORTED_MODULE_2__["DesktopFrame"], {
+  return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -2680,10 +2680,10 @@ const DesktopHome = () => {
     },
     __self: undefined
   }));
-};
+}; // const Home = withMediaComponent(MobileHome, TabletHome, DesktopHome)
 
-const Home = Object(_components_MediaComponent__WEBPACK_IMPORTED_MODULE_4__["default"])(MobileHome, TabletHome, DesktopHome);
-/* harmony default export */ __webpack_exports__["default"] = (Object(_components_AppLayout__WEBPACK_IMPORTED_MODULE_3__["default"])(Home));
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_components_AppLayout__WEBPACK_IMPORTED_MODULE_3__["default"])(DesktopHome));
 
 /***/ }),
 
@@ -2707,10 +2707,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
 
 var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/styles/components/Navigator.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 const NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.header.withConfig({
@@ -2720,7 +2722,7 @@ const NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.header
 const HeaderTitle = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__HeaderTitle",
   componentId: "i7m243-1"
-})(["color:#000000;font-size:2.4rem;font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.5em 1.2em 1em 1.2em;&:hover{cursor:pointer;}"]);
+})(["color:#", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.5em 1.2em 1em 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_4__["Black"], _theme__WEBPACK_IMPORTED_MODULE_4__["TitleSize"]);
 const MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.nav.withConfig({
   displayName: "Navigator__MenuFrame",
   componentId: "i7m243-2"
@@ -2728,11 +2730,11 @@ const MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.nav.w
 const NoActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__NoActiveLink",
   componentId: "i7m243-3"
-})(["color:#000000;font-size:1.2rem;font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;&:after{position:absolute;top:1.1em;bottom:0;left:0;content:'';width:0;height:3px;background-color:#2ecc71;transition:.3s;}&:hover::after{width:100%;}&:hover{cursor:pointer;color:red;}"]);
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;&:after{position:absolute;top:1.1em;bottom:0;left:0;content:'';width:0;height:3px;background-color:", ";transition:.3s;}&:hover::after{width:100%;}&:hover{cursor:pointer;color:red;}"], _theme__WEBPACK_IMPORTED_MODULE_4__["Black"], _theme__WEBPACK_IMPORTED_MODULE_4__["SentenceSize"], _theme__WEBPACK_IMPORTED_MODULE_4__["Blue"]);
 const ActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__ActiveLink",
   componentId: "i7m243-4"
-})(["color:green;font-size:1.2rem;font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;"]);
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;"], _theme__WEBPACK_IMPORTED_MODULE_4__["Pink"], _theme__WEBPACK_IMPORTED_MODULE_4__["SentenceSize"]);
 const StyledLink = (_ref) => {
   let {
     href,
@@ -2745,20 +2747,20 @@ const StyledLink = (_ref) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 69
     },
     __self: undefined
   }, props.active ? __jsx(ActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 70
     },
     __self: undefined
   }, children) : __jsx(NoActiveLink, {
     active: props.active,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 71
     },
     __self: undefined
   }, children));
@@ -2775,13 +2777,13 @@ const StyledTitle = (_ref2) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 76
     },
     __self: undefined
   }, __jsx(HeaderTitle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 77
     },
     __self: undefined
   }, children));
@@ -2805,7 +2807,37 @@ __webpack_require__.r(__webpack_exports__);
 const DesktopFrame = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "Index__DesktopFrame",
   componentId: "mj786f-0"
-})(["display:flex;flex-direction:column;justify-content:center;margin:0.2rem 17rem 1rem 17rem;"]);
+})(["width:70%;display:flex;flex-direction:column;justify-content:center;"]);
+
+/***/ }),
+
+/***/ "./styles/theme.js":
+/*!*************************!*\
+  !*** ./styles/theme.js ***!
+  \*************************/
+/*! exports provided: Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Black", function() { return Black; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Gray", function() { return Gray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Blue", function() { return Blue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Pink", function() { return Pink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TitleSize", function() { return TitleSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderSize", function() { return HeaderSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopicSize", function() { return TopicSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SentenceSize", function() { return SentenceSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardSize", function() { return CardSize; });
+const Black = '#000000';
+const Gray = '#666666';
+const Blue = '#0000EE';
+const Pink = '#FF0000';
+const TitleSize = '2.4rem';
+const HeaderSize = '1.7rem';
+const TopicSize = '1.3rem';
+const SentenceSize = '1.1rem';
+const CardSize = '22rem';
 
 /***/ }),
 
@@ -2829,16 +2861,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
 
 var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/styles/works/Card.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
+
 const StyledCardFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
   displayName: "Card__StyledCardFrame",
   componentId: "zbmkhj-0"
-})(["width:22rem;display:flex;flex-direction:column;margin:0;margin:0.5rem 0 0.5rem 0;&:hover{cursor:pointer;}"]);
+})(["width:", ";display:flex;flex-direction:column;margin:0;margin:0.5rem 0 0.5rem 0;&:hover{cursor:pointer;opacity:0.6;}"], _theme__WEBPACK_IMPORTED_MODULE_4__["CardSize"]);
 const CardFrame = (_ref) => {
   let {
     href,
@@ -2851,13 +2885,13 @@ const CardFrame = (_ref) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: undefined
   }, __jsx(StyledCardFrame, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: undefined
   }, children));
@@ -2865,15 +2899,15 @@ const CardFrame = (_ref) => {
 const CardImage = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.img.withConfig({
   displayName: "Card__CardImage",
   componentId: "zbmkhj-1"
-})(["width:22rem;"]);
+})(["width:", ";"], _theme__WEBPACK_IMPORTED_MODULE_4__["CardSize"]);
 const CardTitle = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Card__CardTitle",
   componentId: "zbmkhj-2"
-})(["color:#000000;font-size:1.5rem;font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0;margin:0.5rem 0 0 0;"]);
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0;margin:0.5rem 0 0 0;"], _theme__WEBPACK_IMPORTED_MODULE_4__["Black"], _theme__WEBPACK_IMPORTED_MODULE_4__["TopicSize"]);
 const CardYear = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Card__CardYear",
   componentId: "zbmkhj-3"
-})(["color:#666666;font-size:1.2rem;font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0;margin:0.2rem 0 0 0;"]);
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0;margin:0.2rem 0 0 0;"], _theme__WEBPACK_IMPORTED_MODULE_4__["Gray"], _theme__WEBPACK_IMPORTED_MODULE_4__["SentenceSize"]);
 
 /***/ }),
 
@@ -2892,11 +2926,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentsList", function() { return ContentsList; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
+
 
 const DesktopFrame = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "works_desktop__DesktopFrame",
   componentId: "sc-5kv61v-0"
-})(["display:flex;flex-direction:column;"]);
+})(["width:70%;display:flex;flex-direction:column;margin:0 auto;"]);
 const ContentsFrame = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "works_desktop__ContentsFrame",
   componentId: "sc-5kv61v-1"
@@ -2904,11 +2940,11 @@ const ContentsFrame = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.d
 const Header = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.withConfig({
   displayName: "works_desktop__Header",
   componentId: "sc-5kv61v-2"
-})(["color:#000000;font-size:1.7rem;font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.3rem 0 0.1rem 0;"]);
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.3rem 0 0.1rem 0;"], _theme__WEBPACK_IMPORTED_MODULE_1__["Black"], _theme__WEBPACK_IMPORTED_MODULE_1__["HeaderSize"]);
 const ContentsList = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "works_desktop__ContentsList",
   componentId: "sc-5kv61v-3"
-})(["display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;&:after{content:\"\";display:block;width:22rem;height:0;}"]);
+})(["display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;&:after{content:\"\";display:block;width:", ";height:0;}"], _theme__WEBPACK_IMPORTED_MODULE_1__["CardSize"]);
 
 /***/ }),
 

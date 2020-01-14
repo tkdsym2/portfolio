@@ -24,11 +24,11 @@ const TabletHome = () => {
 
 const DesktopHome = () => {
   return (
-    <DesktopFrame>
+    <div>
       <Works />
-    </DesktopFrame>
+    </div>
   )
 }
 
-const Home = withMediaComponent(MobileHome, TabletHome, DesktopHome)
-export default withAppLayout(Home)
+// const Home = withMediaComponent(MobileHome, TabletHome, DesktopHome)
+export default withAppLayout(DesktopHome)

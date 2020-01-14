@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
+import { CardSize, TopicSize, SentenceSize, Black, Gray } from '../theme'
+
 const StyledCardFrame = styled.div`
-  width: 22rem;
-  /* background-color: #dddddd; */
+  width: ${CardSize};
   display: flex;
   flex-direction: column;
   margin: 0;
   margin: 0.5rem 0 0.5rem 0;
   &:hover {
     cursor: pointer;
+    opacity: 0.6;
   }
 `
 
@@ -22,12 +24,12 @@ export const CardFrame = ({ href, children, ...props }) => (
 )
 
 export const CardImage = styled.img`
-  width: 22rem;
+  width: ${CardSize};
 `
 
 export const CardTitle = styled.p`
-  color: #000000;
-  font-size: 1.5rem;
+  color: ${Black};
+  font-size: ${TopicSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   margin: 0;
@@ -35,8 +37,8 @@ export const CardTitle = styled.p`
 `
 
 export const CardYear = styled.p`
-  color: #666666;
-  font-size: 1.2rem;
+  color: ${Gray};
+  font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
   margin: 0;

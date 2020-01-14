@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
+import { Black, TitleSize, Blue, SentenceSize, Pink} from '../theme'
+
 export const NavFrame = styled.header`
   display: flex;
   flex-direction: column;
@@ -9,8 +11,8 @@ export const NavFrame = styled.header`
 `
 
 const HeaderTitle = styled.p`
-  color: #000000;
-  font-size: 2.4rem;
+  color: #${Black};
+  font-size: ${TitleSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   margin: 0.5em 1.2em 1em 1.2em;
@@ -26,8 +28,8 @@ export const MenuFrame = styled.nav`
 ` ;
 
 const NoActiveLink = styled.p`
-  color: #000000;
-  font-size: 1.2rem;
+  color: ${Black};
+  font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
   margin: 0.5em 1.2em 1em 1.2em;
@@ -41,7 +43,7 @@ const NoActiveLink = styled.p`
     content: '';
     width: 0;
     height: 3px;
-    background-color: #2ecc71;
+    background-color: ${Blue};
     transition: .3s;
   }
   &:hover::after {
@@ -54,8 +56,8 @@ const NoActiveLink = styled.p`
 `
 
 const ActiveLink = styled.p`
-  color: green;
-  font-size: 1.2rem;
+  color: ${Pink};
+  font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
   margin: 0.5em 1.2em 1em 1.2em;
