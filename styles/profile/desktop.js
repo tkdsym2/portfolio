@@ -19,7 +19,8 @@ export const BioFrame = styled.div`
 `
 export const ContentsFrame = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 2.5rem 0 0 0;
 `
 
@@ -34,8 +35,9 @@ export const Header = styled.p`
 
 export const ProfileFrame = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  /* flex-basis: 50%; */
+  /* justify-content: space-between; */
 `
 
 export const DetailFrame = styled.div`
