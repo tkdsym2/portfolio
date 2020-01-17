@@ -128,6 +128,71 @@ const Footer = () => __jsx(_styles_components_Footer__WEBPACK_IMPORTED_MODULE_1_
 
 /***/ }),
 
+/***/ "./components/MediaComponent.jsx":
+/*!***************************************!*\
+  !*** ./components/MediaComponent.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_media__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-media */ "react-media");
+/* harmony import */ var react_media__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_media__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/components/MediaComponent.jsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+const withMediaComponent = (MobileComponent, TabletComponent, DesktopComponent) => {
+  return props => {
+    return __jsx(react_media__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      queries: {
+        small: "(max-width: 599px)",
+        medium: "(min-width: 600px) and (max-width: 1199px)",
+        large: "(min-width: 1200px)"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: undefined
+    }, matches => __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: undefined
+    }, matches.small && __jsx(MobileComponent, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: undefined
+    })), matches.medium && __jsx(TabletComponent, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: undefined
+    })), matches.large && __jsx(DesktopComponent, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: undefined
+    }))));
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (withMediaComponent);
+
+/***/ }),
+
 /***/ "./components/Navigator.jsx":
 /*!**********************************!*\
   !*** ./components/Navigator.jsx ***!
@@ -141,61 +206,95 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/Navigator */ "./styles/components/Navigator.js");
+/* harmony import */ var _MediaComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MediaComponent */ "./components/MediaComponent.jsx");
+/* harmony import */ var _styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/components/Navigator */ "./styles/components/Navigator.js");
 var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/components/Navigator.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const Navigator = ({
+
+const MediumNavigator = () => __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, "hoge");
+
+const DesktopNavigator = ({
   router
-}) => __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["NavFrame"], {
+}) => __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["NavFrame"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 22
   },
   __self: undefined
-}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledTitle"], {
+}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledTitle"], {
   href: "/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 23
   },
   __self: undefined
-}, "tkd.work"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["MenuFrame"], {
+}, "tkd.work"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["MenuFrame"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 26
   },
   __self: undefined
-}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
+}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
   href: "/",
+  active: router.pathname === '/' ? true : false,
+  topic: "Works",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledHomeIcon"], {
   active: router.pathname === '/' ? true : false,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 28
   },
   __self: undefined
-}, "Works"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
+})), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
   href: "/publication",
+  active: router.pathname === '/publication' ? true : false,
+  topic: "Publication",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledDocumentIcon"], {
   active: router.pathname === '/publication' ? true : false,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 31
   },
   __self: undefined
-}, "Publications"), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__["StyledLink"], {
+})), __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledLink"], {
   href: "/bio",
+  active: router.pathname === '/bio' ? true : false,
+  topic: "Bio",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 33
+  },
+  __self: undefined
+}, __jsx(_styles_components_Navigator__WEBPACK_IMPORTED_MODULE_3__["StyledPersonIcon"], {
   active: router.pathname === '/bio' ? true : false,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 34
   },
   __self: undefined
-}, "Bio")));
+}))));
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Navigator));
+/* harmony default export */ __webpack_exports__["default"] = (Object(next_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(DesktopNavigator));
 
 /***/ }),
 
@@ -2411,13 +2510,17 @@ const FooterText = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.wi
 /*!****************************************!*\
   !*** ./styles/components/Navigator.js ***!
   \****************************************/
-/*! exports provided: NavFrame, MenuFrame, StyledLink, StyledTitle */
+/*! exports provided: NavFrame, MenuFrame, StyledHomeIcon, StyledDocumentIcon, StyledPersonIcon, ItemFrame, StyledLink, StyledTitle */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavFrame", function() { return NavFrame; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuFrame", function() { return MenuFrame; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledHomeIcon", function() { return StyledHomeIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledDocumentIcon", function() { return StyledDocumentIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledPersonIcon", function() { return StyledPersonIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ItemFrame", function() { return ItemFrame; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledLink", function() { return StyledLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledTitle", function() { return StyledTitle; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectWithoutProperties.js");
@@ -2427,11 +2530,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
+/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-media-query */ "styled-media-query");
+/* harmony import */ var styled_media_query__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_media_query__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var styled_icons_fa_solid_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-icons/fa-solid/Home */ "styled-icons/fa-solid/Home");
+/* harmony import */ var styled_icons_fa_solid_Home__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styled_icons_fa_solid_Home__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var styled_icons_typicons_DocumentText__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-icons/typicons/DocumentText */ "styled-icons/typicons/DocumentText");
+/* harmony import */ var styled_icons_typicons_DocumentText__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(styled_icons_typicons_DocumentText__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var styled_icons_material_Person__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-icons/material/Person */ "styled-icons/material/Person");
+/* harmony import */ var styled_icons_material_Person__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_icons_material_Person__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
 
 var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/styles/components/Navigator.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
 
 
 
@@ -2442,19 +2557,48 @@ const NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.header
 const HeaderTitle = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__HeaderTitle",
   componentId: "i7m243-1"
-})(["color:#", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.5em 1.2em 1em 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_4__["Black"], _theme__WEBPACK_IMPORTED_MODULE_4__["TitleSize"]);
+})(["color:#", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.5em 1.2em 1em 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_8__["Black"], _theme__WEBPACK_IMPORTED_MODULE_8__["TitleSize"]);
 const MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.nav.withConfig({
   displayName: "Navigator__MenuFrame",
   componentId: "i7m243-2"
 })(["display:flex;flex-direction:row;justify-content:center;"]);
+const StyledHomeIcon = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(styled_icons_fa_solid_Home__WEBPACK_IMPORTED_MODULE_5__["Home"]).attrs(props => ({
+  size: '1.2rem',
+  color: `${props.active ? 'red' : 'black'}`
+})).withConfig({
+  displayName: "Navigator__StyledHomeIcon",
+  componentId: "i7m243-3"
+})([""]);
+const StyledDocumentIcon = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(styled_icons_typicons_DocumentText__WEBPACK_IMPORTED_MODULE_6__["DocumentText"]).attrs(props => ({
+  size: '1.2rem',
+  color: `${props.active ? 'red' : 'black'}`
+})).withConfig({
+  displayName: "Navigator__StyledDocumentIcon",
+  componentId: "i7m243-4"
+})([""]);
+const StyledPersonIcon = styled_components__WEBPACK_IMPORTED_MODULE_2___default()(styled_icons_material_Person__WEBPACK_IMPORTED_MODULE_7__["Person"]).attrs(props => ({
+  size: '1.2rem',
+  color: `${props.active ? 'red' : 'black'}`
+})).withConfig({
+  displayName: "Navigator__StyledPersonIcon",
+  componentId: "i7m243-5"
+})([""]);
+const ItemFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.withConfig({
+  displayName: "Navigator__ItemFrame",
+  componentId: "i7m243-6"
+})(["display:flex;flex-direction:row;justify-content:center;align-items:center;margin:0 1.2em 0 1.2em;"]);
 const NoActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__NoActiveLink",
-  componentId: "i7m243-3"
-})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;&:after{position:absolute;top:1.1em;bottom:0;left:0;content:'';width:0;height:3px;background-color:", ";transition:.3s;}&:hover::after{width:100%;}&:hover{cursor:pointer;color:red;}"], _theme__WEBPACK_IMPORTED_MODULE_4__["Black"], _theme__WEBPACK_IMPORTED_MODULE_4__["SentenceSize"], _theme__WEBPACK_IMPORTED_MODULE_4__["Blue"]);
+  componentId: "i7m243-7"
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin-left:0.2em;position:relative;transition:.3s;&:after{position:absolute;top:1.1em;bottom:0;left:0;content:'';width:0;height:3px;background-color:", ";transition:.3s;}&:hover::after{width:100%;}&:hover{cursor:pointer;color:red;}", ""], _theme__WEBPACK_IMPORTED_MODULE_8__["Black"], _theme__WEBPACK_IMPORTED_MODULE_8__["SentenceSize"], _theme__WEBPACK_IMPORTED_MODULE_8__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_4___default.a.lessThan(`${_theme__WEBPACK_IMPORTED_MODULE_8__["medium"]}`)`
+    display: none;
+  `);
 const ActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__ActiveLink",
-  componentId: "i7m243-4"
-})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin:0.5em 1.2em 1em 1.2em;position:relative;transition:.3s;"], _theme__WEBPACK_IMPORTED_MODULE_4__["Pink"], _theme__WEBPACK_IMPORTED_MODULE_4__["SentenceSize"]);
+  componentId: "i7m243-8"
+})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:medium;margin-left:0.2em;position:relative;transition:.3s;", ""], _theme__WEBPACK_IMPORTED_MODULE_8__["Pink"], _theme__WEBPACK_IMPORTED_MODULE_8__["SentenceSize"], styled_media_query__WEBPACK_IMPORTED_MODULE_4___default.a.lessThan(`${_theme__WEBPACK_IMPORTED_MODULE_8__["medium"]}`)`
+    display: none;
+  `);
 const StyledLink = (_ref) => {
   let {
     href,
@@ -2467,23 +2611,28 @@ const StyledLink = (_ref) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 106
     },
     __self: undefined
-  }, props.active ? __jsx(ActiveLink, {
+  }, __jsx(ItemFrame, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 107
     },
     __self: undefined
-  }, children) : __jsx(NoActiveLink, {
-    active: props.active,
+  }, children, props.active ? __jsx(ActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 109
     },
     __self: undefined
-  }, children));
+  }, props.topic) : __jsx(NoActiveLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: undefined
+  }, props.topic)));
 };
 const StyledTitle = (_ref2) => {
   let {
@@ -2497,13 +2646,13 @@ const StyledTitle = (_ref2) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 116
     },
     __self: undefined
   }, __jsx(HeaderTitle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 117
     },
     __self: undefined
   }, children));
@@ -2515,7 +2664,7 @@ const StyledTitle = (_ref2) => {
 /*!*************************!*\
   !*** ./styles/theme.js ***!
   \*************************/
-/*! exports provided: Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize */
+/*! exports provided: Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize, large, medium, small */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2529,6 +2678,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopicSize", function() { return TopicSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SentenceSize", function() { return SentenceSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardSize", function() { return CardSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "large", function() { return large; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "medium", function() { return medium; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "small", function() { return small; });
 const Black = '#000000';
 const Gray = '#666666';
 const Blue = '#0000EE';
@@ -2538,6 +2690,9 @@ const HeaderSize = '1.7rem';
 const TopicSize = '1.3rem';
 const SentenceSize = '1.1rem';
 const CardSize = '22rem';
+const large = '1170px';
+const medium = '768px';
+const small = '450px';
 
 /***/ }),
 
@@ -2729,6 +2884,17 @@ module.exports = require("react-is");
 
 /***/ }),
 
+/***/ "react-media":
+/*!******************************!*\
+  !*** external "react-media" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-media");
+
+/***/ }),
+
 /***/ "styled-components":
 /*!************************************!*\
   !*** external "styled-components" ***!
@@ -2737,6 +2903,50 @@ module.exports = require("react-is");
 /***/ (function(module, exports) {
 
 module.exports = require("styled-components");
+
+/***/ }),
+
+/***/ "styled-icons/fa-solid/Home":
+/*!*********************************************!*\
+  !*** external "styled-icons/fa-solid/Home" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-icons/fa-solid/Home");
+
+/***/ }),
+
+/***/ "styled-icons/material/Person":
+/*!***********************************************!*\
+  !*** external "styled-icons/material/Person" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-icons/material/Person");
+
+/***/ }),
+
+/***/ "styled-icons/typicons/DocumentText":
+/*!*****************************************************!*\
+  !*** external "styled-icons/typicons/DocumentText" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-icons/typicons/DocumentText");
+
+/***/ }),
+
+/***/ "styled-media-query":
+/*!*************************************!*\
+  !*** external "styled-media-query" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-media-query");
 
 /***/ }),
 
