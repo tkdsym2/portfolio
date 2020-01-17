@@ -9,4 +9,4 @@ const Work = withRouter(props => (
   </div>
 ))
 
-export default withAppLayout(Work);
+export default Work;

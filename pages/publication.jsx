@@ -9,4 +9,4 @@ const Publication = () => (
     <Publications />
 )
 
-export default withAppLayout(Publication);
+export default Publication

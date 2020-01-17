@@ -16,6 +16,11 @@ import {
   StyledFacebookSquareIcon,
   StyledGithubIcon,
   StyledLabIcon,
+  StyledLanguageIcon,
+  StyledChipIcon,
+  StyledCubeIcon,
+  StyledComputerIcon,
+  StyledCreateIcon,
   StyledText
 } from '../../../styles/profile/desktop'
 
@@ -61,6 +66,9 @@ const Profile = () => (
         <Header>Education</Header>
         <ListWrapper>
           <ProfileList>
+            <StyledSchoolIcon /><StyledText>Master's Student at Meiji University. Advisor: Keita Watanabe. (2019~)</StyledText>
+          </ProfileList>
+          <ProfileList>
             <StyledSchoolIcon /><StyledText>B.S. in Computer Science at Meiji University (2015~2019)</StyledText>
           </ProfileList>
         </ListWrapper>
@@ -69,19 +77,19 @@ const Profile = () => (
         <Header>Skills</Header>
         <ListWrapper>
           <ProfileList>
-            <StyledSchoolIcon /><StyledText>Japanese (Native), English (Beginner)</StyledText>
+            <StyledLanguageIcon /><StyledText>Japanese (Native), English (Beginner)</StyledText>
           </ProfileList>
           <ProfileList>
-            <StyledSchoolIcon /><StyledText>JavaScript(React), Python, Processing, Mobile(React Native or Android-Java), Touch Designer</StyledText>
+            <StyledComputerIcon /><StyledText>JavaScript (React), Python, Processing, React Native, Touch Designer</StyledText>
           </ProfileList>
           <ProfileList>
-            <StyledSchoolIcon /><StyledText>Arduino, Raspberry Pi, 3D Printer, Laser Cutter, Seld-Made Kyeboard (Hobby)</StyledText>
+            <StyledChipIcon /><StyledText>Arduino, Raspberry Pi, 3D Printer, Laser Cutter, <br />Self-Made Keyboard (Hobby)</StyledText>
           </ProfileList>
           <ProfileList>
-            <StyledSchoolIcon /><StyledText>AutoDesk Fusion360, AutoDesk Eagle(Beginner)</StyledText>
+            <StyledCubeIcon /><StyledText>AutoDesk Fusion360, AutoDesk Eagle (Beginner)</StyledText>
           </ProfileList>
           <ProfileList>
-            <StyledSchoolIcon /><StyledText>Adobe CC (illustrator, lightroom, premiere), Procreate</StyledText>
+            <StyledCreateIcon /><StyledText>Adobe CC (illustrator, lightroom, premiere), Procreate</StyledText>
           </ProfileList>
         </ListWrapper>
       </ProfileFrame>

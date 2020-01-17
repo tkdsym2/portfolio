@@ -8,6 +8,14 @@ import { Twitter } from 'styled-icons/boxicons-logos/Twitter';
 import { FacebookSquare } from 'styled-icons/boxicons-logos/FacebookSquare';
 import { Github } from 'styled-icons/boxicons-logos/Github';
 import { Lab } from 'styled-icons/icomoon/Lab';
+import { Language } from 'styled-icons/material/Language';
+import { Chip } from 'styled-icons/boxicons-regular/Chip';
+import { Computer } from 'styled-icons/material/Computer';
+import { Cube } from 'styled-icons/boxicons-solid/Cube';
+import { Create } from 'styled-icons/material/Create';
+import { Home } from 'styled-icons/fa-solid/Home';
+import { DocumentText } from 'styled-icons/typicons/DocumentText';
+import { Person } from 'styled-icons/material/Person';
 
 import { Black, HeaderSize, CardSize, Gray, SentenceSize, TopicSize } from '../theme';
 
@@ -105,6 +113,31 @@ export const StyledGithubIcon = styled(Github).attrs(props => ({
 }))``
 
 export const StyledLabIcon = styled(Lab).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledLanguageIcon = styled(Language).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledChipIcon = styled(Chip).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledComputerIcon = styled(Computer).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledCubeIcon = styled(Cube).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledCreateIcon = styled(Create).attrs(props => ({
   size: '1.2rem',
   color: 'black'
 }))``

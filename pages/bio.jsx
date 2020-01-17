@@ -7,4 +7,4 @@ const Bio = () => (
   <Profile />
 )
 
-export default withAppLayout(Bio);
+export default Bio;

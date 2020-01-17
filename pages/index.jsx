@@ -31,4 +31,4 @@ const DesktopHome = () => {
 }
 
 // const Home = withMediaComponent(MobileHome, TabletHome, DesktopHome)
-export default withAppLayout(DesktopHome)
+export default DesktopHome
