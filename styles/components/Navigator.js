@@ -5,7 +5,7 @@ import { Home } from 'styled-icons/fa-solid/Home';
 import { DocumentText } from 'styled-icons/typicons/DocumentText';
 import { Person } from 'styled-icons/material/Person';
 
-import { Black, TitleSize, Blue, SentenceSize, Pink} from '../theme'
+import { Black, TitleSize, Blue, SentenceSize, Pink, large, medium, small } from '../theme'
 
 export const NavFrame = styled.header`
   display: flex;
@@ -33,17 +33,17 @@ export const MenuFrame = styled.nav`
 
 export const StyledHomeIcon = styled(Home).attrs(props => ({
   size: '1.2rem',
-  color: 'black'
+  color: `${props.active ? 'red':'black'}`
 }))``
 
 export const StyledDocumentIcon = styled(DocumentText).attrs(props => ({
   size: '1.2rem',
-  color: 'black'
+  color: `${props.active ? 'red':'black'}`
 }))``
 
 export const StyledPersonIcon = styled(Person).attrs(props => ({
   size: '1.2rem',
-  color: 'black'
+  color: `${props.active ? 'red':'black'}`
 }))``
 
 export const ItemFrame = styled.div`
@@ -82,7 +82,7 @@ const NoActiveLink = styled.p`
     color: red;
   }
 
-  ${media.lessThan('medium')`
+  ${media.lessThan(`${medium}`)`
     display: none;
   `}
 `
@@ -97,15 +97,18 @@ const ActiveLink = styled.p`
   position: relative;
   transition: .3s;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan(`${medium}`)`
     display: none;
   `}
 `
 
 export const StyledLink = ({href, children, ...props}) => (
   <Link href={href} passHref>
-    {props.active ? (<ActiveLink>{children}</ActiveLink>) : 
-    (<NoActiveLink active={props.active}>{children}</NoActiveLink>)}
+    <ItemFrame>
+      {children}
+      {props.active ? (<ActiveLink>{props.topic}</ActiveLink>) : 
+      (<NoActiveLink>{props.topic}</NoActiveLink>)}
+    </ItemFrame>
   </Link>
 )
 

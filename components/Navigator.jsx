@@ -9,8 +9,7 @@ import {
   StyledLink,
   StyledHomeIcon,
   StyledDocumentIcon,
-  StyledPersonIcon,
-  ItemFrame
+  StyledPersonIcon
  } from '../styles/components/Navigator';
 
 const MediumNavigator = () => (
@@ -25,24 +24,15 @@ const DesktopNavigator = ({ router }) => (
       tkd.work
     </StyledTitle>
     <MenuFrame>
-      <ItemFrame>
-        <StyledHomeIcon />
-        <StyledLink href="/" active={router.pathname === '/' ? true:false}>
-          Works
-        </StyledLink>
-      </ItemFrame>
-      <ItemFrame>
-        <StyledDocumentIcon />
-        <StyledLink href="/publication" active={router.pathname === '/publication' ? true:false}>
-          Publications
-        </StyledLink>
-      </ItemFrame>
-      <ItemFrame>
-        <StyledPersonIcon />
-        <StyledLink href="/bio" active={router.pathname === '/bio' ? true:false}>
-          Bio
-        </StyledLink>
-      </ItemFrame>
+      <StyledLink href="/" active={router.pathname === '/' ? true:false} topic="Works">
+        <StyledHomeIcon active={router.pathname === '/' ? true:false} />
+      </StyledLink>
+      <StyledLink href="/publication" active={router.pathname === '/publication' ? true:false} topic="Publication">
+        <StyledDocumentIcon active={router.pathname === '/publication' ? true:false} />
+      </StyledLink>
+      <StyledLink href="/bio" active={router.pathname === '/bio' ? true:false} topic="Bio">
+        <StyledPersonIcon active={router.pathname === '/bio' ? true:false}/>
+      </StyledLink>
       {/* <Link href="/contact">
         <a>contact</a>
       </Link> */}
