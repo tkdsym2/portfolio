@@ -13,9 +13,6 @@ import { Chip } from 'styled-icons/boxicons-regular/Chip';
 import { Computer } from 'styled-icons/material/Computer';
 import { Cube } from 'styled-icons/boxicons-solid/Cube';
 import { Create } from 'styled-icons/material/Create';
-import { Home } from 'styled-icons/fa-solid/Home';
-import { DocumentText } from 'styled-icons/typicons/DocumentText';
-import { Person } from 'styled-icons/material/Person';
 
 import { Black, HeaderSize, CardSize, Gray, SentenceSize, TopicSize } from '../theme';
 

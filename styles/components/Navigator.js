@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import media from 'styled-media-query';
+import { Home } from 'styled-icons/fa-solid/Home';
+import { DocumentText } from 'styled-icons/typicons/DocumentText';
+import { Person } from 'styled-icons/material/Person';
 
 import { Black, TitleSize, Blue, SentenceSize, Pink} from '../theme'
 
@@ -27,12 +31,36 @@ export const MenuFrame = styled.nav`
   justify-content: center;
 ` ;
 
+export const StyledHomeIcon = styled(Home).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledDocumentIcon = styled(DocumentText).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const StyledPersonIcon = styled(Person).attrs(props => ({
+  size: '1.2rem',
+  color: 'black'
+}))``
+
+export const ItemFrame = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.2em 0 1.2em;
+`
+
 const NoActiveLink = styled.p`
   color: ${Black};
   font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
-  margin: 0.5em 1.2em 1em 1.2em;
+  /* margin: 0.5em 1.2em 1em 1.2em; */
+  margin-left: 0.2em;
   position: relative;
   transition: .3s;
   &:after {
@@ -53,6 +81,10 @@ const NoActiveLink = styled.p`
     cursor: pointer;
     color: red;
   }
+
+  ${media.lessThan('medium')`
+    display: none;
+  `}
 `
 
 const ActiveLink = styled.p`
@@ -60,9 +92,14 @@ const ActiveLink = styled.p`
   font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
-  margin: 0.5em 1.2em 1em 1.2em;
+  /* margin: 0.5em 1.2em 1em 1.2em; */
+  margin-left: 0.2em;
   position: relative;
   transition: .3s;
+
+  ${media.lessThan('medium')`
+    display: none;
+  `}
 `
 
 export const StyledLink = ({href, children, ...props}) => (
