@@ -54,7 +54,7 @@ const Profile = () => (
             </ProfileList>
             <ProfileList />
             <ProfileList>
-              <StyledText>My research field are Human-Computer Interaction (HCI) and Human Augmentation. In particular, hogehogehogehogehogehoge</StyledText>
+              <StyledText>My research field are Human-Computer Interaction (HCI) and Human Augmentation. In particular, I'm interested in understanding our body from the Sense of Agency and the Sense of Ownership and expanding our interaction frame by using augmented devices.</StyledText>
             </ProfileList>
           </ListWrapper>
         </DetailFrame>
