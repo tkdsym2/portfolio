@@ -9,3 +9,7 @@ export const TopicSize = '1.3rem';
 export const SentenceSize = '1.1rem';
 
 export const CardSize = '22rem';
+
+export const large = '1170px';
+export const medium = '768px';
+export const small = '450px';
