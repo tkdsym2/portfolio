@@ -61,6 +61,7 @@ const Profile = () => (
       </ProfileFrame>
       <ImageFrame src="https://i.gyazo.com/662f581635bd791007e4288f3ff45ece.jpg"/>
     </ContentsFrame>
+    
     <ContentsFrame>
       <ProfileFrame>
         <Header>Education</Header>
@@ -83,7 +84,7 @@ const Profile = () => (
             <StyledComputerIcon /><StyledText>JavaScript (React), Python, Processing, React Native, Touch Designer</StyledText>
           </ProfileList>
           <ProfileList>
-            <StyledChipIcon /><StyledText>Arduino, Raspberry Pi, 3D Printer, Laser Cutter, <br />Self-Made Keyboard (Hobby)</StyledText>
+            <StyledChipIcon /><StyledText>Arduino, Raspberry Pi, 3D Printer, Laser Cutter, Self-Made Keyboard (Hobby)</StyledText>
           </ProfileList>
           <ProfileList>
             <StyledCubeIcon /><StyledText>AutoDesk Fusion360, AutoDesk Eagle (Beginner)</StyledText>

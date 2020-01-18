@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 import { School } from 'styled-icons/material/School';
 import { Mail } from 'styled-icons/material/Mail';
@@ -14,7 +15,7 @@ import { Computer } from 'styled-icons/material/Computer';
 import { Cube } from 'styled-icons/boxicons-solid/Cube';
 import { Create } from 'styled-icons/material/Create';
 
-import { Black, HeaderSize, CardSize, Gray, SentenceSize, TopicSize } from '../theme';
+import { Black, HeaderSize, CardSize, Gray, SentenceSize, TopicSize, large } from '../theme';
 
 export const BioFrame = styled.div`
   width: 70%;
@@ -27,6 +28,10 @@ export const ContentsFrame = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin: 2.5rem 0 0 0;
+  ${media.lessThan(`${large}`)`
+    flex-direction: column;
+    margin: 0;
+  `}
 `
 
 export const Header = styled.p`
@@ -43,6 +48,9 @@ export const ProfileFrame = styled.div`
   flex-direction: column;
   /* flex-basis: 50%; */
   /* justify-content: space-between; */
+  ${media.lessThan(`${large}`)`
+    margin: 2.5rem 0 0 0;
+  `}
 `
 
 export const DetailFrame = styled.div`
@@ -144,4 +152,7 @@ export const ImageFrame = styled.img`
   height: 20rem;
   object-fit: cover;
   object-position: 0% 70%;
+  ${media.lessThan(`${large}`)`
+    display: none;
+  `}
 `
