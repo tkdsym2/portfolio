@@ -6,6 +6,14 @@ import publications from '../contents/publications.json';
 const Publications = () => (
   <PubFrame>
     <ContentsFrame>
+      <Header>
+        Conference Papers
+      </Header>
+      <ListWrapper>
+        <PubList>Under Review...</PubList>
+      </ListWrapper>
+    </ContentsFrame>
+    <ContentsFrame>
       <Header>Domestic Conferences & Symposiums</Header>
       <ListWrapper>
         {publications.domestic.map((content, index) => (
