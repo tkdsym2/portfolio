@@ -1,68 +1,68 @@
 {
   "research": [
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "thumb": "https://i.gyazo.com/8987dd294fb88b2580d7ec71b3dd20b1.jpg",
       "title": "Dummy Cursor Experiment",
-      "year": "2019~"
+      "year": "2019~",
+      "url": "dummy_cursor_experiment"
     },
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "thumb": "https://i.gyazo.com/92633125ff9b64bdbf05e08e23e63668.png",
       "title": "fabnavi",
-      "year": "2016~"
+      "year": "2016~",
+      "url": "fabnavi"
     },
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "thumb": "https://i.gyazo.com/4257aaa50d806bbe3b51e32ec9eb0e80.png",
       "title": "Snapped Notification",
-      "year": "2015~2016"
-    },
-    {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-      "title": "Snapped Notification",
-      "year": "2015~2016"
-    },
-    {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-      "title": "Snapped Notification",
-      "year": "2015~2016"
-    },
-    {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-      "title": "Snapped Notification",
-      "year": "2015~2016"
+      "year": "2015~2016",
+      "url": "snapped_notification"
     }
   ],
   "exhibition": [
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-      "title": "Dummy Cursor Experiment",
-      "year": "2019~"
+      "thumb": "https://gyazo.com/9bdae43f7a288c307515c8e229bf318b.jpg",
+      "title": "Internet Centered Design",
+      "year": "2019",
+      "url": "dummy_cursor_experiment"
     },
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-      "title": "fabnavi",
-      "year": "2016~"
+      "thumb": "https://gyazo.com/ced59c01146e1bb1e9ee50e295d010da.jpg",
+      "title": "JusTap",
+      "year": "2018",
+      "url": "fabnavi"
     },
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+      "thumb": "https://gyazo.com/6bf762c8eb1d0d222e3267d9cc260a91.jpeg",
+      "title": "exUI",
+      "year": "2017~2018",
+      "url": "snapped_notification"
+    },
+    {
+      "thumb": "https://gyazo.com/9f363c5846f33209e1860910f41efe1f.png",
       "title": "Snapped Notification",
-      "year": "2015~2016"
+      "year": "2016~2017",
+      "url": "snapped_notification"
     }
   ],
   "others": [
     {
-      "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-      "title": "Dummy Cursor Experiment",
-      "year": "2019~"
+      "thumb": "https://gyazo.com/b57fc4e3557426cd4f6fa3a8b5b52a27.png",
+      "title": "Book Roof",
+      "year": "2019~",
+      "url": "dummy_cursor_experiment"
     },
     {
       "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
       "title": "fabnavi",
-      "year": "2016~"
+      "year": "2016~",
+      "url": "fabnavi"
     },
     {
       "thumb": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
       "title": "Snapped Notification",
-      "year": "2015~2016"
+      "year": "2015~2016",
+      "url": "snapped_notification"
     }
   ]
 }
