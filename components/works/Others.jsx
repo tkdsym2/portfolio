@@ -9,7 +9,7 @@ const Others = () => (
     <Header>Others</Header>
     <ContentsList>
       {contents.others.map((content, index) => (
-        <Card key={index} content={content} />
+        <Card key={index} dir="others" content={content} />
       ))}
     </ContentsList>
   </ContentsFrame>

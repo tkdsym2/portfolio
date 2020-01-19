@@ -9,7 +9,7 @@ const Exhibitions = () => (
     <Header>Exhibitions</Header>
     <ContentsList>
       {contents.exhibition.map((content, index) => (
-        <Card key={index} content={content} />
+        <Card key={index} dir="exhibitions" content={content} />
       ))}
     </ContentsList>
   </ContentsFrame>

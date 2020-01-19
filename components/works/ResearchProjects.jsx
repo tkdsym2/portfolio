@@ -9,7 +9,7 @@ const ResearchProjects = () => (
     <Header>Research Projects</Header>
     <ContentsList>
       {contents.research.map((content, index) => (
-        <Card key={index} content={content} />
+        <Card key={index} dir="research" content={content} />
       ))}
     </ContentsList>
   </ContentsFrame>

@@ -7,8 +7,8 @@ import {
   CardYear
 } from '../../styles/works/Card'
 
-const Card = ({ content }) => (
-  <CardFrame href={`/work?title=${content.title}`}>
+const Card = ({ content, ...props }) => (
+  <CardFrame dir={`${props.dir}`} url={`${content.url}` }>
     <CardImage src={content.thumb}/>
     <CardTitle>{content.title}</CardTitle>
     <CardYear>{content.year}</CardYear>
