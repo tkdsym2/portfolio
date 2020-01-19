@@ -13988,11 +13988,12 @@ var StyledTitle = function StyledTitle(_ref2) {
 /*!*************************!*\
   !*** ./styles/theme.js ***!
   \*************************/
-/*! exports provided: Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize, large, medium, small */
+/*! exports provided: FrameSize, Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize, MobileCardSize, huge, hhuge, large, medium, small */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FrameSize", function() { return FrameSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Black", function() { return Black; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Gray", function() { return Gray; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Blue", function() { return Blue; });
@@ -14002,9 +14003,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopicSize", function() { return TopicSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SentenceSize", function() { return SentenceSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardSize", function() { return CardSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MobileCardSize", function() { return MobileCardSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "huge", function() { return huge; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hhuge", function() { return hhuge; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "large", function() { return large; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "medium", function() { return medium; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "small", function() { return small; });
+var FrameSize = '70%';
 var Black = '#000000';
 var Gray = '#666666';
 var Blue = '#0000EE';
@@ -14014,7 +14019,10 @@ var HeaderSize = '1.7rem';
 var TopicSize = '1.3rem';
 var SentenceSize = '1.1rem';
 var CardSize = '22rem';
-var large = '1170px';
+var MobileCardSize = '28rem';
+var huge = '1524px';
+var hhuge = '1384px';
+var large = '1450px';
 var medium = '768px';
 var small = '450px';
 

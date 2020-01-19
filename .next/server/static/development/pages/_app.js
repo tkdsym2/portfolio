@@ -2664,11 +2664,12 @@ const StyledTitle = (_ref2) => {
 /*!*************************!*\
   !*** ./styles/theme.js ***!
   \*************************/
-/*! exports provided: Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize, large, medium, small */
+/*! exports provided: FrameSize, Black, Gray, Blue, Pink, TitleSize, HeaderSize, TopicSize, SentenceSize, CardSize, MobileCardSize, huge, hhuge, large, medium, small */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FrameSize", function() { return FrameSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Black", function() { return Black; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Gray", function() { return Gray; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Blue", function() { return Blue; });
@@ -2678,9 +2679,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TopicSize", function() { return TopicSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SentenceSize", function() { return SentenceSize; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardSize", function() { return CardSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MobileCardSize", function() { return MobileCardSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "huge", function() { return huge; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hhuge", function() { return hhuge; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "large", function() { return large; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "medium", function() { return medium; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "small", function() { return small; });
+const FrameSize = '70%';
 const Black = '#000000';
 const Gray = '#666666';
 const Blue = '#0000EE';
@@ -2690,7 +2695,10 @@ const HeaderSize = '1.7rem';
 const TopicSize = '1.3rem';
 const SentenceSize = '1.1rem';
 const CardSize = '22rem';
-const large = '1170px';
+const MobileCardSize = '28rem';
+const huge = '1524px';
+const hhuge = '1384px';
+const large = '1450px';
 const medium = '768px';
 const small = '450px';
 
