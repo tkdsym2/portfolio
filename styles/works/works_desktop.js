@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
-import { Black, HeaderSize, CardSize } from '../theme';
+import { Black, HeaderSize, CardSize, MobileCardSize, huge } from '../theme';
 
 export const DesktopFrame = styled.div`
   width: 70%;
@@ -23,14 +24,8 @@ export const Header = styled.p`
   margin: 0.3rem 0 0.1rem 0;
 `
 export const ContentsList = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  &:after {
-    content: "";
-    display: block;
-    width: ${CardSize};
-    height: 0;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 1.0rem;
 `
