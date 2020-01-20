@@ -15,7 +15,18 @@ import { Computer } from 'styled-icons/material/Computer';
 import { Cube } from 'styled-icons/boxicons-solid/Cube';
 import { Create } from 'styled-icons/material/Create';
 
-import { Black, HeaderSize, CardSize, Gray, SentenceSize, TopicSize, large } from '../theme';
+import {
+  Black,
+  HeaderSize,
+  CardSize,
+  Gray,
+  SentenceSize,
+  TopicSize,
+  large,
+  IconSize,
+  BlackGray,
+  Blue
+} from '../theme';
 
 export const BioFrame = styled.div`
   width: 70%;
@@ -39,15 +50,24 @@ export const Header = styled.p`
   font-size: ${HeaderSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
+  letter-spacing: 0.13rem;
   margin: 0;
   margin: 0.3rem 0 0.8rem 0;
+`
+
+export const JaHeader = styled.span`
+  color: ${Gray};
+  font-size: ${TopicSize};
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0rem;
+  margin: 0;
+  margin: 0 0 0 0.3rem;
 `
 
 export const ProfileFrame = styled.div`
   display: flex;
   flex-direction: column;
-  /* flex-basis: 50%; */
-  /* justify-content: space-between; */
   ${media.lessThan(`${large}`)`
     margin: 2.5rem 0 0 0;
   `}
@@ -68,7 +88,7 @@ export const ProfileList = styled.li`
   padding: 0;
   padding: 0.3rem 0 0.3rem 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 `
 
 export const StyledName = styled.p`
@@ -80,71 +100,83 @@ export const StyledName = styled.p`
 `
 
 export const StyledText = styled.span`
-  color: ${Gray};
+  color: ${BlackGray};
   font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
+  letter-spacing: 0.01rem;
+`
+
+export const StyledLink = styled.a`
+  color: ${BlackGray};
+  font-size: ${SentenceSize};
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: medium;
+
+  &:hover {
+    color: ${Blue};
+  }
 `
 
 export const StyledSchoolIcon = styled(School).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledMailIcon = styled(Mail).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledBriefcaseIcon = styled(Briefcase).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledTwitterIcon = styled(Twitter).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledFacebookSquareIcon = styled(FacebookSquare).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledGithubIcon = styled(Github).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledLabIcon = styled(Lab).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledLanguageIcon = styled(Language).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledChipIcon = styled(Chip).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledComputerIcon = styled(Computer).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledCubeIcon = styled(Cube).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const StyledCreateIcon = styled(Create).attrs(props => ({
-  size: '1.2rem',
-  color: 'black'
+  size: `${IconSize}`,
+  color: `${BlackGray}`
 }))``
 
 export const ImageFrame = styled.img`
