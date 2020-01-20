@@ -12,12 +12,6 @@ import {
   StyledPersonIcon
  } from '../styles/components/Navigator';
 
-const MediumNavigator = () => (
-  <div>
-    hoge
-  </div>
-)
-
 const DesktopNavigator = ({ router }) => (
   <NavFrame>
     <StyledTitle href="/">

@@ -13,7 +13,7 @@ export const DesktopFrame = styled.div`
 export const ContentsFrame = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 2.5rem 0 2.5rem 0;
+  margin: 0rem 0 4rem 0;
 `
 
 export const Header = styled.p`
