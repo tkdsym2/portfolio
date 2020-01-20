@@ -30,8 +30,8 @@ export const NavFrame = styled.header`
 const HeaderTitle = styled.p`
   color: #${Black};
   font-size: ${TitleSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
   margin: 0.5em 1.2em 0 1.2em;
   &:hover {
     cursor: pointer;
@@ -86,26 +86,12 @@ export const ItemFrame = styled.div`
 const NoActiveLink = styled.p`
   color: ${Black};
   font-size: ${TopicSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Amarante', cursive;
+  /* font-weight: 700; */
   /* margin: 0.5em 1.2em 1em 1.2em; */
   margin-left: 0.2em;
   position: relative;
   transition: .3s;
-  /* &:after {
-    position: absolute;
-    top: 1.1em;
-    bottom: 0;
-    left: 0;
-    content: '';
-    width: 0;
-    height: 3px;
-    background-color: ${Blue};
-    transition: .3s;
-  }
-  &:hover::after {
-    width: 100%;
-  } */
   &:hover {
     cursor: pointer;
     color: ${Blue};
@@ -119,8 +105,8 @@ const NoActiveLink = styled.p`
 const ActiveLink = styled.p`
   color: ${Blue};
   font-size: ${TopicSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  /* font-weight: 700; */
   /* margin: 0.5em 1.2em 1em 1.2em; */
   margin-left: 0.2em;
   position: relative;
