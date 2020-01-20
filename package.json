@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/tkdsym2/portfolio#readme",
   "dependencies": {
-    "next": "^9.1.7",
+    "next": "^9.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.8.0",
     "react-media": "^1.10.0",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.0.0",
     "styled-icons": "^9.2.0",
     "styled-media-query": "^2.1.2"
   },
