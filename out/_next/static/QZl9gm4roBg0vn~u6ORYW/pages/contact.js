@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{253:function(t,e,n){__NEXT_REGISTER_PAGE("/contact",function(){return t.exports=n(254),{page:t.exports.default}})},254:function(t,e,n){"use strict";n.r(e);var o=n(0),a=n.n(o),c=n(250);e.default=function(){return a.a.createElement(c.a,{title:"portfolio"},a.a.createElement(Test,null,"Contact page"))}}},[[253,1,0]]]);

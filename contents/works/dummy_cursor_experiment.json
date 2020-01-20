@@ -1,0 +1,18 @@
+{
+  "title": "fabnavi",
+  "subtitle": "",
+  "main": "https://i.gyazo.com/8987dd294fb88b2580d7ec71b3dd20b1.jpg",
+  "description": [
+    "Dummy Cursor Experiment is a system for measuring and evaluating the Sense of Ownership (SoO). This experiment displays multiple independently moving dummy cursors on a screen in addition to the real cursor operated by a participant. Participants identify the real cursor by perceiving the correlation between their actual hand motion and the motion of the cursor motion on the screen. This experiment evaluates the SoO quantitatively base on the rate of the real cursor identification by the participants, time required to identify the real cursor, and analysis of the locus of cursor motion.",
+    [
+      {
+        "image": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+        "description": "description per image"
+      },
+      {
+        "image": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+        "description": "description per image"
+      }
+    ]
+  ]
+}
