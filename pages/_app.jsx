@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import App, { Container } from 'next/app';
 
 import Navigator from '../components/Navigator';

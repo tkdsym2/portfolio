@@ -1,34 +1,19 @@
 import React from 'react';
+import Head from 'next/head'
 
 import Works from '../components/Works';
-import { DesktopFrame } from '../styles/pages/Index';
 
-import withAppLayout from '../components/AppLayout';
-import withMediaComponent from '../components/MediaComponent';
-
-const MobileHome = () => {
+const Home = () => {
   return (
     <div>
-      <p>Mobile</p>
-    </div>
-  )
-}
-
-const TabletHome = () => {
-  return (
-    <div>
-      <p>tablet</p>
-    </div>
-  )
-}
-
-const DesktopHome = () => {
-  return (
-    <div>
+      <Head>
+        <title>tkd.work | Works</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
+      </Head>
       <Works />
     </div>
   )
 }
 
-// const Home = withMediaComponent(MobileHome, TabletHome, DesktopHome)
-export default DesktopHome
+export default Home

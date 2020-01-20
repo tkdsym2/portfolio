@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { useRouter } from 'next/router'
-import dynamic from 'next/dynamic';
 
+import MetaCard from '../../components/MetaCard';
 import {
   DetailFrame,
   Header,
@@ -25,21 +24,24 @@ const DetailBox = ({ content }) => (
 )
 
 const Research = ({ data }) => (
-  <DetailFrame>
-    <Header>{data.title}</Header>
-    {data.subtitle !== '' ? <SubHeader>{data.subtitle}</SubHeader> : <span />}
-    <MainImage src={data.main}/>
-    <DescriptionFrame>
-      <StyledDescription>
-        {data.description[0]}
-      </StyledDescription>
-      {data.description[1].length !== 0 ? (
-        data.description[1].map((content, index) => (
-          <DetailBox key={index} content={content}/>
-        ))
-      ) : <span />}
-    </DescriptionFrame>
-  </DetailFrame>
+  <div>
+    <MetaCard data={data}/>
+    <DetailFrame>
+      <Header>{data.title}</Header>
+      {data.subtitle !== '' ? <SubHeader>{data.subtitle}</SubHeader> : <span />}
+      <MainImage src={data.main}/>
+      <DescriptionFrame>
+        <StyledDescription>
+          {data.description[0]}
+        </StyledDescription>
+        {data.description[1].length !== 0 ? (
+          data.description[1].map((content, index) => (
+            <DetailBox key={index} content={content}/>
+          ))
+        ) : <span />}
+      </DescriptionFrame>
+    </DetailFrame>
+  </div>
 )
 
 Research.getInitialProps = async ({ query }) => {
