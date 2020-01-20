@@ -20,6 +20,7 @@ export const Header = styled.p`
   color: ${Black};
   font-size: ${HeaderSize};
   font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.07rem;
   font-weight: bold;
   margin: 0.3rem 0 0.1rem 0;
 `
@@ -27,5 +28,6 @@ export const ContentsList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
-  grid-gap: 1.0rem;
+  grid-gap: 1.2rem;
+  margin-top: 1rem;
 `
