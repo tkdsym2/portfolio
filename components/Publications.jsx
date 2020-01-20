@@ -1,6 +1,14 @@
 import React from 'react';
 
-import { PubFrame, ContentsFrame, Header, ListWrapper, PubList, PdfLink } from '../styles/publications/desktop';
+import {
+  PubFrame,
+  ContentsFrame,
+  Header,
+  ListWrapper,
+  PubList,
+  PdfLink,
+  StyledAuthor
+} from '../styles/publications/desktop';
 import publications from '../contents/publications.json';
 
 const Publications = () => (
@@ -20,9 +28,17 @@ const Publications = () => (
           <PubList key={index}>
             {content.authors.map((author, index) => 
               (index == Object.keys(content.authors).length-1) ? (
-                <span key={index}>{author}.&nbsp;</span>
+                (author === '高田一真' ? (
+                  <StyledAuthor key={index}>{author}.&nbsp;</StyledAuthor>
+                ) : (
+                  <span key={index}>{author}.&nbsp;</span>
+                ))
               ) : (
-                <span key={index}>{author},&nbsp;</span>
+                (author === '高田一真' ? (
+                  <StyledAuthor key={index}>{author},&nbsp;</StyledAuthor>
+                ) : (
+                  <span key={index}>{author},&nbsp;</span>
+                ))
               )
             )}
             {content.title}.&nbsp;

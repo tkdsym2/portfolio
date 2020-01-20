@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-import { Black, HeaderSize, CardSize, Gray, SentenceSize } from '../theme';
+import {
+  Black,
+  HeaderSize,
+  Gray,
+  SentenceSize,
+  Blue,
+  BlackGray
+} from '../theme';
 
 export const PubFrame = styled.div`
   width: 70%;
@@ -20,6 +27,7 @@ export const Header = styled.p`
   font-size: ${HeaderSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
+  letter-spacing: 0.1rem;
   margin: 0;
   margin: 0.3rem 0 0.8rem 0;
 `
@@ -44,4 +52,12 @@ export const PdfLink = styled.a`
   font-size: ${SentenceSize};
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: medium;
+  &:hover {
+    color: ${Blue};
+  }
+`
+
+export const StyledAuthor = styled.span`
+  color: ${BlackGray};
+  font-weight: bold;
 `
