@@ -5,6 +5,7 @@ export const BlackGray = '#322C28';
 export const Gray = '#7B7C7D';
 export const Blue = '#0086CC';
 export const Pink = '#FF0000';
+export const White = '#FFFFFC';
 
 export const TitleSize = '3rem';
 export const HeaderSize = '2.1rem';
