@@ -6,5 +6,29 @@
       "file": "static/chunks/0.js",
       "publicPath": "static/chunks/0.js"
     }
+  ],
+  "./dummy_cursor_experiment.json": [
+    {
+      "id": "./contents/works/dummy_cursor_experiment.json",
+      "name": "./contents/works/dummy_cursor_experiment.json",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "./fabnavi.json": [
+    {
+      "id": "./contents/works/fabnavi.json",
+      "name": "./contents/works/fabnavi.json",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
+    }
+  ],
+  "./snapped_notification.json": [
+    {
+      "id": "./contents/works/snapped_notification.json",
+      "name": "./contents/works/snapped_notification.json",
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
+    }
   ]
 }

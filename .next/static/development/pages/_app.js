@@ -13480,8 +13480,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Navigator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Navigator */ "./components/Navigator.jsx");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.jsx");
+/* harmony import */ var _styles_global__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/global */ "./styles/global.js");
+/* harmony import */ var _components_Navigator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Navigator */ "./components/Navigator.jsx");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.jsx");
 
 
 
@@ -13496,23 +13497,24 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 
 
+
 var Layout = function Layout(props) {
   return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx(_components_Navigator__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }), props.children, __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, __jsx(_components_Navigator__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
+    },
+    __self: this
+  }), props.children, __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
     },
     __self: this
   }));
@@ -13538,13 +13540,19 @@ function (_App) {
       return __jsx(Layout, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 21
         },
         __self: this
-      }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+      }, __jsx(_styles_global__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 22
+        },
+        __self: this
+      }), __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
         },
         __self: this
       })));
@@ -13653,7 +13661,7 @@ var NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].header.
 var HeaderTitle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Navigator__HeaderTitle",
   componentId: "i7m243-1"
-})(["color:#", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin:0.5em 1.2em 0 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TitleSize"]);
+})(["color:#", ";font-size:", ";font-family:'Titillium Web',sans-serif;font-weight:900;margin:0.5em 1.2em 0 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TitleSize"]);
 var MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].nav.withConfig({
   displayName: "Navigator__MenuFrame",
   componentId: "i7m243-2"
@@ -13692,11 +13700,11 @@ var ItemFrame = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.wi
 var NoActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Navigator__NoActiveLink",
   componentId: "i7m243-7"
-})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin-left:0.2em;position:relative;transition:.3s;&:hover{cursor:pointer;color:", ";}", ""], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TopicSize"], _theme__WEBPACK_IMPORTED_MODULE_9__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_5__["default"].lessThan("".concat(_theme__WEBPACK_IMPORTED_MODULE_9__["medium"]))(_templateObject()));
+})(["color:", ";font-size:", ";font-family:'Amarante',cursive;margin-left:0.2em;position:relative;transition:.3s;&:hover{cursor:pointer;color:", ";}", ""], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TopicSize"], _theme__WEBPACK_IMPORTED_MODULE_9__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_5__["default"].lessThan("".concat(_theme__WEBPACK_IMPORTED_MODULE_9__["medium"]))(_templateObject()));
 var ActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Navigator__ActiveLink",
   componentId: "i7m243-8"
-})(["color:", ";font-size:", ";font-family:'Noto Sans JP',sans-serif;font-weight:bold;margin-left:0.2em;position:relative;transition:.3s;", ""], _theme__WEBPACK_IMPORTED_MODULE_9__["Blue"], _theme__WEBPACK_IMPORTED_MODULE_9__["TopicSize"], styled_media_query__WEBPACK_IMPORTED_MODULE_5__["default"].lessThan("".concat(_theme__WEBPACK_IMPORTED_MODULE_9__["medium"]))(_templateObject2()));
+})(["color:", ";font-size:", ";font-family:'Poppins',sans-serif;margin-left:0.2em;position:relative;transition:.3s;", ""], _theme__WEBPACK_IMPORTED_MODULE_9__["Blue"], _theme__WEBPACK_IMPORTED_MODULE_9__["TopicSize"], styled_media_query__WEBPACK_IMPORTED_MODULE_5__["default"].lessThan("".concat(_theme__WEBPACK_IMPORTED_MODULE_9__["medium"]))(_templateObject2()));
 var StyledLink = function StyledLink(_ref) {
   var href = _ref.href,
       children = _ref.children,
@@ -13707,25 +13715,25 @@ var StyledLink = function StyledLink(_ref) {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 121
     },
     __self: this
   }, __jsx(ItemFrame, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 122
     },
     __self: this
   }, children, props.active ? __jsx(ActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 124
     },
     __self: this
   }, props.topic) : __jsx(NoActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 125
     },
     __self: this
   }, props.topic)));
@@ -13740,17 +13748,45 @@ var StyledTitle = function StyledTitle(_ref2) {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 131
     },
     __self: this
   }, __jsx(HeaderTitle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 132
     },
     __self: this
   }, children));
 };
+
+/***/ }),
+
+/***/ "./styles/global.js":
+/*!**************************!*\
+  !*** ./styles/global.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900&display=swap');\n  body {\n    /* font-family: 'Poppins', sans-serif;\n    font-family: 'Lato', sans-serif; */\n    /* font-family: 'Open Sans Condensed', sans-serif; */\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject()));
 
 /***/ }),
 

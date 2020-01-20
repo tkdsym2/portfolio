@@ -21,7 +21,7 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/bio": [
+    "/exhibitions/[url]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
