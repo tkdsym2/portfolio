@@ -21,10 +21,6 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/bio": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/exhibitions/[url]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -34,10 +30,6 @@
       "static/runtime/main.js"
     ],
     "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/publication": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
