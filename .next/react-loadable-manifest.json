@@ -23,6 +23,14 @@
       "publicPath": "static/chunks/2.js"
     }
   ],
+  "./flamework_framework.json": [
+    {
+      "id": "./contents/works/flamework_framework.json",
+      "name": "./contents/works/flamework_framework.json",
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
+    }
+  ],
   "./snapped_notification.json": [
     {
       "id": "./contents/works/snapped_notification.json",

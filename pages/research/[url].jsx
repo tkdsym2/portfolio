@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import YouTube from 'react-youtube';
 
 import MetaCard from '../../components/MetaCard';
 import {
@@ -7,11 +8,25 @@ import {
   SubHeader,
   MainImage,
   DescriptionFrame,
-  StyledDescription
+  StyledDescription,
+  StyledDetailFrame,
+  LinkFrame,
+  LinkHeader,
+  WebLink,
+  MovieFrame,
+  FrameBody
 } from '../../styles/pages/detail';
 
+const opts = {
+  width: '650',
+  height: '390',
+  playerVars: {
+    autoplay: 0
+  },
+};
+
 const DetailBox = ({ content }) => (
-  <div>
+  <StyledDetailFrame>
     {content.image !== "" ? (
       <MainImage src={content.image} />
     ) : (
@@ -20,7 +35,7 @@ const DetailBox = ({ content }) => (
     <StyledDescription>
       {content.description}
     </StyledDescription>
-  </div>
+  </StyledDetailFrame>
 )
 
 const Research = ({ data }) => (
@@ -40,6 +55,23 @@ const Research = ({ data }) => (
           ))
         ) : <span />}
       </DescriptionFrame>
+      {data.youtube !== "none" ? (
+        <MovieFrame>
+          <LinkHeader>Video</LinkHeader>
+          <YouTube 
+            videoId={data.youtube}
+            opts={opts}
+          />
+        </MovieFrame>
+      ) : <span />}
+      {data.website.length !== 0 ? (
+        <LinkFrame>
+          <LinkHeader>Links</LinkHeader>
+          {data.website.map((content, index) => (
+          <WebLink key={index} href={content.link} target="_blank">{content.title}</WebLink>
+          ))}
+        </LinkFrame>
+      ) : <span />}
     </DetailFrame>
   </div>
 )

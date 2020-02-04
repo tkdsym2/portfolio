@@ -13661,7 +13661,7 @@ var NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].header.
 var HeaderTitle = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Navigator__HeaderTitle",
   componentId: "i7m243-1"
-})(["color:#", ";font-size:", ";font-family:'Titillium Web',sans-serif;font-weight:900;margin:0.5em 1.2em 0 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TitleSize"]);
+})(["color:#", ";font-size:", ";margin:0.5em 1.2em 0 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TitleSize"]);
 var MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].nav.withConfig({
   displayName: "Navigator__MenuFrame",
   componentId: "i7m243-2"
@@ -13700,7 +13700,7 @@ var ItemFrame = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.wi
 var NoActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Navigator__NoActiveLink",
   componentId: "i7m243-7"
-})(["color:", ";font-size:", ";font-family:'Amarante',cursive;margin-left:0.2em;position:relative;transition:.3s;&:hover{cursor:pointer;color:", ";}", ""], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TopicSize"], _theme__WEBPACK_IMPORTED_MODULE_9__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_5__["default"].lessThan("".concat(_theme__WEBPACK_IMPORTED_MODULE_9__["medium"]))(_templateObject()));
+})(["color:", ";font-size:", ";margin-left:0.2em;position:relative;transition:.3s;&:hover{cursor:pointer;color:", ";}", ""], _theme__WEBPACK_IMPORTED_MODULE_9__["Black"], _theme__WEBPACK_IMPORTED_MODULE_9__["TopicSize"], _theme__WEBPACK_IMPORTED_MODULE_9__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_5__["default"].lessThan("".concat(_theme__WEBPACK_IMPORTED_MODULE_9__["medium"]))(_templateObject()));
 var ActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "Navigator__ActiveLink",
   componentId: "i7m243-8"

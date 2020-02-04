@@ -30,8 +30,8 @@ export const NavFrame = styled.header`
 const HeaderTitle = styled.p`
   color: #${Black};
   font-size: ${TitleSize};
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 900;
+  /* font-family: 'Titillium Web', sans-serif;
+  font-weight: 900; */
   margin: 0.5em 1.2em 0 1.2em;
   &:hover {
     cursor: pointer;
@@ -86,7 +86,7 @@ export const ItemFrame = styled.div`
 const NoActiveLink = styled.p`
   color: ${Black};
   font-size: ${TopicSize};
-  font-family: 'Amarante', cursive;
+  /* font-family: 'Amarante', cursive; */
   /* font-weight: 700; */
   /* margin: 0.5em 1.2em 1em 1.2em; */
   margin-left: 0.2em;
