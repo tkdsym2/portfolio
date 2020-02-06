@@ -7,66 +7,34 @@
       "publicPath": "static/chunks/0.js"
     }
   ],
-  "./dummy_cursor_experiment.json": [
-    {
-      "id": "./contents/works/dummy_cursor_experiment.json",
-      "name": "./contents/works/dummy_cursor_experiment.json",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    }
-  ],
-  "./fabnavi.json": [
-    {
-      "id": "./contents/works/fabnavi.json",
-      "name": "./contents/works/fabnavi.json",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    }
-  ],
-  "./flamework_framework.json": [
-    {
-      "id": "./contents/works/flamework_framework.json",
-      "name": "./contents/works/flamework_framework.json",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    }
-  ],
   "./icc.json": [
     {
       "id": "./contents/exhibition/icc.json",
       "name": "./contents/exhibition/icc.json",
-      "file": "static/chunks/5.js",
-      "publicPath": "static/chunks/5.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     }
   ],
   "./metoa.json": [
     {
       "id": "./contents/exhibition/metoa.json",
       "name": "./contents/exhibition/metoa.json",
-      "file": "static/chunks/6.js",
-      "publicPath": "static/chunks/6.js"
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ],
   "./openlab2018.json": [
     {
       "id": "./contents/exhibition/openlab2018.json",
       "name": "./contents/exhibition/openlab2018.json",
-      "file": "static/chunks/7.js",
-      "publicPath": "static/chunks/7.js"
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
     }
   ],
   "./openlab2019.json": [
     {
       "id": "./contents/exhibition/openlab2019.json",
       "name": "./contents/exhibition/openlab2019.json",
-      "file": "static/chunks/8.js",
-      "publicPath": "static/chunks/8.js"
-    }
-  ],
-  "./snapped_notification.json": [
-    {
-      "id": "./contents/works/snapped_notification.json",
-      "name": "./contents/works/snapped_notification.json",
       "file": "static/chunks/4.js",
       "publicPath": "static/chunks/4.js"
     }
