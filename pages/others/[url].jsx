@@ -13,8 +13,7 @@ import {
   LinkFrame,
   LinkHeader,
   WebLink,
-  MovieFrame,
-  FrameBody
+  MovieFrame
 } from '../../styles/pages/detail';
 
 const opts = {
@@ -26,7 +25,7 @@ const opts = {
 };
 
 const DetailBox = ({ content }) => (
-  <StyledDetailFrame>
+  <div>
     {content.image !== "" ? (
       <MainImage src={content.image} />
     ) : (
@@ -37,7 +36,7 @@ const DetailBox = ({ content }) => (
         {content}
       </StyledDescription>
     ))}
-  </StyledDetailFrame>
+  </div>
 )
 
 const Research = ({ data }) => (
@@ -49,9 +48,9 @@ const Research = ({ data }) => (
       <MainImage src={data.main}/>
       <DescriptionFrame>
         {data.description[0].map((content, index) => (
-            <StyledDescription key={index}>
-              {content}
-            </StyledDescription>
+          <StyledDescription key={index}>
+            {content} 
+          </StyledDescription>
         ))}
         {data.description[1].length !== 0 ? (
           data.description[1].map((content, index) => (
@@ -81,7 +80,7 @@ const Research = ({ data }) => (
 )
 
 Research.getInitialProps = async ({ query }) => {
-  const json = await import(`../../contents/works/${query.url}.json`)
+  const json = await import(`../../contents/other/${query.url}.json`)
   return {
     data: json
   }

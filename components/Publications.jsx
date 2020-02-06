@@ -44,7 +44,7 @@ const Publications = () => (
             {content.title}.&nbsp;
             {content.conference}.&nbsp;
             {content.year}.&nbsp;
-            <PdfLink href={content.url}>[PDF]</PdfLink>
+            <PdfLink href={content.url} target="_blank">[PDF]</PdfLink>
           </PubList>
         ))}
       </ListWrapper>
@@ -57,7 +57,7 @@ const Publications = () => (
             {content.title}.&nbsp;
             {content.conference}.&nbsp;
             {content.date}.&nbsp;
-            <PdfLink href={content.url}>[Link]</PdfLink>
+            <PdfLink href={content.url} target="_blank">[Link]</PdfLink>
           </PubList>
         ))}
       </ListWrapper>
@@ -71,7 +71,7 @@ const Publications = () => (
           {content.theme},&nbsp;
           {content.place},&nbsp;
           {content.date}.&nbsp;
-          <PdfLink href={content.url}>[Link]</PdfLink>
+          <PdfLink href={content.url} target="_blank">[Link]</PdfLink>
         </PubList>
         ))}
       </ListWrapper>

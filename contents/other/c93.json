@@ -1,0 +1,22 @@
+{
+  "title": "Welcome to Reactive X Middleware",
+  "subtitle": "",
+  "main": "https://i.gyazo.com/4bd7e3ce65eb5589ac90384ec73a7a87.png",
+  "youtube": "none",
+  "website": [
+    {
+      "title": "detail",
+      "link": "https://ocreilly.meiji-ncc.tech/C93/"
+    }
+  ],
+  "authors": [
+    "",
+    ""
+  ],
+  "description": [
+    [
+      "RxJS を使った Redux Middleware の実装と、 それに伴う Application 全体のコードを わかりやすくするまでの過程を紹介します。"
+    ],
+    []
+  ]
+}

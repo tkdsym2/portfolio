@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
 
 import MetaCard from '../../components/MetaCard';
 import {
@@ -40,7 +39,7 @@ const DetailBox = ({ content }) => (
   </StyledDetailFrame>
 )
 
-const Research = ({ data }) => (
+const Exhibition = ({ data }) => (
   <div>
     <MetaCard data={data}/>
     <DetailFrame>
@@ -49,9 +48,9 @@ const Research = ({ data }) => (
       <MainImage src={data.main}/>
       <DescriptionFrame>
         {data.description[0].map((content, index) => (
-            <StyledDescription key={index}>
-              {content}
-            </StyledDescription>
+          <StyledDescription key={index}>
+            {content}
+          </StyledDescription>
         ))}
         {data.description[1].length !== 0 ? (
           data.description[1].map((content, index) => (
@@ -80,11 +79,11 @@ const Research = ({ data }) => (
   </div>
 )
 
-Research.getInitialProps = async ({ query }) => {
-  const json = await import(`../../contents/works/${query.url}.json`)
+Exhibition.getInitialProps = async ({ query }) => {
+  const json = await import(`../../contents/exhibition/${query.url}.json`)
   return {
     data: json
   }
 }
 
-export default Research;
+export default Exhibition;

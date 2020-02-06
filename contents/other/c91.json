@@ -1,0 +1,22 @@
+{
+  "title": "React Native for Android",
+  "subtitle": "",
+  "main": "https://i.gyazo.com/4bcf9cca045f2a0f406ddd40adbf7a77.png",
+  "youtube": "none",
+  "website": [
+    {
+      "title": "detail",
+      "link": "https://ocreilly.meiji-ncc.tech/C91/"
+    }
+  ],
+  "authors": [
+    "",
+    ""
+  ],
+  "description": [
+    [
+      "新しいモバイル開発の方法として， Facebook 産の React Native が登場しました． 今回は Android 開発向けに， React Native で開発する際に ハマりがちな部分や便利なライブラリなどを紹介します．"
+    ],
+    []
+  ]
+}

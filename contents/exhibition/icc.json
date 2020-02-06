@@ -1,23 +1,11 @@
 {
   "title": "Snapped Notification",
-  "subtitle": "Photo sharing by subject detection using ad hoc networks",
-  "main": "https://i.gyazo.com/4257aaa50d806bbe3b51e32ec9eb0e80.png",
-  "youtube": "2nJrJwEGNq4",
+  "subtitle": "",
+  "main": "https://gyazo.com/9f363c5846f33209e1860910f41efe1f.png",
+  "youtube": "none",
   "website": [
     {
-      "title": "Interaction2016-demo",
-      "link": "http://www.interaction-ipsj.org/proceedings/2016/data/pdf/2C47.pdf"
-    },
-    {
-      "title": "HCI169",
-      "link": "https://ipsj.ixsq.nii.ac.jp/ej/index.php?active_action=repository_view_main_item_detail&page_id=13&block_id=8&item_id=174324&item_no=1"
-    },
-    {
-      "title": "WISS2018-demo",
-      "link": "https://www.wiss.org/WISS2016Proceedings/demo/3-A18.pdf"
-    },
-    {
-      "title": "ICC",
+      "title": "[official page]",
       "link": "https://www.ntticc.or.jp/en/archive/works/snappednotification/"
     }
   ],
@@ -29,6 +17,7 @@
     [
       "This system allows not only the photographer but also the person in the photograph to have the photograph. When the photographer takes a picture, the subject value (the possibility that a certain subject is reflected) is calculated. Notify that the subject was photographed based on the subject value and share the photograph. A system for resolving the inconsistency of belonging to a photograph, in which the photographer is the photographer (other person) while the photographer is himself."
     ],
-    []
+    [
+    ]
   ]
 }

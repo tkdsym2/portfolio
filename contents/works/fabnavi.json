@@ -1,18 +1,30 @@
 {
   "title": "fabnavi",
-  "subtitle": "",
-  "main": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
+  "subtitle": "Video-based recording/editing tool mainly for assembling processes",
+  "main": "https://i.gyazo.com/92633125ff9b64bdbf05e08e23e63668.png",
+  "youtube": "fq0-6UXIzjU",
+  "website": [
+    {
+      "title": "official page",
+      "link": "http://mobiquitous.com/fabnavi/index-en.html"
+    },
+    {
+      "title": "application",
+      "link": "http://fabnavi.org/"
+    },
+    {
+      "title": "paper",
+      "link": "http://mobiquitous.com/pub/fab10-fabnavi.pdf"
+    }
+  ],
+  "authors": [
+    "",
+    ""
+  ],
   "description": [
-    "hogehoge",
     [
-      {
-        "image": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-        "description": "description per image"
-      },
-      {
-        "image": "https://gyazo.com/949b43883bb0ca5a1c5a062c33e65257.jpg",
-        "description": "description per image"
-      }
-    ]
+      "fabnavi is a support system to create video-based instrctions of assembling works: Recording with smartphone / Editing & Sharing with Web browsers."
+    ],
+    []
   ]
 }

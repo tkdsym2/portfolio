@@ -1,0 +1,22 @@
+{
+  "title": "Shader based on Processing",
+  "subtitle": "",
+  "main": "https://i.gyazo.com/3064f259879e5d91520e803b87330590.png",
+  "youtube": "none",
+  "website": [
+    {
+      "title": "detail",
+      "link": "https://ocreilly.meiji-ncc.tech/TBF01/"
+    }
+  ],
+  "authors": [
+    "",
+    ""
+  ],
+  "description": [
+    [
+      "ProcessingとGLSLで気軽にShaderを始めましょう． 今回は簡単な画像処理とGLSLを使ったエフェクトについて書こうと思います．"
+    ],
+    []
+  ]
+}
