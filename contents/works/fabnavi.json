@@ -22,7 +22,9 @@
     ""
   ],
   "description": [
-    "fabnavi is a support system to create video-based instrctions of assembling works: Recording with smartphone / Editing & Sharing with Web browsers.",
+    [
+      "fabnavi is a support system to create video-based instrctions of assembling works: Recording with smartphone / Editing & Sharing with Web browsers."
+    ],
     []
   ]
 }
