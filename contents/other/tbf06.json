@@ -1,8 +1,9 @@
 {
   "title": "Examination of Object Detection",
-  "subtitle": "",
+  "subtitle": "Tech Book Fest 6",
   "main": "https://i.gyazo.com/35d74d33aef57868ada6051a3214dfff.png",
   "youtube": "none",
+  "url": "/other/tbf06",
   "website": [
     {
       "title": "detail",
@@ -15,7 +16,7 @@
   ],
   "description": [
     [
-      "誰もが機械学習の開発をできるようになり、頻繁にアルゴリズムも更新されています。今回は、機械学習を使った物体検出に関する内容です。物体検出アルゴリズムの解説ではなく、目的に対して物体検出を使うか、検出精度を上げるためにデータをどうするべきか、などについて考察します。"
+      "Everyone can develop machine learning, and the algorithms are updated frequently. This time, we will focus on object detection using machine learning. Instead of explaining the object detection algorithm, we will consider whether to use object detection for the purpose and what to do with the data to improve the detection accuracy."
     ],
     []
   ]

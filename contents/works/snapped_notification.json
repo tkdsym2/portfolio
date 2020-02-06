@@ -1,8 +1,9 @@
 {
   "title": "Snapped Notification",
-  "subtitle": "Photo sharing by subject detection using ad hoc networks",
+  "subtitle": "Photo sharing by subject detection using ad-hoc networks",
   "main": "https://i.gyazo.com/4257aaa50d806bbe3b51e32ec9eb0e80.png",
   "youtube": "2nJrJwEGNq4",
+  "url": "/works/snapped_notification",
   "website": [
     {
       "title": "Interaction2016-demo",

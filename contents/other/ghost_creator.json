@@ -1,0 +1,21 @@
+{
+  "title": "Ghost Creator",
+  "subtitle": "Origami support system that reproduces the hand movements of others",
+  "main": "https://i.gyazo.com/18292bbca16f9d6013482b4617ce3627.jpg",
+  "youtube": "none",
+  "url": "/other/ghost_creator",
+  "website": [
+    
+  ],
+  "authors": [
+    "",
+    ""
+  ],
+  "description": [
+    [
+      "Origami repeats folding and opening as the object to be folded becomes more complex. However, in a manual with many texts, it is difficult to know which process the user is in. Then, HoloLens is attached and the folding motion from the subjective viewpoint of the other person is reproduced. Place your hand on the action to be played and fold the paper with the same action.",
+      "Ghost Creator uses HoloLens and Myo. HoloLens is used for recording and playback at hand. Myo is used to measure where the user who is folding the paper is currently in the folding process."
+    ],
+    []
+  ]
+}

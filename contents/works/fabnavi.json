@@ -3,6 +3,7 @@
   "subtitle": "Video-based recording/editing tool mainly for assembling processes",
   "main": "https://i.gyazo.com/92633125ff9b64bdbf05e08e23e63668.png",
   "youtube": "fq0-6UXIzjU",
+  "url": "/works/fabnavi",
   "website": [
     {
       "title": "official page",
@@ -23,7 +24,8 @@
   ],
   "description": [
     [
-      "fabnavi is a support system to create video-based instrctions of assembling works: Recording with smartphone / Editing & Sharing with Web browsers."
+      "fabnavi is a support system to create video-based instrctions of assembling works: Recording with smartphone / Editing & Sharing with Web browsers.",
+      "Coming Soon..."
     ],
     []
   ]

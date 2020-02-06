@@ -1,8 +1,9 @@
 {
   "title": "New CLI for React Native",
-  "subtitle": "",
+  "subtitle": "Tech Book Fest 2",
   "main": "https://i.gyazo.com/34082ae4a204f3f2c5a2ed7905151890.png",
   "youtube": "none",
+  "url": "/other/tbf02",
   "website": [
     
   ],
@@ -12,7 +13,7 @@
   ],
   "description": [
     [
-      "昨今注目を集めている React Native ですが， React Conf 2017 にて新しい CLI である CRNA が発表されました． 今回は，CRNA について周辺技術を交えて紹介していきます．"
+      "As for React Native, which has been attracting attention recently, a new CLI, CRNA, was announced at React Conf 2017. This time, I will introduce CRNA with peripheral technologies."
     ],
     []
   ]

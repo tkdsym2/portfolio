@@ -19,8 +19,8 @@ export const ContentsFrame = styled.div`
 export const Header = styled.p`
   color: ${Black};
   font-size: ${HeaderSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  letter-spacing: 0.07rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
   font-weight: bold;
   margin: 0.3rem 0 0.1rem 0;
 `

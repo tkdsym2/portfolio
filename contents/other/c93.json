@@ -1,8 +1,9 @@
 {
   "title": "Welcome to Reactive X Middleware",
-  "subtitle": "",
+  "subtitle": "Comiket93",
   "main": "https://i.gyazo.com/4bd7e3ce65eb5589ac90384ec73a7a87.png",
   "youtube": "none",
+  "url": "/other/c93",
   "website": [
     {
       "title": "detail",
@@ -15,7 +16,7 @@
   ],
   "description": [
     [
-      "RxJS を使った Redux Middleware の実装と、 それに伴う Application 全体のコードを わかりやすくするまでの過程を紹介します。"
+      "I will introduce the implementation of Redux Middleware using RxJS and the process of making the whole application code easier to understand."
     ],
     []
   ]

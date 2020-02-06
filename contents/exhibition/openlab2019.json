@@ -3,6 +3,7 @@
   "subtitle": "Interaction design based on the Internet",
   "main": "https://gyazo.com/9bdae43f7a288c307515c8e229bf318b.jpg",
   "youtube": "none",
+  "url": "/exhibition/openlab2019",
   "website": [
   ],
   "authors": [
@@ -11,42 +12,30 @@
   ],
   "description": [
     [
-      "本展示会では、昨年度に引き続き、クックパッド、KDDI総合研究所との共同研究に加え、資生堂との共同研究、さらに自己帰属感や意思決定、コミュニケーション手法などをテーマにした個人の研究成果を展示します。今年のテーマは「インターネット中心設計」です。これは「メディアがインターネット1つになった」という考え方に基づき、あらゆるものをインターネット前提にして世界を再構築（インタラクションデザイン）してみようというチャレンジです。そうした流れの中で「メディアデザイン」は死語になろうとしています。我々は、PDUデザインという考え方を前面に押し出します。PDUデザインは、スマートフォンの成功やインターネットサービスでの成功による産業の劇的な変化の約20年を踏まえた、プラットフォーム構造から発想するデザイン論です。"
+      "At this exhibition, as in the previous year, in addition to joint research with Cookpad and KDDI Research Institute, joint research with Shiseido, as well as individual research results on themes such as self-attribution, decision-making, and communication techniques were exhibited. You. This year's theme is \"Internet-Centered Design.\" This is a challenge to try to reconstruct the world (interaction design) based on the idea that \"the media has become one Internet\" and assume that everything is the Internet. In that context, \"media design\" is about to die. We bring the idea of ​​PDU design to the fore. PDU design is a design theory inspired by a platform structure based on the dramatic changes in the industry due to the success of smartphones and the success of Internet services for about 20 years.",
+      "I worked as a project manager for the exhibition. There are no personal exhibits. I managed the coordination and schedule for meeting the exhibition theme.",
+      "This page is work in progress. The rest of the content is soon."
     ],
     [
       {
         "memo": "PDU Design",
         "image": "https://i.gyazo.com/3812adbf6153f4bb4f661b75f698b855.png",
         "description": [
-          "インタラクションデザインの観点を踏まえながら、プラットフォーマー、デベロッパー、ユーザーの関係性をPDUデザインとして整理しました。PDUデザインについての概要説明と、デモとしてAirSketcher DK1とmetabox、卒業生とのコラボレーション企画「かもしれない取扱説明書」事例にPDUデザインについて考察します。"
+          "Based on the interaction design perspective, the relationships between platformers, developers, and users have been organized into PDU designs. We will discuss the outline of PDU design, and discuss PDU design in the case of AirSketcher DK1 and metabox as a demonstration, and a case study \"Maybe a manual\" with graduates."
         ]
       },
       {
-        "memo": "Cookpad",
+        "memo": "Pursuit of Self",
         "image": "",
         "description": [
-          "Cookpad共同研究ではこれまで、調理を支援・代行してくれるスマート調理デバイスの試作をしてきました。今年度は、こうしたデバイスを実際の調理で活用するためのプラットフォーム、CookHubを開発しました。本展示では、CookHubのデモを通して、スマート調理による調理の変化と、レシピのありかたについて考えます。"
-        ]
-      },
-      {
-        "memo": "自己帰属感の新たな展開",
-        "image": "",
-        "description": [
-          "我々は自己帰属感の生起要因を知るために、ダミーカーソル実験中の視線の動きを解析した。 また、「自分ごと」も自己帰属感の一種だと考えた。我々は，社会に起こる事柄を「自分ごと化」させることによって新たな体験を生み出した。"
-        ]
-      },
-      {
-        "memo": "個人展示",
-        "image": "",
-        "description": [
-          "スマート意思決定, 3Dプリンタの新たな挑戦, コミュニケーションのインタラクションデザイン"
+          "We analyzed gaze movements during the dummy cursor experiment in order to understand the causes of self-attribution. Also, we thought that \"oneself\" was a kind of self-attribution. We created new experiences by \"making ourselves\" what happens in society."
         ]
       },
       {
         "memo": "展示会場",
         "image": "https://i.gyazo.com/fb5fd21706a0a5eeaaf2d9f6291f0499.jpg",
         "description": [
-          "展示会場について"
+          "About the exhibition hall"
         ]
       }
     ]

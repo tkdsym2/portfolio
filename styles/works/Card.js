@@ -45,8 +45,8 @@ export const CardImage = styled.img`
 export const CardTitle = styled.p`
   color: ${Black};
   font-size: ${TopicSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   letter-spacing: 0.01rem;
   margin: 0;
   margin: 0.3rem 0 0 0.3rem;
@@ -55,8 +55,8 @@ export const CardTitle = styled.p`
 export const CardYear = styled.p`
   color: ${Gray};
   font-size: ${SentenceSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: medium;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   margin: 0;
   margin: 0.1rem 0 0.3rem 0.3rem;
 `

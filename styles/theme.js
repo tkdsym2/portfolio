@@ -21,5 +21,5 @@ export const large = '1450px';
 export const medium = '768px';
 export const small = '450px';
 
-export const IconSize = '1.2rem';
+export const IconSize = '1.3rem';
 export const NavIconSize = '1.5rem';

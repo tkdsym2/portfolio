@@ -20,16 +20,16 @@ export const DetailFrame = styled.div`
 export const Header = styled.p`
   color: ${Black};
   font-size: ${TitleSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
   margin: 0;
 `
 
 export const SubHeader = styled.p`
   color: ${Gray};
   font-size: ${HeaderSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   margin: 0.7rem 0 0 0;
 `
 
@@ -47,6 +47,7 @@ export const DescriptionFrame = styled.div`
 export const StyledDescription = styled.p`
   color: ${Gray};
   font-size: ${SentenceSize};
+  font-family: 'Lato', sans-serif;
 `
 
 export const StyledDetailFrame = styled.div`
@@ -68,8 +69,7 @@ export const LinkHeader = styled.p`
 export const WebLink = styled.a`
   color: ${Gray};
   font-size: ${SentenceSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: medium;
+  font-family: 'Lato', sans-serif;
   &:hover {
     color: ${Blue};
   }
