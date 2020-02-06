@@ -17,9 +17,11 @@ const DetailBox = ({ content }) => (
     ) : (
       <span />
     )}
-    <StyledDescription>
-      {content.description}
-    </StyledDescription>
+    {content.description.map((content, index) => (
+      <StyledDescription key={index}>
+        {content}
+      </StyledDescription>
+    ))}
   </div>
 )
 
@@ -31,9 +33,11 @@ const Research = ({ data }) => (
       {data.subtitle !== '' ? <SubHeader>{data.subtitle}</SubHeader> : <span />}
       <MainImage src={data.main}/>
       <DescriptionFrame>
-        <StyledDescription>
-          {data.description[0]}
-        </StyledDescription>
+        {data.description[0].map((content, index) => (
+          <StyledDescription key={index}>
+            {content} 
+          </StyledDescription>
+        ))}
         {data.description[1].length !== 0 ? (
           data.description[1].map((content, index) => (
             <DetailBox key={index} content={content}/>
