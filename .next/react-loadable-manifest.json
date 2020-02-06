@@ -6,37 +6,5 @@
       "file": "static/chunks/0.js",
       "publicPath": "static/chunks/0.js"
     }
-  ],
-  "./icc.json": [
-    {
-      "id": "./contents/exhibition/icc.json",
-      "name": "./contents/exhibition/icc.json",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    }
-  ],
-  "./metoa.json": [
-    {
-      "id": "./contents/exhibition/metoa.json",
-      "name": "./contents/exhibition/metoa.json",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    }
-  ],
-  "./openlab2018.json": [
-    {
-      "id": "./contents/exhibition/openlab2018.json",
-      "name": "./contents/exhibition/openlab2018.json",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
-    }
-  ],
-  "./openlab2019.json": [
-    {
-      "id": "./contents/exhibition/openlab2019.json",
-      "name": "./contents/exhibition/openlab2019.json",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
-    }
   ]
 }

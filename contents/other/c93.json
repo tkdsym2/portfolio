@@ -1,17 +1,22 @@
 {
-  "title": "Internet Centered Design",
-  "subtitle": "Interaction design based on the Internet",
-  "main": "https://gyazo.com/9bdae43f7a288c307515c8e229bf318b.jpg",
+  "title": "Welcome to Reactive X Middleware",
+  "subtitle": "",
+  "main": "https://i.gyazo.com/4bd7e3ce65eb5589ac90384ec73a7a87.png",
   "youtube": "none",
   "website": [
-    
+    {
+      "title": "detail",
+      "link": "https://ocreilly.meiji-ncc.tech/C93/"
+    }
   ],
   "authors": [
     "",
     ""
   ],
   "description": [
-    "With the spread of IoT technology, kitchens have begun to introduce IoT devices that can be called smart cooking utensils, but use multiple devices to cook a single dish using different appliances, as each cooker is based on a different recipe data format. Therefore, this study proposes smart cookware that directly cooperates with digitalized recipes, and this paper focuses on one of the elements of the cooking process, the thermal power, and uses the thermal power based on the recipe data. In this paper, we propose a framework for controlling Flamework Framework, and consider the change of cooking experience through trial production of Flamework Framework.",
+    [
+      "RxJS を使った Redux Middleware の実装と、 それに伴う Application 全体のコードを わかりやすくするまでの過程を紹介します。"
+    ],
     []
   ]
 }
