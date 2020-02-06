@@ -1,8 +1,9 @@
 {
   "title": "Shader based on Processing",
-  "subtitle": "",
+  "subtitle": "Tech Book Fest",
   "main": "https://i.gyazo.com/3064f259879e5d91520e803b87330590.png",
   "youtube": "none",
+  "url": "/other/tbf01",
   "website": [
     {
       "title": "detail",
@@ -15,7 +16,7 @@
   ],
   "description": [
     [
-      "ProcessingとGLSLで気軽にShaderを始めましょう． 今回は簡単な画像処理とGLSLを使ったエフェクトについて書こうと思います．"
+      "Feel free to start Shader with Processing and GLSL. This time, I would like to write about simple image processing and effects using GLSL."
     ],
     []
   ]

@@ -1,12 +1,13 @@
 {
   "title": "Snapped Notification",
-  "subtitle": "",
+  "subtitle": "Photo sharing by subject detection using ad-hoc networks",
   "main": "https://gyazo.com/9f363c5846f33209e1860910f41efe1f.png",
   "youtube": "none",
+  "url": "/exhibition/snapped_notification",
   "website": [
     {
       "title": "[official page]",
-      "link": "https://www.ntticc.or.jp/en/archive/works/snappednotification/"
+      "url": "https://www.ntticc.or.jp/en/archive/works/snappednotification/"
     }
   ],
   "authors": [

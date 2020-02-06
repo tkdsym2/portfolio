@@ -3,10 +3,15 @@
   "subtitle": "Touch points with goods, services, and towns changing with IoT",
   "main": "https://i.gyazo.com/2c716b7a823d6ba6d542560493bb0b75.jpg",
   "youtube": "none",
+  "url": "/exhibition/metoa",
   "website": [
     {
       "title": "[official page]",
-      "link": "https://metoa.jp/concept-exhibition/exui/"
+      "url": "https://metoa.jp/concept-exhibition/exui/"
+    },
+    {
+      "title": "Kenya Nakazato",
+      "url": "https://sixd.studio/"
     }
   ],
   "authors": [
@@ -15,35 +20,17 @@
   ],
   "description": [
     [
-      "家電を始め、モノには操作するためのボタンや画面、ユーザインタフェースがありました。exUIプロジェクトでは、このユーザインタフェースを一切プロダクトから無くしUIレスプロダクトにし、すべての操作をスマートフォンから提供する手法を提案します。これを外在化したUI＝exUIと定義しました。インターネットがものに繋がるようになると、ユーザインタフェースはモノについている必要がなくなります。スマートフォンや他の機器から制御できるようになるからです。そしてプロダクトの表面には、ユーザインタフェースをなくすことができます。exUIはプロダクトの外観だけでなく、モノの定義、価値、体験を大きく変えます。"
+      "Starting with home appliances, things had buttons, screens, and user interfaces to operate. The exUI project proposes a method of eliminating this user interface from products at all and making it a UI-less product, and providing all operations from a smartphone. This is defined as externalized UI = exUI. When the Internet becomes connected, the user interface no longer needs to be attached to things. Because they can be controlled from smartphones and other devices. And there is no user interface on the surface of the product. exUI dramatically changes not only the appearance of products, but also the definition, value, and experience of things."
     ],
     [
       {
         "memo": "producrts",
         "image": "https://i.gyazo.com/e95e67ea5a20ee5d39e6e426c1aae616.jpg",
         "description": [
-          "This is our products."
-        ]
-      },
-      {
-        "memo": "AnoHako",
-        "image": "",
-        "description": [
-          "物理インタフェースのない真っ白な自動販売機. スマートフォンをかざして，メニューを表示。購入・決済もスマートフォンで行います。ボタンもディスプレイなどの煩雑なインタフェースはなくなり、景観を損なうこともありません。誰が利用しているのかわかるため，UIをパーソナライズ化できます。たとえば、外国の方にはその人の母国語で表示する、未成年者にはお酒を表示しない、お気に入りの商品をトップに表示するといったことができます。"
-        ]
-      },
-      {
-        "memo": "Air Sketcher2",
-        "image": "",
-        "description": [
-          "直接「風」を操れる扇風機．「ここに強く、ここは弱く、ここはなしで」ARを用いて、風を送りたい場所に色を塗り、環境に直接指示をすることで風をデザインします。扇風機にカメラがついていますが、それは初代AirSketcherの名残。カメラは一切使用せず、スマートフォンのAR機能だけで空間を認識しています。扇風機はスマートフォンからの命令に従って動いているだけです。"
-        ]
-      },
-      {
-        "memo": "Stone",
-        "image": "",
-        "description": [
-          "変幻自在なスピーカー．石ころのような変哲もない形。だけどStoneはUIを切り替えると音楽プレイヤーになり，ラジオになり，オルゴールにもなります。さらには楽器にもなります。ARによって見た目も変わります。もしスピーカーに電波のチューニングUIがついていたらラジオです。早送り巻き戻しがついていれば、音楽プレイヤーかもしれません。このようにUIがその製品の定義や価値を決めていると言えます。exUIによって、そのUIはプロダクトからなくなり、ソフトウェアで定義できるようになります。"
+          "This is exUI products.",
+          "(Left) AirSketcher2: A fan that can directly control the wind. \"Strength here, here weak, here nothing\" Use AR to paint the color where you want to send the wind and design the wind by giving direct instructions to the environment. The fan has a camera, which is a remnant of the original AirSketcher. No camera is used, and the space is recognized only by the AR function of the smartphone. The electric fan only moves according to the instructions from the smartphone.",
+          "(Center) Stone: Transformable speaker. Unshakable shape like stone. However, when you switch the UI, Stone becomes a music player, a radio, and a music box. It can also be an instrument. The appearance changes depending on the AR. If the speaker has a radio tuning UI, it is a radio. If fast forward rewind is on, you may be a music player. Thus, the UI determines the definition and value of the product. With exUI, the UI is removed from the product and can be defined in software.",
+          "(Right) AnoHako: Pure white vending machine without physical interface. Display the menu by holding your smartphone over it. Purchases and settlements are also performed on smartphones. There are no buttons or complicated interfaces such as a display, and the scenery is not affected. You can personalize the UI because you know who is using it. For example, foreigners may want to display their language in their native language, minors may not see alcohol, or they may place their favorite products on top. This refines Kenya Nakazato's product."
         ]
       }
     ]

@@ -1,8 +1,9 @@
 {
   "title": "React Native for Android",
-  "subtitle": "",
+  "subtitle": "Comiket91",
   "main": "https://i.gyazo.com/4bcf9cca045f2a0f406ddd40adbf7a77.png",
   "youtube": "none",
+  "url": "/other/c91",
   "website": [
     {
       "title": "detail",
@@ -15,7 +16,7 @@
   ],
   "description": [
     [
-      "新しいモバイル開発の方法として， Facebook 産の React Native が登場しました． 今回は Android 開発向けに， React Native で開発する際に ハマりがちな部分や便利なライブラリなどを紹介します．"
+      "React Native from Facebook has emerged as a new mobile development method. This time, for Android development, we introduce the parts that are often addicted when developing with React Native and useful libraries."
     ],
     []
   ]
