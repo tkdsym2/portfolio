@@ -1,16 +1,19 @@
 import React from 'react';
-import Head from 'next/head'
 
+import MetaCard from '../components/MetaCard';
 import Works from '../components/Works';
+
+const data = {
+  title: "Works",
+  url: "/",
+  subtitle: "Welcome to tkd portfolio!",
+  main: "https://i.gyazo.com/8987dd294fb88b2580d7ec71b3dd20b1.jpg",
+}
 
 const Home = () => {
   return (
     <div>
-      <Head>
-        <title>tkd.work | Works</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
-      </Head>
+      <MetaCard data={data}/>
       <Works />
     </div>
   )
