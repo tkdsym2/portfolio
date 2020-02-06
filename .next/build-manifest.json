@@ -21,11 +21,11 @@
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
     ],
-    "/bio": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/research/[url]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

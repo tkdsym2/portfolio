@@ -12,6 +12,7 @@ const MetaCard = ({ data }) => (
     <meta property="og:description" content={data.subtitle}/>
     <meta property="og:image" content={data.main} />
     <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:500,700,900&display=swap" rel="stylesheet"></link>
   </Head>
 )
 

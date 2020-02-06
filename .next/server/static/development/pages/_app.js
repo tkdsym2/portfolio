@@ -2493,7 +2493,7 @@ const NavFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.header
 const HeaderTitle = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__HeaderTitle",
   componentId: "i7m243-1"
-})(["color:#", ";font-size:", ";margin:0.5em 1.2em 0 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_8__["Black"], _theme__WEBPACK_IMPORTED_MODULE_8__["TitleSize"]);
+})(["color:#", ";font-size:", ";font-family:'Poppins',sans-serif;font-weight:900;margin:0.5em 1.2em 0 1.2em;&:hover{cursor:pointer;}"], _theme__WEBPACK_IMPORTED_MODULE_8__["Black"], _theme__WEBPACK_IMPORTED_MODULE_8__["TitleSize"]);
 const MenuFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.nav.withConfig({
   displayName: "Navigator__MenuFrame",
   componentId: "i7m243-2"
@@ -2526,7 +2526,7 @@ const ItemFrame = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.w
 const NoActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
   displayName: "Navigator__NoActiveLink",
   componentId: "i7m243-7"
-})(["color:", ";font-size:", ";margin-left:0.2em;position:relative;transition:.3s;&:hover{cursor:pointer;color:", ";}", ""], _theme__WEBPACK_IMPORTED_MODULE_8__["Black"], _theme__WEBPACK_IMPORTED_MODULE_8__["TopicSize"], _theme__WEBPACK_IMPORTED_MODULE_8__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_4___default.a.lessThan(`${_theme__WEBPACK_IMPORTED_MODULE_8__["medium"]}`)`
+})(["color:", ";font-size:", ";font-family:'Poppins',sans-serif;margin-left:0.2em;position:relative;transition:.3s;&:hover{cursor:pointer;color:", ";}", ""], _theme__WEBPACK_IMPORTED_MODULE_8__["Black"], _theme__WEBPACK_IMPORTED_MODULE_8__["TopicSize"], _theme__WEBPACK_IMPORTED_MODULE_8__["Blue"], styled_media_query__WEBPACK_IMPORTED_MODULE_4___default.a.lessThan(`${_theme__WEBPACK_IMPORTED_MODULE_8__["medium"]}`)`
     display: none;
   `);
 const ActiveLink = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.p.withConfig({
@@ -2547,25 +2547,25 @@ const StyledLink = (_ref) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 117
     },
     __self: undefined
   }, __jsx(ItemFrame, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 118
     },
     __self: undefined
   }, children, props.active ? __jsx(ActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 120
     },
     __self: undefined
   }, props.topic) : __jsx(NoActiveLink, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 121
     },
     __self: undefined
   }, props.topic)));
@@ -2582,13 +2582,13 @@ const StyledTitle = (_ref2) => {
     passHref: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 127
     },
     __self: undefined
   }, __jsx(HeaderTitle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 128
     },
     __self: undefined
   }, children));
@@ -2609,7 +2609,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"]`
-  @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Poppins:700,900&display=swap');
   body {
     /* font-family: 'Poppins', sans-serif;
     font-family: 'Lato', sans-serif; */
@@ -2666,7 +2666,7 @@ const hhuge = '1384px';
 const large = '1450px';
 const medium = '768px';
 const small = '450px';
-const IconSize = '1.2rem';
+const IconSize = '1.3rem';
 const NavIconSize = '1.5rem';
 
 /***/ }),

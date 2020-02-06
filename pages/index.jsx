@@ -7,7 +7,7 @@ const data = {
   title: "Works",
   url: "/",
   subtitle: "Welcome to tkd portfolio!",
-  main: "https://i.gyazo.com/8987dd294fb88b2580d7ec71b3dd20b1.jpg",
+  main: "https://i.gyazo.com/3b8d2d378a8832a294d61f32e7d63704.jpg"
 }
 
 const Home = () => {

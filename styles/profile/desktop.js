@@ -48,8 +48,8 @@ export const ContentsFrame = styled.div`
 export const Header = styled.p`
   color: ${Black};
   font-size: ${HeaderSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   letter-spacing: 0.1rem;
   margin: 0;
   margin: 0.3rem 0 0.8rem 0;
@@ -94,16 +94,14 @@ export const ProfileList = styled.li`
 export const StyledName = styled.p`
   color: ${Black};
   font-size: ${TopicSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: bold;
+  font-family: 'Lato', sans-serif;
   margin: 0;
 `
 
 export const StyledText = styled.span`
   color: ${BlackGray};
   font-size: ${SentenceSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: medium;
+  font-family: 'Lato', sans-serif;
   margin-left: 0.8rem;
   letter-spacing: 0.01rem;
 `
@@ -111,9 +109,7 @@ export const StyledText = styled.span`
 export const StyledLink = styled.a`
   color: ${BlackGray};
   font-size: ${SentenceSize};
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: medium;
-
+  font-family: 'Lato', sans-serif;
   &:hover {
     color: ${Blue};
   }
