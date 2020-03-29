@@ -11,7 +11,8 @@ import { StudyFrame,
          TaskFrom,
          UsingLetters,
          SettingBox,
-         StyledForm
+         StyledForm,
+         AnswerText
         } from '../../styles/prototypes/typo1'
 import { LetterGenerator, CorrectTask } from '../../utils/LetterGenerator'
 
@@ -55,7 +56,7 @@ export default class Typo1 extends React.Component {
       number: 2000,
       task: '',
       currentNum: 0,
-      correctThresh: 100,
+      correctThresh: 30,
       correctedPos: 0,
       enGenerateLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
       jaGenerateLetters: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん',
@@ -184,6 +185,9 @@ export default class Typo1 extends React.Component {
     return (
       <DesktopFrame>
         <ParamFrame>
+          <AnswerText>
+            Please transcribe the string that appears on the left to the right
+          </AnswerText>
           <ParamBox>
             {/* Language Property */}
             <StyledButton color={this.state.property} onClick={this.OpenPropery}>Open Property</StyledButton>

@@ -93,3 +93,9 @@ export const TaskFrom = styled.textarea`
   font-size: 1.3em;
   word-break: break-all;
 `
+
+export const AnswerText = styled.p`
+  font-size: 1em;
+  color: ${Gray};
+  margin: 0 1em 0 1em;
+`
