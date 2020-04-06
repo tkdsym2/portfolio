@@ -3,7 +3,7 @@ const axios = require('axios');
 const qs = require('qs');
 
 const AnalyzeLetter = sentence => {
-  axios.post('http://maapi.net/apis/mecapi', 
+  axios.post('https://maapi.net/apis/mecapi', 
     qs.stringify(
       {
         'sentence': sentence,
@@ -33,7 +33,7 @@ export const TaskGenerator = sentence => {
   axios(options)
     .then(res => {
       let _sentence = AnalyzeLetter(res.data.converted)
-      return _sentence
+      return res.data.converted.replace(/\s+/g, "")
     })
     .catch(err => {
       console.error(err)
