@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 import { Black, BlackGray, Gray, Blue, White } from '../theme';
 
@@ -9,14 +9,66 @@ export const StudyFrame = styled.div`
 `
 
 export const TaskFrame = styled.div`
+  position: relative;
   width: 50%;
   height: 100%;
-  border: 2px solid;
+  border: 1px solid;
   border-color: ${Gray};
   border-radius: 3px;
   padding: 0;
   margin: 0;
   font-size: 19px;
+`
+
+const flash = keyframes`
+  0%, 100%{
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+`
+
+const normal = keyframes`
+  0%, 100% {
+    opacity: 0
+  }
+`
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+
+  to {
+    /* transform: scale(1); */
+    opacity: 0;
+  }
+`;
+
+export const FilmFrame = styled.div`
+  visibility: ${props => props.toggle ? 'visible' : 'hidden'};
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  background: white;
+`;
+
+
+export const TaskLetter = styled.p`
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: 'Noto Sans CJK JP';
+  word-break: break-all;
+  font-size: ${props => props.fontSize}em;
+  margin: 0;
+  letter-spacing: ${props => props.carning}em;
+  line-height: ${props => props.lineHeight}em;
+  /* margin: 0.5em; */
 `
 
 export const ParamFrame = styled.div`
@@ -63,15 +115,6 @@ export const EditorFrame = styled.div`
   /* background-color: ${Blue}; */
 `
 
-export const TaskLetter = styled.p`
-  word-break: break-all;
-  font-size: ${props => props.fontSize}em;
-  margin: 0;
-  letter-spacing: ${props => props.carning}em;
-  line-height: ${props => props.lineHeight}em;
-  /* margin: 0.5em; */
-`
-
 export const StyledButton = styled.button`
   background: ${props => props.color ? Blue : White};
   color: ${props => props.color ? White : Black};
@@ -88,9 +131,10 @@ export const StyledButton = styled.button`
 `
 
 export const TaskFrom = styled.textarea`
+  font-family: 'Noto Sans CJK JP';
   width: 100%;
   height: 1070px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   word-break: break-all;
 `
 

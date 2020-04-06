@@ -12,9 +12,10 @@ import { StudyFrame,
          UsingLetters,
          SettingBox,
          StyledForm,
-         AnswerText
+         AnswerText,
+         FilmFrame,
         } from '../../styles/prototypes/typo1'
-import { LetterGenerator, CorrectTask } from '../../utils/LetterGenerator'
+import { LetterGenerator, CorrectTask, TaskGenerator } from '../../utils/LetterGenerator'
 
 class InputForm extends React.Component {
   constructor(props) {
@@ -53,28 +54,36 @@ export default class Typo1 extends React.Component {
     super(props);
 
     this.state = {
-      number: 2000,
+      number: 200,
       task: '',
       currentNum: 0,
-      correctThresh: 30,
+      correctThresh: 5,
       correctedPos: 0,
       enGenerateLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
       jaGenerateLetters: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん',
       enLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
       jaLetters: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん',
-      en: true,
+      en: false,
       carning: 0,
       lineHeight: 1.55,
-      fontSize: 1,
-      property: false
+      fontSize: 1.2,
+      property: false,
+      toggle: false,
+      blindTime: 100,
+      loaded: false
     }
+
+    this.CorrctLetters = this.CorrctLetters.bind(this);
   }
 
+  // API request
   componentDidMount() {
     let _letters = this.state.en ? this.state.enGenerateLetters : this.state.jaGenerateLetters
-    let _task = LetterGenerator(this.state.number, _letters);
+    // let _task = LetterGenerator(this.state.number, _letters);
+    let _task = TaskGenerator(_letters);
     this.setState({
-      task: _task
+      task: _task,
+      loaded: true
     })
   }
 
@@ -86,18 +95,34 @@ export default class Typo1 extends React.Component {
     })
   }
 
-  CorrctLetters = current => {
+  // important func:
+  // this correct task lettes by current letter count of user
+  // if true: animation have to run
+  CorrctLetters(current)  {
     if(current >= this.state.correctThresh) {
       let correctStart = current - this.state.correctThresh;
       let correctedTask = CorrectTask(current, this.state.task, this.state.correctThresh, correctStart, this.state.jaLetters, this.state.enLetters, this.state.en)
       this.setState({
-        task: correctedTask
+        task: correctedTask,
+        toggle: !this.state.toggle
+      }, () => {
+        setTimeout(() => {
+          this.setState({
+            toggle: !this.state.toggle
+          })
+        }, this.state.blindTime)
       })
     } else {
       this.setState({
         currentNum: current
       })
     }
+  }
+
+  OffToggle = () => {
+    this.setState({
+      toggle: false
+    })
   }
 
   ChangeLang = lang => {
@@ -110,7 +135,6 @@ export default class Typo1 extends React.Component {
         en: false
       })
     }
-    // this.GenerateTask()
   }
 
   ChangeFontSize = event => {
@@ -181,6 +205,12 @@ export default class Typo1 extends React.Component {
     })
   }
 
+  Test = () => {
+    this.setState({
+      test: !this.state.test
+    })
+  }
+
   render() {
     return (
       <DesktopFrame>
@@ -221,18 +251,23 @@ export default class Typo1 extends React.Component {
             </UsingLetters>
           </SettingBox>
         </ParamFrame>
-        <StudyFrame>
-          <TaskFrame>
-            <TaskLetter
-              fontSize={this.state.fontSize}
-              carning={this.state.carning}
-              lineHeight={this.state.lineHeight}
-            >{this.state.task}</TaskLetter>
-          </TaskFrame>
-          <EditorFrame>
-            <InputForm task={this.state.task} counter={num => {this.CorrctLetters(num);}}/>
-          </EditorFrame>
-        </StudyFrame>
+        {this.state.loaded ? (
+          <StudyFrame>
+            <TaskFrame>
+              <TaskLetter
+                fontSize={this.state.fontSize}
+                carning={this.state.carning}
+                lineHeight={this.state.lineHeight}
+              >{this.state.task}</TaskLetter>
+              <FilmFrame toggle={this.state.toggle}/>
+            </TaskFrame>
+            <EditorFrame>
+              <InputForm task={this.state.task} counter={num => {this.CorrctLetters(num);}}/>
+            </EditorFrame>
+          </StudyFrame>
+        ) : (
+          <UsingLetters>now loading...</UsingLetters>
+        )}
       </DesktopFrame>
     )
   }
