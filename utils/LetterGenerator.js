@@ -2,6 +2,10 @@
 const axios = require('axios');
 const qs = require('qs');
 
+axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+
 const AnalyzeLetter = sentence => {
   axios.post('https://maapi.net/apis/mecapi', 
     qs.stringify(
