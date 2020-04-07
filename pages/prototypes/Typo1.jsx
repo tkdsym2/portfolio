@@ -71,7 +71,8 @@ export default class Typo1 extends React.Component {
       toggle: false,
       blindTime: 100,
       loaded: false,
-      sum: 52
+      sum: 52,
+      noise: true
     }
 
     this.CorrctLetters = this.CorrctLetters.bind(this);
@@ -103,7 +104,7 @@ export default class Typo1 extends React.Component {
   CorrctLetters(current)  {
     const randomJudge = Math.floor(Math.random()*2)
     console.log(randomJudge);
-    if(current >= this.state.correctThresh && this.state.sum > -1) {
+    if(current >= this.state.correctThresh) {
       if(randomJudge > 0) {
         let correctStart = current - this.state.correctThresh;
         let correctedTask = CorrectSentence(this.state.jaGenerateLetters, correctStart, this.state.sum)
@@ -242,12 +243,12 @@ export default class Typo1 extends React.Component {
           {/* Visual Property */}
           <SettingBox open={this.state.property}>
             {/* Corrected Letters */}
-            <UsingLetters>
+            {/* <UsingLetters>
               GenerateLetters: {this.state.en ? <StyledForm defaultValue={this.state.enGenerateLetters} value={this.state.enGenerateLetters} onChange={e => this.ChangeGenerateLetter(e)}/> : <StyledForm defaultValue={this.state.jaGenerateLetters} value={this.state.jaGenerateLetters} onChange={e => this.ChangeGenerateLetter(e)}/>}
             </UsingLetters>
             <UsingLetters>
               Correcter Letters: {this.state.en ? <StyledForm defaultValue={this.state.enLetters} value={this.state.enLetters} onChange={e => this.ChangeLetter(e)}/> : <StyledForm defaultValue={this.state.jaLetters} value={this.state.jaLetters} onChange={e => this.ChangeLetter(e)}/>}
-            </UsingLetters>
+            </UsingLetters> */}
             <UsingLetters>
               Font Size: <StyledForm defaultValue={this.state.fontSize} onChange={e => this.ChangeFontSize(e)} />[em]
             </UsingLetters>
@@ -272,6 +273,7 @@ export default class Typo1 extends React.Component {
                 fontSize={this.state.fontSize}
                 carning={this.state.carning}
                 lineHeight={this.state.lineHeight}
+                noise={this.state.noise}
               >{this.state.task}</TaskLetter>
               <FilmFrame toggle={this.state.toggle}/>
             </TaskFrame>

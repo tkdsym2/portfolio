@@ -47,16 +47,119 @@ const fadeOut = keyframes`
   }
 `;
 
+const noise = keyframes`
+  0% {
+    left: -10px;
+    clip: rect(10px, 9999px, 63px, 0);
+  }
+  4% {
+    clip: rect(137px, 9999px, 150px, 0);
+  }
+  8% {
+    clip: rect(82px, 9999px, 178px, 0);
+  }
+  12% {
+    left: -2px;
+    clip: rect(85px, 9999px, 125px, 0);
+  }
+  16% {
+    clip: rect(223px, 9999px, 258px, 0);
+  }
+  20% {
+    left: 10px;
+    clip: rect(100px, 9999px, 146px, 0);
+  }
+  24% {
+    clip: rect(41px, 9999px, 72px, 0);
+  }
+  28% {
+    clip: rect(9px, 9999px, 45px, 0);
+  }
+  32% {
+    clip: rect(136px, 9999px, 164px, 0);
+    filter: hue-rotate(-25deg);
+  }
+  36% {
+    left: -9px;
+    clip: rect(84px, 9999px, 116px, 0);
+  }
+  40% {
+    top: 7px;
+    clip: rect(229px, 9999px, 315px, 0);
+  }
+  44% {
+    clip: rect(37px, 9999px, 73px, 0);
+  }
+  48% {
+    clip: rect(163px, 9999px, 180px, 0);
+  }
+  52% {
+    clip: rect(205px, 9999px, 244px, 0);
+  }
+  56% {
+    left: 6px;
+    clip: rect(135px, 9999px, 170px, 0);
+  }
+  60% {
+    clip: rect(14px, 9999px, 100px, 0);
+  }
+  64% {
+    left: -2px;
+    clip: rect(116px, 9999px, 129px, 0);
+  }
+  68% {
+    clip: rect(37px, 9999px, 69px, 0);
+  }
+  72% {
+    top: -9px;
+    clip: rect(232px, 9999px, 264px, 0);
+  }
+  76% {
+    left: -8px;
+    clip: rect(100px, 9999px, 196px, 0);
+    filter: hue-rotate(35deg);
+  }
+  80% {
+    clip: rect(199px, 9999px, 245px, 0);
+  }
+  84% {
+    clip: rect(37px, 9999px, 73px, 0);
+  }
+  88% {
+    left: -10px;
+    clip: rect(1px, 9999px, 296px, 0);
+  }
+  92% {
+    clip: rect(141px, 9999px, 272px, 0);
+  }
+  96% {
+    clip: rect(33px, 9999px, 65px, 0);
+  }
+  100% {
+    clip: rect(137px, 9999px, 273px, 0);
+  }
+`
+
 export const FilmFrame = styled.div`
   visibility: ${props => props.toggle ? 'visible' : 'hidden'};
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 300px;
+  height: 1000px;
   background: white;
+  opacity: 0.7;
 `;
 
+export const NoiseFrame = styled.div`
+  visibility: ${props => props.toggle ? 'visible' : 'hidden'};
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1000px;
+  background: white;
+`
 
 export const TaskLetter = styled.p`
   position: absolute;
@@ -68,6 +171,7 @@ export const TaskLetter = styled.p`
   margin: 0;
   letter-spacing: ${props => props.carning}em;
   line-height: ${props => props.lineHeight}em;
+  /* animation: ${props => props.noise ? css`${noise} 0.8s 1 alternate-reverse 1s` : ''}; */
   /* margin: 0.5em; */
 `
 
@@ -134,8 +238,9 @@ export const TaskFrom = styled.textarea`
   font-family: 'Noto Sans CJK JP';
   width: 100%;
   height: 1070px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   word-break: break-all;
+  letter-spacing: 0.5em;
 `
 
 export const AnswerText = styled.p`
