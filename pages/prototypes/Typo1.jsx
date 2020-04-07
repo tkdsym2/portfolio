@@ -60,18 +60,18 @@ export default class Typo1 extends React.Component {
       correctThresh: 5,
       correctedPos: 0,
       enGenerateLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
-      jaGenerateLetters: 'むかし、むかしきたのくににすむひとりのわかものがちちおやとゆきのなか、かりにでかけました。とつぜん、てんきがわるくなったので、ふたりはやまごやでよるをあかし、てんきがかいふくするのをまちました。まよなかのことです。ねているといりぐちがばたんとあき、しろいきものをきたひとりのいろじろのおんなのひとがそこにたっていました。',
+      jaGenerateLetters: 'むかし、むかしきたのくににすむひとりのわかものがちちおやとゆきのなか、かりにでかけました。とつぜん、てんきがわるくなったので、ふたりはやまごやでよるをあかし、てんきがかいふくするのをまちました。まよなかのことです。ねているといりぐちがばたんとあき、しろいきものをきたひとりのいろじろのおんなのひとがそこにたっていました。わかものがはなしかけようとすると、そのおんなのひとはちちおやにしろいいきをふきかけたところ、ちちおやはたちまちしろくなるといっしゅんにこおってしまいました。ゆきおんなに、わかものはみうごきできませんでした。「わかいもの、おまえはたすけてやるが、きょうのことはけっしてだれにもはなしてはいけない。」そういうとゆきのなかにきえてしまいました。つぎのあさ、めがさめるとちちおやはこおってしんでいました。それからいちねんがたったあるあめのひのことです。うつくしいおんなのひとがのきしたであまやどりしていました。わかものはおんなのひとをいえのなかにはいれてあげるといきさつをきいたところ「なまえはなんという。これからどこにいくのか。」「なまえは「おゆき」といい、わたしにはみうちはいません。これからいくところもありません。」それをきいてしんぱいしたわかものはしばらくいえにおゆきをおいておくことをきめました。ふたりはやがてこいにおち、けっこんしてこどももでき、しあわせなひびをおくっていました。あるゆきのひのこと、わかものはうっかりとあのひのやまごやでのことをはなしてしまいました。おゆきはかなしいかおでいいました。「あれほどはなしてはいけないといったのにはなしてしまいましたね。」そういうと、おゆきはかれのもとからきえました。おゆきこそゆきおんなだったのです。それいらいおゆきのすがたをみたものはひとりもいませんでした。',
       enLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
       jaLetters: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん',
       en: false,
-      carning: 0.4,
+      carning: 0.5,
       lineHeight: 1.55,
       fontSize: 1.2,
       property: false,
       toggle: false,
       blindTime: 100,
       loaded: false,
-      sum: 17
+      sum: 52
     }
 
     this.CorrctLetters = this.CorrctLetters.bind(this);
@@ -101,23 +101,37 @@ export default class Typo1 extends React.Component {
   // this correct task lettes by current letter count of user
   // if true: animation have to run
   CorrctLetters(current)  {
-    if(current >= this.state.correctThresh && this.state.sum >= 0) {
-      let correctStart = current - this.state.correctThresh;
-      let correctedTask = CorrectSentence(this.state.jaGenerateLetters, correctStart, this.state.sum)
-      // console.log(_correctedTask);
-      // let correctedTask = CorrectTask(current, this.state.task, this.state.correctThresh, correctStart, this.state.jaLetters, this.state.enLetters, this.state.en)
-      let _sum = this.state.sum - 1;
-      this.setState({
-        task: correctedTask,
-        toggle: !this.state.toggle,
-        sum: _sum
-      }, () => {
-        setTimeout(() => {
-          this.setState({
-            toggle: !this.state.toggle
-          })
-        }, this.state.blindTime)
-      })
+    const randomJudge = Math.floor(Math.random()*2)
+    console.log(randomJudge);
+    if(current >= this.state.correctThresh && this.state.sum > -1) {
+      if(randomJudge > 0) {
+        let correctStart = current - this.state.correctThresh;
+        let correctedTask = CorrectSentence(this.state.jaGenerateLetters, correctStart, this.state.sum)
+        // console.log(_correctedTask);
+        // let correctedTask = CorrectTask(current, this.state.task, this.state.correctThresh, correctStart, this.state.jaLetters, this.state.enLetters, this.state.en)
+        let _sum = this.state.sum - 1;
+        this.setState({
+          task: correctedTask,
+          toggle: !this.state.toggle,
+          sum: _sum
+        }, () => {
+          setTimeout(() => {
+            this.setState({
+              toggle: !this.state.toggle
+            })
+          }, this.state.blindTime)
+        })
+      } else {
+        this.setState({
+          toggle: !this.state.toggle,
+        }, () => {
+          setTimeout(() => {
+            this.setState({
+              toggle: !this.state.toggle
+            })
+          }, this.state.blindTime)
+        })
+      }
     } else {
       this.setState({
         currentNum: current
