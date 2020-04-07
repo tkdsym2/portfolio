@@ -50,6 +50,48 @@ export const LetterGenerator = (number, letters) => {
   return Array.from(Array(number)).map(()=>letters[Math.floor(Math.random()*letters.length)]).join('')
 }
 
+const InitialArray = [
+  'むかし', '、',  'むかし',  'きた',  'の',   'くに',  'に',   'すむ',
+  'ひとり', 'の',  'わかもの',  'が',   'ちちおや',
+  'と',   'ゆき', 'の',    'なか',  '、',   'かりに', 'でかけ', 'まし',
+  'た',   '。',  'とつぜん', '、',   'てんき', 'が',   'わるく', 'なっ',
+  'た',   'ので', '、',    'ふたり', 'は',   'やまごや',
+  'で',   'よる', 'を',    'あかし', '、',   'てんき', 'が',   'かいふく', 
+  'する', 'の',    'を',   'まち',  'まし',  'た',   '。',
+  'まよなか',   'の',   'こと',  'です',  '。',   'ね',
+  'て',   'いる', 'と',    'いり',  'ぐち',  'が',   'ばたん', 'と',
+  'あき',  '、',  'しろい',  'きもの', 'を',   'き',   'た',   'ひとり',
+  'の',   'いろじろ',  'の',  'おんな', 'の',   'ひと',
+  'が',   'そこ', 'に',    'たっ',  'て',   'い',   'まし',  'た',
+  '。'
+]
+
+const CorrectedArray = []
+
+const SearchWords = [
+  'きた', 'ひとり', 'わかもの', 'ちちおや', 'ゆき', 'とつぜん', 'わるく', 'ふたり', 'やまごや', 'よる', 'まよなか', 'ばたん',
+  'しろい', 'ひとり', 'いろじろ', 'おんな', 'ひと'
+]
+
+const UpdatedWords = [
+  'にし', 'ひとり', 'ろうじん', 'ははおや', 'あめ', 'きゅうに', 'すごく', 'ひとり', 'かわごや', 'あさ', 'まひるま',
+  'がたん', 'くろい', 'ふたり', 'いろぐろ', 'おとこ', 'ねこ'
+]
+
+export const CorrectSentence = (task, correctStart, index) => {
+  // index は react 側で減らす
+  let randomIndex = Math.floor(Math.random() * index)
+  let target = SearchWords[randomIndex]
+  let correctPos = InitialArray.indexOf(target)
+  let correctWord = UpdatedWords[randomIndex]
+  // search と udate から指定の箇所を消す
+  SearchWords.splice(randomIndex, 1)
+  UpdatedWords.splice(randomIndex, 1)
+  InitialArray[correctPos] = correctWord
+  InitialArray.forEach(val => CorrectedArray.push(val))
+  return InitialArray.join('')
+}
+
 export const CorrectTask = (currentNum, task, thresh, correctStart, jaCorrection, enCorrection, flag) => {
   let S = flag ? enCorrection : jaCorrection;
   let m = parseInt(correctStart / S.length);

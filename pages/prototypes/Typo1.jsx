@@ -15,7 +15,7 @@ import { StudyFrame,
          AnswerText,
          FilmFrame,
         } from '../../styles/prototypes/typo1'
-import { LetterGenerator, CorrectTask, TaskGenerator } from '../../utils/LetterGenerator'
+import { LetterGenerator, CorrectTask, TaskGenerator, CorrectSentence } from '../../utils/LetterGenerator'
 
 class InputForm extends React.Component {
   constructor(props) {
@@ -60,17 +60,18 @@ export default class Typo1 extends React.Component {
       correctThresh: 5,
       correctedPos: 0,
       enGenerateLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
-      jaGenerateLetters: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん',
+      jaGenerateLetters: 'むかし、むかしきたのくににすむひとりのわかものがちちおやとゆきのなか、かりにでかけました。とつぜん、てんきがわるくなったので、ふたりはやまごやでよるをあかし、てんきがかいふくするのをまちました。まよなかのことです。ねているといりぐちがばたんとあき、しろいきものをきたひとりのいろじろのおんなのひとがそこにたっていました。',
       enLetters: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
       jaLetters: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをん',
       en: false,
-      carning: 0,
+      carning: 0.4,
       lineHeight: 1.55,
       fontSize: 1.2,
       property: false,
       toggle: false,
       blindTime: 100,
-      loaded: false
+      loaded: false,
+      sum: 17
     }
 
     this.CorrctLetters = this.CorrctLetters.bind(this);
@@ -80,7 +81,8 @@ export default class Typo1 extends React.Component {
   componentDidMount() {
     let _letters = this.state.en ? this.state.enGenerateLetters : this.state.jaGenerateLetters
     // let _task = LetterGenerator(this.state.number, _letters);
-    let _task = TaskGenerator(_letters);
+    // let _task = TaskGenerator(_letters);
+    let _task = this.state.jaGenerateLetters;
     this.setState({
       task: _task,
       loaded: true
@@ -99,12 +101,16 @@ export default class Typo1 extends React.Component {
   // this correct task lettes by current letter count of user
   // if true: animation have to run
   CorrctLetters(current)  {
-    if(current >= this.state.correctThresh) {
+    if(current >= this.state.correctThresh && this.state.sum >= 0) {
       let correctStart = current - this.state.correctThresh;
-      let correctedTask = CorrectTask(current, this.state.task, this.state.correctThresh, correctStart, this.state.jaLetters, this.state.enLetters, this.state.en)
+      let correctedTask = CorrectSentence(this.state.jaGenerateLetters, correctStart, this.state.sum)
+      // console.log(_correctedTask);
+      // let correctedTask = CorrectTask(current, this.state.task, this.state.correctThresh, correctStart, this.state.jaLetters, this.state.enLetters, this.state.en)
+      let _sum = this.state.sum - 1;
       this.setState({
         task: correctedTask,
-        toggle: !this.state.toggle
+        toggle: !this.state.toggle,
+        sum: _sum
       }, () => {
         setTimeout(() => {
           this.setState({
@@ -117,12 +123,6 @@ export default class Typo1 extends React.Component {
         currentNum: current
       })
     }
-  }
-
-  OffToggle = () => {
-    this.setState({
-      toggle: false
-    })
   }
 
   ChangeLang = lang => {
