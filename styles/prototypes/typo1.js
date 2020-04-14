@@ -171,7 +171,6 @@ export const TaskLetter = styled.p`
   margin: 0;
   letter-spacing: ${props => props.carning}em;
   line-height: ${props => props.lineHeight}em;
-  /* animation: ${props => props.noise ? css`${noise} 0.8s 1 alternate-reverse 1s` : ''}; */
   /* margin: 0.5em; */
 `
 
@@ -235,13 +234,27 @@ export const StyledButton = styled.button`
 `
 
 export const TaskFrom = styled.textarea`
+  position: absolute;
+  left: 0px;
+  top: 0px;
   font-family: 'Noto Sans CJK JP';
-  width: 100%;
+  width: 200%;
   height: 1070px;
   font-size: 1.5em;
   word-break: break-all;
   letter-spacing: 0.5em;
 `
+
+export const FilmFrameInput = styled.div`
+  visibility: ${props => props.toggle ? 'visible' : 'hidden'};
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200%;
+  height: 1000px;
+  background: white;
+  opacity: 0.7;
+`;
 
 export const AnswerText = styled.p`
   font-size: 1em;

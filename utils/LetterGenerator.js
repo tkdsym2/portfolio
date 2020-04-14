@@ -172,6 +172,35 @@ export const CorrectSentence = (task, correctStart, index) => {
   return InitialArray.join('')
 }
 
+export const GenerateCorrectSentence = () => {
+  let _sentence = [];
+  SearchWords.forEach((word, index) => {
+    let pos = InitialArray.indexOf(word)
+    let correctWord = UpdatedWords[index]
+    InitialArray[pos] = correctWord
+    InitialArray.forEach(val => _sentence.push(val))
+  })
+  return _sentence.join('')
+}
+
+// export const CorrectSentence = (original, corrector) => {
+//   let newArr = []
+//   let _d = []
+//   original.split('').forEach((item, index) => {
+//     if(item === b.split('')[index]) return;
+//     const correctInfo = {
+//       pos: index,
+//       pre: item,
+//       correct: b.split('')[index]
+//     }
+//     newArr.push(correctInfo);
+//   })
+
+//   _d = original;
+//   let _arr = newArr.split('')
+//   _arr.splice(object.pos);
+// }
+
 export const CorrectTask = (currentNum, task, thresh, correctStart, jaCorrection, enCorrection, flag) => {
   let S = flag ? enCorrection : jaCorrection;
   let m = parseInt(correctStart / S.length);

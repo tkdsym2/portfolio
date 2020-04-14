@@ -14,22 +14,24 @@ import { StudyFrame,
          StyledForm,
          AnswerText,
          FilmFrame,
+         FilmFrameInput
         } from '../../styles/prototypes/typo1'
-import { LetterGenerator, CorrectTask, TaskGenerator, CorrectSentence } from '../../utils/LetterGenerator'
+import { LetterGenerator, CorrectTask, TaskGenerator, CorrectSentence, GenerateCorrectSentence } from '../../utils/LetterGenerator'
 
 class InputForm extends React.Component {
   constructor(props) {
     super(props);
 
+    let sentence = GenerateCorrectSentence()
+
     this.state = {
       inputLetters: 0,
       prevLetters:'',
-      currentLetters: ''
+      currentLetters: '',
+      correctLetters: sentence,
+      toggle: false,
+      blindTime: 100
     }
-  }
-
-  componentDidMount = () => {
-    
   }
 
   onInputChange = event => {
@@ -37,14 +39,26 @@ class InputForm extends React.Component {
     let sum = letters.length;
     this.setState({
       inputLetters: sum,
-      currentLetters: letters
+      currentLetters: letters,
+      toggle: !this.state.toggle
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          toggle: !this.state.toggle
+        })
+      }, this.state.blindTime)
     })
+    console.log(this.state)
+    // send parent component
     this.props.counter(sum);
   }
 
   render(){
     return (
-      <TaskFrom onChange={e => this.onInputChange(e)} />
+      <TaskFrame>
+        <TaskFrom onChange={e => this.onInputChange(e)} value={this.state.currentLetters}/>
+        <FilmFrameInput toggle={this.state.toggle}/>
+      </TaskFrame>
     )
   }
 }
