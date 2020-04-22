@@ -16,7 +16,7 @@ import { StudyFrame,
          FilmFrame,
          FilmFrameInput
         } from '../../styles/prototypes/typo1'
-import { LetterGenerator, CorrectTask, TaskGenerator, CorrectSentence, GenerateCorrectSentence } from '../../utils/LetterGenerator'
+import { LetterGenerator, ReplaceUserLetters, CorrectSentence, GenerateCorrectSentence } from '../../utils/LetterGenerator'
 
 class InputForm extends React.Component {
   constructor(props) {
@@ -36,10 +36,14 @@ class InputForm extends React.Component {
 
   onInputChange = event => {
     let letters = event.target.value;
+    /**
+     * insert func
+     */
+    let correctedLetters = ReplaceUserLetters(letters)
     let sum = letters.length;
     this.setState({
       inputLetters: sum,
-      currentLetters: letters,
+      currentLetters: correctedLetters,
       toggle: !this.state.toggle
     }, () => {
       setTimeout(() => {
@@ -126,7 +130,7 @@ export default class Typo1 extends React.Component {
         // let correctedTask = CorrectTask(current, this.state.task, this.state.correctThresh, correctStart, this.state.jaLetters, this.state.enLetters, this.state.en)
         let _sum = this.state.sum - 1;
         this.setState({
-          task: correctedTask,
+          // task: correctedTask,
           toggle: !this.state.toggle,
           sum: _sum
         }, () => {

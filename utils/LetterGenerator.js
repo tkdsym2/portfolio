@@ -217,3 +217,61 @@ export const CorrectTask = (currentNum, task, thresh, correctStart, jaCorrection
     return S.substr(0,1) + task.slice(1)
   }
 }
+
+/**
+ * replace user input letters
+ */
+
+const _SearchWords = [
+  'きた', 'ひとり', 'わかもの', 'ちちおや', 'ゆき', 'とつぜん', 'わるく', 'ふたり', 'やまごや', 'よる', 'まよなか', 'ばたん',
+  'しろい', 'ひとり', 'いろじろ', 'おんな', 'ひと',
+  'わかもの', 'おんな', 'ちちおや', 'しろい', 'ちちおや', 'しろく',
+  'ゆき',  'おんな', 'わかもの', 
+  'おまえ', 'きょう', 'ゆき',
+  'あさ', 'ちちおや', 'いち', 'あめ',
+  'うつくしい', 'おんな', 'のきした', 'あま', 'わかもの', 'おんな', 'いえ',
+  'みうち', 'ところ', 'わかもの',
+  'ふたり', 'こい', 'しあわせ', 'ゆき', 'わかもの', 'やまごや', 
+  'かなしい', 'ゆき', 'おんな',
+]
+
+const _UpdatedWords = [
+  'にし', 'ひとり', 'ろうじん', 'ははおや', 'あめ', 'きゅうに', 'すごく', 'ひとり', 'かわごや', 'あさ', 'まひるま',
+  'がたん', 'くろい', 'ふたり', 'いろぐろ', 'おとこ', 'ねこ',
+  'ろうじん', 'おとこ', 'ははおや', 'くろい', 'ははおや', 'くろく',
+  'あめ', 'おとこ', 'ろうじん',
+  'あなた', 'きのう', 'あめ',
+  'ひる', 'ははおや', 'はち', 'ゆき',
+  'すばらしい', 'おとこ', 'きのした', 'ゆき', 'ろうじん', 'おとこ', 'やど',
+  'かぞく', 'ばしょ', 'ろうじん',
+  'ごにん', 'いけ', 'こうふく', 'あめ', 'ろうじん', 'かわごや',
+  'うれしい', 'あめ', 'おとこ',
+]
+
+export const ReplaceUserLetters = letters => {
+  const Items = []
+  _SearchWords.some((item, index) => {
+    let result = letters.indexOf(item)
+    if(result === -1) return true
+    const _item = {
+      pos: result,
+      word: item,
+      len: item.length,
+      corrected: _UpdatedWords[index],
+      arrayPos: index
+    }
+    Items.push(_item);
+    console.log(Items);
+  })
+
+  const K = Math.floor(Math.random() * 2)
+  if(K !== 1 && Items.length !== 0) {
+    let randomIndex = Math.floor(Math.random() * Items.length)
+    const corrected = letters.replace(Items[randomIndex].word, Items[randomIndex].corrected)
+    _SearchWords.splice(Items[randomIndex].arrayPos, 1)
+    _UpdatedWords.splice(Items[randomIndex].arrayPos, 1)
+    return corrected;
+  } else {
+    return letters
+  }
+}
