@@ -240,7 +240,7 @@ export const TaskFrom = styled.textarea`
   font-family: 'Noto Sans CJK JP';
   width: 200%;
   height: 1070px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   word-break: break-all;
   letter-spacing: 0.5em;
 `
