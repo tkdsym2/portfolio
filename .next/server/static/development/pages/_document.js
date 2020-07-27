@@ -1502,7 +1502,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/pages/_document.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/_document.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 

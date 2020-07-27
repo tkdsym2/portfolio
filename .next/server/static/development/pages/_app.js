@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/components/Footer */ "./styles/components/Footer.js");
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/components/Footer.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Footer.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -142,7 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/Navigator */ "./styles/components/Navigator.js");
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/components/Navigator.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2355,7 +2355,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Navigator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Navigator */ "./components/Navigator.jsx");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.jsx");
 
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/pages/_app.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/_app.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -2476,7 +2476,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_icons_material_Person__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_icons_material_Person__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
 
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/styles/components/Navigator.js";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/styles/components/Navigator.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
