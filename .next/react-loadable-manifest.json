@@ -1,4 +1,12 @@
 {
+  "../../contents/works/fabnavi.json": [
+    {
+      "id": "./contents/works/fabnavi.json",
+      "name": "./contents/works/fabnavi.json",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
