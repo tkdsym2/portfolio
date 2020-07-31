@@ -55,6 +55,17 @@ const Report = ({ data }) => {
         </Description>
 
         <SectionHeader>
+          前置き
+        </SectionHeader>
+        <FigureBox>
+          <FigureImage src='/reports/Intro.png'/>
+          <Caption>Fig0: 運動主体感・身体所有感</Caption>
+        </FigureBox>
+        <Description>
+          本研究では，運動主体感と身体所有感というキーワードの内身体所有感，特にカーソルに対する身体所有感について扱います．
+        </Description>
+
+        <SectionHeader>
           はじめに
         </SectionHeader>
         <SubSection>
@@ -102,73 +113,119 @@ const Report = ({ data }) => {
           Fig2はFig1の結果を一つのグラフに統合したものである．Fig1のグラフの傾向と同様に，刺激が大きく，介入頻度が高いほど違和感・不快感の指数は上昇している．これらの実験結果から，
           我々はカーソルに対して身体所有感を感じていると言える．
         </Description>
-        <SubSection>
-          ダミーカーソル実験の提案
-        </SubSection>
-        <Description>
-          ほげほgへおgへおhがおせひごいあうぃゔおがへおいうgひうljdぶfぁいうhふぉえうあほいうえgふぉあいうgふぇおいw
-        </Description>
+
 
         <SectionHeader>
           ダミーカーソル実験
         </SectionHeader>
         <Description>
-          ほげほgへおgへおhがおせひごいあうぃゔおがへおいうgひうljdぶfぁいうhふぉえうあほいうえgふぉあいうgふぇおいw
+          予備実験でカーソルのSoOが示唆されたことから，我々は自己/他の識別による身体所有感を評価する手法 ダミーカーソル実験を開発した．
+          予備実験(User Study#1)では，実験手法が有効であるかを確かめるため，画面上に2~3個のカーソルを並べ，参加者は自分が動かしているカーソルかどうかを
+          7段階で評価する実験を実施した．実験の結果，ほぼ全ての参加者が明確に，リアルカーソルとダミーカーソルを判別できていた．
+          この実験結果に基づき，本実験(User Study#2)では，ダミーカーソル数を大幅に増やして実験を実施した．この実験では，一つ一つのカーソルに対して
+          評価を下すことは困難であるため，タスクをリアルカーソルの識別とした．結果，ほぼ全ての参加者が複数ダミーカーソルの中からリアルカーソルを
+          識別できた．
+          以下に，それぞれのUser Studyの詳細と結果について記す．
         </Description>
         <SubSection>
           User Study#1
         </SubSection>
         <Description>
-          ほげほgへおgへおhがおせひごいあうぃゔおがへおいうgひうljdぶfぁいうhふぉえうあほいうえgふぉあいうgふぇおいw
+          User Study#1では，カーソルを2~3個並べ，参加者は自分が動かしているカーソルかどうかをそれぞれに対して7段階で評価する．Unityで実装したが，オンラインサンプルを用意したので
+          雰囲気を掴みたい方はどうぞ．
         </Description>
         <SubSubSection>
           目的
         </SubSubSection>
+        <Description>
+          本実験の目的は，リアル/ダミーカーソルの識別ができるかどうかを調査するための実験である．
+        </Description>
         <SubSubSection>
           実験デザイン
         </SubSubSection>
+        <Description>
+          実験を開始すると，カーソルが2~3個提示される．参加者はマウスを操作し，それぞれのカーソルに対して "自分が操作している感" を7段階で評価する．
+          一度の制限時間は20秒である．
+        </Description>
+        <SubSubSection>
+          実験条件
+        </SubSubSection>
+        <Description>
+          ダミーカーソルのモーションアルゴリズムには角速度を用いた．角速度のパラメータは[1, 5, 10, 15, 30, 45, 60, 75, 90]度の合計9つでそれぞれ最低2回の試行が行われる．
+          また，今回の実験ではリアル/ダミーカーソル合わせて2個呈示する実験とした．
+        </Description>
         <SubSubSection>
           結果
         </SubSubSection>
+        <Description>
+          実験の結果について記す．Fig3は，リアル/ダミーカーソルそれぞれに対して，自分が動かしている確信度を回転角ごとにプロットしたものである．
+        </Description>
         <FigureBox>
           <FigureImage src='/reports/graph.png'/>
-          <Caption>(左)回転角ごとのリアルカーソルの識別率 / (右)回転角ごとのダミーカーソルの識別率</Caption>
+          <Caption>Fig3: (左)回転角ごとのリアルカーソルの識別率 / (右)回転角ごとのダミーカーソルの識別率</Caption>
         </FigureBox>
+        <Description>
+          Fig3の回転角15度以上のプロットを見ると，リアルカーソルとダミーカーソルの判別が明確についていることがわかる．しかし，回転角が15度以下の場合には，リアルカーソルとダミーカーソルの
+          動きにほとんど差異がないため，誤認識や両方自身が動かしているカーソルだと感じる場合が多くなる．
+        </Description>
         <FigureBox>
           <FigureImage src='/reports/graph2.png'/>
-          <Caption>回転角ごとのリアルカーソル/ダミーカーソルの識別率</Caption>
+          <Caption>Fig: 4回転角ごとのリアルカーソル/ダミーカーソルの識別率</Caption>
         </FigureBox>
+        <Description>
+          Fig4はFig3の左右のプロットを一つにまとめたものである．この図からもわかる通り，回転角が15度以上の場合はリアルカーソルとダミーカーソルを
+          明確に識別できていることがわかる．すなわち，識別可能/不可能の二値化で評価することが可能になる．
+        </Description>
 
         <SubSection>
           User Study#2  
         </SubSection>
+        <Description>
+          User Study#1の結果を踏まえ，回転角を15度以上に設定し，ダミーカーソル数を大幅に増やした実験を設計する．
+        </Description>
         <SubSubSection>
           目的
         </SubSubSection>
+        <Description>
+          本実験では，複数提示されるダミーカーソルの中から，リアルカーソルを識別できるかを調査する．
+        </Description>
         <SubSubSection>
           実験デザイン
         </SubSubSection>
+        <Description>
+          Fig6に実験手順，Fig7に実験環境と実際の実験の様子について記載する．
+        </Description>
         <FigureBox>
           <FigureImage src='/reports/procedure.png'/>
-          <Caption>実験手順</Caption>
+          <Caption>Fig6: 実験手順</Caption>
         </FigureBox>
         <FigureBox>
           <FigureImage src='/reports/US2andApparatus.png'/>
-          <Caption>(A)実験環境の構成 / (B)実験の様子</Caption>
+          <Caption>Fig7: (A)実験環境の構成 / (B)実験の様子</Caption>
         </FigureBox>
-
-
         <SubSubSection>
           結果
         </SubSubSection>
         <FigureBox>
           <FigureImage src='/reports/TimeAndDummyNum-fix.png'/>
-          <Caption>ダミーカーソル数と識別までに要する時間</Caption>
+          <Caption>Fig8: ダミーカーソル数と識別までに要する時間</Caption>
         </FigureBox>
         <Description>
-          ほげほgへおgへおhがおせひごいあうぃゔおがへおいうgひうljdぶfぁいうhふぉえうあほいうえgふぉあいうgふぇおいw
+          実験の結果，ほとんど全ての場合で，ダミーカーソル数に関係なく参加者はリアルカーソルを識別できた．このことから，参加者は自身の手の動きと
+          カーソルの動きの相関関係を知覚，すなわち身体所有感があるからこそ識別可能であると我々は考えている．
         </Description>
         
+        <SectionHeader>
+          議論
+        </SectionHeader>
+        <Description>
+          今回実施した実験結果から，我々はダミーカーソル実験により身体所有感の評価を従来のような定性的な評価(アンケート評価)ではなく，識別できるかできないかの
+          二値による定量的な評価が可能であると考えている．さらに，我々の実験ではリアルカーソルをした際に身体所有感の生起が起こっていると考える．
+        </Description>
+        <FigureBox>
+          <FigureImage src='/reports/Discussion.png'/>
+          <Caption>Fig9: 身体所有感の生起</Caption>
+        </FigureBox>
 
       </DetailFrame>
     </div>
@@ -176,7 +233,7 @@ const Report = ({ data }) => {
 }
 
 Report.getInitialProps = async ({ query }) => {
-  const json = await import(`../../contents/works/fabnavi.json`)
+  const json = await import(`../../contents/keitalab/report2020.json`)
   return {
     data: json
   }

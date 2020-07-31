@@ -1,10 +1,10 @@
 {
-  "../../contents/works/fabnavi.json": [
+  "../../contents/keitalab/report2020.json": [
     {
-      "id": "./contents/works/fabnavi.json",
-      "name": "./contents/works/fabnavi.json",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "id": "./contents/keitalab/report2020.json",
+      "name": "./contents/keitalab/report2020.json",
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ],
   "./dev/noop": [

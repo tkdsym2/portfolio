@@ -65,3 +65,12 @@ export const Caption = styled.p`
   margin: 0;
   padding: 0;
 `
+export const Link = styled.a`
+  color: ${BlackGray};
+  font-size: ${SentenceSize};
+  /* font-family: 'Lato', sans-serif; */
+  &:hover {
+    color: ${Blue};
+  }
+  /* margin-right: 1.5rem; */
+`
