@@ -12,7 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/components/Footer */ "./styles/components/Footer.js");
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/components/Footer.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Footer.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -51,7 +51,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _styles_components_Navigator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/Navigator */ "./styles/components/Navigator.js");
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/components/Navigator.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/components/Navigator.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -13489,7 +13489,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/pages/_app.jsx";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/pages/_app.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 
@@ -13623,7 +13623,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../theme */ "./styles/theme.js");
 
 
-var _jsxFileName = "/Users/kazuma/Desktop/tkd/pp/portfolio/styles/components/Navigator.js";
+var _jsxFileName = "/Users/kazuma/Desktop/tkd/portfolio/styles/components/Navigator.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 

@@ -101,7 +101,7 @@ export const StyledName = styled.p`
 export const StyledText = styled.span`
   color: ${BlackGray};
   font-size: ${SentenceSize};
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   margin-left: 0.8rem;
   letter-spacing: 0.01rem;
 `
