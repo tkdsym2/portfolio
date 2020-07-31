@@ -21,7 +21,8 @@ import {
   SubSubSection,
   FigureImage,
   FigureBox,
-  Caption
+  Caption,
+  Link
 } from '../../styles/keitalab/report'
 
 
@@ -132,7 +133,7 @@ const Report = ({ data }) => {
         </SubSection>
         <Description>
           User Study#1では，カーソルを2~3個並べ，参加者は自分が動かしているカーソルかどうかをそれぞれに対して7段階で評価する．Unityで実装したが，オンラインサンプルを用意したので
-          雰囲気を掴みたい方はどうぞ．
+          雰囲気を掴みたい方はどうぞ．<Link target="_blank" href="https://experiment-studio-git-add-cursor-study.tkdsym2.now.sh/experiment/zero-one-study" >Demo Link</Link>
         </Description>
         <SubSubSection>
           目的
