@@ -1,36 +1,19 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tkdsym2/portfolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tkdsym2/portfolio/issues"
-  },
-  "homepage": "https://github.com/tkdsym2/portfolio#readme",
   "dependencies": {
-    "next": "^9.2.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-icons": "^3.8.0",
-    "react-media": "^1.10.0",
-    "react-youtube": "^7.9.0",
-    "styled-components": "^5.0.0",
-    "styled-icons": "^9.2.0",
-    "styled-media-query": "^2.1.2"
+    "next": "13.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6"
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.0"
   }
 }

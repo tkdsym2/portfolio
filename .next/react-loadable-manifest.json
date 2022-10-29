@@ -1,18 +1,1 @@
-{
-  "../../contents/keitalab/report2020.json": [
-    {
-      "id": "./contents/keitalab/report2020.json",
-      "name": "./contents/keitalab/report2020.json",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
-    }
-  ],
-  "./dev/noop": [
-    {
-      "id": "./node_modules/next/dist/client/dev/noop.js",
-      "name": "./node_modules/next/dist/client/dev/noop.js",
-      "file": "static/chunks/0.js",
-      "publicPath": "static/chunks/0.js"
-    }
-  ]
-}
+{}
